@@ -13,3 +13,7 @@ body {
   align-items: center;
   background: var(--clr-bg);
 }
+
+.content {
+  width: 70%;
+}
