@@ -1,7 +1,7 @@
 :root {
   --clr-primary: orange;
   --clr-body: white;
-  --clr-bg: black;
+  --clr-bg: rgba(0, 0, 0, 0.388);
 }
 
 body {
@@ -20,8 +20,9 @@ body {
   background: var(--clr-body);
   padding: 3em;
   text-transform: capitalize;
-  width: 70%;
-  max-width: 500px;
+  /* width: 70%;
+  max-width: 500px; */
+  width: min(500px, 70%);
   > p {
     color: var(--clr-bg);
   }
