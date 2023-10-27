@@ -1,7 +1,7 @@
 :root {
   --clr-primary: "orange";
-  --clr-body: "black";
-  --clr-bg: "gray";
+  --clr-body: "gray";
+  --clr-bg: "black";
 }
 
 body {
