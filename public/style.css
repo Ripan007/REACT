@@ -19,4 +19,8 @@ body {
 .content {
   background: var(--clr-body);
   padding: 3em;
+  text-transform: capitalize;
+  > p {
+    color: var(--clr-bg);
+  }
 }
