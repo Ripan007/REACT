@@ -1,7 +1,3 @@
-function name(){
+const head = document.getElementById("head");
 
-}
-
-name.addLi
-
-===
+head.addEventListener("mouseenter", function () {});
