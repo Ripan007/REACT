@@ -1,13 +1,10 @@
 import React from "react";
-
-export const App = () => {
-  function handleClick() {}
-  return (
-    <div>
-      <h1 onClick={handleClick}>add one line</h1>
-      llllll one more line
-    </div>
-  );
-};
-
-//  redu
+export class App extends React.Component() {
+  render() {
+    return (
+      <>
+        <h1>class bass component</h1>
+      </>
+    );
+  }
+}
