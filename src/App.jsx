@@ -5,30 +5,29 @@ class App extends React.Component {
     this.state = {
       name: "random",
     };
-    this.increment = this.increment.bind(this);
+
+    this.handleChange = this.handleChange.bind(this);
   }
-  increment() {
-    this.setState((prev) => {
-      return {
-        count: prev.count + 1,
-      };
+
+  handleChange(e) {
+    this.setState({
+      name: e.target.value,
     });
   }
   render() {
     return (
       <>
-        <h1>{this.state.count}</h1>
-        <button onClick={this.increment}>increment</button>
         <input
           type="text"
           name=""
           id=""
           placeholder="enter name"
-          value={this.state.name}
+          // value={this.state.name}
+          onChange={this.handleChange}
         />
+        <h2>{this.state.name}</h2>
       </>
     );
   }
 }
-
 export default App;
