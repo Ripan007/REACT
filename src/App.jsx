@@ -1,10 +1,18 @@
 import React from "react";
-export class App extends React.Component() {
+class App extends React.Component() {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "random",
+    };
+  }
   render() {
     return (
       <>
-        <h1>class bass component</h1>
+        <h1>{this.state.name}</h1>
       </>
     );
   }
 }
+
+export { App };
