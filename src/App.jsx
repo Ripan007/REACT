@@ -1,8 +1,14 @@
 import React from "react";
 
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      name: "random",
+    };
+  }
   render() {
-    return <h1>welcome</h1>;
+    return <h1>{this.state.name}</h1>;
   }
 }
 
