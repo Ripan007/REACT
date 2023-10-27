@@ -1,7 +1,7 @@
 :root {
-  --clr-primary: "orange";
-  --clr-body: "gray";
-  --clr-bg: "black";
+  --clr-primary: orange;
+  --clr-body: white;
+  --clr-bg: black;
 }
 
 body {
@@ -15,5 +15,6 @@ body {
 }
 
 .content {
-  width: 70%;
+  background: var(--clr-body);
+  padding: 3em;
 }
