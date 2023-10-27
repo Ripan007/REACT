@@ -12,6 +12,8 @@ body {
   justify-content: center;
   align-items: center;
   background: var(--clr-bg);
+  line-height: 1.6;
+  color: var(--clr-primary);
 }
 
 .content {
