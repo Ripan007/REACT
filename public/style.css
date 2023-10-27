@@ -20,6 +20,8 @@ body {
   background: var(--clr-body);
   padding: 3em;
   text-transform: capitalize;
+  width: 70%;
+  max-width: 500px;
   > p {
     color: var(--clr-bg);
   }
