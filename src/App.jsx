@@ -1,14 +1,26 @@
 import React from "react";
-
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      name: "random",
+      count: 0,
     };
+    this.increment = this.increment.bind(this);
+  }
+  increment() {
+    this.setState((prev) => {
+      return {
+        count: prev.count + 1,
+      };
+    });
   }
   render() {
-    return <h1>{this.state.name}</h1>;
+    return (
+      <>
+        <h1>{this.state.count}</h1>
+        <button onClick={this.increment}>increment</button>
+      </>
+    );
   }
 }
 
