@@ -3,10 +3,3 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.content {
-  font-size: 3em;
-  margin-bottom: 2em;
-}
-
-/*  compounding is not exists , but there is a relation of root element and html page */
