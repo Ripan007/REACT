@@ -10,3 +10,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.btn--first {
+  padding: 1rem 2rem;
+}
+
+.btn--second {
+  padding: 1em 2em;
+  font-size: 1em;
+}
