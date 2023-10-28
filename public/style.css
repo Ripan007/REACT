@@ -1,23 +1,12 @@
-html {
-  font-size: 3rem;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.box {
-  font-size: 2rem;
-}
-
 .content {
-  font-size: 1rem;
-}
-
-.content > p {
-  font-size: 1rem;
+  font-size: 3em;
+  margin-bottom: 2em;
 }
 
 /*  compounding is not exists , but there is a relation of root element and html page */
