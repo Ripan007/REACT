@@ -1,3 +1,6 @@
-const head = document.getElementById("head");
+(function () {
+  const toggleButton = document.querySelector("#module > button");
+  const currentTheme = localStorage.getItem("theme");
+});
 
-head.addEventListener("mouseenter", function () {});
+function switcdhTheme() {}
