@@ -19,3 +19,5 @@ html {
 .content > p {
   font-size: 1rem;
 }
+
+/*  compounding is not exists , but there is a relation of root element and html page */
