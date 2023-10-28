@@ -13,9 +13,10 @@ body {
 
 .btn--first {
   padding: 1rem 2rem;
+  font-size: 2rem;
 }
 
 .btn--second {
   padding: 1em 2em;
-  font-size: 1em;
+  font-size: 2em;
 }
