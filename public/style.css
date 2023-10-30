@@ -1,0 +1,10 @@
+.child {
+  background-color: green;
+  padding: 1rem;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
