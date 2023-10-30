@@ -14,6 +14,7 @@ body {
 .content {
   max-width: 500px;
   padding: 1rem;
+  box-shadow: 10px 12px black;
 }
 
 img {
@@ -22,4 +23,5 @@ img {
 }
 
 .content > img {
+  background-size: cover;
 }
