@@ -10,14 +10,3 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.content {
-  width: 500px;
-  padding: 1rem;
-  box-shadow: 10px 12px;
-  /* border: 1px solid black; */
-}
-
-.content > img {
-  width: 100%;
-}
