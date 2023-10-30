@@ -11,12 +11,16 @@ body {
   align-items: center;
 }
 
-.btn--first {
-  padding: 1rem 2rem;
-  font-size: 2rem;
+.content {
+  max-width: 500px;
+  padding: 1rem;
 }
 
-.btn--second {
-  padding: 1em 2em;
-  font-size: 2em;
+img {
+  width: 250px;
+  height: 250px;
+}
+
+.content > img {
+  width: 100%;
 }
