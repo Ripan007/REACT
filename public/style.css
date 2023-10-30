@@ -1,1 +1,4 @@
-*
+input ::-webkit-input-placeholder {
+  color: #b1230a;
+  font-size: 12px;
+}
