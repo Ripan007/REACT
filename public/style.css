@@ -16,12 +16,3 @@ body {
   padding: 1rem;
   box-shadow: 10px 12px black;
 }
-
-img {
-  width: 250px;
-  height: 250px;
-}
-
-.content > img {
-  background-size: cover;
-}
