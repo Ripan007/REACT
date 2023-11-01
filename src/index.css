@@ -53,7 +53,7 @@ button:focus {
   color: #6b7280;
 } */
 
-.controls input {
+/* .controls input {
   width: 100%;
   padding: 0.75rem 1rem;
   line-height: 1.5;
@@ -72,7 +72,7 @@ input.invalid {
   color: #ef4444;
   border-color: #f73f3f;
   background-color: #fed2d2;
-}
+} */
 
 .actions {
   display: flex;
