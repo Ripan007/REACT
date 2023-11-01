@@ -1,7 +1,13 @@
-import React from "react";
+import AuthInputs from "./Components/AuthInputs";
+import Header from "./Components/Header";
 
 export const App = () => {
-  return <div>App</div>;
+  return (
+    <>
+      <Header />
+      <main>
+        <AuthInputs />
+      </main>
+    </>
+  );
 };
-
-//  css and responsive design
