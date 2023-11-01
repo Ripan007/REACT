@@ -1,5 +1,9 @@
 // import logo from "../assets/logo.png";
-import "./Header.css";
+// import "./Header.css";
+import { styled } from "styled-components";
+
+const StyledHeader = styled.header``;
+
 export default function Header() {
   return (
     <header>
