@@ -59,3 +59,5 @@ export default function AuthInputs() {
     </div>
   );
 }
+
+//  focus was the prime things , i have to avoid those distractino
