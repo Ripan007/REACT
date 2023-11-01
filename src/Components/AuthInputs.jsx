@@ -52,7 +52,7 @@ export default function AuthInputs() {
     <div id="auth-inputs">
       <ControlContainer>
         <p>
-          <Label className={`label ${emailNotValid ? "invalid" : ""}`}>
+          <Label invalid= {}>
             Email
           </Label>
           <Input
