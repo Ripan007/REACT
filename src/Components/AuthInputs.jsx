@@ -22,7 +22,7 @@ const Input = styled.input`
   width: 100%;
   padding: 0.75rem 1rem;
   line-height: 1.5;
-  background-color: #d1d5db;
+  background-color: ${({ invalid }) => (invalid ? "#fed2d2" : " #d1d5db")};
   color: #374151;
   border: 1px solid transparent;
   border-radius: 0.25rem;
