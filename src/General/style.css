@@ -10,6 +10,12 @@ div {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .nav {
   background-color: lightblue;
 }
