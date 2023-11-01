@@ -37,7 +37,9 @@ export default function AuthInputs() {
           />
         </p>
         <p>
-          <label className={`la`}>Password</label>
+          <label className={`label ${passwordNotValid ? "invalid" : ""}`}>
+            Password
+          </label>
           <input
             type="password"
             // style={{
