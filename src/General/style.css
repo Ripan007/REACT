@@ -1,9 +1,3 @@
 .container {
-  background-color: red;
-}
-
-@media (min-width: 640px) {
-  .container {
-    background-color: lightcoral;
-  }
+  background-color: lightblue;
 }
