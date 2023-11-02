@@ -7,7 +7,7 @@ export default function Header() {
         alt="A canvas"
       />
       <h1 className="text-amber-800 uppercase text-center">ReactArt</h1>
-      <p>A community of artists and art-lovers.</p>
+      <p className="text-stone-200">A community of artists and art-lovers.</p>
     </header>
   );
 }
