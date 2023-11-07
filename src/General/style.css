@@ -19,3 +19,11 @@ body {
   border-radius: 5px;
   padding: 1rem;
 }
+
+.upper-layout {
+  background-color: blue;
+  height: 60%;
+  border-radius: inherit;
+}
+.bottom-layout {
+}
