@@ -1,22 +1,42 @@
+import { useState } from "react";
+
 export default function Login() {
-  function handleSubmit(event) {
-    event.preventDefault();
-    const fd = new FormData(event.target);
-    const identicalObject = fd.getAll("identical");
-    const data = Object.fromEntries(fd.entries());
-    data.identical = identicalObject;
-    console.log(data);
+  const [enterData, setEnterData] = useState({
+    email: "default",
+    password: "default",
+  });
+
+  function inputHandleChange(identifier, value) {
+    setEnterData((prevValue) => ({
+      ...prevValue,
+      [identifier]: value,
+    }));
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(enterData);
   }
   return (
     <form onSubmit={handleSubmit}>
-      <input type="email" name="email" id="" />
-      <input type="paidenticalObjectssword" id="" />
-      <input type="text" name="firstName" id="" />
-      <input type="text" name="lastName" id="" />
-      <input type="checkbox" name="identical" value="animal" id="animal" />
-      <input type="checkbox" name="identical" value="human" id="human" />
+      <input
+        type="email"
+        name="email"
+        id=""
+        value={enterData.email}
+        placeholder="email"
+        onChange={(e) => inputHandleChange("email", e.target.value)}
+      />
+      <input
+        type="password"
+        name="password"
+        id=""
+        value={enterData.password}
+        placeholder="password"
+        onChange={(e) => inputHandleChange("password", e.target.value)}
+      />
       <button type="reset">reset</button>
-      <button type="submit">login</button>
+      <button type="login">login</button>
     </form>
   );
 }
