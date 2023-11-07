@@ -18,6 +18,10 @@ export default function Login() {
       ...prevValue,
       [identifier]: value,
     }));
+    setEdit((prevEdit) => ({
+      ...prevEdit,
+      [identifier]: false,
+    }));
   }
 
   function inputHandleBlur(identifier) {
