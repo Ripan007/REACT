@@ -1,24 +1,15 @@
-header {
-  --border-width: 10px;
-}
-
-header {
-  border: 1px solid #000;
-}
-
-.nav-list > li {
-  border: 1px solid red;
-}
-
-.nav-list {
-  display: flex;
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* flex-wrap: wrap; */
 }
 
-.nav-list li {
-  flex-shrink: 1;
-  flex-grow: 1;
+.cards {
+  background-color: green;
+  color: white;
+}
+
+.column {
+  display: flex;
+  gap: 2rem;
 }
