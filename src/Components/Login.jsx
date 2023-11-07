@@ -2,8 +2,11 @@ export default function Login() {
   function handleSubmit(event) {
     event.preventDefault();
     const fd = new FormData(event.target);
+    const identicalChannel = fd.getAll("identicalValue");
     const data = Object.fromEntries(fd.entries());
+    data.identicalValue = identicalChannel;
     console.log(data);
+    data.target.reset();
   }
   return (
     <form onSubmit={handleSubmit}>
