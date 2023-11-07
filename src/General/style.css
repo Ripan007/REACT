@@ -24,7 +24,18 @@ body {
 }
 
 .upper-layout {
-  background-color: blue;
+  background-color: rgba(0, 0, 255, 0.571);
   height: 60%;
   border-radius: inherit;
+}
+
+.heading {
+  font-size: 1.3rem;
+  padding-block: 1rem;
+  text-align: center;
+}
+
+.paragraph {
+  padding-block: 0.7rem;
+  text-align: center;
 }
