@@ -2,12 +2,13 @@ import { useState } from "react";
 
 export default function Login() {
   const [enterValues, setEnterValues] = useState({
-    email: "default",
+    email: "",
     password: "",
   });
 
   const emailNotValid =
     enterValues.email !== "" && !enterValues.email.includes("@");
+
   function inputHandleChange(identifier, value) {
     setEnterValues((prevValue) => ({
       ...prevValue,
