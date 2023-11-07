@@ -1,20 +1,20 @@
 import { useState } from "react";
 
 export default function Login() {
-  const [getInput, setGetInput] = useState({
+  const [enteredValue, setEnteredValue] = useState({
     email: "",
     password: "",
   });
 
-  function handleChange(identifier, value) {
-    setGetInput((preValue) => ({
+  function handleInputChange(identifier, value) {
+    setEnteredValue((preValue) => ({
       ...preValue,
       [identifier]: value,
     }));
   }
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(getInput);
+    console.log(enteredValue);
   }
   return (
     <form onSubmit={handleSubmit}>
@@ -22,15 +22,15 @@ export default function Login() {
         type="email"
         name=""
         id=""
-        value={getInput.email}
-        onChange={(e) => handleChange("email", e.target.value)}
+        value={enteredValue.email}
+        onChange={(e) => handleInputChange("email", e.target.value)}
       />
       <input
         type="password"
         name=""
         id=""
-        value={getInput.password}
-        onChange={(e) => handleChange("password", e.target.value)}
+        value={enteredValue.password}
+        onChange={(e) => handleInputChange("password", e.target.value)}
       />
       <button>reset</button>
       <button>login</button>
