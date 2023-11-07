@@ -1,6 +1,9 @@
 export default function Login() {
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <h2>login</h2>
       <div>
         <label htmlFor="">email:</label>
