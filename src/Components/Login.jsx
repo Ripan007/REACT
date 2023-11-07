@@ -1,22 +1,18 @@
-import { useRef } from "react";
-
 export default function Login() {
-  const email = useRef();
-  const password = useRef();
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    const emailData = email.current.value;
-    const passwordData = password.current.value;
-    console.log(emailData, passwordData);
-    email.current.value = "";
+  function handleSubmit(event) {
+    event.preventDefault();
+    const fd = new FormData(event.target);
+    const data = Object.fromEntries(fd.entries());
+    console.log(data);
   }
   return (
     <form onSubmit={handleSubmit}>
-      <input type="email" name="email" id="" ref={email} />
-      <input type="password" name="password" id="" ref={password} />
+      <input type="text" name="firstName" id="" />
+      <input type="text" name="lastName" id="" />
+      <input type="checkbox" name="identicalValue" id="" value="animal" />
+      <input type="checkbox" name="identicalValue" id="" value="human" />
       <button type="submit">submit</button>
-      <button type="reset">reset</button>
+      <button className="reset">reset</button>
     </form>
   );
 }
