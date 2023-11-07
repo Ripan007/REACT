@@ -1,4 +1,7 @@
 export default function App() {
+  function handleSubmit() {
+    console.log("submitted");
+  }
   return (
     <>
       <h1>login</h1>
@@ -10,7 +13,13 @@ export default function App() {
         <input type="password" name="" id="" />
         <br />
         <button className="">reset</button>
-        <button className="">login</button>
+        <button
+          type="button"
+          className="bg-red-700 text-white p-9"
+          onClick={handleSubmit}
+        >
+          login
+        </button>
       </form>
     </>
   );
