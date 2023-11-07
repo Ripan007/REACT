@@ -11,8 +11,8 @@ export default function Login() {
     <form onSubmit={handleSubmit}>
       <input type="email" name="email" id="" />
       <input type="password" name="password" id="" />
-      <input type="checkbox" name="acquisition" value="animal" id="" />
-      <input type="checkbox" name="acquisition" value="human" id="" />
+      <input type="checkbox" name="acquisition" value="animal" id="animal" />
+      <input type="checkbox" name="acquisition" value="human" id="human" />
       <button>reset</button>
       <button>login</button>
     </form>
