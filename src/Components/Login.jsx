@@ -1,21 +1,19 @@
 export default function Login() {
-  function handleSubmit(event) {
-    event.preventDefault();
-    const fd = new FormData(event.target);
-    const identicalChannel = fd.getAll("identicalValue");
-    const data = Object.fromEntries(fd.entries());
-    data.identicalValue = identicalChannel;
-    console.log(data);
-    fd.current.reset();
+  function handleSubmit(e) {
+    e.preventDefault();
   }
+
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" name="firstName" id="" />
-      <input type="text" name="lastName" id="" />
-      <input type="checkbox" name="identicalValue" id="" value="animal" />
-      <input type="checkbox" name="identicalValue" id="" value="human" />
+      <input
+        type="email"
+        name="email"
+        id=""
+        placeholder="email"
+        onChange={(e) => inputHandleChange("email", e.target.value)}
+      />
+      <input type="password" name="password" id="" placeholder="password" />
       <button type="submit">submit</button>
-      <button className="reset">reset</button>
     </form>
   );
 }
