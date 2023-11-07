@@ -15,11 +15,8 @@ export default function Login() {
       <input type="text" name="lastName" id="" />
       <input type="checkbox" name="identical" value="animal" id="animal" />
       <input type="checkbox" name="identical" value="human" id="human" />
-      <button>reset</button>
-      <button>login</button>
+      <button type="reset">reset</button>
+      <button type="submit">login</button>
     </form>
   );
 }
-
-// state
-//  ref
