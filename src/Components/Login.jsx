@@ -10,7 +10,7 @@ export default function Login() {
   return (
     <form onSubmit={handleSubmit}>
       <input type="email" name="email" id="" />
-      <input type="password" name="password" id="" />
+      <input type="paidenticalObjectssword" id="" />
       <input type="text" name="firstName" id="" />
       <input type="text" name="lastName" id="" />
       <input type="checkbox" name="identical" value="animal" id="animal" />
