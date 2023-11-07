@@ -6,7 +6,7 @@ export default function Login() {
     const data = Object.fromEntries(fd.entries());
     data.identicalValue = identicalChannel;
     console.log(data);
-    data.target.reset();
+    fd.current.reset();
   }
   return (
     <form onSubmit={handleSubmit}>
