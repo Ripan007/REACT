@@ -11,7 +11,7 @@ export default function Login() {
         <input type="password" name="" id="" />
       </div>
       <p>
-        <button>reset</button>
+        <button className="bg-green-400 p-1 rounded-sm">reset</button>
         <button>login</button>
       </p>
     </form>
