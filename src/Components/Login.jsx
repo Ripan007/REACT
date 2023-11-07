@@ -2,9 +2,7 @@ export default function Login() {
   function handleSubmit(event) {
     event.preventDefault();
     const fd = new FormData(event.target);
-    const acquistionChannel = fd.getAll("acquisition");
     const data = Object.fromEntries(fd.entries());
-    data.acquisition = acquistionChannel;
     console.log(data);
   }
   return (
