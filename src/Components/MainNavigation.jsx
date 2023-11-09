@@ -3,8 +3,8 @@ function MainNavigation() {
   return (
     <>
       <h1>main navigation</h1>
-      <header className="bg-slate-600 p-2 text-white uppercase flex ">
-        <nav>
+      <header className="bg-slate-600 p-2 text-white uppercase  ">
+        <nav className="flex">
           <ul>
             <li>
               <NavLink
