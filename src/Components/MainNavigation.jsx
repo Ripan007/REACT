@@ -3,10 +3,12 @@ function MainNavigation() {
   return (
     <>
       <h1>main navigation</h1>
-      <header>
+      <header className="bg-slate-600 p-2 text-white uppercase ">
         <nav>
           <ul>
-            <Link to="/">home</Link>
+            <Link className="m-2" to="/">
+              home
+            </Link>
             <Link to="/products">products</Link>
           </ul>
         </nav>
