@@ -1,4 +1,11 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+
+const PRODUCT = [
+  { id: "p1", title: "product 1" },
+  { id: "p2", title: "product 2" },
+  { id: "p3", title: "product 3" },
+];
+
 function Products() {
   const navigate = useNavigate();
   function NavigateHandler() {
@@ -11,9 +18,11 @@ function Products() {
         navigate
       </button>
       <ul>
-        <p>product one</p>
-        <p>product two</p>
-        <p>product three</p>
+        {PRODUCT.map((prod) => (
+          <li key={prod.id}>
+            <Link to={`/products/${prod.id}`}>{prod.title}</Link>
+          </li>
+        ))}
       </ul>
     </>
   );
