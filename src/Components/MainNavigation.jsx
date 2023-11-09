@@ -8,9 +8,9 @@ function MainNavigation() {
           <ul>
             <li>
               <NavLink
+                to="/"
                 className={({ isActive }) => (isActive ? "active" : undefined)}
                 end
-                to="/"
               >
                 home
               </NavLink>
