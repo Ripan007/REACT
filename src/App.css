@@ -1,2 +1,5 @@
-@media screen(max-width:769px) {
+.active {
+  background-color: red;
+  color: white;
+  padding: 1rem;
 }
