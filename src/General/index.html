@@ -10,9 +10,21 @@
 </head>
 
 <body>
+  <script>
+    function change(c){
+let pic ;
+if(c===0){
+  pic = '../assets/Images/book.jpg'
+}else{
+  pic = '../assets/Images/cheese.jpg'
+}
+
+document.getElementById('imag').src =  pic
+    }
+  </script>
 
 
-  <img src="../assets/Images/book.jpg" alt="">
+  <img id="image"  src="../assets/Images/book.jpg" alt="">
 
 <button type="button" onclick ="change(1)">first</button>
 <button type="button" onclick ="change(0)">second</button>
