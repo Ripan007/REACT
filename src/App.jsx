@@ -1,3 +1,5 @@
+//  importing component
+
 import RenderContent from "./RenderContent";
 
 function App() {
