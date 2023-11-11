@@ -1,14 +1,15 @@
 //  importing component
 
-import { DynamicOutput } from "./React-essentials/DynamicOutput";
-import RenderContent from "./RenderContent";
+// import { DynamicValue } from "./React-essentials/components/Header";
+import { Main } from "./React-essentials/components/Main";
+// import RenderContent from "./RenderContent";
 
 function App() {
   return (
     <>
-      <h1>welcome</h1>
-      <RenderContent />
-      <DynamicOutput />
+      {/* <h1>welcome</h1> */}
+      {/* <RenderContent /> */}
+      <Main />
     </>
   );
 }
