@@ -32,9 +32,18 @@ export const Main = () => {
       {/*  better way to access data */}
       {/* old way   <Card title = {cardData[0].title}/> */}
       <section>
-        <Card {...cardData[0]} />
+        {/*  better way to render */}
+        {/* <Card {...cardData[0]} />
         <Card {...cardData[1]} />
-        <Card {...cardData[2]} />
+        <Card {...cardData[2]} /> */}
+
+        {/* render array of object  */}
+
+        <ul>
+          {cardData.map((cardDatas) => (
+            <Card key={cardDatas.title} {...cardDatas} />
+          ))}
+        </ul>
       </section>
       <section>
         {/* attribute way */}
@@ -42,13 +51,31 @@ export const Main = () => {
         <TabContent label="jsx"></TabContent>
         <TabContent label="props"></TabContent>
         <TabContent label="state"></TabContent> */}
-        <menu>
-          <TabContent onSelect={() => handleClick("components")}>
+        <menu className="bg-slate-200  p-2 max-w-fit">
+          <TabContent
+            isSelected={selectedTopic === "components"}
+            onSelect={() => handleClick("components")}
+          >
             components
           </TabContent>
-          <TabContent onSelect={() => handleClick("jsx")}>jsx</TabContent>
-          <TabContent onSelect={() => handleClick("props")}>props</TabContent>
-          <TabContent onSelect={() => handleClick("state")}>state</TabContent>
+          <TabContent
+            isSelected={selectedTopic === "jsx"}
+            onSelect={() => handleClick("jsx")}
+          >
+            jsx
+          </TabContent>
+          <TabContent
+            isSelected={selectedTopic === "props"}
+            onSelect={() => handleClick("props")}
+          >
+            props
+          </TabContent>
+          <TabContent
+            isSelected={selectedTopic === "state"}
+            onSelect={() => handleClick("state")}
+          >
+            state
+          </TabContent>
         </menu>
         {/* dynamic content */}
         {/* {!selectedTopic && <p>select a topic</p>}

@@ -2,6 +2,7 @@
 
 // import { DynamicValue } from "./React-essentials/components/Header";
 import { Main } from "./React-essentials/components/Main";
+import "./App.css";
 // import RenderContent from "./RenderContent";
 
 function App() {

@@ -1,6 +1,10 @@
 import React from "react";
 
-export const TabContent = ({ children, onSelect }) => {
+export const TabContent = ({ children, onSelect, isSelected }) => {
   //   console.log("tab content");
-  return <button onClick={onSelect}>{children}</button>;
+  return (
+    <button className={isSelected ? "active" : undefined} onClick={onSelect}>
+      {children}
+    </button>
+  );
 };

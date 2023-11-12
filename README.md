@@ -14,3 +14,4 @@ by default react component execute ones
 managing state => useState => manage data & tell react to re-execute a component function
 render content conditionally
 dynamic styling
+dynamic lists
