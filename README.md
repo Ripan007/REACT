@@ -1,4 +1,9 @@
 React is declarative
+REACT ESSENTIALS:(components,jsx & state)
+building user interfaces using components
+using, sharing and outputting data
+handling user events
+
 Why Components ?
 Components are a fundamental concept
 
