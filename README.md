@@ -1,8 +1,12 @@
-React is declarative
+## React is declarative
+
 REACT ESSENTIALS:(components,jsx & state)
 building user interfaces using components
 using, sharing and outputting data
 handling user events
+building interactive ui using states
+
+---
 
 Why Components ?
 Components are a fundamental concept
@@ -20,3 +24,11 @@ managing state => useState => manage data & tell react to re-execute a component
 render content conditionally
 dynamic styling
 dynamic lists
+
+---
+
+React Essentials - Deep Dive => Beyond the basic
+behind the scenes of jsx
+structuring states and components
+advanced state usage
+patters and best practice
