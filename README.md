@@ -32,3 +32,6 @@ behind the scenes of jsx
 structuring states and components
 advanced state usage
 patters and best practice
+
+fragment
+splitting components by feature and state
