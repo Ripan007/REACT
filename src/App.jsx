@@ -1,5 +1,5 @@
-import "./App.css";
 import TicApp from "./Project-tic-tac-toe/TicApp";
+import "./App.css";
 
 function App() {
   return (
