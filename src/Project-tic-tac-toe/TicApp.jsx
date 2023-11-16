@@ -1,13 +1,12 @@
+import Player from "./components/Player";
+
 export default function TicApp() {
   return (
     <main>
       <div id="game-container">
         <ol id="players">
-          <li></li>
-          <li>
-            <span className="player-name">player 2</span>
-            <span className="player-symbol">x</span>
-          </li>
+          <Player name="player 1 " symbol="x" />
+          <Player name="player 2" symbol="o" />
         </ol>
         game board
       </div>
