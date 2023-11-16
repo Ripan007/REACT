@@ -35,3 +35,14 @@ patters and best practice
 
 fragment
 splitting components by feature and state
+wrapping component => avoid writing extra code
+rest operator
+
+---
+
+tic tac toe project
+multiple states value => lifting state up
+derived state
+nested list
+array and object states
+component functions vs "normal functions"

@@ -1,10 +1,10 @@
 import "./App.css";
-import { MainDeep } from "./ReactEssentials-Deep/components/MainDeep";
+import TicApp from "./Project-tic-tac-toe/TicApp";
 
 function App() {
   return (
     <>
-      <MainDeep />
+      <TicApp />
     </>
   );
 }
