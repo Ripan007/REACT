@@ -47,3 +47,8 @@ nested list
 array and object states
 component functions vs "normal functions"
 lifting state up => lift the state up to the closest ancestor component that has access to all the component that need to to work with that state
+
+---
+
+investment calculator
+two way binding
