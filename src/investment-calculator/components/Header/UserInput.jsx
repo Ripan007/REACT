@@ -3,17 +3,17 @@ export default function UserInput() {
     <section id="user-input">
       <div className="input-group">
         <p>
-          <label htmlFor=""></label>
-          <input type="text" />
+          <label htmlFor="">initial investment</label>
+          <input type="text" required />
         </p>
         <p>
-          <label htmlFor=""></label>
-          <input type="text" />
+          <label htmlFor="">annual investment</label>
+          <input type="text" required />
         </p>
       </div>
       <div className="input-group">
         <p>
-          <label htmlFor=""></label>
+          <label htmlFor="">expected return</label>
           <input type="text" />
         </p>
         <p>
