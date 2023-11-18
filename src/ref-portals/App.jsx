@@ -1,5 +1,10 @@
+import Player from "./components/Players";
+
 export default function App() {
-  return <>
-    <><header/>
-  </>;
+  return (
+    <>
+      <Player />
+      <div id="challenges"></div>
+    </>
+  );
 }
