@@ -1,12 +1,13 @@
 // import TicApp from "./Project-tic-tac-toe/TicApp";
 // import "./App.css";
-import Practice from "./Practice";
+// import Practice from "./Practice";
+import InvestApp from "./investment-calculator/InvestApp";
 
 function App() {
   return (
     <>
       {/* <TicApp /> */}
-      <Practice />
+      <InvestApp />
     </>
   );
 }
