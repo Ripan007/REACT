@@ -1,3 +1,13 @@
-export default function StyleApp() {
-  return <h1>style App</h1>;
+import AuthInputs from "./components/AuthInputs.jsx";
+import Header from "./components/Header.jsx";
+
+export default function App() {
+  return (
+    <>
+      <Header />
+      <main>
+        <AuthInputs />
+      </main>
+    </>
+  );
 }
