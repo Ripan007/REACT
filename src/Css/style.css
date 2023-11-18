@@ -8,6 +8,7 @@
   font-size: 30px;
   text-align: center;
   color: white;
+  flex-wrap: wrap;
 }
 
 .flex-item-right {
@@ -23,7 +24,8 @@
 }
 
 @media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
+  .flex-container,
+  .flex-item-right {
+    flex: 100%;
   }
 }
