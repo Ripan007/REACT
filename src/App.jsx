@@ -1,13 +1,10 @@
-// import TicApp from "./Project-tic-tac-toe/TicApp";
-// import "./App.css";
-// import Practice from "./Practice";
-import InvestApp from "./investment-calculator/InvestApp";
+import StyleApp from "./styling-components/StyleApp";
 
 function App() {
   return (
     <>
       {/* <TicApp /> */}
-      <InvestApp />
+      <StyleApp />
     </>
   );
 }
