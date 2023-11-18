@@ -52,3 +52,7 @@ lifting state up => lift the state up to the closest ancestor component that has
 
 investment calculator
 two way binding
+
+---
+
+styling components
