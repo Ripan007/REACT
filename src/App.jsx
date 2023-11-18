@@ -1,10 +1,9 @@
-import StyleApp from "./styling-components/StyleApp";
-import "./styling-components/StyleApp.css";
+import App from "../src/ref-portals/App";
 function App() {
   return (
     <>
       {/* <TicApp /> */}
-      <StyleApp />
+      <App />
     </>
   );
 }
