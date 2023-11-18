@@ -1,4 +1,9 @@
+import Header from "./components/Header/Header";
 import "./investApp.css";
 export default function InvestApp() {
-  return <h1>welcome more</h1>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
