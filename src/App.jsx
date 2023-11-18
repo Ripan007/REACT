@@ -15,3 +15,4 @@ function App() {
 export default App;
 
 // CONSISTENCY , EXCITEMENT , PATIENT  , LEARNABILITY  => MANTRA
+//  this few key points  i have  to remember
