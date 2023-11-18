@@ -55,4 +55,9 @@ two way binding
 
 ---
 
-styling components
+styling components:
+styling with vanilla css
+scoping styles with module css
+css-in-js styling with styled components
+styling with tailwind css
+static and dynamic(conditional) styling
