@@ -14,11 +14,11 @@ export default function UserInput() {
       <div className="input-group">
         <p>
           <label htmlFor="">expected return</label>
-          <input type="text" />
+          <input type="text" required />
         </p>
         <p>
-          <label htmlFor=""></label>
-          <input type="text" />
+          <label htmlFor="">duration</label>
+          <input type="text" required />
         </p>
       </div>
     </section>
