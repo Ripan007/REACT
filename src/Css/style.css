@@ -1,4 +1,15 @@
 .flex-container {
   background-color: blue;
   height: 600px;
+  overflow: scroll;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  width: 100px;
+  background-color: #fff;
+  line-height: 10px;
+  margin: 10px;
+  text-align: center;
 }
