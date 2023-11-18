@@ -1,5 +1,5 @@
 import StyleApp from "./styling-components/StyleApp";
-
+import "./styling-components/StyleApp.css";
 function App() {
   return (
     <>
