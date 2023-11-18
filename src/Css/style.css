@@ -7,6 +7,23 @@
   flex-direction: row;
   font-size: 30px;
   text-align: center;
+  color: white;
 }
 
-.flexc
+.flex-item-right {
+  background-color: blue;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-left {
+  background-color: red;
+  padding: 10px;
+  flex: 50%;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
