@@ -1,12 +1,13 @@
 .flex-container {
   background-color: blue;
   display: flex;
-
-  flex-flow: row nowrap;
+  height: 100vh;
+  align-items: center;
 }
 
 .flex-container > div {
   width: 100px;
+  height: 100px;
   background-color: #fff;
   margin: 10px;
   line-height: 70px;
