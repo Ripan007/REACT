@@ -1,4 +1,3 @@
-import App from "../src/ref-portals/App";
 function App() {
   return (
     <>
