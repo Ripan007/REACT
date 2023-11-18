@@ -1,8 +1,10 @@
 import { useRef, useState } from "react";
 
 export default function Player() {
+  //  refs way
   const playerName = useRef();
   const [enterPlayerName, setEnterPlayerName] = useState(null);
+  // default way
   // const [enterPlayerName, setEnterPlayerName] = useState("");
   // const [submitted, setSubmitted] = useState(false);
 
