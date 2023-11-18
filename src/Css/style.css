@@ -1,0 +1,22 @@
+.flex-container {
+  background-color: blue;
+  display: flex;
+}
+
+.flex-container > div {
+  background-color: #fff;
+  margin: 10px;
+  width: 100px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.flex-container > div:nth-child(1) {
+  background-color: red;
+  flex-grow: 2;
+}
+
+.flex-container > div:nth-child(2) {
+  background-color: orange;
+  flex-grow: 10;
+}
