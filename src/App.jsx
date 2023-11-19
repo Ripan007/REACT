@@ -9,6 +9,6 @@ function App() {
 
 export default App;
 
-// CONSISTENCY , EXCITEMENT , PATIENT  , LEARNABILITY  => MANTRA
+// CONSISTENCY , EXCITEMENT , PATIENT  , LEARNABILITY  , imagination => MANTRA
 //  this few key points  i have  to remember
 // for learning  => https://react.dev/learn => official react source
