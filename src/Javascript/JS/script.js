@@ -149,5 +149,11 @@ const checkIn = function (flightName, passenger) {
 };
 
 checkIn(flight, ripan);
+
+const newPassport = function (person) {
+  person.passport = Math.trunc(Math.random() * 1000000);
+};
+
+newPassport(ripan);
 console.log(flight);
 console.log(ripan);
