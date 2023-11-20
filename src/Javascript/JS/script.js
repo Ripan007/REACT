@@ -108,3 +108,18 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 };
 
 checkWinner(scoreDolphins, scoreKoalas);*/
+//  default parameter //
+
+const bookings = [];
+const createBooking = function (flightNum, numPassenger = 2, price = 1200) {
+  const booking = {
+    flightNum,
+    numPassenger,
+    price,
+  };
+  bookings.push(booking);
+  console.log(bookings);
+};
+
+createBooking("llkm");
+createBooking("llmtss", 3, 200);
