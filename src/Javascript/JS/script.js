@@ -6,6 +6,7 @@
 
 // functions  //
 //  reusable chunk of code => maintainable code
+//  dry principle => clean code
 function fruitProcessor(apples, oranges) {
   console.log(apples, oranges);
   const juice = `Juice contain  ${apples} and ${oranges} oranges`;
