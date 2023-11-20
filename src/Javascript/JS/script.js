@@ -80,10 +80,10 @@ const yearsUntilRetirement = function (birthYear, name) {
   const age = calAge(birthYear);
   const retirement = 80 - age;
   if (retirement > 0) {
-    console.log(`${name} retires at the age  of ${retirement} `);
+    console.log(`${name} retires at the age  of ${retirement} 😆`);
     return retirement;
   } else {
-    console.log(`${name} already retires`);
+    console.log(`${name} already retires 🎃`);
     return -1;
   }
 };
