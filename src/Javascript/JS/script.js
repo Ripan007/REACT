@@ -92,7 +92,7 @@ console.log(yearsUntilRetirement(1395, "mohit"));
 */
 
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
-const scoreDolphins = calcAverage(44, 23, 71);
+const scoreDolphins = calcAverage(144, 323, 71);
 const scoreKoalas = calcAverage(65, 54, 49);
 console.log(scoreDolphins, scoreKoalas);
 
@@ -107,6 +107,6 @@ const checkWinner = function (scoreDolphins, scoreKoalas) {
   }
 };
 
-checkWinner();
+checkWinner(scoreDolphins, scoreKoalas);
 
 //  a team only when  if it  has the average score of the  double team
