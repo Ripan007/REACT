@@ -109,7 +109,8 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 
 checkWinner(scoreDolphins, scoreKoalas);*/
 //  default parameter //
-const bookings = [];
+
+/* const bookings = [];
 const createBooking = function (
   flightNum = "jhhfgf",
   numPassenger = 2,
@@ -127,3 +128,24 @@ const createBooking = function (
 createBooking("llhf");
 createBooking("llhf", undefined, 6666);
 createBooking("tfe", 10, 2000);
+ */
+
+// passing arguments : value vs reference
+
+const flight = "ttrf";
+const ripan = {
+  name: "ripan mondal",
+  passport: 2234555,
+};
+
+const checkIn = function (flightName, passenger) {
+  flightName = "rrtss";
+  passenger.name = "mr " + passenger.name;
+  if (passenger.passport === 2234555) {
+    alert("checkIn");
+  } else {
+    alert("wrong passport");
+  }
+};
+
+checkIn(flight, ripan);
