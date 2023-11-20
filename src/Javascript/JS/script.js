@@ -166,13 +166,19 @@ checkIn(flight, ripan);*/
   };
 };
 
+// functions accepting callback functions //
+
+
+// functions returning functions //
 const greetHey = greet("hey");
 greetHey("mohit");
 greetHey("sohail");
 greet("hi")("janvi");*/
 
+/*
 const greet = (greeting) => (name) => console.log(`${greeting} ${name}`);
 const greetHey = greet("hey");
 greetHey("mohit");
 greetHey("sohail");
 greet("hi")("kanika");
+*/
