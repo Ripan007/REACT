@@ -1,7 +1,9 @@
-import add, { cart } from "./shoppingCart.js";
+import { cart, addToCart } from "./shoppingCart.js";
 
-add("pizza", 9);
-add("laddo", 39);
-add("jamun", 95);
+addToCart("pizza", 9);
+addToCart("laddo", 39);
+addToCart("jamun", 95);
+addToCart("maruti", 95);
 console.log(cart);
-console.log(add);
+
+//  patient
