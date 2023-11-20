@@ -1,1 +1,2 @@
-console.log("exporting module");
+const name = "shopping";
+export { name };
