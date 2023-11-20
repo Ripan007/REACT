@@ -1,3 +1,3 @@
-import { name } from "./shoppingCart.js";
+import {} from "./shoppingCart.js";
 console.log(name);
 console.log("welcome to the script tag");
