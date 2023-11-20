@@ -71,8 +71,7 @@ const fruitProcessor = function (apples, oranges) {
 console.log(fruitProcessor(2, 4));*/
 
 // reviewing functions //
-
-const calAge = function (birthYear) {
+/*const calAge = function (birthYear) {
   return 2034 - birthYear;
 };
 
@@ -90,3 +89,27 @@ const yearsUntilRetirement = function (birthYear, name) {
 
 console.log(yearsUntilRetirement(1995, "mohit"));
 console.log(yearsUntilRetirement(1395, "mohit"));
+*/
+
+const calcAverage = (score1, score2, score3) => score1 + score2 + score3 / 3;
+const scoreDolphins = (score1, score2, score3) =>
+  calcAverage(score1, score2, score3);
+const scoreKoalas = (score1, score2, score3) =>
+  calcAverage(score1, score2, score3);
+const avgDolphins = scoreDolphins(100, 100, 100);
+const avgKoalas = scoreKoalas(65, 54, 49);
+console.log(avgDolphins, avgKoalas);
+
+const checkWinner = (avgDolphins, avgKoalas) => {
+  if (avgDolphins >= avgKoalas * 2) {
+    console.log(`Dolphins wins (${avgDolphins} vs${avgKoalas})`);
+  } else if (avgKoalas >= avgDolphins * 2) {
+    console.log(`koalas wins (${avgDolphins} vs${avgKoalas})`);
+  } else {
+    console.log(`no teams wins 🙂`);
+  }
+};
+
+checkWinner();
+
+//  a team only when  if it  has the average score of the  double team
