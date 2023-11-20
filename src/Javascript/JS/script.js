@@ -154,3 +154,5 @@ const newPassport = function (person) {
 
 newPassport(ripan);
 checkIn(flight, ripan);
+
+// javascript only have passing by  value //
