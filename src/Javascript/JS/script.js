@@ -39,3 +39,17 @@ console.log(age1, age2);*/
 
 // function expressions  //
 //  my own prefer choice is function expression => structured way of code
+//  arrow functions  //
+//  does not have this keyword
+
+/*const calAge3 = (birthYear) => 2024 - birthYear;
+const age3 = calAge3(1995);
+console.log(age3);*/
+
+const ageUntilRetirement = (birthYear, name) => {
+  const age = 2024 - birthYear;
+  const retirement = 80 - age;
+  return `${name} retires  at  the age of ${retirement}`;
+};
+const calRetirement = ageUntilRetirement(1995, "mohit");
+console.log(calRetirement);
