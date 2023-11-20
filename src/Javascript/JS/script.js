@@ -109,9 +109,12 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 
 checkWinner(scoreDolphins, scoreKoalas);*/
 //  default parameter //
-
 const bookings = [];
-const createBooking = function (flightNum, numPassenger = 2, price = 1200) {
+const createBooking = function (
+  flightNum = "jhhfgf",
+  numPassenger,
+  price = 555
+) {
   const booking = {
     flightNum,
     numPassenger,
@@ -121,5 +124,5 @@ const createBooking = function (flightNum, numPassenger = 2, price = 1200) {
   console.log(bookings);
 };
 
-createBooking("llkm");
-createBooking("llmtss", 3, 200);
+createBooking("llhf");
+createBooking("llhf", undefined, 6666);
