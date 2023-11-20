@@ -112,4 +112,6 @@ const checkWinner = (avgDolphins, avgKoalas) => {
 
 checkWinner();
 
+console.log(132 * 2);
+
 //  a team only when  if it  has the average score of the  double team
