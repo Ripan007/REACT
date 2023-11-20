@@ -66,3 +66,4 @@ static and dynamic(conditional) styling
 
 refs && portal
 refs vs state
+forwardRef => forwarding ref from one component to another
