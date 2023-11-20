@@ -56,6 +56,7 @@ const calRetirement = ageUntilRetirement(1995, "mohit");
 console.log(calRetirement);*/
 
 // functions calling other functions  //
+// when we require  small pieces to process the juice
 const cutPieces = function (fruit) {
   return fruit * 3;
 };
