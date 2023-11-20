@@ -1,2 +1,2 @@
-import "./shoppingCart";
+import "../shoppingCart";
 console.log("importing module");
