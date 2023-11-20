@@ -149,3 +149,5 @@ const checkIn = function (flightName, passenger) {
 };
 
 checkIn(flight, ripan);
+console.log(flight);
+console.log(ripan);
