@@ -165,3 +165,8 @@ const greet = function (greeting) {
     console.log(`${greeting} ${name}`);
   };
 };
+
+const greetHey = greet("hey");
+greetHey("mohit");
+greetHey("sohail");
+greet("hi")("janvi");
