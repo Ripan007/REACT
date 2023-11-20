@@ -91,7 +91,7 @@ console.log(yearsUntilRetirement(1995, "mohit"));
 console.log(yearsUntilRetirement(1395, "mohit"));
 */
 
-const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+/*const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 const scoreDolphins = Math.trunc(calcAverage(144, 323, 71));
 const scoreKoalas = Math.trunc(calcAverage(65, 54, 49));
 console.log(scoreDolphins, scoreKoalas);
@@ -107,6 +107,4 @@ const checkWinner = function (avgDolphins, avgKoalas) {
   }
 };
 
-checkWinner(scoreDolphins, scoreKoalas);
-
-//  a team only when  if it  has the average score of the  double team
+checkWinner(scoreDolphins, scoreKoalas);*/
