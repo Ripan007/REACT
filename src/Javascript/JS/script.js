@@ -12,5 +12,7 @@ function fruitProcessor(apples, oranges) {
   return juice;
 }
 
+//  calling /running /invoking functions
+//  if we return =>  then  we have  to store  => then invoke
 const appleJuice = fruitProcessor(2, 0);
 console.log(appleJuice);
