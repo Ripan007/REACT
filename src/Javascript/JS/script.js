@@ -131,8 +131,7 @@ createBooking("tfe", 10, 2000);
  */
 
 // passing arguments : value vs reference
-
-const flight = "wrrf";
+/*const flight = "wrrf";
 const ripan = {
   name: "ripan mondal",
   passport: 246677,
@@ -153,6 +152,9 @@ const newPassport = function (person) {
 };
 
 newPassport(ripan);
-checkIn(flight, ripan);
+checkIn(flight, ripan);*/
 
 // javascript only have passing by  value //
+
+//  first class vs higher order functions //
+// first-class : javascript treat functions as first-class functions /
