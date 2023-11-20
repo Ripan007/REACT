@@ -132,19 +132,19 @@ createBooking("tfe", 10, 2000);
 
 // passing arguments : value vs reference
 
-const flight = "ttrf";
+const flight = "wrrf";
 const ripan = {
   name: "ripan mondal",
-  passport: 2234555,
+  passport: 246677,
 };
 
 const checkIn = function (flightName, passenger) {
-  flightName = "rrtss";
-  passenger.name = "mr " + passenger.name;
-  if (passenger.passport === 2234555) {
+  flightName = "gggff";
+  passenger.name = "mr. " + passenger.name;
+  if (passenger.passport === 246677) {
     alert("checkIn");
   } else {
-    alert("wrong passport");
+    console.log("wrong passport");
   }
 };
 
