@@ -1,3 +1,4 @@
-import {} from "./shoppingCart.js";
-console.log(name);
-console.log("welcome to the script tag");
+import add, { cart } from "./shoppingCart.js";
+
+add("pizza", 9);
+console.log(cart);
