@@ -166,9 +166,6 @@ checkIn(flight, ripan);*/
   };
 };
 
-// functions accepting callback functions //
-
-
 // functions returning functions //
 const greetHey = greet("hey");
 greetHey("mohit");
@@ -182,3 +179,22 @@ greetHey("mohit");
 greetHey("sohail");
 greet("hi")("kanika");
 */
+
+// functions accepting callback functions //
+const oneWard = function (str) {
+  return str.replace(/ /g, "").toLowerCase();
+};
+
+const upperFirstWard = function (str) {
+  const [first, ...others] = str.split("");
+  return [first.toUpperCase(), ...others].join("");
+};
+
+const transformer = function (str, fn) {
+  console.log(`original string:${str}`);
+  console.log(`transformed string: ${fn(str)}`);
+  console.log(`transformed by :${fn.name}`);
+};
+
+transformer("javascript is the best", upperFirstWard);
+transformer("javascript is the best", oneWard);
