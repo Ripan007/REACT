@@ -112,7 +112,7 @@ checkWinner(scoreDolphins, scoreKoalas);*/
 const bookings = [];
 const createBooking = function (
   flightNum = "jhhfgf",
-  numPassenger,
+  numPassenger = 2,
   price = 555
 ) {
   const booking = {
@@ -126,3 +126,4 @@ const createBooking = function (
 
 createBooking("llhf");
 createBooking("llhf", undefined, 6666);
+createBooking("tfe", 10, 2000);
