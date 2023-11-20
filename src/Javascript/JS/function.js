@@ -181,7 +181,7 @@ greet("hi")("kanika");
 */
 
 // functions accepting callback functions //
-const oneWard = function (str) {
+/*const oneWard = function (str) {
   return str.replace(/ /g, "").toLowerCase();
 };
 
@@ -197,4 +197,4 @@ const transformer = function (str, fn) {
 };
 
 transformer("javascript is the best", upperFirstWard);
-transformer("javascript is the best", oneWard);
+transformer("javascript is the best", oneWard);*/
