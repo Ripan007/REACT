@@ -56,3 +56,15 @@ const calRetirement = ageUntilRetirement(1995, "mohit");
 console.log(calRetirement);*/
 
 // functions calling other functions  //
+const cutPieces = function (fruit) {
+  return fruit * 3;
+};
+
+const fruitProcessor = function (apples, oranges) {
+  const applePieces = cutPieces(apples);
+  const orangePieces = cutPieces(oranges);
+  const juice = `juice contains ${applePieces} pieces of apples and ${orangePieces} pieces of oranges`;
+  return juice;
+};
+
+console.log(fruitProcessor(2, 4));
