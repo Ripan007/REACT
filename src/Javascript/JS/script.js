@@ -22,19 +22,19 @@ console.log(appleJuice);
 //  parameter  => reference
 
 // function declaration //
-
-function calAge1(birthYear) {
+//  the difference =>  function declaration called before defining the function (hoisting)
+/*function calAge1(birthYear) {
   return 2024 - birthYear;
 }
 
-const age1 = calAge1(1995);
+const age1 = calAge1(1995);*/
 
 // function expressions
-const calAge2 = function (birthYear) {
+/*const calAge2 = function (birthYear) {
   return 2024 - birthYear;
 };
 
 const age2 = calAge2(1994);
-console.log(age1, age2);
+console.log(age1, age2);*/
 
 // function expressions  //
