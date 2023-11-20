@@ -159,3 +159,9 @@ checkIn(flight, ripan);*/
 //  first class vs higher order functions //
 // first-class : javascript treat functions as first-class citizens/ functions are simply value / functions are just another type of objects / its a concept
 // higher order functions : its in practice / a function that receive another functions as arguments /  return it or both / possible becoz of first-class functions
+
+const greet = function (greeting) {
+  return function (name) {
+    console.log(`${greeting} ${name}`);
+  };
+};
