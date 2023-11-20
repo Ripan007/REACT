@@ -38,3 +38,4 @@ const age2 = calAge2(1994);
 console.log(age1, age2);*/
 
 // function expressions  //
+//  my own prefer choice is function expression => structured way of code
