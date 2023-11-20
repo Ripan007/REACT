@@ -157,4 +157,4 @@ checkIn(flight, ripan);*/
 // javascript only have passing by  value //
 
 //  first class vs higher order functions //
-// first-class : javascript treat functions as first-class functions /
+// first-class : javascript treat functions as first-class citizens/ functions are simply value /
