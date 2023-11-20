@@ -96,8 +96,8 @@ const scoreDolphins = (score1, score2, score3) =>
   calcAverage(score1, score2, score3);
 const scoreKoalas = (score1, score2, score3) =>
   calcAverage(score1, score2, score3);
-const avgDolphins = scoreDolphins(100, 100, 100);
-const avgKoalas = scoreKoalas(65, 54, 49);
+const avgDolphins = Math.floor(scoreDolphins(200, 220, 100));
+const avgKoalas = Math.floor(scoreKoalas(65, 54, 49));
 console.log(avgDolphins, avgKoalas);
 
 const checkWinner = (avgDolphins, avgKoalas) => {
