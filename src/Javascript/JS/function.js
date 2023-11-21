@@ -230,6 +230,7 @@ const h = function () {
 };
 g();
 f();
-console.dir(g);
+console.dir(f);
 h();
 f();
+console.dir(f);
