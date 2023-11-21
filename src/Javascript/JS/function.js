@@ -248,10 +248,28 @@ const perGroup = 100;
 
 boardPassenger(180, 3);*/
 
-(function () {
+/*(function () {
   const header = document.querySelector('h1');
   header.style.color = 'red';
   document.querySelector('body').addEventListener('click', function () {
     header.style.color = 'blue';
   });
 })();
+*/
+
+//  scope - scope chain //
+/*const myName = ' ripan';
+function first() {
+  const age = 29;
+  if (age >= 29) {
+    const decade = 3;
+    var millenial = true;
+  }
+  function second() {
+    const job = 'programmer';
+    console.log(`${myName} is a ${age}-years old  ${job}`);
+  }
+  second();
+}
+
+first();*/
