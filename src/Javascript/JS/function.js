@@ -247,3 +247,8 @@ console.dir(f);*/
 const perGroup = 100;
 
 boardPassenger(180, 3);*/
+
+(function () {
+  const header = document.querySelector('h1');
+  header.style.color = 'red';
+})();
