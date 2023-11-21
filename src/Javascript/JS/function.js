@@ -284,12 +284,16 @@ function calAge(birthYear) {
   function printAge() {
     const output = `you are ${age} ,born in ${birthYear}`;
     console.log(output);
+    if (birthYear >= 1995 && birthYear <= 1995) {
+      const str = `oh,and you are a millennial, ${firstName}`;
+      console.log(str);
+    }
   }
   printAge();
   // console.log(firstName);
   return age;
 }
 
-// const firstName = 'ripan';
+const firstName = 'ripan';
 
 calAge(1995);
