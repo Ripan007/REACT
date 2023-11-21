@@ -278,6 +278,8 @@ first();*/
 //global scope
 // function scope
 // black scope
+// let && const are  black scope
+// var functional scope
 
 function calAge(birthYear) {
   const age = 2024 - birthYear;
