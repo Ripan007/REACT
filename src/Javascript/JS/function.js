@@ -208,7 +208,8 @@ const secureBooking = function () {
     console.log(`${passengerCount} passenger`);
   };
 };
-const booking = secureBooking();
-booking();
-booking();
-booking();
+
+const booker = secureBooking();
+booker();
+booker();
+booker();
