@@ -281,8 +281,7 @@ first();*/
 // let && const are  black scope
 // var functional scope
 // function behave like functional scope , in case of 'strict mode activated'
-
-function calAge(birthYear) {
+/*function calAge(birthYear) {
   const age = 2024 - birthYear;
   function printAge() {
     const output = `you are ${age} ,born in ${birthYear}`;
@@ -304,3 +303,4 @@ function calAge(birthYear) {
 const firstName = 'ripan';
 
 calAge(1995);
+*/
