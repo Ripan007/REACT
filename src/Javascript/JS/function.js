@@ -221,5 +221,15 @@ const g = function () {
     console.log(a * 2);
   };
 };
+
+const h = function () {
+  const b = 33;
+  f = function () {
+    console.log(b * 2);
+  };
+};
 g();
+f();
+console.dir(g);
+h();
 f();
