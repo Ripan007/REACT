@@ -10,7 +10,8 @@ module.exports = {
   ignorePatterns: ["dist", "eslintrc.cjs"],
   parseOptions: { ecmaVersion: "latest", sourceType: "module" },
   settings: { react: { version: "18.2" } },
-  plugins: {
+  plugins: ["react-refresh"],
+  rules: {
     "react-refresh/only-export-components": [
       "warn",
       { allowConstantExport: true },
