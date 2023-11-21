@@ -280,6 +280,7 @@ first();*/
 // black scope
 // let && const are  black scope
 // var functional scope
+// function behave like functional scope , in case of 'strict mode activated'
 
 function calAge(birthYear) {
   const age = 2024 - birthYear;
@@ -289,6 +290,10 @@ function calAge(birthYear) {
     if (birthYear >= 1995 && birthYear <= 1995) {
       const str = `oh,and you are a millennial, ${firstName}`;
       console.log(str);
+      function add(a, b) {
+        return a + b;
+      }
+      console.log(add(1, 3));
     }
   }
   printAge();
