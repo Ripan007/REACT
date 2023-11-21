@@ -200,8 +200,7 @@ transformer("javascript is the best", upperFirstWard);
 transformer("javascript is the best", oneWard);*/
 
 // closure //
-
-const secureBooking = function () {
+/*const secureBooking = function () {
   let passengerCount = 0;
   return function () {
     passengerCount++;
@@ -213,3 +212,14 @@ const booker = secureBooking();
 booker();
 booker();
 booker();
+*/
+
+let f;
+const g = function () {
+  const a = 23;
+  f = function () {
+    console.log(a * 2);
+  };
+};
+g();
+f();
