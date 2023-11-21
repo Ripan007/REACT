@@ -273,3 +273,13 @@ function first() {
 }
 
 first();*/
+
+function calAge(birthYear) {
+  const age = 2024 - birthYear;
+  console.log(firstName);
+  return age;
+}
+
+const firstName = 'ripan';
+
+calAge(1995);
