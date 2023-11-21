@@ -274,12 +274,22 @@ function first() {
 
 first();*/
 
+/**/
+//global scope
+// function scope
+// black scope
+
 function calAge(birthYear) {
   const age = 2024 - birthYear;
-  console.log(firstName);
+  function printAge() {
+    const output = `you are ${age} ,born in ${birthYear}`;
+    console.log(output);
+  }
+  printAge();
+  // console.log(firstName);
   return age;
 }
 
-const firstName = 'ripan';
+// const firstName = 'ripan';
 
 calAge(1995);
