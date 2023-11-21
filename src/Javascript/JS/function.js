@@ -198,3 +198,4 @@ const transformer = function (str, fn) {
 
 transformer("javascript is the best", upperFirstWard);
 transformer("javascript is the best", oneWard);*/
+console.log('welcome');
