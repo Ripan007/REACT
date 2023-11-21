@@ -198,4 +198,17 @@ const transformer = function (str, fn) {
 
 transformer("javascript is the best", upperFirstWard);
 transformer("javascript is the best", oneWard);*/
-console.log('welcome');
+
+// closure //
+
+const secureBooking = function () {
+  let passengerCount = 0;
+  return function () {
+    passengerCount++;
+    console.log(`${passengerCount} passenger`);
+  };
+};
+const booking = secureBooking();
+booking();
+booking();
+booking();
