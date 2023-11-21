@@ -214,7 +214,7 @@ booker();
 booker();
 */
 
-let f;
+/*let f;
 const g = function () {
   const a = 23;
   f = function () {
@@ -233,4 +233,17 @@ f();
 console.dir(f);
 h();
 f();
-console.dir(f);
+console.dir(f);*/
+
+/*const boardPassenger = function (n, wait) {
+  const perGroup = n / 3;
+  setTimeout(function () {
+    console.log(`we are now boarding all ${n} passenger`);
+    console.log(`there are three group , each with ${perGroup} passenger`);
+  }, wait * 1000);
+  console.log(`will start boarding at ${wait} seconds`);
+};
+
+const perGroup = 100;
+
+boardPassenger(180, 3);*/
