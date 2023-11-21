@@ -1,1 +1,1 @@
-{ "rules": { "indent": "error" } }
+{ "extends": ["some-other-config-you-use"], "rules": { "indent": "error" } }
