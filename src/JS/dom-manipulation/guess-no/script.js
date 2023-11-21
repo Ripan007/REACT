@@ -1,5 +1,3 @@
-function app() {
-  const a = 10;
-}
+function app() {}
 
 app();
