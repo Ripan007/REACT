@@ -9,6 +9,7 @@ function Header() {
       <Link to="/">home</Link>
       <Link to="/about">about</Link>
       <Link to="/contact">contact</Link>
+      <Link to="/user/kk">user</Link>
     </nav>
   );
 }
@@ -21,6 +22,10 @@ function Contact() {
   return <h1>contact page</h1>;
 }
 
+function User() {
+  return <h1>user page</h1>;
+}
+
 function App() {
   return (
     <BrowserRouter>
@@ -29,6 +34,7 @@ function App() {
         <Route path="/" element={<h1>home page</h1>} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/user/:userId" element={<User />} />
       </Routes>
     </BrowserRouter>
   );
