@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { BiPlay } from 'react-icons/bi';
+import { AiOutlinePlus } from 'react-icons/ai';
 
 // https://api.themoviedb.org/3/movie/popular?api_key=414de5c9e644c9e6d0c98a0ed884c288&append_to_response=videos
 const apiKey = '414de5c9e644c9e6d0c98a0ed884c288';
@@ -94,13 +96,16 @@ function Home() {
       >
         {popularMovies[0] && <h1>{popularMovies[0].original_title}</h1>}
         {popularMovies[0] && <p>{popularMovies[0].overview}</p>}
-        <button>
-          <BiPlay />
-          play
-        </button>
-        <button>
-          my list <AiOutlinePlus />
-        </button>
+        <div>
+          {' '}
+          <button>
+            <BiPlay />
+            play
+          </button>
+          <button>
+            my list <AiOutlinePlus />
+          </button>
+        </div>
       </div>
 
       <Row title={'Popular on Netflix'} arr={upcomingMovies} />
