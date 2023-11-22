@@ -75,8 +75,8 @@ function Row({ data }) {
   return (
     <>
       <h1>row</h1>
-      <h2>{data}</h2>
-      <Card />
+
+      <Card data={data} />
     </>
   );
 }
