@@ -9,6 +9,7 @@ $bg: rgba(0, 0, 0, 0.765);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   &::after {
     content: '';
     width: 100%;
