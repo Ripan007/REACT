@@ -22,8 +22,8 @@ function Home() {
   }
 
   useEffect(() => {
-    localStorage.setItem('tasks', JSON.stringify('tasks'));
-  }, []);
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }, [tasks]);
   return (
     <div className="container">
       <form onSubmit={submitHandler}>
