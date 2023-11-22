@@ -43,7 +43,7 @@ function Home() {
     const fetchUpcoming = async () => {
       const {
         data: { results },
-      } = await axios.get(`${url}/${upcoming}?api_key=${apiKey}&page=2`);
+      } = await axios.get(`${url}/${upcoming}?api_key=${apiKey}&page`);
       setUpcomingMovies(results);
       // console.log(results);
     };
@@ -84,12 +84,7 @@ function Home() {
   }, []);
   return (
     <section className="home">
-      <div
-        className="banner"
-        style={{
-          backgroundImage: `url(${`${imgUrl}/${popularMovies[0].poster_path}`})`,
-        }}
-      ></div>
+      <div className="banner"></div>
       <Row title={'Popular on Netflix'} arr={upcomingMovies} />
       <Row title={'Movies'} arr={nowMovies} />
       <Row title={'Tv Shows'} arr={topRatedMovies} />
