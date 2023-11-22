@@ -11,12 +11,15 @@ $bg: rgba(0, 0, 0, 0.765);
     border-radius: 100%;
   }
   > div {
-    border: 1px solid red;
     width: 100%;
     margin: 0rem 20rem;
     a {
       color: white;
       padding: 0rem 1rem;
     }
+  }
+  svg {
+    color: white;
+    font-size: 2rem;
   }
 }
