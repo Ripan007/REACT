@@ -43,7 +43,7 @@ function Home() {
   return (
     <section className="home">
       <div className="banner"></div>
-      <Row title={'Popular on Netflix'} />
+      <Row title={'Popular on Netflix'} arr={'upcoming'} />
       <Row title={'Movies'} />
       <Row title={'Tv Shows'} />
       <Row title={'Recently Viewed'} />
