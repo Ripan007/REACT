@@ -73,7 +73,6 @@ function Home() {
         data: { genres },
       } = await axios.get(`${genre}`);
       setGenre(genres);
-      console.log(genres);
     };
 
     fetchUpcoming();
