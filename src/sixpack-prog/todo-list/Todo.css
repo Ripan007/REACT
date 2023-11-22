@@ -58,3 +58,7 @@ button:hover {
 .task {
   display: flex;
 }
+
+.task > div {
+  width: 100%;
+}
