@@ -18,3 +18,30 @@ header {
   text-transform: uppercase;
   padding: 1rem 2rem;
 }
+
+.container {
+  background-color: cornsilk;
+  width: 70%;
+  min-height: 100vh;
+  margin: auto;
+  padding: 4vh;
+}
+
+.container > form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea,
+button {
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.251);
+  border-radius: 0.4rem;
+}
+
+button {
+  background-color: red;
+  color: white;
+  text-transform: capitalize;
+}
