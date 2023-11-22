@@ -11,10 +11,13 @@ $bg: rgba(0, 0, 0, 0.765);
     height: 100%;
     border-radius: 100%;
   }
+  > div {
+    width: 100%;
+  }
 
   svg {
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0rem 1rem;
     cursor: pointer;
   }
