@@ -57,7 +57,17 @@ function App() {
 }
 
 export default App;
+
 */
+
+function Row() {
+  return (
+    <>
+      <h1>ROW</h1>
+      <P>{data}</P>
+    </>
+  );
+}
 
 import React from 'react';
 import AppNetflix from './netflix-clone/components/AppNetflix';
