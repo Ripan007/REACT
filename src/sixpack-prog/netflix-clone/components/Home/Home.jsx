@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Card({ image }) {
-  return <img src={image} alt="image" />;
+  return <img className="card" src={image} alt="image" />;
 }
 
 function Row({ title }) {
