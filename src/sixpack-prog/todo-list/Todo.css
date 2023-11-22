@@ -30,6 +30,7 @@ header {
 .container > form {
   display: flex;
   flex-direction: column;
+  gap: 0.3rem;
 }
 
 input,
@@ -43,5 +44,9 @@ button {
 button {
   background-color: red;
   color: white;
-  text-transform: capitalize;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: rgba(255, 0, 0, 0.817);
 }
