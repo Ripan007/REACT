@@ -14,7 +14,7 @@ function Header() {
         <Link to="/tvshows">tvshows</Link>
         <Link to="/tvshows">tvshows</Link>
       </div>
-      <CiSearch />
+      <CiSearch style={{ color: 'white' }} />
     </nav>
   );
 }
