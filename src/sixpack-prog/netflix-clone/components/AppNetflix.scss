@@ -22,6 +22,9 @@ $bg: rgba(0, 0, 0, 0.765);
   > div {
     width: 100%;
     margin-left: 4vmax;
+    > a {
+      margin: 1vmax;
+    }
   }
 
   svg {
