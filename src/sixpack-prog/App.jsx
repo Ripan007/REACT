@@ -60,6 +60,11 @@ export default App;
 
 */
 
+import { useContext } from 'react';
+import { Context } from '../main';
+
+const data = useContext(Context);
+console.log(data);
 function Row() {
   return (
     <>
