@@ -94,7 +94,10 @@ function Home() {
       >
         {popularMovies[0] && <h1>{popularMovies[0].original_title}</h1>}
         {popularMovies[0] && <p>{popularMovies[0].overview}</p>}
+        <button>play</button>
+        <button>my list</button>
       </div>
+
       <Row title={'Popular on Netflix'} arr={upcomingMovies} />
       <Row title={'Movies'} arr={nowMovies} />
       <Row title={'Tv Shows'} arr={topRatedMovies} />

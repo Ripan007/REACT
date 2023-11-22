@@ -8,7 +8,7 @@ $bg: rgba(0, 0, 0, 0.765);
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
   flex-direction: column;
   &::after {
     content: '';
@@ -18,11 +18,18 @@ $bg: rgba(0, 0, 0, 0.765);
     background-color: $bg;
     opacity: 0.4;
   }
-  h1 {
+  h1,
+  p {
     color: white;
     font-size: 4rem;
     width: 50%;
     z-index: 10;
+  }
+  p {
+    // width: 100%;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.3rem;
   }
 }
 
