@@ -36,8 +36,10 @@ function Row({
 function Home() {
   useEffect(() => {
     const fetchUpcoming = async () => {
-      const { data } = await axios.get(`${url}/${upcoming}?api_keys=${apiKey}`);
-      console.log(data);
+      const {
+        data: { results },
+      } = await axios.get(`${url}/${upcoming}?api_key=${apiKey}`);
+      console.log(results);
     };
     fetchUpcoming();
   }, []);
