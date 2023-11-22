@@ -6,6 +6,7 @@ $bg: rgba(0, 0, 0, 0.765);
 }
 
 .row {
+  background-color: $bg;
   > div {
     display: flex;
     justify-content: space-evenly;
