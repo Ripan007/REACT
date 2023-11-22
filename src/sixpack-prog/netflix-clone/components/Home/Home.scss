@@ -9,5 +9,7 @@ $bg: rgba(0, 0, 0, 0.765);
   width: 200px;
   cursor: pointer;
   transition: transform 0.5s;
-  &: hover;
+  &:hover {
+    transform: translateY(-10px) scale(1);
+  }
 }
