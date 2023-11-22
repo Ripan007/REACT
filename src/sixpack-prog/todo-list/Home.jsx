@@ -26,7 +26,7 @@ function Home() {
           value={description}
           onChange={e => setDescription(e.target.value)}
         ></textarea>
-        <button>add</button>
+        <button type="submit">add</button>
       </form>
       {task.map((item, index) => {
         const { title, description } = item;
