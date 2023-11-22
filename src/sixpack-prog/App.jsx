@@ -1,8 +1,8 @@
 import React from 'react';
 import Todo from './todo-list/Todo';
 import {
-  reactBrowserRouter,
-  reactProvider,
+  createBrowserRouter,
+  RouterProvider,
   Route,
   Link,
   createBrowserRouter,
@@ -18,9 +18,15 @@ const router = createBrowserRouter([
       </div>
     ),
   },
+  { path: 'about', element: <div>about</div> },
 ]);
 function App() {
-  return <>{/* <Todo /> */}</>;
+  return (
+    <>
+      {/* <Todo /> */}
+      <></>
+    </>
+  );
 }
 
 export default App;
