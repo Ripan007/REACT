@@ -7,6 +7,8 @@
   font-family: 'Roboto', sans-serif;
 }
 header {
+  position: sticky;
+  top: 0;
   text-align: center;
   background: rgb(23, 57, 228);
   background: radial-gradient(
@@ -24,7 +26,7 @@ header {
   width: 70%;
   min-height: 100vh;
   margin: auto;
-  padding: 4vh;
+  padding: 4vh 8vh;
 }
 
 .container > form {
