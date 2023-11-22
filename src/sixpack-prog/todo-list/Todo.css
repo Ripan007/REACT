@@ -62,3 +62,9 @@ button:hover {
 .task > div {
   width: 100%;
 }
+
+.task button {
+  border-radius: 100%;
+  width: 30px;
+  width: 30px;
+}
