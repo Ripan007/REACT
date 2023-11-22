@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 // https://api.themoviedb.org/3/movie/popular?api_key=414de5c9e644c9e6d0c98a0ed884c288&append_to_response=videos
 const apiKey = '414de5c9e644c9e6d0c98a0ed884c288';
@@ -31,23 +31,51 @@ function Row({ title, arr = [] }) {
 }
 
 function Home() {
+  const [upcomingMovies, setUpcomingMovies] = useState([]);
+  const [nowMovies, setNowMovies] = useState([]);
+  const [topRatedMovies, setTopRatedMovies] = useState([]);
+  const [popularMovies, setPopularMovies] = useState([]);
   useEffect(() => {
     const fetchUpcoming = async () => {
       const {
         data: { results },
       } = await axios.get(`${url}/${upcoming}?api_key=${apiKey}`);
+      setUpcomingMovies(results);
+      console.log(results);
+    };
+    const fetchNowPlaying = async () => {
+      const {
+        data: { results },
+      } = await axios.get(`${url}/${nowPlaying}?api_key=${apiKey}`);
+      setNowMovies(results);
+      console.log(results);
+    };
+    const fetchTopRated = async () => {
+      const {
+        data: { results },
+      } = await axios.get(`${url}/${topRated}?api_key=${apiKey}`);
+      setTopRatedMovies(results);
+      console.log(results);
+    };
+    const fetchPopular = async () => {
+      const {
+        data: { results },
+      } = await axios.get(`${url}/${popular}?api_key=${apiKey}`);
+      setPopularMovies(results);
       console.log(results);
     };
     fetchUpcoming();
+    fetchNowPlaying();
+    fetchTopRated();
+    fetchPopular();
   }, []);
   return (
     <section className="home">
       <div className="banner"></div>
-      <Row title={'Popular on Netflix'} arr={'upcoming'} />
-      <Row title={'Movies'} />
-      <Row title={'Tv Shows'} />
-      <Row title={'Recently Viewed'} />
-      <Row title={'My List'} />
+      <Row title={'Popular on Netflix'} arr={upcomingMovies} />
+      <Row title={'Movies'} arr={nowMovies} />
+      <Row title={'Tv Shows'} arr={topRatedMovies} />
+      <Row title={'Recently Viewed'} arr={popularMovies} />
     </section>
   );
 }
