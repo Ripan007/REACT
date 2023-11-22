@@ -1,31 +1,12 @@
 import React from 'react';
 import Todo from './todo-list/Todo';
-import {
-  RouterProvider,
-  Route,
-  Link,
-  createBrowserRouter,
-} from 'react-router-dom';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: (
-      <div>
-        <h1>home</h1>
-        <Link to="about">about page</Link>
-      </div>
-    ),
-  },
-  { path: 'about', element: <div>about</div> },
-]);
+import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
+
+const router = createBrowserRouter([{}, {}]);
+
 function App() {
-  return (
-    <>
-      {/* <Todo /> */}
-      <RouterProvider router={router} />
-    </>
-  );
+  return <>{/* <Todo /> */}</>;
 }
 
 export default App;
