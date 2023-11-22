@@ -4,7 +4,7 @@ function Task() {
   return (
     <div className="task">
       <div>
-        <h1>title</h1>
+        <p>title</p>
         <p>description</p>
       </div>
 
