@@ -9,6 +9,8 @@ function Home() {
   function submitHandler(e) {
     e.preventDefault();
     setTask([...task, { title, description }]);
+    setTitle('');
+    setDescription('');
   }
 
   function deleteTask(index) {
