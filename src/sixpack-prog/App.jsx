@@ -65,7 +65,8 @@ import AppNetflix from './netflix-clone/components/AppNetflix';
 function App() {
   return (
     <>
-      <AppNetflix />
+      <h1>welcome</h1>
+      {/* <AppNetflix /> */}
     </>
   );
 }
