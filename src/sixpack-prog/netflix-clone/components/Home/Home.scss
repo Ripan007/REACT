@@ -10,6 +10,10 @@ $bg: rgba(0, 0, 0, 0.765);
   justify-content: center;
   // align-items: center;
   flex-direction: column;
+  padding: 3rem;
+  box-sizing: border-box;
+  top: 0%;
+  left: 0%;
   &::after {
     content: '';
     width: 100%;
@@ -46,6 +50,13 @@ $bg: rgba(0, 0, 0, 0.765);
       margin: 1rem;
       background-color: #fff;
       cursor: pointer;
+
+      &:nth-child(odd) {
+        background-color: #fff;
+      }
+      &:nth-child(even) {
+        background-color: #ffffff63;
+      }
       & svg {
         font-size: 1.7rem;
         margin: 0 10px;
