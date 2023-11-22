@@ -7,6 +7,7 @@ import {
   Route,
   Link,
   useParams,
+  useNavigate,
 } from 'react-router-dom';
 
 function Header() {
@@ -31,7 +32,13 @@ function Contact() {
 function User() {
   const params = useParams();
   console.log(params.userId);
-  return <h1>user page</h1>;
+  const navigation = useNavigate();
+  return (
+    <div>
+      user page
+      <button onClick={() => navigation('/about')}>navigate</button>
+    </div>
+  );
 }
 
 function App() {
