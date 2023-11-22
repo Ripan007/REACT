@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 import Task from './Task';
 
 function Home() {
-  const [task, setTask] = useState([]);
+  const [tasks, setTask] = useState([]);
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
 
   function submitHandler(e) {
     e.preventDefault();
-    setTask([...task, { title, description }]);
+    setTask([...tasks, { title, description }]);
     setTitle('');
     setDescription('');
   }
 
   function deleteTask(index) {
-    const filterArr = task.filter((val, i) => i !== index);
+    const filterArr = tasks.filter((val, i) => i !== index);
     setTask(filterArr);
   }
   return (
@@ -27,15 +27,13 @@ function Home() {
           onChange={e => setTitle(e.target.value)}
         />
         <textarea
-          name=""
-          id=""
           placeholder="description"
           value={description}
           onChange={e => setDescription(e.target.value)}
         ></textarea>
         <button type="submit">add</button>
       </form>
-      {task.map((item, index) => {
+      {tasks.map((item, index) => {
         const { title, description } = item;
         return (
           <Task
