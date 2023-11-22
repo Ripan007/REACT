@@ -1,5 +1,6 @@
 import React from 'react';
 import netflix from '../../../../../src/assets/netflix.png';
+import '../Home/Home.scss';
 
 function Header() {
   return (
