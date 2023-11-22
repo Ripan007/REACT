@@ -1,5 +1,5 @@
 import React from 'react';
-import { netflix } from '../../../../assets/netflix-logo.png';
+import netflix from '../../../../../src/assets/netflix.png';
 
 function Header() {
   return (
