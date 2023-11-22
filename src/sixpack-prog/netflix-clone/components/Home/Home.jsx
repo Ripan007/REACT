@@ -84,7 +84,9 @@ function Home() {
   }, []);
   return (
     <section className="home">
-      <div className="banner"></div>
+      <div className="banner">
+        <img src={`${imgUrl}/${popularMovies[0].poster_path}`} alt="" />
+      </div>
       <Row title={'Popular on Netflix'} arr={upcomingMovies} />
       <Row title={'Movies'} arr={nowMovies} />
       <Row title={'Tv Shows'} arr={topRatedMovies} />
