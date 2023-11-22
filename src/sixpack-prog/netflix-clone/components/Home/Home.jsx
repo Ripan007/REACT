@@ -1,4 +1,7 @@
 import React from 'react';
+import axios from 'axios';
+// https://api.themoviedb.org/3/movie/popular?api_key=414de5c9e644c9e6d0c98a0ed884c288&append_to_response=videos
+const apiKey = '414de5c9e644c9e6d0c98a0ed884c288';
 
 function Card({ img }) {
   return (
