@@ -1,7 +1,13 @@
 import React from 'react';
 import Todo from './todo-list/Todo';
 
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  useParams,
+} from 'react-router-dom';
 
 function Header() {
   return (
@@ -9,7 +15,7 @@ function Header() {
       <Link to="/">home</Link>
       <Link to="/about">about</Link>
       <Link to="/contact">contact</Link>
-      <Link to="/user/kk">user</Link>
+      <Link to="/user/monti">user</Link>
     </nav>
   );
 }
@@ -23,6 +29,8 @@ function Contact() {
 }
 
 function User() {
+  const params = useParams();
+  console.log(params);
   return <h1>user page</h1>;
 }
 
