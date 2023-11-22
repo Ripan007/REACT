@@ -1,7 +1,14 @@
 import React from 'react';
 
 function Card({ image }) {
-  return <img className="card" src={image} alt="image" />;
+  return (
+    <>
+      <img className="card" src={image} alt="image" />;
+      <img className="card" src={image} alt="image" />;
+      <img className="card" src={image} alt="image" />;
+      <img className="card" src={image} alt="image" />;
+    </>
+  );
 }
 
 function Row({ title }) {
@@ -21,6 +28,9 @@ function Home() {
   return (
     <section className="home">
       <div className="banner"></div>
+      <Row title={'popular on netflix'} />
+      <Row title={'popular on netflix'} />
+      <Row title={'popular on netflix'} />
       <Row title={'popular on netflix'} />
     </section>
   );
