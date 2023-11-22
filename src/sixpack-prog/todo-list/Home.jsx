@@ -30,7 +30,15 @@ function Home() {
       </form>
       {task.map((item, index) => {
         const { title, description } = item;
-        return <Task key={index} title={title} description={description} />;
+        return (
+          <Task
+            key={index}
+            title={title}
+            description={description}
+            deleteTask={deleteTask}
+            index={index}
+          />
+        );
       })}
     </div>
   );
