@@ -33,6 +33,9 @@ function Home() {
     <section className="home">
       <div className="banner"></div>
       <Row title={'popular on netflix'} />
+      <Row title={'popular on netflix'} />
+      <Row title={'popular on netflix'} />
+      <Row title={'popular on netflix'} />
     </section>
   );
 }
