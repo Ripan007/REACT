@@ -1,8 +1,10 @@
 $bg: rgba(0, 0, 0, 0.765);
 
 .banner {
-  height: 400px;
+  height: 600px;
   background-color: $bg;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .row {
