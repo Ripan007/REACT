@@ -60,27 +60,15 @@ export default App;
 
 */
 
-import { useContext } from 'react';
-import { Context } from '../main';
-
-function Row({ data }) {
-  return (
-    <>
-      <h1>ROW</h1>
-      <p>{data}</p>
-    </>
-  );
-}
-
 import React from 'react';
 import AppNetflix from './netflix-clone/components/AppNetflix';
+import Row from './Row';
 
 function App() {
-  const data = useContext(Context);
-  console.log(data);
   return (
     <>
       <h1>welcome</h1>
+
       <Row />
     </>
   );
