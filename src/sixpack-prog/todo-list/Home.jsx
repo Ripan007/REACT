@@ -6,7 +6,7 @@ function Home() {
     ? JSON.parse(localStorage.getItem('tasks'))
     : [];
 
-  const [tasks, setTask] = useState([]);
+  const [tasks, setTask] = useState(initialArr);
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
 

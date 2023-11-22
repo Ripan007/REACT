@@ -8,7 +8,7 @@ function Task({ title, description, deleteTask, index }) {
         <span>{description}</span>
       </div>
 
-      <button onClick={() => deleteTask(index)}>+</button>
+      <button onClick={() => deleteTask(index)}> - </button>
     </div>
   );
 }
