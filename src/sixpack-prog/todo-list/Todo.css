@@ -57,7 +57,7 @@ button:hover {
 
 .task {
   display: flex;
-  background-color: lightgray;
+  background-color: white;
   margin: 1rem 0rem;
   padding: 1rem;
   border-radius: 4px;
@@ -66,7 +66,13 @@ button:hover {
 .task > div {
   width: 100%;
 }
+.task > div p {
+  text-transform: capitalize;
+}
 
+.task > div span {
+  color: gray;
+}
 .task button {
   border-radius: 100%;
   width: 30px;

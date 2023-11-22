@@ -5,7 +5,7 @@ function Task({ title, description }) {
     <div className="task">
       <div>
         <p>{title}</p>
-        <p>{description}</p>
+        <span>{description}</span>
       </div>
 
       <button>+</button>
