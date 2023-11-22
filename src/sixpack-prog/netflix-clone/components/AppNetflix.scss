@@ -21,7 +21,7 @@ $bg: rgba(0, 0, 0, 0.765);
   }
   > div {
     width: 100%;
-    margin-left: 4vmax;
+    margin-left: 8vmax;
     > a {
       margin: 1vmax;
     }
@@ -30,8 +30,11 @@ $bg: rgba(0, 0, 0, 0.765);
   svg {
     color: white;
     font-size: 2rem;
-
     cursor: pointer;
+    margin-right: 2vmax;
+    &:hover {
+      color: gray;
+    }
   }
 }
 
