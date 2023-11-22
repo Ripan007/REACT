@@ -43,7 +43,7 @@ function Home() {
     const fetchUpcoming = async () => {
       const {
         data: { results },
-      } = await axios.get(`${url}/${upcoming}?api_key=${apiKey}`);
+      } = await axios.get(`${url}/${upcoming}?api_key=${apiKey}&page=2`);
       setUpcomingMovies(results);
       // console.log(results);
     };
