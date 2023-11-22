@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import axios from 'axios';
 // https://api.themoviedb.org/3/movie/popular?api_key=414de5c9e644c9e6d0c98a0ed884c288&append_to_response=videos
 const apiKey = '414de5c9e644c9e6d0c98a0ed884c288';
+const url = 'https://api.themoviedb.org/3/movie';
+const upcoming = 'upcoming';
 
 function Card({ img }) {
   return (
@@ -32,6 +34,11 @@ function Row({
 }
 
 function Home() {
+  useEffect(() => {
+    const fetchUpcoming = async () => {
+      const { data } = await axios.get(`${url}/${upcoming}`);
+    };
+  }, []);
   return (
     <section className="home">
       <div className="banner"></div>
