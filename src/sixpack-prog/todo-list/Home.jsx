@@ -10,6 +10,11 @@ function Home() {
     e.preventDefault();
     setTask([...task, { title, description }]);
   }
+
+  function deleteTask(index) {
+    const filterArr = task.filter((val, i) => i !== index);
+    setTask(filterArr);
+  }
   return (
     <div className="container">
       <form onSubmit={submitHandler}>
