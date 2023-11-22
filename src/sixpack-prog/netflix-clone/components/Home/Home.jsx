@@ -25,9 +25,9 @@ function Row({
     <div className="row">
       <h2>{title}</h2>
       <div>
-        {arr.map(item => (
-          <Card img={item.img} />
-        ))}
+        {arr.map((item, index) => {
+          return <Card key={index} img={item.img} />;
+        })}
       </div>
     </div>
   );
