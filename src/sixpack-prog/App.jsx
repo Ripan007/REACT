@@ -1,7 +1,6 @@
 import React from 'react';
 import Todo from './todo-list/Todo';
 import {
-  createBrowserRouter,
   RouterProvider,
   Route,
   Link,
