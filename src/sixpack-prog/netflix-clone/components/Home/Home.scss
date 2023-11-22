@@ -5,6 +5,13 @@ $bg: rgba(0, 0, 0, 0.765);
   background-color: $bg;
 }
 
+.row {
+  > div {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .card {
   width: 200px;
   cursor: pointer;
