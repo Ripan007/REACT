@@ -8,71 +8,21 @@ function Card({ image }) {
   );
 }
 
-function Row({ title }) {
+function Row({
+  title,
+  arr = [
+    {
+      img: 'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg',
+    },
+  ],
+}) {
   return (
     <div className="row">
       <h2>{title}</h2>
       <div>
-        <Card
-          image={
-            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
-          }
-        />
-        <Card
-          image={
-            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
-          }
-        />
-        <Card
-          image={
-            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
-          }
-        />
-        <Card
-          image={
-            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
-          }
-        />
-        <Card
-          image={
-            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
-          }
-        />
-        <Card
-          image={
-            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
-          }
-        />
-        <Card
-          image={
-            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
-          }
-        />
-        <Card
-          image={
-            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
-          }
-        />
-        <Card
-          image={
-            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
-          }
-        />
-        <Card
-          image={
-            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
-          }
-        />
-        <Card
-          image={
-            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
-          }
-        />
-        <Card
-          image={
-            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
-          }
-        />
+        {arr.map(item => (
+          <Card img={item.img} />
+        ))}
       </div>
     </div>
   );
