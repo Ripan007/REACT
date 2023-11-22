@@ -5,8 +5,7 @@ function Home() {
   const [task, setTask] = useState([]);
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  console.log(title);
-  console.log(description);
+
   function submitHandler(e) {
     e.preventDefault();
     setTask([...task, { title, description }]);
@@ -31,7 +30,7 @@ function Home() {
       </form>
       {task.map((item, index) => {
         const { title, description } = item;
-        return <Task title={title} description={description} />;
+        return <Task key={index} title={title} description={description} />;
       })}
     </div>
   );
