@@ -17,7 +17,13 @@ function Home() {
           value={title}
           onChange={e => setTitle(e.target.value)}
         />
-        <textarea name="" id="" placeholder="description"></textarea>
+        <textarea
+          name=""
+          id=""
+          placeholder="description"
+          value={description}
+          onChange={e => setDescription(e.target.value)}
+        ></textarea>
         <button>add</button>
       </form>
       {task.map(() => (
