@@ -9,6 +9,7 @@ function Home() {
   console.log(description);
   function submitHandler(e) {
     e.preventDefault();
+    setTask([...task, { title, description }]);
   }
   return (
     <div className="container">
@@ -28,9 +29,10 @@ function Home() {
         ></textarea>
         <button>add</button>
       </form>
-      {task.map(() => (
-        <Task />
-      ))}
+      {task.map((item, index) => {
+        const { title, description } = item;
+        return <Task title={title} description={description} />;
+      })}
     </div>
   );
 }
