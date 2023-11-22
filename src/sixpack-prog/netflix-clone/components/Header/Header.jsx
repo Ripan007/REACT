@@ -9,9 +9,9 @@ function Header() {
     <nav className="header">
       <img src={netflix} alt="" />
       <div>
-        <Link to="/tvshows">tvshows</Link>
-        <Link to="/tvshows">tvshows</Link>
-        <Link to="/tvshows">tvshows</Link>
+        <Link to="/tvshows">Tv Shows</Link>
+        <Link to="/tvshows">Movies</Link>
+        <Link to="/tvshows">Recently Added</Link>
         <Link to="/tvshows">tvshows</Link>
       </div>
       <CiSearch />
