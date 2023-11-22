@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Task from './Task';
 
 function Home() {
   const initialArr = localStorage.getItem('tasks')
     ? JSON.parse(localStorage.getItem('tasks'))
     : [];
-  const [tasks, setTask] = useState([]);
+  const [tasks, setTask] = useState(initialArr);
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
 
@@ -20,6 +20,10 @@ function Home() {
     const filterArr = tasks.filter((val, i) => i !== index);
     setTask(filterArr);
   }
+
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify('tasks'));
+  }, []);
   return (
     <div className="container">
       <form onSubmit={submitHandler}>
