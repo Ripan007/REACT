@@ -3,6 +3,7 @@ import axios from 'axios';
 // https://api.themoviedb.org/3/movie/popular?api_key=414de5c9e644c9e6d0c98a0ed884c288&append_to_response=videos
 const apiKey = '414de5c9e644c9e6d0c98a0ed884c288';
 const url = 'https://api.themoviedb.org/3/movie';
+const imgUrl = 'https://image.tmdb.org/t/p/original';
 const upcoming = 'upcoming';
 const nowPlaying = 'now_playing';
 const topRated = 'top_rated';
@@ -16,20 +17,13 @@ function Card({ img }) {
   );
 }
 
-function Row({
-  title,
-  arr = [
-    {
-      img: 'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg',
-    },
-  ],
-}) {
+function Row({ title, arr = [] }) {
   return (
     <div className="row">
       <h2>{title}</h2>
       <div>
         {arr.map((item, index) => {
-          return <Card key={index} img={item.img} />;
+          return <Card key={index} img={`${imgUrl}/${item.poster_path}`} />;
         })}
       </div>
     </div>
