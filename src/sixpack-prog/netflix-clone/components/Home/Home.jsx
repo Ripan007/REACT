@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Card({ image }) {
+function Card({ img }) {
   return (
     <>
-      <img className="card" src={image} alt="image" />
+      <img className="card" src={img} alt="image" />
     </>
   );
 }
