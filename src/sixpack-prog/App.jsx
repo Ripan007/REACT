@@ -61,15 +61,11 @@ export default App;
 */
 
 import React from 'react';
-import AppNetflix from './netflix-clone/components/AppNetflix';
-import Row from './Row';
 
 function App() {
   return (
     <>
       <h1>welcome</h1>
-
-      <Row />
     </>
   );
 }
