@@ -10,9 +10,9 @@ function Header() {
       <img src={netflix} alt="" />
       <div>
         <Link to="/tvshows">Tv Shows</Link>
-        <Link to="/tvshows">Movies</Link>
-        <Link to="/tvshows">Recently Added</Link>
-        <Link to="/tvshows">tvshows</Link>
+        <Link to="/movies">Movies</Link>
+        <Link to="/recently">Recently Added</Link>
+        <Link to="/list">My List</Link>
       </div>
       <CiSearch />
     </nav>
