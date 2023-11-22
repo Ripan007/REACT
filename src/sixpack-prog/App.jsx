@@ -1,3 +1,7 @@
-export default function App() {
-  return <h1>six pack programmer , add more</h1>;
+import React from 'react';
+
+function App() {
+  return <div>App</div>;
 }
+
+export default App;
