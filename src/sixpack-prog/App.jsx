@@ -18,7 +18,7 @@ function About() {
 }
 
 function Contact() {
-  return <h1>about page</h1>;
+  return <h1>contact page</h1>;
 }
 
 function App() {
@@ -26,9 +26,9 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<div>home page</div>} />
+        <Route path="/" element={<h1>home page</h1>} />
         <Route path="/about" element={<About />} />
-        <Route path="/" element={<Contact />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
