@@ -41,12 +41,14 @@ button {
   padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.251);
   border-radius: 0.4rem;
+  outline: none;
 }
 
 button {
   background-color: red;
   color: white;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 button:hover {
