@@ -5,3 +5,34 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
+$bg: rgba(0, 0, 0, 0.765);
+.header {
+  background-color: $bg;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0.4rem;
+  justify-content: space-between;
+  > img {
+    height: 100%;
+    border-radius: 100%;
+  }
+  > div {
+    width: 100%;
+    margin-left: 4vmax;
+  }
+
+  svg {
+    color: white;
+    font-size: 2rem;
+
+    cursor: pointer;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
