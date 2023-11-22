@@ -62,10 +62,30 @@ export default App;
 import React from 'react';
 import AppNetflix from './netflix-clone/components/AppNetflix';
 
+function Card({ data }) {
+  return (
+    <div style={{ color: 'red' }}>
+      <h1>card</h1>
+      <h1>{data}</h1>
+    </div>
+  );
+}
+
+function Row({ data }) {
+  return (
+    <>
+      <h1>row</h1>
+      <h2>{data}</h2>
+      <Card />
+    </>
+  );
+}
+
 function App() {
   return (
     <>
       <h1>welcome</h1>
+      <Row data="ripan" />
       {/* <AppNetflix /> */}
     </>
   );
