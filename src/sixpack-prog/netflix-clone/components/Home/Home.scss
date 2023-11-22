@@ -6,6 +6,9 @@ $bg: rgba(0, 0, 0, 0.765);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &::after {
     content: '';
     width: 100%;
@@ -18,6 +21,7 @@ $bg: rgba(0, 0, 0, 0.765);
     color: white;
     font-size: 4rem;
     width: 50%;
+    z-index: 10;
   }
 }
 
