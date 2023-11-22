@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       {/* <Todo /> */}
-      <></>
+      <RouterProvider router={router} />
     </>
   );
 }
