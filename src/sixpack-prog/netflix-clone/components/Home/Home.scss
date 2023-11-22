@@ -1,7 +1,7 @@
 $bg: rgba(0, 0, 0, 0.765);
 
 .banner {
-  height: 600px;
+  height: 400px;
   background-color: $bg;
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,6 +13,11 @@ $bg: rgba(0, 0, 0, 0.765);
     position: absolute;
     background-color: $bg;
     opacity: 0.4;
+  }
+  h1 {
+    color: white;
+    font-size: 4rem;
+    width: 50%;
   }
 }
 
