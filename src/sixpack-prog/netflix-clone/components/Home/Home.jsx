@@ -8,6 +8,8 @@ const upcoming = 'upcoming';
 const nowPlaying = 'now_playing';
 const topRated = 'top_rated';
 const popular = 'popular';
+const genre =
+  'https://api.themoviedb.org/3/genre/list?api_key=414de5c9e644c9e6d0c98a0ed884c288&append_to_response=videos';
 
 function Card({ img }) {
   return (
@@ -35,6 +37,7 @@ function Home() {
   const [nowMovies, setNowMovies] = useState([]);
   const [topRatedMovies, setTopRatedMovies] = useState([]);
   const [popularMovies, setPopularMovies] = useState([]);
+  const [genre, setGenre] = useState([]);
   useEffect(() => {
     const fetchUpcoming = async () => {
       const {
@@ -64,10 +67,19 @@ function Home() {
       setPopularMovies(results);
       console.log(results);
     };
+    const getAllGenre = async () => {
+      const {
+        data: { genres },
+      } = await axios.get(`${genre}`);
+      setGenre(genres);
+      console.log(genres);
+    };
+
     fetchUpcoming();
     fetchNowPlaying();
     fetchTopRated();
     fetchPopular();
+    getAllGenre();
   }, []);
   return (
     <section className="home">
@@ -76,6 +88,7 @@ function Home() {
       <Row title={'Movies'} arr={nowMovies} />
       <Row title={'Tv Shows'} arr={topRatedMovies} />
       <Row title={'Recently Viewed'} arr={popularMovies} />
+      <Row title={'Genre'} arr={genre} />
     </section>
   );
 }
