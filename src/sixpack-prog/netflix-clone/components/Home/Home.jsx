@@ -44,28 +44,28 @@ function Home() {
         data: { results },
       } = await axios.get(`${url}/${upcoming}?api_key=${apiKey}`);
       setUpcomingMovies(results);
-      console.log(results);
+      // console.log(results);
     };
     const fetchNowPlaying = async () => {
       const {
         data: { results },
       } = await axios.get(`${url}/${nowPlaying}?api_key=${apiKey}`);
       setNowMovies(results);
-      console.log(results);
+      // console.log(results);
     };
     const fetchTopRated = async () => {
       const {
         data: { results },
       } = await axios.get(`${url}/${topRated}?api_key=${apiKey}`);
       setTopRatedMovies(results);
-      console.log(results);
+      // console.log(results);
     };
     const fetchPopular = async () => {
       const {
         data: { results },
       } = await axios.get(`${url}/${popular}?api_key=${apiKey}`);
       setPopularMovies(results);
-      console.log(results);
+      // console.log(results);
     };
     const getAllGenre = async () => {
       const {
