@@ -4,6 +4,9 @@ import axios from 'axios';
 const apiKey = '414de5c9e644c9e6d0c98a0ed884c288';
 const url = 'https://api.themoviedb.org/3/movie';
 const upcoming = 'upcoming';
+const nowPlaying = 'now_playing';
+const topRated = 'top_rated';
+const popular = 'popular';
 
 function Card({ img }) {
   return (
