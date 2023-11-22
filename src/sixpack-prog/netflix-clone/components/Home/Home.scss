@@ -16,10 +16,13 @@ $bg: rgba(0, 0, 0, 0.765);
     a {
       color: white;
       padding: 0rem 1rem;
+      text-decoration: none;
     }
   }
   svg {
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
+    margin: 0rem 1rem;
+    cursor: pointer;
   }
 }
