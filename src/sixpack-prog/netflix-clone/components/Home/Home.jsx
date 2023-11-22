@@ -32,10 +32,11 @@ function Home() {
   return (
     <section className="home">
       <div className="banner"></div>
-      <Row title={'popular on netflix'} />
-      <Row title={'popular on netflix'} />
-      <Row title={'popular on netflix'} />
-      <Row title={'popular on netflix'} />
+      <Row title={'Popular on Netflix'} />
+      <Row title={'Movies'} />
+      <Row title={'Tv Shows'} />
+      <Row title={'Recently Viewed'} />
+      <Row title={'My List'} />
     </section>
   );
 }
