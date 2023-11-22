@@ -87,7 +87,7 @@ function Home() {
       <div
         className="banner"
         style={{
-          backgroundImage: `url(${`${imgUrl}/${popularMovies[0].poster_path}`}}`,
+          backgroundImage: `url(${`${imgUrl}/${popularMovies[0].poster_path}`})`,
         }}
       ></div>
       <Row title={'Popular on Netflix'} arr={upcomingMovies} />
