@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   // color: white;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 a,
 h2 {
