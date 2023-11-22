@@ -58,11 +58,11 @@ button:hover {
 .task {
   display: flex;
   background-color: lightgray;
+  margin: 1rem 0rem;
 }
 
 .task > div {
   width: 100%;
-  margin: 1rem 0rem;
 }
 
 .task button {
