@@ -6,6 +6,7 @@ function Home() {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   console.log(title);
+  console.log(description);
   function submitHandler(e) {
     e.preventDefault();
   }
