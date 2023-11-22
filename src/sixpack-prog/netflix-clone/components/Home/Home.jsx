@@ -83,7 +83,14 @@ function Home() {
   }, []);
   return (
     <section className="home">
-      <div className="banner"></div>
+      <div
+        className="banner"
+        style={{
+          backgroundImage: popularMovies[0]
+            ? `url(${`${imgUrl}/${popularMovies[0].poster_path}`})`
+            : 'rgb(16,16,16)',
+        }}
+      ></div>
       <Row title={'Popular on Netflix'} arr={upcomingMovies} />
       <Row title={'Movies'} arr={nowMovies} />
       <Row title={'Tv Shows'} arr={topRatedMovies} />
