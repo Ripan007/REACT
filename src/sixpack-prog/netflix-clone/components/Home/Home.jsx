@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 // https://api.themoviedb.org/3/movie/popular?api_key=414de5c9e644c9e6d0c98a0ed884c288&append_to_response=videos
 const apiKey = '414de5c9e644c9e6d0c98a0ed884c288';
 const url = 'https://api.themoviedb.org/3/movie';
@@ -88,7 +89,15 @@ function Home() {
       <Row title={'Movies'} arr={nowMovies} />
       <Row title={'Tv Shows'} arr={topRatedMovies} />
       <Row title={'Recently Viewed'} arr={popularMovies} />
-      <div className="genreBox"></div>
+      <div className="genreBox">
+        {genres.map(item => {
+          return (
+            <Link key={item.id} to={`/genre/${item.id}`}>
+              {item.name}
+            </Link>
+          );
+        })}
+      </div>
     </section>
   );
 }
