@@ -33,6 +33,46 @@ function Row({ title }) {
             'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
           }
         />
+        <Card
+          image={
+            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
+          }
+        />
+        <Card
+          image={
+            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
+          }
+        />
+        <Card
+          image={
+            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
+          }
+        />
+        <Card
+          image={
+            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
+          }
+        />
+        <Card
+          image={
+            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
+          }
+        />
+        <Card
+          image={
+            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
+          }
+        />
+        <Card
+          image={
+            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
+          }
+        />
+        <Card
+          image={
+            'https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg'
+          }
+        />
       </div>
     </div>
   );
