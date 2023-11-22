@@ -60,9 +60,14 @@ export default App;
 */
 
 import React from 'react';
+import AppNetflix from './netflix-clone/components/AppNetflix';
 
 function App() {
-  return <div>App</div>;
+  return (
+    <>
+      <AppNetflix />
+    </>
+  );
 }
 
 export default App;

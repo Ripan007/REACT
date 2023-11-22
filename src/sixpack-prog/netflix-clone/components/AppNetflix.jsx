@@ -1,7 +1,8 @@
 import React from 'react';
+import './App.scss';
 
-function App() {
-  return <div>App</div>;
+function AppNetflix() {
+  return <div>App netflix</div>;
 }
 
-export default App;
+export default AppNetflix;
