@@ -37,7 +37,7 @@ function Home() {
   const [nowMovies, setNowMovies] = useState([]);
   const [topRatedMovies, setTopRatedMovies] = useState([]);
   const [popularMovies, setPopularMovies] = useState([]);
-  const [genre, setGenre] = useState([]);
+  const [genres, setGenre] = useState([]);
   useEffect(() => {
     const fetchUpcoming = async () => {
       const {
@@ -88,7 +88,7 @@ function Home() {
       <Row title={'Movies'} arr={nowMovies} />
       <Row title={'Tv Shows'} arr={topRatedMovies} />
       <Row title={'Recently Viewed'} arr={popularMovies} />
-      <Row title={'Genre'} arr={genre} />
+      <div className="genreBox"></div>
     </section>
   );
 }
