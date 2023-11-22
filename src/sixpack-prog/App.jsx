@@ -30,7 +30,7 @@ function Contact() {
 
 function User() {
   const params = useParams();
-  console.log(params);
+  console.log(params.userId);
   return <h1>user page</h1>;
 }
 
