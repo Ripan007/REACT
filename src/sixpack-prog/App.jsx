@@ -1,3 +1,4 @@
+/*
 import React from 'react';
 import Todo from './todo-list/Todo';
 
@@ -53,6 +54,15 @@ function App() {
       </Routes>
     </BrowserRouter>
   );
+}
+
+export default App;
+*/
+
+import React from 'react';
+
+function App() {
+  return <div>App</div>;
 }
 
 export default App;
