@@ -36,8 +36,10 @@ function Row({
 function Home() {
   useEffect(() => {
     const fetchUpcoming = async () => {
-      const { data } = await axios.get(`${url}/${upcoming}`);
+      const { data } = await axios.get(`${url}/${upcoming}?api_keys=${apiKey}`);
+      console.log(data);
     };
+    fetchUpcoming();
   }, []);
   return (
     <section className="home">
