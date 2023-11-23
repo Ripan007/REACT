@@ -6,5 +6,10 @@ document.querySelector('.check').addEventListener('click', function () {
   if (!guess) {
     document.querySelector('.message').textContent = '☠️ nothing is selected';
   } else if (guess === secretNumber) {
+    document.querySelector('.message').textContent = 'guess correct';
+  } else if (guess > secretNumber) {
+    document.querySelector('.message').textContent = 'guess is high';
+  } else if (guess < secretNumber) {
+    document.querySelector('.message').textContent = 'guess is low';
   }
 });
