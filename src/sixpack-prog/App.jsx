@@ -131,12 +131,18 @@ class App extends React.Component {
     this.plus = this.plus.bind(this);
   }
   componentDidMount() {
+    // ? act like  useState
     setTimeout(() => {
       console.log('fetched');
     }, 1000);
   }
   componentDidUpdate() {
+    // ? when ui rerender , state update , change ui
     console.log('fetched again');
+  }
+
+  shouldComponentUpdate() {
+    return false;
   }
 
   plus() {
