@@ -1,4 +1,5 @@
 const secretNumber = Math.trunc(Math.random() * 20) + 1;
+let score = 20;
 document.querySelector('.number').textContent = secretNumber;
 document.querySelector('.check').addEventListener('click', function () {
   const guess = +document.querySelector('.guess').value;
@@ -9,7 +10,11 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.message').textContent = 'guess correct';
   } else if (guess > secretNumber) {
     document.querySelector('.message').textContent = 'guess is high';
+    score--;
+    document.querySelector('.score').textContent = score;
   } else if (guess < secretNumber) {
     document.querySelector('.message').textContent = 'guess is low';
+    score--;
+    document.querySelector('.score').textContent = score;
   }
 });
