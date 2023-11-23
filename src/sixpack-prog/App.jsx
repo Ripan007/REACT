@@ -121,6 +121,32 @@ componentWillUnmount
 */
 
 import React from 'react';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
+function Header() {
+  return (
+    <nav>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+    </nav>
+  );
+}
+
+function Home() {
+  return (
+    <>
+      <h1>home page</h1>
+    </>
+  );
+}
+
+function About() {
+  return (
+    <>
+      <h1>about page</h1>
+    </>
+  );
+}
 
 class App extends React.Component {
   constructor() {
@@ -156,10 +182,16 @@ class App extends React.Component {
   }
   render() {
     return (
-      <>
-        <h1>{this.state.count}</h1>
-        <button onClick={this.plus}> + </button>
-      </>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+
+        {/* <h1>{this.state.count}</h1>
+        <button onClick={this.plus}> + </button> */}
+      </BrowserRouter>
     );
   }
 }
