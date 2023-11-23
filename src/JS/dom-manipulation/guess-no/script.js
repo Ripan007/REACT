@@ -1,11 +1,13 @@
 // change style ,content ,attribute => dom manipulation
-const secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
 console.log(secretNumber);
 let score = 20;
 
 const reset = document
   .querySelector('.again')
   .addEventListener('click', function () {
+    secretNumber = Math.trunc(Math.random() * 20) + 1;
+    console.log(secretNumber);
     document.querySelector('.score').textContent = 0;
     document.querySelector('.number').textContent = '?';
     document.querySelector('.message').textContent = 'Start guessing..';
