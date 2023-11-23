@@ -61,11 +61,12 @@ export default App;
 */
 
 import React from 'react';
+import Home from './chat-app/Home';
 
 function App() {
   return (
     <>
-      <h1>welcome</h1>
+      <Home />
     </>
   );
 }
