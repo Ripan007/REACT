@@ -114,6 +114,10 @@ class App extends React.Component {
 
 /*
 ? life cycle methods
+componentDidMount
+ShouldComponentUpdate
+componentDidUpdate
+componentWillUnmount
 */
 
 import React from 'react';
