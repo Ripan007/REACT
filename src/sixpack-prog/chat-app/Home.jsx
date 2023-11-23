@@ -22,25 +22,31 @@ function Home() {
   const [user, setUser] = useState(false);
   return (
     <Box bg="red.50">
-      <Container height="100vh" bg="white">
-        <VStack h="full" p="3">
-          <Button colorScheme="red" w="full">
-            logout
-          </Button>
-          <VStack h="full" w="full" overflowY={'auto'}>
-            <Message title="show the message" user="other" />
-          </VStack>
+      {user ? (
+        <Container height="100vh" bg="white">
+          <VStack h="full" p="3">
+            <Button colorScheme="red" w="full">
+              logout
+            </Button>
+            <VStack h="full" w="full" overflowY={'auto'}>
+              <Message title="show the message" user="other" />
+            </VStack>
 
-          <form style={{ width: '100%' }}>
-            <HStack>
-              <Input placeholder="enter some text" />
-              <Button colorScheme="purple" type="submit">
-                send
-              </Button>
-            </HStack>
-          </form>
+            <form style={{ width: '100%' }}>
+              <HStack>
+                <Input placeholder="enter some text" />
+                <Button colorScheme="purple" type="submit">
+                  send
+                </Button>
+              </HStack>
+            </form>
+          </VStack>
+        </Container>
+      ) : (
+        <VStack>
+          <Button>sign in with google</Button>
         </VStack>
-      </Container>
+      )}
     </Box>
   );
 }
