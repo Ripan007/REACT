@@ -7,7 +7,7 @@ const reset = document
   .querySelector('.again')
   .addEventListener('click', function () {
     document.querySelector('.score').textContent = 0;
-    document.querySelector('');
+    document.querySelector('.number').textContent = '?';
   });
 
 document.querySelector('.check').addEventListener('click', function () {
