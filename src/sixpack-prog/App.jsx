@@ -128,6 +128,7 @@ class App extends React.Component {
     this.state = {
       count: 0,
     };
+    this.plus = this.plus.bind(this);
   }
   componentDidMount() {
     setTimeout(() => {
@@ -137,10 +138,17 @@ class App extends React.Component {
   componentDidUpdate() {
     console.log('fetched again');
   }
+
+  plus() {
+    this.setState(prev => ({
+      count: prev.count + 1,
+    }));
+  }
   render() {
     return (
       <>
         <h1>{this.state.count}</h1>
+        <button onClick={this.plus}> + </button>
       </>
     );
   }
