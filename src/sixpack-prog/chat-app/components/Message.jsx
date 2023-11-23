@@ -1,10 +1,10 @@
 import { Avatar, HStack, Text } from '@chakra-ui/react';
 import React from 'react';
 
-function Message({ title, uri }) {
+function Message({ title, uri, user = 'other' }) {
   return (
     <HStack
-      alignSelf={'flex-end'}
+      alignSelf={user === 'me' ? 'flex-end' : 'flex-start'}
       borderRadius="md"
       bg="gray.100"
       py="2"
