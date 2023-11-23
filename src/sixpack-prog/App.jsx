@@ -138,7 +138,9 @@ function Home() {
     console.log(e.clientY);
   };
 
-  useEffect(() => {});
+  useEffect(() => {
+    document.addEventListener('mousemove', mouseOverFun);
+  }, []);
   return (
     <>
       <h1>home page</h1>
