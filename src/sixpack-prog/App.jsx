@@ -123,6 +123,12 @@ componentWillUnmount
 import React from 'react';
 
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      count: 0,
+    };
+  }
   componentDidMount() {
     setTimeout(() => {
       console.log('fetched');
@@ -134,7 +140,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <h1>welcome</h1>
+        <h1>{this.state.count}</h1>
       </>
     );
   }
