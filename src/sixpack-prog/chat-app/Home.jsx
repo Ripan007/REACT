@@ -55,3 +55,6 @@ function Home() {
 }
 
 export default Home;
+
+// excitement , curious  ,patient  => key mantra
+//  learn => practice => practice => learn =>  vicious circle
