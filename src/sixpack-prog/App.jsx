@@ -169,7 +169,7 @@ class Home extends React.Component {
     super();
   }
 
-  componentDidUpdate() {
+  componentDidMount() {
     document.addEventListener('mousemove', mouseOverFun);
   }
   render() {
