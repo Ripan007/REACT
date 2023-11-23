@@ -12,15 +12,15 @@ function Home() {
   return (
     <Box bg="red.50">
       <Container height="100vh" bg="white">
-        <VStack h="full" bg="telegram.100">
+        <VStack h="full" p="3">
           <Button colorScheme="red" w="full">
             logout
           </Button>
-          <VStack h="full" w="full" bg="purple.100"></VStack>
+          <VStack h="full" w="full"></VStack>
 
           <form style={{ width: '100%' }}>
             <HStack>
-              <Input />
+              <Input outline={'none'} />
               <Button colorScheme="purple" type="submit">
                 send
               </Button>
