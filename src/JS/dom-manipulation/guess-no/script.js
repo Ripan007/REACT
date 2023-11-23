@@ -3,6 +3,10 @@ const secretNumber = Math.trunc(Math.random() * 20) + 1;
 console.log(secretNumber);
 let score = 20;
 
+const reset = document
+  .querySelector('.again')
+  .addEventListener('click', function () {});
+
 document.querySelector('.check').addEventListener('click', function () {
   const guess = +document.querySelector('.guess').value;
   console.log(guess, typeof guess);
