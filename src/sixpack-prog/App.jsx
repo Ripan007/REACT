@@ -67,12 +67,14 @@ class App extends React.Component {
     super();
     this.state = {
       name: 'ripan',
+      role: 'developer',
     };
   }
   render() {
     return (
       <>
         <h1>{this.state.name}</h1>
+        <h2>{this.state.role}</h2>
       </>
     );
   }
