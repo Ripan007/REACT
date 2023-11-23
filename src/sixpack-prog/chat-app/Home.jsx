@@ -20,7 +20,7 @@ function Home() {
 
           <form style={{ width: '100%' }}>
             <HStack>
-              <Input outline={'none'} />
+              <Input placeholder="enter some text" />
               <Button colorScheme="purple" type="submit">
                 send
               </Button>
