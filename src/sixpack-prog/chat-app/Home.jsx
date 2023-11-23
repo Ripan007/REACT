@@ -18,10 +18,10 @@ function Home() {
             logout
           </Button>
           <VStack h="full" w="full">
-            <Message title="show the message" user="me" />
-            <Message title="show the message" user="me" />
             <Message title="show the message" user="other" />
             <Message title="show the message" user="other" />
+            <Message title="show the message" user="me" />
+            <Message title="show the message" user="me" />
             <Message title="show the message" user="me" />
           </VStack>
 
