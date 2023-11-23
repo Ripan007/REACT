@@ -8,6 +8,7 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import Message from './components/Message.JSX';
+import {GoggleAuthProvider,}
 
 function Home() {
   return (
@@ -19,25 +20,6 @@ function Home() {
           </Button>
           <VStack h="full" w="full" overflowY={'auto'}>
             <Message title="show the message" user="other" />
-            <Message title="show the message" user="other" />
-            <Message title="show the message" user="me" />
-            <Message title="show the message" user="me" />
-            <Message title="show the message" user="me" />
-            <Message title="show the message" user="other" />
-            <Message title="show the message" user="other" />
-            <Message title="show the message" user="me" />
-            <Message title="show the message" user="me" />
-            <Message title="show the message" user="me" />
-            <Message title="show the message" user="other" />
-            <Message title="show the message" user="other" />
-            <Message title="show the message" user="me" />
-            <Message title="show the message" user="me" />
-            <Message title="show the message" user="me" />
-            <Message title="show the message" user="other" />
-            <Message title="show the message" user="other" />
-            <Message title="show the message" user="me" />
-            <Message title="show the message" user="me" />
-            <Message title="show the message" user="me" />
           </VStack>
 
           <form style={{ width: '100%' }}>
