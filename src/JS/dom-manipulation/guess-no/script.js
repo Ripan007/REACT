@@ -6,9 +6,10 @@ let score = 20;
 const reset = document
   .querySelector('.again')
   .addEventListener('click', function () {
+    score = 20;
     secretNumber = Math.trunc(Math.random() * 20) + 1;
     console.log(secretNumber);
-    document.querySelector('.score').textContent = 0;
+    document.querySelector('.score').textContent = score;
     document.querySelector('.number').textContent = '?';
     document.querySelector('.message').textContent = 'Start guessing..';
     document.querySelector('.guess').value = '';
