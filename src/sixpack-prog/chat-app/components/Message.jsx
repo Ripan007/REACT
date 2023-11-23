@@ -1,10 +1,11 @@
-import { HStack, Text } from '@chakra-ui/react';
+import { Avatar, HStack, Text } from '@chakra-ui/react';
 import React from 'react';
 
-function Message({ title }) {
+function Message({ title, uri }) {
   return (
     <HStack>
       <Text>{title}</Text>
+      <Avatar src={uri} />
     </HStack>
   );
 }
