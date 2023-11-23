@@ -9,9 +9,13 @@ document.querySelector('.check').addEventListener('click', function () {
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = 'guess correct';
   } else if (guess > secretNumber) {
-    document.querySelector('.message').textContent = 'guess is high';
-    score--;
-    document.querySelector('.score').textContent = score;
+    if (score > 0) {
+      document.querySelector('.message').textContent = 'guess is high';
+      score--;
+      document.querySelector('.score').textContent = score;
+    } else {
+      document.querySelector('.message').textContent = 'you loose the game';
+    }
   } else if (guess < secretNumber) {
     document.querySelector('.message').textContent = 'guess is low';
     score--;
