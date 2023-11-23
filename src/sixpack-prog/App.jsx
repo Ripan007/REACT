@@ -120,7 +120,8 @@ componentDidUpdate
 componentWillUnmount
 */
 
-import React, { useEffect } from 'react';
+/*
+
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 function Header() {
@@ -151,7 +152,7 @@ function Header() {
   );
 }*/
 
-function About() {
+/* function About() {
   return (
     <>
       <h1>about page</h1>
@@ -190,18 +191,18 @@ class App extends React.Component {
     this.plus = this.plus.bind(this);
   }
   componentDidMount() {
-    // ? act like  useState
+     act like  useState
     setTimeout(() => {
       console.log('fetched');
     }, 1000);
   }
   componentDidUpdate() {
-    // ? when ui rerender , state update , change ui
+     when ui rerender , state update , change ui
     console.log('update');
   }
 
   shouldComponentUpdate() {
-    // ? ui render wont take place ,rerender stop
+     ui render wont take place ,rerender stop
     return true;
   }
 
@@ -222,11 +223,18 @@ class App extends React.Component {
           <Route path="/about" element={<About />} />
         </Routes>
 
-        {/* <h1>{this.state.count}</h1>
-        <button onClick={this.plus}> + </button> */}
+        { <h1>{this.state.count}</h1>
+        <button onClick={this.plus}> + </button> }
       </BrowserRouter>
     );
   }
+}
+ */
+
+import React from 'react';
+
+function App() {
+  return <div>App</div>;
 }
 
 export default App;
