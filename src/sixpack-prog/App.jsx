@@ -123,6 +123,11 @@ componentWillUnmount
 import React from 'react';
 
 class App extends React.Component {
+  componentDidMount() {
+    setTimeout(() => {
+      console.log('fetched');
+    }, 1000);
+  }
   render() {
     return (
       <>
