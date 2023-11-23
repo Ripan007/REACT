@@ -7,6 +7,7 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import React from 'react';
+import Message from './components/Message.JSX';
 
 function Home() {
   return (
@@ -16,7 +17,9 @@ function Home() {
           <Button colorScheme="red" w="full">
             logout
           </Button>
-          <VStack h="full" w="full"></VStack>
+          <VStack h="full" w="full">
+            <Message title="show the message" />
+          </VStack>
 
           <form style={{ width: '100%' }}>
             <HStack>
