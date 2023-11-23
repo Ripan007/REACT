@@ -128,6 +128,9 @@ class App extends React.Component {
       console.log('fetched');
     }, 1000);
   }
+  componentDidUpdate() {
+    console.log('fetched again');
+  }
   render() {
     return (
       <>
