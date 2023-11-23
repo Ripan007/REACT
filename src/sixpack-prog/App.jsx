@@ -62,6 +62,15 @@ export default App;
 
 import React from 'react';
 
+class Name extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return <h1>{this.props.name}</h1>;
+  }
+}
+
 class App extends React.Component {
   constructor() {
     super();
@@ -96,6 +105,7 @@ class App extends React.Component {
           value={this.state.name}
         />
         <button onClick={this.increment}> + </button>
+        <Name name="ripan" />
       </>
     );
   }
