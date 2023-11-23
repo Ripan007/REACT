@@ -10,6 +10,8 @@ const reset = document
     document.querySelector('.number').textContent = '?';
     document.querySelector('.message').textContent = 'Start guessing..';
     document.querySelector('.guess').value = '';
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('.number').style.width = '15rem';
   });
 
 document.querySelector('.check').addEventListener('click', function () {
