@@ -1,4 +1,4 @@
-import { Box, Container, VStack } from '@chakra-ui/react';
+import { Box, Button, Container, VStack } from '@chakra-ui/react';
 import React from 'react';
 
 function Home() {
@@ -6,7 +6,9 @@ function Home() {
     <Box bg="red.50">
       <Container height="100vh" bg="white">
         <VStack h="full" bg="telegram.100">
-          <button></button>
+          <Button colorScheme="red" w="full">
+            logout
+          </Button>
         </VStack>
       </Container>
     </Box>
