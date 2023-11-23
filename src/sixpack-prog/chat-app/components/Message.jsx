@@ -12,7 +12,7 @@ function Message({ title, uri, user = 'other' }) {
     >
       {user === 'other' && <Avatar src={uri} />}
       <Text>{title}</Text>
-      <Avatar src={uri} />
+      {user === 'me' && <Avatar src={uri} />}
     </HStack>
   );
 }
