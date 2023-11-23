@@ -3,7 +3,7 @@ import React from 'react';
 
 function Message({ title, uri }) {
   return (
-    <HStack>
+    <HStack borderRadius="baseline" bg="gray.100" py="2" px="4">
       <Text>{title}</Text>
       <Avatar src={uri} />
     </HStack>
