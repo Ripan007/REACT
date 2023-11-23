@@ -16,13 +16,16 @@ function Home() {
           <Button colorScheme="red" w="full">
             logout
           </Button>
-          <VStack bg="purple.100"></VStack>
-          <HStack>
-            <form>
+          <VStack h="full" w="full" bg="purple.100"></VStack>
+
+          <form>
+            <HStack h="full">
               <Input />
-              <Button type="submit">send</Button>
-            </form>
-          </HStack>
+              <Button colorScheme="purple" type="submit">
+                send
+              </Button>
+            </HStack>
+          </form>
         </VStack>
       </Container>
     </Box>
