@@ -132,7 +132,7 @@ function Header() {
   );
 }
 
-function Home() {
+/*function Home() {
   const mouseOverFun = e => {
     console.log(e.clientX);
     console.log(e.clientY);
@@ -149,7 +149,7 @@ function Home() {
       <h1>home page</h1>
     </>
   );
-}
+}*/
 
 function About() {
   return (
@@ -157,6 +157,15 @@ function About() {
       <h1>about page</h1>
     </>
   );
+}
+
+class Home extends React.Component {
+  constructor() {
+    super();
+  }
+  render() {
+    return <h1>home page</h1>;
+  }
 }
 
 class App extends React.Component {
