@@ -17,7 +17,22 @@ function Home() {
           <Button colorScheme="red" w="full">
             logout
           </Button>
-          <VStack h="full" w="full">
+          <VStack h="full" w="full" overflowY={'auto'}>
+            <Message title="show the message" user="other" />
+            <Message title="show the message" user="other" />
+            <Message title="show the message" user="me" />
+            <Message title="show the message" user="me" />
+            <Message title="show the message" user="me" />
+            <Message title="show the message" user="other" />
+            <Message title="show the message" user="other" />
+            <Message title="show the message" user="me" />
+            <Message title="show the message" user="me" />
+            <Message title="show the message" user="me" />
+            <Message title="show the message" user="other" />
+            <Message title="show the message" user="other" />
+            <Message title="show the message" user="me" />
+            <Message title="show the message" user="me" />
+            <Message title="show the message" user="me" />
             <Message title="show the message" user="other" />
             <Message title="show the message" user="other" />
             <Message title="show the message" user="me" />
