@@ -72,7 +72,7 @@ class App extends React.Component {
   }
 
   increment() {
-    this.setState(prevState => prevState.count + 1);
+    this.setState(prev => ({ count: prev.count + 1 }));
   }
   render() {
     return (
