@@ -18,8 +18,8 @@ function Home() {
           </Button>
           <VStack h="full" w="full" bg="purple.100"></VStack>
 
-          <form>
-            <HStack h="full">
+          <form style={{ width: '100%' }}>
+            <HStack>
               <Input />
               <Button colorScheme="purple" type="submit">
                 send
