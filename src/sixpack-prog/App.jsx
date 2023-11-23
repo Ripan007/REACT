@@ -140,6 +140,9 @@ function Home() {
 
   useEffect(() => {
     document.addEventListener('mousemove', mouseOverFun);
+    return () => {
+      document.removeEventListener('mousemove', mouseOverFun);
+    };
   }, []);
   return (
     <>
@@ -177,7 +180,7 @@ class App extends React.Component {
 
   shouldComponentUpdate() {
     // ? ui render wont take place ,rerender stop
-    return false;
+    return true;
   }
 
   componentWillUnmount() {
