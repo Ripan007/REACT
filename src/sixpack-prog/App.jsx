@@ -68,16 +68,26 @@ class App extends React.Component {
     this.state = {
       count: 0,
     };
+
+    this.state = {
+      name: 'default',
+    };
     this.increment = this.increment.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   increment() {
     this.setState(prev => ({ count: prev.count + 1 }));
   }
+
+  handleChange(e) {
+    this.setState(() => e.target.value);
+  }
   render() {
     return (
       <>
         <h1>{this.state.count}</h1>
+        <input type="enter some text" onChange={this.handleChange} />
         <button onClick={this.increment}> + </button>
       </>
     );
