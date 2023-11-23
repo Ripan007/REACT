@@ -168,6 +168,7 @@ class Home extends React.Component {
   constructor() {
     super();
   }
+
   componentDidUpdate() {
     document.addEventListener('mousemove', mouseOverFun);
   }
