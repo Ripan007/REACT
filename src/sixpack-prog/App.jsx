@@ -87,7 +87,12 @@ class App extends React.Component {
     return (
       <>
         <h1>{this.state.count}</h1>
-        <input type="enter some text" onChange={this.handleChange} />
+        <h2>{this.state.name}</h2>
+        <input
+          type="enter some text"
+          onChange={this.handleChange}
+          value={this.state.name}
+        />
         <button onClick={this.increment}> + </button>
       </>
     );
