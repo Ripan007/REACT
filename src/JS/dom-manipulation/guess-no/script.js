@@ -8,6 +8,8 @@ const reset = document
   .addEventListener('click', function () {
     document.querySelector('.score').textContent = 0;
     document.querySelector('.number').textContent = '?';
+    document.querySelector('.message').textContent = 'Start guessing..';
+    document.querySelector('.guess').textContent = '';
   });
 
 document.querySelector('.check').addEventListener('click', function () {
