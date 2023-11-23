@@ -23,6 +23,10 @@ function Card({ img }) {
   );
 }
 
+if(){
+
+}
+
 function Row({ title, arr = [] }) {
   return (
     <div className="row">
