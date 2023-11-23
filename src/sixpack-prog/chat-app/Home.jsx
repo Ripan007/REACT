@@ -1,4 +1,11 @@
-import { Box, Button, Container, Input, VStack } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Container,
+  HStack,
+  Input,
+  VStack,
+} from '@chakra-ui/react';
 import React from 'react';
 
 function Home() {
@@ -10,10 +17,12 @@ function Home() {
             logout
           </Button>
           <VStack bg="purple.100"></VStack>
-          <form>
-            <Input />
-            <Button type="submit">send</Button>
-          </form>
+          <HStack>
+            <form>
+              <Input />
+              <Button type="submit">send</Button>
+            </form>
+          </HStack>
         </VStack>
       </Container>
     </Box>
