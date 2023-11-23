@@ -18,8 +18,13 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = 0;
     }
   } else if (guess < secretNumber) {
-    document.querySelector('.message').textContent = 'guess is low';
-    score--;
-    document.querySelector('.score').textContent = score;
+    if (guess > 1) {
+      document.querySelector('.message').textContent = 'guess is low';
+      score--;
+      document.querySelector('.score').textContent = score;
+    } else {
+      document.querySelector('.message').textContent = 'you loose the game';
+      document.querySelector('.score').textContent = 0;
+    }
   }
 });
