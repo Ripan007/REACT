@@ -8,14 +8,14 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import Message from './components/Message.JSX';
-import { getAuth, GoggleAuthProvider, signInWitPopUp } from 'firebase/auth';
+import { getAuth, GoggleAuthProvider, signInWithPopUp } from 'firebase/auth';
 import { app } from '../firebase';
 
 const auth = getAuth(app);
 
 const loginHandler = () => {
   const provider = new GoggleAuthProvider();
-  signInWitPopUp(auth, provider);
+  signInWithPopUp(auth, provider);
 };
 
 function Home() {
