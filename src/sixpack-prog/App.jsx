@@ -172,6 +172,10 @@ class Home extends React.Component {
   componentDidMount() {
     document.addEventListener('mousemove', mouseOverFun);
   }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousemove', mouseOverFun);
+  }
   render() {
     return <h1>home page</h1>;
   }
