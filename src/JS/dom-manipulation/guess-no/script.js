@@ -1,3 +1,1 @@
-document.querySelector('.check').addEventListener('click', function () {
-  document.querySelector('.guess').value;
-});
+document.querySelector('.');
