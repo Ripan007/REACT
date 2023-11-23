@@ -1,11 +1,13 @@
-import { Box, Container } from '@chakra-ui/react';
+import { Box, Container, VStack } from '@chakra-ui/react';
 import React from 'react';
 
 function Home() {
   return (
     <Box bg="red.50">
       <Container height="100vh" bg="white">
-        chakra ui
+        <VStack h="full" bg="telegram.100">
+          <button></button>
+        </VStack>
       </Container>
     </Box>
   );
