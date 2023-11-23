@@ -138,13 +138,17 @@ class App extends React.Component {
   }
   componentDidUpdate() {
     // ? when ui rerender , state update , change ui
-    console.log('fetched again');
+    console.log('update');
   }
 
   shouldComponentUpdate() {
+    // ? ui render wont take place ,rerender stop
     return false;
   }
 
+  componentWillUnmount() {
+    console.log('unmounting');
+  }
   plus() {
     this.setState(prev => ({
       count: prev.count + 1,
