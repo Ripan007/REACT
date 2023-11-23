@@ -9,7 +9,7 @@ const reset = document
     document.querySelector('.score').textContent = 0;
     document.querySelector('.number').textContent = '?';
     document.querySelector('.message').textContent = 'Start guessing..';
-    document.querySelector('.guess').textContent = '';
+    document.querySelector('.guess').value = '';
   });
 
 document.querySelector('.check').addEventListener('click', function () {
