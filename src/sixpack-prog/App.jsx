@@ -68,11 +68,17 @@ class App extends React.Component {
     this.state = {
       count: 0,
     };
+    this.increment = this.increment.bind(this);
+  }
+
+  increment() {
+    this.setState(prevState => prevState.count + 1);
   }
   render() {
     return (
       <>
         <h1>{this.state.count}</h1>
+        <button onClick={this.increment}> + </button>
       </>
     );
   }
