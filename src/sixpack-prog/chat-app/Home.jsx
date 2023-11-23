@@ -8,7 +8,7 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import Message from './components/Message.JSX';
-import {GoggleAuthProvider,}
+import { GoggleAuthProvider, signInWitPopUp } from '';
 
 function Home() {
   return (
