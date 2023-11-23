@@ -120,7 +120,7 @@ componentDidUpdate
 componentWillUnmount
 */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 function Header() {
@@ -133,6 +133,12 @@ function Header() {
 }
 
 function Home() {
+  const mouseOverFun = e => {
+    console.log(e.clientX);
+    console.log(e.clientY);
+  };
+
+  useEffect(() => {});
   return (
     <>
       <h1>home page</h1>
