@@ -159,9 +159,17 @@ function About() {
   );
 }
 
+const mouseOverFun = e => {
+  console.log(e.clientX);
+  console.log(e.clientY);
+};
+
 class Home extends React.Component {
   constructor() {
     super();
+  }
+  componentDidUpdate() {
+    document.addEventListener('mousemove', mouseOverFun);
   }
   render() {
     return <h1>home page</h1>;
