@@ -10,6 +10,7 @@ function Message({ title, uri, user = 'other' }) {
       py="2"
       px="4"
     >
+      {user === 'other' && <Avatar src={uri} />}
       <Text>{title}</Text>
       <Avatar src={uri} />
     </HStack>
