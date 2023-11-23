@@ -112,6 +112,10 @@ class App extends React.Component {
   }
 }*/
 
+/*
+? life cycle methods
+*/
+
 import React from 'react';
 
 class App extends React.Component {
