@@ -66,15 +66,13 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      name: 'ripan',
-      role: 'developer',
+      count: 0,
     };
   }
   render() {
     return (
       <>
-        <h1>{this.state.name}</h1>
-        <h2>{this.state.role}</h2>
+        <h1>{this.state.count}</h1>
       </>
     );
   }
