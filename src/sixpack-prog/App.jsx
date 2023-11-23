@@ -60,7 +60,8 @@ export default App;
 
 */
 
-import React from 'react';
+/*
+? class based components
 
 class Name extends React.Component {
   constructor(props) {
@@ -105,7 +106,19 @@ class App extends React.Component {
           value={this.state.name}
         />
         <button onClick={this.increment}> + </button>
-        <Name name="ripan" />
+        <Name name="ripan  mondal" />
+      </>
+    );
+  }
+}*/
+
+import React from 'react';
+
+class App extends React.Component {
+  render() {
+    return (
+      <>
+        <h1>welcome</h1>
       </>
     );
   }
