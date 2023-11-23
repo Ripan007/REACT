@@ -32,7 +32,7 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.number').style.width = '30rem';
     if (score > highScore) {
       highScore = score;
-      document.querySelector('.highScore').textContent = highScore;
+      document.querySelector('.highscore').textContent = highScore;
     }
     // when guess is to high
   } else if (guess > secretNumber) {
