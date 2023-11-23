@@ -1,3 +1,4 @@
+// change style ,content ,attribute => dom manipulation
 const secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 document.querySelector('.number').textContent = secretNumber;
