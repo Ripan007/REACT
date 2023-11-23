@@ -19,6 +19,7 @@ const loginHandler = () => {
 };
 
 function Home() {
+  const [user, setUser] = useState(false);
   return (
     <Box bg="red.50">
       <Container height="100vh" bg="white">
