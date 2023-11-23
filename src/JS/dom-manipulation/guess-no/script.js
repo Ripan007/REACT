@@ -5,7 +5,10 @@ let score = 20;
 
 const reset = document
   .querySelector('.again')
-  .addEventListener('click', function () {});
+  .addEventListener('click', function () {
+    document.querySelector('.score').textContent = 0;
+    document.querySelector('');
+  });
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = +document.querySelector('.guess').value;
