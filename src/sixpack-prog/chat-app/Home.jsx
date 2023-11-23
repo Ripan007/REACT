@@ -3,8 +3,8 @@ import React from 'react';
 
 function Home() {
   return (
-    <Box>
-      <Container height="100vh" bg="red">
+    <Box bg="red.50">
+      <Container height="100vh" bg="white">
         chakra ui
       </Container>
     </Box>
