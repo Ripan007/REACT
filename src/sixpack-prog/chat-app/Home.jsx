@@ -9,6 +9,8 @@ function Home() {
           <Button colorScheme="red" w="full">
             logout
           </Button>
+          <VStack bg="purple.100"></VStack>
+          <form></form>
         </VStack>
       </Container>
     </Box>
