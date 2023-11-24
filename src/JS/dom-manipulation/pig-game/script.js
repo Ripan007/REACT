@@ -26,8 +26,10 @@ btnRoll.addEventListener('click', function () {
   if (dice !== 1) {
     // add dice to current score
     currentScore += dice;
-    current0El.textContent = currentScore;
+    document.querySelector(`current-${activePlayer}`).textContent =
+      currentScore;
   } else {
     // switch to next player
+    activePlayer = activePlayer === 0 ? 1 : 0;
   }
 });
