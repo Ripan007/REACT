@@ -12,7 +12,7 @@ const displayMessage = function (message) {
 };
 
 document.querySelector('.check').addEventListener('click', function () {
-  let guess = +document.querySelector('.guess').value;
+  const guess = Number(document.querySelector('.guess').value);
   console.log(guess);
 });
 
