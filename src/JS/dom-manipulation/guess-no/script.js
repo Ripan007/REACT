@@ -17,9 +17,12 @@ document.querySelector('.check').addEventListener('click', function () {
 //  when  there is no input
 if (!guess) {
   displayMessage('🛑 no  number');
+  //  when player win
 } else if (guess === secretNumber) {
   displayMessage('✴️ correct number');
   document.querySelector('.number').textContent = secretNumber;
   document.querySelector('body').style.background = '#60b347';
   document.querySelector('.number').style.width = '30rem';
+  if (score > highScore) {
+  }
 }
