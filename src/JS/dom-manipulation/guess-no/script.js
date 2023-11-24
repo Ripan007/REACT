@@ -1,4 +1,6 @@
 // change style ,content ,attribute => dom manipulation
+//  refactoring  the code
+//  stick to the dry principle => try to not repeat the code
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 console.log(secretNumber);
 let score = 20;
