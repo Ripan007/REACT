@@ -23,6 +23,6 @@ if (!guess) {
   document.querySelector('.number').textContent = secretNumber;
   document.querySelector('body').style.background = '#60b347';
   document.querySelector('.number').style.width = '30rem';
-  if (score > highScore) {
+  if (score > highscore) {
   }
 }
