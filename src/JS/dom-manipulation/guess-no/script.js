@@ -29,6 +29,10 @@ if (!guess) {
     // when guess is wrong
   } else if (guess !== secretNumber) {
     if (score > 1) {
+      displayMessage(guess > secretNumber ? 'high' : 'low');
+      score--;
+      document.querySelector('.score').textContent = score;
+    } else {
     }
   }
 }
