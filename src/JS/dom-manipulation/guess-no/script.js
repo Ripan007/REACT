@@ -35,27 +35,30 @@ document.querySelector('.check').addEventListener('click', function () {
     if (score > highScore) {
       highScore = score;
       document.querySelector('.highscore').textContent = highScore;
+    } else if (guess !== score) {
     }
 
+    // REPETITIVE CODE
     // when guess is to high
-  } else if (guess > secretNumber) {
-    if (score > 1) {
-      document.querySelector('.message').textContent = 'guess is high';
-      score--;
-      document.querySelector('.score').textContent = score;
-    } else {
-      document.querySelector('.message').textContent = 'you loose the game';
-      document.querySelector('.score').textContent = 0;
-    }
-    // when guess is low
-  } else if (guess < secretNumber) {
-    if (score > 1) {
-      document.querySelector('.message').textContent = 'guess is low';
-      score--;
-      document.querySelector('.score').textContent = score;
-    } else {
-      document.querySelector('.message').textContent = 'you loose the game';
-      document.querySelector('.score').textContent = 0;
-    }
+    // } else if (guess > secretNumber) {
+    //   if (score > 1) {
+    //     document.querySelector('.message').textContent = 'guess is high';
+    //     score--;
+    //     document.querySelector('.score').textContent = score;
+    //   } else {
+    //     document.querySelector('.message').textContent = 'you loose the game';
+    //     document.querySelector('.score').textContent = 0;
+    //   }
+    //   // when guess is low
+    // } else if (guess < secretNumber) {
+    //   if (score > 1) {
+    //     document.querySelector('.message').textContent = 'guess is low';
+    //     score--;
+    //     document.querySelector('.score').textContent = score;
+    //   } else {
+    //     document.querySelector('.message').textContent = 'you loose the game';
+    //     document.querySelector('.score').textContent = 0;
+    //   }
+    // }
   }
 });
