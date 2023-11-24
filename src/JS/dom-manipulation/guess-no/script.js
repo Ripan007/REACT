@@ -20,4 +20,6 @@ if (!guess) {
 } else if (guess === secretNumber) {
   displayMessage('✴️ correct number');
   document.querySelector('.number').textContent = secretNumber;
+  document.querySelector('body').style.background = '#60b347';
+  document.querySelector('.number').style.width = '30rem';
 }
