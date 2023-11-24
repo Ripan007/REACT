@@ -24,5 +24,8 @@ if (!guess) {
   document.querySelector('body').style.background = '#60b347';
   document.querySelector('.number').style.width = '30rem';
   if (score > highscore) {
+    highscore = score;
+    document.querySelector('.highscore').textContent = highscore;
+  } else if (guess !== secretNumber) {
   }
 }
