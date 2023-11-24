@@ -33,6 +33,8 @@ if (!guess) {
       score--;
       document.querySelector('.score').textContent = score;
     } else {
+      displayMessage('you lost the game');
+      document.querySelector('.score').textContent = 0;
     }
   }
 }
