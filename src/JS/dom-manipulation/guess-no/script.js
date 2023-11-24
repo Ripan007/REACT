@@ -35,7 +35,9 @@ document.querySelector('.check').addEventListener('click', function () {
     if (score > highScore) {
       highScore = score;
       document.querySelector('.highscore').textContent = highScore;
-    } else if (guess !== score) {
+    } else if (guess !== secretNumber) {
+      if (score > 1) {
+      }
     }
 
     // REPETITIVE CODE
