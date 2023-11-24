@@ -1,25 +1,10 @@
 // change style ,content ,attribute => dom manipulation
 //  refactoring  the code
 //  stick to the dry principle => try to not repeat the code
-let secretNumber = Math.trunc(Math.random() * 20) + 1;
 
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highScore = 0;
-
-const reset = document
-  .querySelector('.again')
-  .addEventListener('click', function () {
-    score = 20;
-    secretNumber = Math.trunc(Math.random() * 20) + 1;
-
-    document.querySelector('.score').textContent = score;
-    document.querySelector('.number').textContent = '?';
-    document.querySelector('.message').textContent = 'Start guessing..';
-    document.querySelector('.guess').value = '';
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('.number').style.width = '15rem';
-  });
-
 document.querySelector('.check').addEventListener('click', function () {
   const guess = +document.querySelector('.guess').value;
 
@@ -46,6 +31,18 @@ document.querySelector('.check').addEventListener('click', function () {
         document.querySelector('.score').textContent = 0;
       }
     }
+
+    document.querySelector('.again').addEventListener('click', function () {
+      score = 20;
+      secretNumber = Math.trunc(Math.random() * 20) + 1;
+
+      document.querySelector('.score').textContent = score;
+      document.querySelector('.number').textContent = '?';
+      document.querySelector('.message').textContent = 'Start guessing..';
+      document.querySelector('.guess').value = '';
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('.number').style.width = '15rem';
+    });
 
     // REPETITIVE CODE
     // when guess is to high
