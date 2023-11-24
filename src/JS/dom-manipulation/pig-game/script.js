@@ -12,4 +12,8 @@ score1El.textContent = 0;
 diceEl.classList.add('hidden');
 
 //  rolling dice functionality
-btnRoll.addEventListener('click', function () {});
+btnRoll.addEventListener('click', function () {
+  // 1.generate a random dice roll
+  // 2.display dice
+  // 3.check for rolled 1:if true,switch to next player
+});
