@@ -11,7 +11,7 @@ const displayMessage = function (message) {
 };
 
 document.querySelector('.check').addEventListener('click', function () {
-  const guess = document.querySelector('.guess').value;
+  const guess = +document.querySelector('.guess').value;
 });
 
 //  when  there is no input
