@@ -36,4 +36,4 @@ btnRoll.addEventListener('click', function () {
   }
 });
 
-//  The quick brown fox jumps
+//  The quick brown fox jumps over the lazy dog
