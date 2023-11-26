@@ -14,10 +14,13 @@ function App() {
       style={{
         width: '100px',
         height: '100px',
-        textAlign: 'center',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
         backgroundColor: hover ? 'yellow' : 'blue',
         color: hover ? 'black' : 'white',
         padding: '1rem',
+        fontFamily: 'system-ui',
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
