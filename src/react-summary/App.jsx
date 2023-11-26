@@ -7,7 +7,9 @@ function modal() {
   return (
     <>
       <form onSubmit={submitForm}>
-        <input type="text" name="" id="" />
+        <label htmlFor="">text</label>
+        <textarea></textarea>
+        <label></label>
       </form>
     </>
   );
