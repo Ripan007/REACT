@@ -8,4 +8,14 @@
 
 header {
   background-color: blue;
+  display: flex;
+  padding: 1rem;
+}
+
+header > h1 {
+  flex: 1;
+}
+
+header > button {
+  border-radius: 25px;
 }

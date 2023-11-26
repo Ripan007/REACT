@@ -5,6 +5,7 @@ function Header() {
   return (
     <header>
       <h1>react poster</h1>
+
       <button>new post</button>
     </header>
   );
