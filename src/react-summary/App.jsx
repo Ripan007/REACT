@@ -1,10 +1,16 @@
 import React from 'react';
 import './App.css';
+import { FaRegMessage } from 'react-icons/fa6';
 
 function Header() {
   return (
     <header>
-      <h1>react poster</h1>
+      <div>
+        <h1>
+          <FaRegMessage />
+          react poster
+        </h1>
+      </div>
 
       <button>new post</button>
     </header>
