@@ -1,3 +1,5 @@
+import style from './Post.module.css';
+
 import React from 'react';
 const names = ['mohit', 'rajiv'];
 
@@ -6,10 +8,10 @@ console.log(Math.random());
 
 function Post() {
   return (
-    <>
-      <h1>{chosenNames}</h1>
+    <div className={style.post}>
+      <h1 className={style.post__name}>{chosenNames}</h1>
       <p>details</p>
-    </>
+    </div>
   );
 }
 

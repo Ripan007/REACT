@@ -1,0 +1,10 @@
+body {
+  background-color: red;
+}
+.post {
+  background-color: blue;
+}
+
+.post__name {
+  color: red;
+}
