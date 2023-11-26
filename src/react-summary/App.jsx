@@ -2,21 +2,24 @@ import React from 'react';
 import './App.css';
 import { FaRegMessage } from 'react-icons/fa6';
 
-function modal() {
+function Modal() {
   function submitForm() {}
   return (
     <>
       <form onSubmit={submitForm}>
         <label htmlFor="">text</label>
         <textarea></textarea>
-        <label></label>
+        <label>your name</label>
+        <input type="text" />
       </form>
     </>
   );
 }
 
 function Header() {
-  function handleClick() {}
+  function handleClick() {
+    setModal(true);
+  }
   return (
     <header>
       <div>
@@ -32,9 +35,11 @@ function Header() {
 }
 
 function App() {
+  const [modal, setModal] = usesState(false);
   return (
     <>
       <Header />
+      {modal ? <Modal /> : ''}
     </>
   );
 }
