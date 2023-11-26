@@ -14,3 +14,8 @@ panes {
   flex: 1;
   min-width: min(100%, 10em);
 }
+
+.panes {
+  flex: 4;
+  min-width: min(100%, 40em);
+}
