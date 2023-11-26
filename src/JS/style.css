@@ -4,6 +4,10 @@
   gap: 0.3rem;
 }
 
+.folder-tree {
+  flex: 1;
+}
+
 div:nth-child(1) {
   background-color: red;
 }
