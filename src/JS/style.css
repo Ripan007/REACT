@@ -9,8 +9,12 @@
   min-width: min(100%, 10em);
 }
 
-#file-manager >  :not(){
-    div:nth-child(1) {
+#file-manager > :not(:first-child) {
+  flex: 2;
+  min-width: min(100%, 20rem);
+}
+
+div:nth-child(1) {
   background-color: red;
 }
 
