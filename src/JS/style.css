@@ -9,3 +9,8 @@ panes {
   flex-wrap: wrap;
   gap: 0.3em;
 }
+
+#folder-trees {
+  flex: 1;
+  min-width: min(100%, 10em);
+}
