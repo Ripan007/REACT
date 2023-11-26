@@ -1,46 +1,10 @@
-import React, { useState } from 'react';
-import './App.css';
-import { FaRegMessage } from 'react-icons/fa6';
-
-function Modal() {
-  function submitForm() {}
-  return (
-    <>
-      <form onSubmit={submitForm}>
-        <label htmlFor="">text</label>
-        <textarea></textarea>
-        <label>your name</label>
-        <input type="text" />
-      </form>
-    </>
-  );
-}
-
-function Header() {
-  function handleClick() {
-    setModal(true);
-    console.log('button');
-  }
-  return (
-    <header>
-      <div>
-        <h1>
-          <FaRegMessage />
-          react poster
-        </h1>
-      </div>
-
-      <button onClick={handleClick}>new post</button>
-    </header>
-  );
-}
+import React from 'react';
+import Post from './components/Post';
 
 function App() {
-  const [modal, setModal] = useState(false);
   return (
     <>
-      <Header />
-      {modal ? <Modal /> : ''}
+      <Post />
     </>
   );
 }
