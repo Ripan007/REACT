@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { FaRegMessage } from 'react-icons/fa6';
 
@@ -19,6 +19,7 @@ function Modal() {
 function Header() {
   function handleClick() {
     setModal(true);
+    console.log('button');
   }
   return (
     <header>
@@ -35,7 +36,7 @@ function Header() {
 }
 
 function App() {
-  const [modal, setModal] = usesState(false);
+  const [modal, setModal] = useState(false);
   return (
     <>
       <Header />
