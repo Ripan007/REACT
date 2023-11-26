@@ -27,3 +27,8 @@ header {
   display: grid;
   place-content: center;
 }
+
+.bottom {
+  position: absolute;
+  inset: auto 0 0;
+}
