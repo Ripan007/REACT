@@ -1,8 +1,7 @@
 function App() {
   return (
     <>
-      {/* <TicApp /> */}
-      <App />
+      <h1>welcome</h1>
     </>
   );
 }
