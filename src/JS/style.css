@@ -1,0 +1,9 @@
+* {
+  border: 1px solid #000;
+}
+
+#file-manager,
+panes {
+  display: flex;
+  height: 100vh;
+}
