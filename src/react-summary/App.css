@@ -12,7 +12,7 @@ header {
   padding: 1rem;
 }
 
-header > h1 {
+header > div {
   flex: 1;
 }
 
