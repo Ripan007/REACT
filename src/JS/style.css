@@ -9,7 +9,8 @@
   min-width: min(100%, 10em);
 }
 
-div:nth-child(1) {
+#file-manager >  :not(){
+    div:nth-child(1) {
   background-color: red;
 }
 
