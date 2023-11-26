@@ -1,11 +1,11 @@
 #cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 1em;
+  justify-content: center;
 }
 
 #cards > article {
-  display: none;
+  flex: none;
   width: 20em;
 }
