@@ -6,6 +6,7 @@
 
 .folder-tree {
   flex: 1;
+  min-width: min(90%, 10em);
 }
 
 div:nth-child(1) {
