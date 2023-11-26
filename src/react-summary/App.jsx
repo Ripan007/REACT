@@ -3,6 +3,7 @@ import './App.css';
 import { FaRegMessage } from 'react-icons/fa6';
 
 function Header() {
+  function handleClick() {}
   return (
     <header>
       <div>
@@ -12,7 +13,7 @@ function Header() {
         </h1>
       </div>
 
-      <button>new post</button>
+      <button onClick={handleClick}>new post</button>
     </header>
   );
 }
