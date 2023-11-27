@@ -18,6 +18,10 @@ for await (const line of file.readLines()) {
 
 // reading ,coding , practice
 
+/*
+npm package
 var generateName = require('sillyname');
 var sillyName = generateName();
 console.log(`my name is ${sillyName}`);
+
+*/
