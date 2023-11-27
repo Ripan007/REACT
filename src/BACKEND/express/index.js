@@ -12,10 +12,10 @@ app.post('/register', (req, res) => {
 app.put('/user/ripan', (req, res) => {
   res.sendStatus(200);
 });
-app.patch('/', (req, res) => {
+app.patch('/user/ripan', (req, res) => {
   res.sendStatus(200);
 });
-app.delete('/', (req, res) => {
+app.delete('/user/ripan', (req, res) => {
   res.sendStatus(200);
 });
 /*app.get('/contact', (req, res) => {
