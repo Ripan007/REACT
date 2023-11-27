@@ -37,7 +37,8 @@ import qr from 'qr-image';
 inquirer
   .prompt([{ message: 'Type in your URL:', name: 'URL' }])
   .then(answers => {
-    var qr_svg = qr.image('I love QR!', { type: 'svg' });
+    const url = answers.URL;
+    var qr_svg = qr.image(url);
     qr_svg.pipe(require('fs').createWriteStream('i_love_qr.svg'));
   })
   .catch(error => {
