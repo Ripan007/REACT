@@ -6,7 +6,3 @@ fs.writeFile('message.txt', 'welcome node', err => {
 });
 
 const file = await open('./message.txt');
-for await (const line of file.readLines(){
-    console.log(line);
-
-})
