@@ -34,9 +34,7 @@ console.log(`i am ${superheroes.random()}`);
 import inquirer from 'inquirer';
 
 inquirer
-  .prompt([
-    /* Pass your questions in here */
-  ])
+  .prompt([{ message: 'Type in your URL:' }])
   .then(answers => {
     // Use user feedback for... whatever!!
   })
