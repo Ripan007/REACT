@@ -5,12 +5,18 @@ app.get('/', (req, res) => {
   res.send('<h1>home page</h1>');
 });
 
-app.post('/', (req, res) => {
-  res.statusCode(201);
+app.post('/register', (req, res) => {
+  res.sendStatus(201);
 });
 
-app.put('/', (req, res) => {
-  res.statusCode();
+app.put('/user/ripan', (req, res) => {
+  res.sendStatus(200);
+});
+app.patch('/', (req, res) => {
+  res.sendStatus(200);
+});
+app.delete('/', (req, res) => {
+  res.sendStatus(200);
 });
 /*app.get('/contact', (req, res) => {
   res.send('<h1>contact page</h1>');
