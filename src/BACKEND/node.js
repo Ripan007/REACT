@@ -7,11 +7,13 @@ fs.writeFile('message.txt', 'welcome to node', err => {
 });*/
 
 // read file
-import { log } from 'node:console';
-import { open } from 'node:fs/promises';
+/*import { open } from 'node:fs/promises';
 
 const file = await open('./message.txt');
 
 for await (const line of file.readLines()) {
   console.log(line);
 }
+*/
+
+// reading ,coding , practice
