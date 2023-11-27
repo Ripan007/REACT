@@ -21,7 +21,7 @@ for await (const line of file.readLines()) {
 /*
 npm package
 var generateName = require('sillyname');
+import generateName from 'sillyname';
 var sillyName = generateName();
 console.log(`my name is ${sillyName}`);
-
 */
