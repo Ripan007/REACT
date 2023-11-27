@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
+  res.statusCode(201);
+});
+
+app.put('/', (req, res) => {
   res.statusCode();
 });
 /*app.get('/contact', (req, res) => {
