@@ -1,1 +1,1 @@
-behind the code : server , applications or database
+behind the scenes code : servers , applications and database
