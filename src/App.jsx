@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NgModule } from '@angular';
 
 function App() {
   const [hover, setHover] = useState(false);
