@@ -9,15 +9,12 @@
   <body>
     <h1>responsive methods</h1>
     <style>
-      @media (max-width: 500px) {
-        body {
-          background-color: pink;
-        }
+      :root {
+        --primary-font: system-ui;
+        --primary-color: red;
       }
-      @media (min-width: 500px) {
-        body {
-          background-color: rgb(192, 255, 212);
-        }
+      h1 {
+        color: var(--primary-color);
       }
     </style>
 
