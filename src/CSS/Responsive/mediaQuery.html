@@ -9,7 +9,7 @@
     <h1>media query</h1>
     <p>adding breakpoints to define layout</p>
     <style>
-      @media (max-width: 600px) {
+      /*       @media (max-width: 600px) {
         body {
           background-color: pink;
         }
@@ -18,11 +18,19 @@
         body {
           background-color: rgb(187, 22, 49);
         }
+      } */
+
+      @media (min-width: 600px) and (max-width: 900px) {
+        body {
+          background-color: red;
+        }
       }
     </style>
   </body>
 </html>
 
+<!--  max-width : less than or equal to -->
+<!-- min-width:greater than or equal to -->
 <!-- change the background color of each device
 mobile :319 - 480
 tablets:481 - 1200
