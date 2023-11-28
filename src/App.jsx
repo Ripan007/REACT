@@ -1,7 +1,4 @@
 import { useState } from 'react';
-import { NgModule } from '@angular';
-import { backIn } from 'framer-motion';
-
 function App() {
   const [hover, setHover] = useState(false);
 
