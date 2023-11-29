@@ -42,12 +42,13 @@ friends.shift();
 console.log(friends.indexOf('gopi'));
 console.log(friends.includes('rajvir'));*/
 
-// 50-300 => 15%
-// different => 20%
+/*50-300 => 15%
+different => 20%
 
 const callTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 };
 
-const bills = [125, 555,44];
-const
+const bills = [125, 555, 44];
+const tips = [callTip(bills[0]), callTip(bills[1]), callTip(bills[2])];
+console.log(bills, tips);*/
