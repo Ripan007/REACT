@@ -19,5 +19,7 @@ const interested = prompt(
   'what  are things  , you want to know what the random bio'
 );
 if (bio[interested]) {
-  console.log();
+  console.log(bio[interested]);
+} else {
+  console.log('the output is wrong');
 }
