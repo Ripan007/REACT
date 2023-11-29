@@ -9,3 +9,5 @@ const bio = {
 console.log(bio);
 console.log(bio.firstName);
 console.log(bio['lastName']);
+const nameKey = 'Name';
+console.log(bio('first' + nameKey));
