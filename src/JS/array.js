@@ -37,5 +37,7 @@ const friends = ['mohit', 'gopi', 'jyoti', 'sarvana'];
 // friends.push('raj');
 // friends.unshift('kabita');
 // friends.pop();
-friends.shift();
+// friends.shift();
+
+const newArray = friends.push();
 console.log(friends);
