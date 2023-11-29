@@ -53,4 +53,3 @@ const tips = [0.15, 0.2];
 const firstCus = calTip(bills[0], tips[0]);
 console.log(firstCus);
 const totals = bills + tips;
-console.log(totals);
