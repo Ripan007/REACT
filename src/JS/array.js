@@ -50,6 +50,6 @@ const calTip = function (bills, tips) {
 
 const bills = [125, 555, 44];
 const tips = [0.15, 0.2];
-const firstCus = calTip(`${bills[0]}  ${tips[0]}`);
+const firstCus = calTip(bills[0], tips[0]);
 console.log(firstCus);
 const totals = bills + tips;
