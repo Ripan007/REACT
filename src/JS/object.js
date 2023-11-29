@@ -28,3 +28,5 @@ bio.location = 'portblair';
 bio['twitter'] = '@randomBuster';
 console.log(bio);
 */
+
+//  mohit has 3 friends,and his best friend is
