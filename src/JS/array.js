@@ -17,5 +17,5 @@ const calAge = function (birthyear) {
 };
 
 const years = [2000, 2001, 1995, 1994];
-const age1 = calAge[0];
+const age1 = calAge[years[0]];
 console.log(age1);
