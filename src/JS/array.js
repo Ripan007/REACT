@@ -41,3 +41,15 @@ friends.shift();
 
 console.log(friends.indexOf('gopi'));
 console.log(friends.includes('rajvir'));*/
+
+// 50-300 => 15%
+// different => 20%
+const calTip = function (bills, tips) {
+  return bills * tips;
+};
+
+const bills = [125, 555, 44];
+const tips = [15, 20];
+const firstCus = calTip(bills[0], tips[0]);
+console.log(firstCus);
+const totals = bills + tips;
