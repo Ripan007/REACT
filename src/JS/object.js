@@ -15,7 +15,7 @@ const bio = {
 // console.log(bio['first' + nameKey]);
 // console.log(bio['last' + nameKey]);
 
-const interested = prompt(
+/*const interested = prompt(
   'what  are things  , you want to know what the random bio'
 );
 if (bio[interested]) {
@@ -23,3 +23,8 @@ if (bio[interested]) {
 } else {
   console.log('the output is wrong');
 }
+
+bio.location = 'portblair';
+bio['twitter'] = '@randomBuster';
+console.log(bio);
+*/
