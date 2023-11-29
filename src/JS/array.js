@@ -30,3 +30,12 @@ const ages = [
   calAge(years[3]),
 ];
 console.log(ages);*/
+
+/* function methods*/
+
+const friends = ['mohit', 'gopi', 'jyoti', 'sarvana'];
+// friends.push('raj');
+// friends.unshift('kabita');
+// friends.pop();
+friends.shift();
+console.log(friends);
