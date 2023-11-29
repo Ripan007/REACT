@@ -44,12 +44,10 @@ console.log(friends.includes('rajvir'));*/
 
 // 50-300 => 15%
 // different => 20%
-const calTip = function (bills, tips) {
-  return bills * tips;
+
+const callTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 };
 
-const bills = [125, 555, 44];
-const tips = [0.15, 0.2];
-const firstCus = calTip(bills[0], tips[0]);
-console.log(firstCus);
-const totals = bills + tips;
+const bills = [125, 555,44];
+const
