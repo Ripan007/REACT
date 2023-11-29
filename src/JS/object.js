@@ -1,5 +1,3 @@
-const { Value } = require('sass');
-
 const bio = {
   firstName: 'mohit',
   lastName: 'yogi',
@@ -13,6 +11,13 @@ const bio = {
 // console.log(bio['lastName']);
 // exact Value
 // computed value
-const nameKey = 'Name';
-console.log(bio['first' + nameKey]);
-console.log(bio['last' + nameKey]);
+// const nameKey = 'Name';
+// console.log(bio['first' + nameKey]);
+// console.log(bio['last' + nameKey]);
+
+const interested = prompt(
+  'what  are things  , you want to know what the random bio'
+);
+if (bio[interested]) {
+  console.log();
+}
