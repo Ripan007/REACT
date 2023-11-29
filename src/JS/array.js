@@ -1,4 +1,4 @@
-const friends = ['mohit', 'rajiv', 'gopi'];
+const friends = ['mohit', 'rajiv', 'gopi', 'kamla'];
 // accessing the  value
 console.log(friends[0]);
 
@@ -9,3 +9,5 @@ console.log(years[0]);
 
 friends[0] = 'chanda';
 console.log(friends);
+
+console.log(friends[friends.length - 2]);
