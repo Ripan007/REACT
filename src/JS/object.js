@@ -30,4 +30,6 @@ console.log(bio);
 */
 
 //  mohit has 3 friends,and his best friend is called rajvir
-console.log(`${bio.firstName} has ${bio.friends.length}`);
+console.log(
+  `${bio.firstName} has ${bio.friends.length} friends, and his best friend is called ${bio.friends[0]}`
+);
