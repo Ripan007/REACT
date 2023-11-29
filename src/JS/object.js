@@ -5,3 +5,7 @@ const bio = {
   job: 'teacher',
   friends: ['rajvir', 'karishma', 'mohit'],
 };
+
+console.log(bio);
+console.log(bio.firstName);
+console.log(bio['lastName']);
