@@ -29,4 +29,5 @@ bio['twitter'] = '@randomBuster';
 console.log(bio);
 */
 
-//  mohit has 3 friends,and his best friend is
+//  mohit has 3 friends,and his best friend is called rajvir
+console.log(`${bio.firstName} has ${bio.friends.length}`);
