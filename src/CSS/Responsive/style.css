@@ -2,3 +2,11 @@
   opacity: 0;
   position: absolute;
 }
+
+.custom-checkbox + label:before {
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
