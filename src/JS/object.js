@@ -53,3 +53,12 @@ console.log(bio.statement());
 // jonas is a 46-year old teacher , and  he has a  driver license
 
 //  bmi = mass / (height * height)  / mass /(height ** 2)
+
+const miller = {
+  fullName:'miller john',
+  mass :,
+
+}
+const  smith = {
+
+}
