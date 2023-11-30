@@ -1,7 +1,7 @@
-export default function Practice() {
-  return (
-    <div>
-      <h1>welcome</h1>
-    </div>
-  );
+import React from 'react';
+
+function Practice() {
+  return <div>Practice</div>;
 }
+
+export default Practice;
