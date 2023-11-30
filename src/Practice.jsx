@@ -6,6 +6,7 @@ function Practice() {
   const [password, setPassword] = useState('');
   function handleSubmit(e) {
     e.preventDefault();
+    console.log('Email:', email, 'Password:', password);
   }
   return (
     <form onSubmit={handleSubmit}>
@@ -15,15 +16,17 @@ function Practice() {
         name=""
         id=""
         value={email}
-        onChange={() => setEmail(e.target.value)}
+        onChange={e => setEmail(e.target.value)}
       />
       <label>password:</label>
       <input
         type="password"
         name=""
         id=""
+        value={password}
         onChange={e => setPassword(e.target.value)}
       />
+      <button type="submit">submit</button>
     </form>
   );
 }
