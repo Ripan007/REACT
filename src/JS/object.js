@@ -81,7 +81,7 @@ console.log(
   }'s (${smith.calBmi()}))`
 );*/
 
-const prabhu = {
+/* const prabhu = {
   firstName: 'prabhu',
   weight: 62,
   height: 1.2,
@@ -113,4 +113,4 @@ if (prabhu.bmi > rajiv.bmi) {
   console.log(
     `${rajiv.firstName}'s BMI (${rajiv.bmi} is higher than ${prabhu.firstName}'s BMI (${prabhu.bmi}))`
   );
-}
+} */
