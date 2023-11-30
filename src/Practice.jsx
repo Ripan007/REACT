@@ -1,4 +1,7 @@
 import React from 'react';
+function UserProfiles() {
+  return <h1>profiles</h1>;
+}
 const userData = [
   {
     name: 'John',
@@ -23,6 +26,7 @@ function Practice() {
   return (
     <div>
       <h1>user profiles</h1>
+      <UserProfiles users={userData} />
     </div>
   );
 }
