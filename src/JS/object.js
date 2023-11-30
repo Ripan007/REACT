@@ -26,8 +26,7 @@ console.log(
   `${bio.firstName} has ${bio.friends.length} friends, and his best friend is called ${bio.friends[0]}`
 );
 
-*/
-
+/*
 const bio = {
   firstName: 'mohit',
   lastName: 'yogi',
@@ -48,13 +47,14 @@ const bio = {
 };
 
 console.log(bio.statement());
+*/
 
 // write a method
 // jonas is a 46-year old teacher , and  he has a  driver license
 
 //  bmi = mass / (height * height)  / mass /(height ** 2)
 
-const miller = {
+/* const miller = {
   fullName: 'miller john',
   mass: 78,
   height: 1.69,
@@ -73,10 +73,32 @@ const smith = {
 };
 
 console.log(miller.calBmi(), smith.calBmi());
-// "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!";
+"John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!";
 
 console.log(
   `${miller.fullName}'s BMI (${miller.calBmi()} is higher than ${
     smith.fullName
   }'s (${smith.calBmi()}))`
-);
+);*/
+
+const prabhu = {
+  firstName: 'prabhu',
+  weight: 66,
+  height: 1.4,
+  calBmi: function () {
+    this.bmi = this.weight / this.height ** 2;
+    return this.bmi;
+  },
+};
+const rajiv = {
+  firstName: 'rajiv',
+  weight: 55,
+  height: 1.7,
+  calBmi: function () {
+    this.bmi = this.weight / this.height ** 2;
+    return this.bmi;
+  },
+};
+
+prabhu.calBmi();
+rajiv.calBmi();
