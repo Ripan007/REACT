@@ -14,8 +14,26 @@ function Practice() {
       setEmailError('');
     }
   };
-
-  return <div>Practice</div>;
+  const handleSubmit = event => {
+    event.preventDefault();
+    const isValid = validateEmail(email);
+    if (isValid) {
+      // Submit form
+    }
+  };
+  return (
+    <div>
+      <input
+        type="email"
+        value={email}
+        onChange={e => {
+          setEmail(e.target.value);
+          validateEmail(e.target.value);
+        }}
+      />
+      {emailError && <div className="error">{emailError}</div>}
+    </div>
+  );
 }
 
 export default Practice;
