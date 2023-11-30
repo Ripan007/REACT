@@ -22,7 +22,7 @@ function Practice() {
     }
   };
   return (
-    <div>
+    <form onSubmit={handleSubmit}>
       <input
         type="email"
         value={email}
@@ -32,7 +32,9 @@ function Practice() {
         }}
       />
       {emailError && <div className="error">{emailError}</div>}
-    </div>
+
+      <button type="submit">submit</button>
+    </form>
   );
 }
 
