@@ -3,7 +3,7 @@ import React from 'react';
 const userData = [];
 
 function UserProfiles({ users }) {
-  if (users === 0) {
+  if (users.length === 0) {
     return <p>user not available</p>;
   }
   return (
