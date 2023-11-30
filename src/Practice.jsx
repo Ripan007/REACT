@@ -18,6 +18,7 @@ function Practice() {
           onChange={e => setInputValue(e.target.value)}
         />
       </label>
+      <button type="submit">submit</button>
     </form>
   );
 }
