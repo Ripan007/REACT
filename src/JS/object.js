@@ -34,7 +34,7 @@ const bio = {
   birthYear: 1995,
   job: 'teacher',
   friends: ['rajvir', 'karishma', 'mohit'],
-  hasDriverLicense: true,
+  hasDriverLicense: false,
   calAge: function (birthYear) {
     return 2024 - birthYear;
   },
@@ -42,7 +42,7 @@ const bio = {
     console.log(
       `${this.firstName} is a ${this.calAge(1995)}-year old ${
         this.job
-      } ,and he has  ${hasDriverLicense}? 'a' : 'not' driver license `
+      } ,and he has ${this.hasDriverLicense ? 'a' : 'not'}  driver license `
     );
   },
 };
