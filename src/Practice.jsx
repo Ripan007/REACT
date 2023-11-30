@@ -1,6 +1,10 @@
 import React from 'react';
 
-const userData = [];
+const userData = [
+  { name: 'random', age: 23, gender: 'male' },
+  { name: 'random', gender: 'male' },
+  { name: 'random', age: 23, gender: 'male' },
+];
 
 function UserProfiles({ users }) {
   if (users.length === 0) {
@@ -18,6 +22,7 @@ function UserProfile({ user }) {
   return (
     <div>
       <h1>{user.name}</h1>
+      {}
     </div>
   );
 }
