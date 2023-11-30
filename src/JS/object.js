@@ -105,4 +105,6 @@ rajiv.calBmi();
 console.log(prabhu.bmi);
 console.log(rajiv.bmi);
 
-if()
+if (prabhu.bmi > rajiv.bmi) {
+  console.log(`${prabhu.firstName}'s BMI (prabhu.bmi)`);
+}
