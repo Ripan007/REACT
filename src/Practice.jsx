@@ -1,9 +1,7 @@
 import React from 'react';
-// const element = <h1>hello</h1>;
-
-const element = React.createElement('h1', null, 'hello,world');
+const userData = [{ name: 'John', email: ' ' }];
 function Practice() {
-  return <div>{element}</div>;
+  return <div></div>;
 }
 
 export default Practice;
