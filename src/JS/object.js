@@ -58,6 +58,7 @@ const miller = {
   fullName: 'miller john',
   mass: 78,
   height: 1.69,
+  cac,
 };
 
 const smith = {
