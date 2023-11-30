@@ -92,8 +92,8 @@ const prabhu = {
 };
 const rajiv = {
   firstName: 'rajiv',
-  weight: 55,
-  height: 1.7,
+  weight: 64,
+  height: 1.3,
   calBmi: function () {
     this.bmi = this.weight / this.height ** 2;
     return this.bmi;
@@ -108,5 +108,9 @@ console.log(rajiv.bmi);
 if (prabhu.bmi > rajiv.bmi) {
   console.log(
     `${prabhu.firstName}'s BMI (${prabhu.bmi} is higher than ${rajiv.firstName}'s BMI (${rajiv.bmi}))`
+  );
+} else if (rajiv.bmi > prabhu.bmi) {
+  console.log(
+    `${rajiv.firstName}'s BMI (${rajiv.bmi} is higher than ${prabhu.firstName}'s BMI (${prabhu.bmi}))`
   );
 }
