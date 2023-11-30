@@ -1,6 +1,6 @@
 import React from 'react';
 
-const userDatas = [
+const userData = [
   { name: 'random', age: 23, gender: 'male' },
   { name: 'random', age: 23 },
   { name: 'random', age: 23, gender: 'male' },
@@ -9,9 +9,15 @@ const userDatas = [
 function UserProfiles() {
   return <div></div>;
 }
-
+function UserProfile() {
+  return <div></div>;
+}
 function Practice() {
-  return <div>Practice</div>;
+  return (
+    <div>
+      <UserProfiles users={userData} />
+    </div>
+  );
 }
 
 export default Practice;
