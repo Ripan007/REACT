@@ -10,22 +10,28 @@ function Practice() {
   }
   return (
     <form onSubmit={handleSubmit}>
-      <label>email:</label>
-      <input
-        type="email"
-        name=""
-        id=""
-        value={email}
-        onChange={e => setEmail(e.target.value)}
-      />
-      <label>password:</label>
-      <input
-        type="password"
-        name=""
-        id=""
-        value={password}
-        onChange={e => setPassword(e.target.value)}
-      />
+      <label>
+        email:{' '}
+        <input
+          type="email"
+          name=""
+          id=""
+          value={email}
+          onChange={e => setEmail(e.target.value)}
+        />
+      </label>
+
+      <label>
+        password:{' '}
+        <input
+          type="password"
+          name=""
+          id=""
+          value={password}
+          onChange={e => setPassword(e.target.value)}
+        />
+      </label>
+
       <button type="submit">submit</button>
     </form>
   );
