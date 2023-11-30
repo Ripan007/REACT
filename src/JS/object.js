@@ -38,10 +38,12 @@ const bio = {
   calAge: function (birthYear) {
     return 2024 - birthYear;
   },
+  statement: function () {
+    console.log(`${this.firstName}`);
+  },
 };
 
-console.log(bio.calAge(1995));
-console.log(bio['calAge'](1990));
+console.log(bio.statement());
 
 // write a method
-// jonas is a 46-year old teacher ,
+// jonas is a 46-year old teacher , and  he has a  driver license
