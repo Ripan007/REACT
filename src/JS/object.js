@@ -102,3 +102,7 @@ const rajiv = {
 
 prabhu.calBmi();
 rajiv.calBmi();
+console.log(prabhu.bmi);
+console.log(rajiv.bmi);
+
+if()
