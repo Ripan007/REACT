@@ -6,13 +6,6 @@ const bio = {
   friends: ['rajvir', 'karishma', 'mohit'],
 };
 
-let name = 'rajiv';
-
-if (name === 'rajiv') {
-  console.log('the input is correct');
-} else {
-  console.log('the  input is icorect');
-}
 /*
 console.log(bio);
 console.log(bio.firstName);
