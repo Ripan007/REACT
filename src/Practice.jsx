@@ -1,7 +1,16 @@
 import React from 'react';
+function UserProfile() {
+  return <div></div>;
+}
 function UserProfiles({ users }) {
   if (users === 0) return <p>no user available</p>;
-  return <div></div>;
+  return (
+    <div>
+      {users.map((user, index) => (
+        <UserProfile user={user} />
+      ))}
+    </div>
+  );
 }
 const userData = [
   {
