@@ -106,5 +106,7 @@ console.log(prabhu.bmi);
 console.log(rajiv.bmi);
 
 if (prabhu.bmi > rajiv.bmi) {
-  console.log(`${prabhu.firstName}'s BMI (prabhu.bmi)`);
+  console.log(
+    `${prabhu.firstName}'s BMI (${prabhu.bmi} is higher than ${rajiv.firstName}'s BMI (${rajiv.bmi}))`
+  );
 }
