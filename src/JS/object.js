@@ -39,7 +39,11 @@ const bio = {
     return 2024 - birthYear;
   },
   statement: function () {
-    console.log(`${this.firstName}`);
+    console.log(
+      `${this.firstName} is a ${this.calAge(1995)}-year old ${
+        this.job
+      } ,and he has  ${hasDriverLicense}? 'a' : 'not' driver license `
+    );
   },
 };
 
