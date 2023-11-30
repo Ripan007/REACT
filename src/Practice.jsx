@@ -14,6 +14,7 @@ function Practice() {
     <div>
       <h1>{count}</h1>
       <button onClick={handleClick}>next</button>
+      Total - {total}
     </div>
   );
 }
