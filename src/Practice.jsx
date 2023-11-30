@@ -21,7 +21,11 @@ function Practice() {
           value={inputValue}
           onChange={e => setInputValue(e.target.value)}
         /> */}
-        <input type="text" ref={inputRef} />
+        <input
+          type="text"
+          ref={inputRef}
+          onChange={e => setInputValue(e.target.value)}
+        />
       </label>
       <button type="submit">submit</button>
     </form>
