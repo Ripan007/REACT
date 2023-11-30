@@ -44,4 +44,4 @@ console.log(bio.calAge(1995));
 console.log(bio['calAge'](1990));
 
 // write a method
-//
+// jonas is a 46-year old teacher ,
