@@ -30,19 +30,19 @@ function UserProfiles({ users }) {
 }
 
 const userData = [
-  // {
-  //   name: 'Alice',
-  //   email: 'alice@example.com',
-  //   age: 25,
-  //   website: 'https://alice.com',
-  // },
-  // { name: 'Bob', email: 'bob@example.com', age: 30 },
-  // {
-  //   name: 'Charlie',
-  //   email: 'charlie@example.com',
-  //   age: 35,
-  //   website: 'https://charlie.com',
-  // },
+  {
+    name: 'Alice',
+    email: 'alice@example.com',
+    age: 25,
+    website: 'https://alice.com',
+  },
+  { name: 'Bob', email: 'bob@example.com', age: 30 },
+  {
+    name: 'Charlie',
+    email: 'charlie@example.com',
+    age: 35,
+    website: 'https://charlie.com',
+  },
 ];
 
 function App() {
