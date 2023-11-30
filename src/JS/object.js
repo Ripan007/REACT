@@ -58,11 +58,18 @@ const miller = {
   fullName: 'miller john',
   mass: 78,
   height: 1.69,
-  cac,
+  calBmi: function () {
+    return this.mass / this.height ** 2;
+  },
 };
 
 const smith = {
   fullName: 'smith josh',
   mass: 92,
   height: 1.99,
+  calBmi: function () {
+    return this.mass / this.height ** 2;
+  },
 };
+
+console.log(miller.calBmi(), smith.calBmi());
