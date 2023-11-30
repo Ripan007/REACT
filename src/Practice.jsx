@@ -1,12 +1,8 @@
 import React from 'react';
 
-const userData = [
-  { name: 'random', age: 23, gender: 'male' },
-  { name: 'random', age: 23 },
-  { name: 'random', age: 23, gender: 'male' },
-];
+const userData = [];
 
-function UserProfiles(users) {
+function UserProfiles({ users }) {
   if (users === 0) {
     return <p>user not available</p>;
   }
