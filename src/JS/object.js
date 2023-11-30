@@ -31,7 +31,14 @@ console.log(
 const bio = {
   firstName: 'mohit',
   lastName: 'yogi',
-  age: 2024 - 1995,
+  birthYear: 1995,
   job: 'teacher',
   friends: ['rajvir', 'karishma', 'mohit'],
+  hasDriverLicense: true,
+  calAge: function (birthYear) {
+    return 2024 - birthYear;
+  },
 };
+
+console.log(bio.calAge(1995));
+console.log(bio['calAge'](1990));
