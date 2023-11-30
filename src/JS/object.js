@@ -55,10 +55,13 @@ console.log(bio.statement());
 //  bmi = mass / (height * height)  / mass /(height ** 2)
 
 const miller = {
-  fullName:'miller john',
-  mass :,
+  fullName: 'miller john',
+  mass: 78,
+  height: 1.69,
+};
 
-}
-const  smith = {
-
-}
+const smith = {
+  fullName: 'smith josh',
+  mass: 92,
+  height: 1.99,
+};
