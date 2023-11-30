@@ -1,3 +1,4 @@
-body {
-  background-color: red;
+.custom-checkbox {
+  opacity: 0;
+  position: absolute;
 }
