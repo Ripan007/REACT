@@ -1,18 +1,17 @@
 import React from 'react';
-import { useRef } from 'react';
+import { useState } from 'react';
 
 function Practice() {
-  const userInput = useRef();
-  function handleSubmit(e) {
-    e.preventDefault();
-    console.log('user_input--value:', userInput.current.value);
-  }
-  return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" ref={userInput} />
-      <button type="submit">submit</button>
-    </form>
-  );
+  const [email, setEmail] = useState('');
+  const [emailError, setEmailError] = useState('');
+
+  const validateEmail = value => {
+    if (!value) {
+      setEmailError('email is required');
+    }
+  }else if(!/\S+@\S+\.\S+/.test(value))
+
+  return <div>Practice</div>;
 }
 
 export default Practice;
