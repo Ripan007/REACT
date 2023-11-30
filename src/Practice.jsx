@@ -13,7 +13,7 @@ function UserProfiles({ users }) {
   return (
     <div>
       {users.map((user, index) => {
-        return <UserProfile user={user} />;
+        return <UserProfile key={index} user={user} />;
       })}
     </div>
   );
@@ -22,6 +22,8 @@ function UserProfile({ user }) {
   return (
     <div>
       <h1>{user.name}</h1>
+      <p>{user.age}</p>
+      <p>{user.gender}</p>
       {user.age && <p>{user.age}</p>}
     </div>
   );
