@@ -52,4 +52,4 @@ console.log(bio.statement());
 // write a method
 // jonas is a 46-year old teacher , and  he has a  driver license
 
-//  bmi = mass / (height * height)
+//  bmi = mass / (height * height)  / mass /(height ** 2)
