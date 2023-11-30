@@ -23,26 +23,7 @@ function UserProfiles({ users }) {
     </div>
   );
 }
-const userData = [
-  {
-    name: 'John',
-    email: '@john ',
-    age: 23,
-    website: 'https://:www.google.com',
-  },
-  {
-    name: 'John',
-
-    age: 23,
-    website: 'https://:www.google.com',
-  },
-  {
-    name: 'John',
-    email: '@john ',
-    age: 23,
-    website: 'https://:www.google.com',
-  },
-];
+const userData = [];
 function Practice() {
   return (
     <div>
