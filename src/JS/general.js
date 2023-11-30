@@ -11,3 +11,9 @@ const newArr = arr.toSorted();
 console.log(newArr);
 console.log(arr);
 */
+
+/* toSpliced , toReverse*/
+
+const arr = [1, 2, 3];
+const newArr = arr.toReversed();
+console.log(newArr);
