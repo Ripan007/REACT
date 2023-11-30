@@ -83,8 +83,8 @@ console.log(
 
 const prabhu = {
   firstName: 'prabhu',
-  weight: 66,
-  height: 1.4,
+  weight: 62,
+  height: 1.2,
   calBmi: function () {
     this.bmi = this.weight / this.height ** 2;
     return this.bmi;
