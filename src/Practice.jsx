@@ -12,11 +12,12 @@ function Practice() {
     <form onSubmit={handleSubmitForm}>
       <label>
         name:
-        <input
+        {/* <input
           type="text"
           value={inputValue}
           onChange={e => setInputValue(e.target.value)}
-        />
+        /> */}
+        <input type="text"  ref={}/>
       </label>
       <button type="submit">submit</button>
     </form>
