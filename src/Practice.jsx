@@ -1,6 +1,7 @@
 import React from 'react';
-function UserProfiles() {
-  return <h1>profiles</h1>;
+function UserProfiles({ users }) {
+  if (users === 0) return <p>no user available</p>;
+  return <div></div>;
 }
 const userData = [
   {
