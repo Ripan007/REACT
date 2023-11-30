@@ -42,3 +42,6 @@ const bio = {
 
 console.log(bio.calAge(1995));
 console.log(bio['calAge'](1990));
+
+// write a method
+//
