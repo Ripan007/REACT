@@ -1,6 +1,6 @@
-import Player from "./components/Players";
-import "./App.css";
-import TimerChallenge from "./components/TimerChallenge";
+import Player from './components/Players';
+import './App.css';
+import TimerChallenge from './components/TimerChallenge';
 
 export default function App() {
   return (
