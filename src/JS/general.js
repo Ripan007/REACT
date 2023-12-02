@@ -35,5 +35,3 @@ console.log([...arr1, ...arr2]);
 
 console.log(combine.join('-'));
 console.log(combine.join(','));
-
-console.log();
