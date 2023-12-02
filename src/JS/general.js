@@ -17,8 +17,7 @@ console.log(arr);
 const newArr = arr.toReversed();
 const newArr = arr.toSpliced(1, 1);
 console.log(newArr);*/
-
-const arr = ['a', 'b', 'c', 'd', 'e'];
+/*const arr = ['a', 'b', 'c', 'd', 'e'];
 console.log('🚀 ~ file: general.js:22 ~ arr:', arr);
 const newArr = arr.slice(-1);
 console.log('🚀 ~ file: general.js:23 ~ newArr:', newArr);
@@ -35,3 +34,4 @@ console.log([...arr1, ...arr2]);
 
 console.log(combine.join('-'));
 console.log(combine.join(','));
+*/
