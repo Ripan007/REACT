@@ -32,3 +32,6 @@ const combine = arr1.concat(arr2);
 console.log(combine);
 
 console.log([...arr1, ...arr2]);
+
+console.log(combine.join('-'));
+console.log(combine.join(','));
