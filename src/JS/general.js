@@ -22,3 +22,8 @@ const arr = ['a', 'b', 'c', 'd', 'e'];
 console.log('🚀 ~ file: general.js:22 ~ arr:', arr);
 const newArr = arr.slice(-1);
 console.log('🚀 ~ file: general.js:23 ~ newArr:', newArr);
+
+const arr1 = ['a', 'b'];
+const arr2 = ['c', 'd'];
+
+console.log(arr1.reverse());
