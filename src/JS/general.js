@@ -45,6 +45,7 @@ console.log('general', arr[arr.length - 1]);
 
 const movements = [100, 45, 35, 78];
 
-if (movements > 0) {
-  console.log('');
+for (const movement of movements) {
+  if (movement > 0) {
+  }
 }
