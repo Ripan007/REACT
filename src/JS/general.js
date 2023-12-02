@@ -17,3 +17,6 @@ console.log(arr);
 const newArr = arr.toReversed();
 const newArr = arr.toSpliced(1, 1);
 console.log(newArr);*/
+
+const arr = ['a', 'b', 'c', 'd', 'e'];
+console.log(arr.slice(0, 1));
