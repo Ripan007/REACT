@@ -65,3 +65,7 @@ const currencies = new Map([
   ['US', 'united state dollar'],
   ['EUR ', 'europe'],
 ]);
+
+currencies.forEach(function (value, key) {
+  console.log(`${key}: ${value}`);
+});
