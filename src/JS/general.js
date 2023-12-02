@@ -27,3 +27,8 @@ const arr1 = ['a', 'b'];
 const arr2 = ['c', 'd'];
 
 console.log(arr1.reverse());
+
+const combine = arr1.concat(arr2);
+console.log(combine);
+
+console.log([...arr1, ...arr2]);
