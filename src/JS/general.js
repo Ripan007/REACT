@@ -35,3 +35,7 @@ console.log([...arr1, ...arr2]);
 console.log(combine.join('-'));
 console.log(combine.join(','));
 */
+const arr = [1, 2, 3];
+console.log('ripan'.at(1));
+console.log(arr.at(0));
+console.log(arr.s);
