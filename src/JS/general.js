@@ -42,3 +42,9 @@ console.log(arr.at(0));
 console.log(arr.slice(-1)[0]);
 console.log('general', arr[arr.length - 1]);
 */
+
+const movements = [100, 45, 35, 78];
+
+if (movements > 0) {
+  console.log('');
+}
