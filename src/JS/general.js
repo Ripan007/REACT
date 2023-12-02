@@ -47,5 +47,8 @@ const movements = [100, 45, 35, 78];
 
 for (const movement of movements) {
   if (movement > 0) {
+    console.log(`you deposited ${movement}`);
+  } else {
+    console.log(`you withdraw ${Math.abs(movement)}`);
   }
 }
