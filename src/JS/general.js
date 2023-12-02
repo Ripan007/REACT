@@ -19,4 +19,7 @@ const newArr = arr.toSpliced(1, 1);
 console.log(newArr);*/
 
 const arr = ['a', 'b', 'c', 'd', 'e'];
-console.log(arr.slice(0, 1));
+const newArr = arr.slice(0, 1);
+console.log('modified arr', newArr);
+console.log('original arr', arr);
+// console.log(arr.slice(0, 1));
