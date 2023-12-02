@@ -53,10 +53,15 @@ const movements = [100, 45, 35, 78];
 //   }
 // }
 
-movements.forEach(function (movement) {
+/*movements.forEach(function (movement) {
   if (movement > 0) {
     console.log(`you deposited ${movement}`);
   } else {
     console.log(`you withdraw ${Math.abs(movement)}`);
   }
-});
+});*/
+
+const currencies = new Map([
+  ['US', 'united state dollar'],
+  ['EUR ', 'europe'],
+]);
