@@ -61,7 +61,7 @@ const movements = [100, 45, 35, 78];
   }
 });*/
 
-const currencies = new Map([
+/*const currencies = new Map([
   ['US', 'united state dollar'],
   ['EUR ', 'europe'],
 ]);
@@ -72,3 +72,7 @@ currencies.forEach(function (value, key) {
 
 const uniqueCurrencies = new Set(['us', 'us', 'gbp']);
 console.log('🚀 ~ file: general.js:77 ~ uniqueCurrencies:', uniqueCurrencies);
+uniqueCurrencies.forEach(function (value, key) {
+  console.log(`${key}:${value}`);
+});
+*/
