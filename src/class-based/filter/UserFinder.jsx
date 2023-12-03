@@ -1,15 +1,17 @@
-import React, { Fragment, useEffect, useState } from 'react';
-import Users from '../toggle/Users';
+import { Fragment, useState, useEffect } from 'react';
+
+import Users from './Users';
 
 const DUMMY_USERS = [
-  { id: 'u1', name: 'mohit' },
-  { id: 'u2', name: 'rajiv' },
-  { id: 'u3', name: 'gopal' },
+  { id: 'u1', name: 'Max' },
+  { id: 'u2', name: 'Manuel' },
+  { id: 'u3', name: 'Julie' },
 ];
 
-function UserFinder() {
+const UserFinder = () => {
   const [filteredUsers, setFilteredUsers] = useState(DUMMY_USERS);
   const [searchTerm, setSearchTerm] = useState('');
+
   useEffect(() => {
     setFilteredUsers(
       DUMMY_USERS.filter(user => user.name.includes(searchTerm))
@@ -19,12 +21,15 @@ function UserFinder() {
   const searchChangeHandler = event => {
     setSearchTerm(event.target.value);
   };
+
   return (
     <Fragment>
-      <input type="search" onChange={searchChangeHandler} />
+      <div className={classes.finder}>
+        <input type="search" onChange={searchChangeHandler} />
+      </div>
       <Users users={filteredUsers} />
     </Fragment>
   );
-}
+};
 
 export default UserFinder;
