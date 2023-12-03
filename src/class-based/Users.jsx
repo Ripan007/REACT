@@ -22,7 +22,7 @@ class Users extends Component {
     const usersList = (
       <ul>
         {USERS_DATA.map(user => (
-          <User />
+          <user />
         ))}
       </ul>
     );
