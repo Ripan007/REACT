@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Practice from './Practice';
+import App from '../src/class-based/App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Practice />
+    <App />
   </React.StrictMode>
 );
