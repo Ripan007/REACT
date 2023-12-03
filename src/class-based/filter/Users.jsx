@@ -1,7 +1,6 @@
 import { Component } from 'react';
 
 import User from './User';
-import classes from './Users.module.css';
 
 class Users extends Component {
   constructor() {
@@ -29,7 +28,7 @@ class Users extends Component {
     );
 
     return (
-      <div className={classes.users}>
+      <div>
         <button onClick={this.toggleUsersHandler.bind(this)}>
           {this.state.showUsers ? 'Hide' : 'Show'} Users
         </button>
