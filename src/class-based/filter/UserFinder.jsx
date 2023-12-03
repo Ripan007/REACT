@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
+import Users from '../toggle/Users';
 
 const DUMMY_USERS = [
   { id: 'u1', name: 'mohit' },
@@ -21,7 +22,7 @@ function UserFinder() {
   return (
     <Fragment>
       <input type="search" onChange={searchChangeHandler} />
-      <Users />
+      <Users users={filteredUsers} />
     </Fragment>
   );
 }
