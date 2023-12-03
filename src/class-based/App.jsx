@@ -1,6 +1,7 @@
 import Users from './Users';
 
-const App = () => {
+function App() {
   return <Users />;
-};
+}
+
 export default App;
