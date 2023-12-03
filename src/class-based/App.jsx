@@ -1,7 +1,12 @@
 import React from 'react';
+import Users from './Users';
 
 function App() {
-  return <div>App</div>;
+  return (
+    <div>
+      <Users />
+    </div>
+  );
 }
 
 export default App;
