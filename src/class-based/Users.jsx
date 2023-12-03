@@ -19,7 +19,13 @@ class Users extends Component {
     });
   }
   render() {
-    const usersList = <ul>{}</ul>;
+    const usersList = (
+      <ul>
+        {USERS_DATA.map(user => (
+          <User />
+        ))}
+      </ul>
+    );
     return (
       <>
         <button onClick={this.toggleUsersHandler.this(bind)}>
@@ -30,3 +36,5 @@ class Users extends Component {
     );
   }
 }
+
+export default Users;
