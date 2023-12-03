@@ -10,7 +10,7 @@ class Users extends Component {
   constructor() {
     super();
     this.state = {
-      showText: false,
+      showUsers: false,
     };
   }
   render() {
@@ -21,7 +21,11 @@ class Users extends Component {
         ))}
       </ul>
     );
-    return <></>;
+    return (
+      <>
+        <button onClick={this.toggleUserHandle.bind(this)}>{}</button>
+      </>
+    );
   }
 }
 
