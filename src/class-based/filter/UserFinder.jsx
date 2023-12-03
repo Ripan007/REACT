@@ -14,6 +14,10 @@ function UserFinder() {
       DUMMY_USERS.filter(user => user.name.includes(searchTerm))
     );
   }, [searchTerm]);
+
+  const searchChangeToggler = event => {
+    setSearchTerm(event.target.value);
+  };
   return <div>UserFinder</div>;
 }
 
