@@ -10,7 +10,7 @@ function Users() {
   const [showUsers, setShowUsers] = useState(true);
 
   const toggleUsersHandler = () => {
-    setShowUsers(currUsers);
+    setShowUsers(currState => !currState);
   };
   return <div>Users</div>;
 }
