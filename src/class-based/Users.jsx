@@ -1,3 +1,6 @@
+import { Component } from 'react';
+import User from './User';
+
 const USERS_DATA = [
   { id: 'u1', name: 'john' },
   { id: 'u2', name: 'mohit' },
@@ -19,6 +22,23 @@ class Users extends Component {
   }
 
   render() {
-    return <h1></h1>;
+    const usersList = (
+      <ul>
+        {USERS_DATA.map(user => (
+          <User key={user.id} name={user.name} />
+        ))}
+      </ul>
+    );
+
+    return (
+      <>
+        <button onClick={this.toggleUsersHandler.bind(this)}>
+          {this.showUsers ? 'hide' : 'show'}
+        </button>
+        {this.showUsers && usersList}
+      </>
+    );
   }
 }
+
+export default Users;
