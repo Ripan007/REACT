@@ -12,7 +12,11 @@ function Users() {
   const toggleUsers = () => {
     setShowUsers(currState => !currState);
   };
-  return <>{showUsers ? 'hide' : 'show'}</>;
+  return (
+    <>
+      <button> {showUsers ? 'hide' : 'show'}</button>
+    </>
+  );
 }
 
 export default Users;
