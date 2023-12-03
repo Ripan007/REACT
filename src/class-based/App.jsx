@@ -1,7 +1,7 @@
-import Users from './Users';
+import React from 'react';
 
 function App() {
-  return <Users />;
+  return <div>App</div>;
 }
 
 export default App;
