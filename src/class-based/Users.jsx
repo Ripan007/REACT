@@ -22,7 +22,13 @@ function Users() {
     </ul>
   );
 
-  return <div>Users</div>;
+  return (
+    <div>
+      <button onClick={toggleUsersHandler}>
+        {showUsers ? 'hide' : 'show'} users
+      </button>
+    </div>
+  );
 }
 
 export default Users;
