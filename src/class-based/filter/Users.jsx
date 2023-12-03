@@ -1,7 +1,5 @@
 import { Component } from 'react';
-
-import User from './User';
-import classes from './Users.module.css';
+import User from '../toggle/User';
 
 class Users extends Component {
   constructor() {
