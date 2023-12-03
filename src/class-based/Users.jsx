@@ -13,6 +13,13 @@ class Users extends Component {
   }
   render() {
     const usersList = <ul></ul>;
-    return <></>;
+    return (
+      <>
+        <button onClick={this.toggleUsersHandler.this(bind)}>
+          {this.state.showUsers ? 'hide' : 'show'}
+        </button>
+        {this.state.showUsers && usersList}
+      </>
+    );
   }
 }
