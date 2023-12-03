@@ -11,12 +11,11 @@ class Users extends Component {
   constructor() {
     super();
     this.state = {
-      showUsers: false,
+      showUsers: true,
     };
   }
 
   toggleUsersHandler() {
-    console.log('clicked');
     this.setState(currState => {
       return { showUsers: !currState.showUsers };
     });
