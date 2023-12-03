@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import User from './User';
 
 const DUMMY_USERS = [
   { id: 'u1  ', name: 'rajiv' },
@@ -12,6 +13,15 @@ function Users() {
   const toggleUsersHandler = () => {
     setShowUsers(currState => !currState);
   };
+
+  const usersList = (
+    <ul>
+      {DUMMY_USERS.map(user => (
+        <User key={user.id} name={user.name} />
+      ))}
+    </ul>
+  );
+
   return <div>Users</div>;
 }
 
