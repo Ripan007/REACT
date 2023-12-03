@@ -1,6 +1,6 @@
 import { Component } from 'react';
 
-class user extends Component {
+class User extends Component {
   render() {
     return <li>{this.props.name}</li>;
   }

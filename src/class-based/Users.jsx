@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import User from './User';
 
 const USERS_DATA = [
   { id: 'u1', name: 'john' },
@@ -22,7 +23,7 @@ class Users extends Component {
     const usersList = (
       <ul>
         {USERS_DATA.map(user => (
-          <user />
+          <User key={user.id} name={user.name} />
         ))}
       </ul>
     );
