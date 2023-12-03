@@ -23,7 +23,9 @@ class Users extends Component {
     );
     return (
       <>
-        <button onClick={this.toggleUserHandle.bind(this)}>{}</button>
+        <button onClick={this.toggleUserHandle.bind(this)}>
+          {this.state.showUsers ? 'HIDE ' : 'SHOW'}
+        </button>
       </>
     );
   }
