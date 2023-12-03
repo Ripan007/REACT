@@ -27,6 +27,7 @@ function Users() {
       <button onClick={toggleUsersHandler}>
         {showUsers ? 'hide' : 'show'} users
       </button>
+      {showUsers && usersList}
     </div>
   );
 }
