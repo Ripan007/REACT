@@ -13,6 +13,12 @@ class Users extends Component {
       showUsers: false,
     };
   }
+
+  toggleUserHandle() {
+    this.setState(currState => {
+      return { showUsers: !currState.showUsers };
+    });
+  }
   render() {
     const userList = (
       <ul>
