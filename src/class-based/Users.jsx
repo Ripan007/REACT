@@ -8,7 +8,11 @@ const DUMMY_USERS = [
 
 function Users() {
   const [showUsers, setShowUsers] = useState(true);
-  return <div>Users</div>;
+
+  const toggleUsers = () => {
+    setShowUsers(currState => !currState);
+  };
+  return <>{showUsers ? 'hide' : 'show'}</>;
 }
 
 export default Users;
