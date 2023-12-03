@@ -1,7 +1,7 @@
 import React from 'react';
 
-function User() {
-  return <div>User</div>;
+function User(props) {
+  return <li>{props.name}</li>;
 }
 
 export default User;
