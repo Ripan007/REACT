@@ -1,3 +1,6 @@
+import { Component } from 'react';
+import User from './User';
+
 const USERS_DATA = [
   { id: 'u1', name: 'ripan' },
   { id: 'u2', name: 'mohit' },
@@ -11,7 +14,13 @@ class Users extends Component {
     };
   }
   render() {
-    const userList = <ul>{}</ul>;
+    const userList = (
+      <ul>
+        {USERS_DATA.map(user => (
+          <User key={user.id} name={user.name} />
+        ))}
+      </ul>
+    );
     return <></>;
   }
 }
