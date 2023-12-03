@@ -1,5 +1,7 @@
 class User extends Component {
   render() {
-    return <li></li>;
+    return <li>{props.name}</li>;
   }
 }
+
+export default User;
