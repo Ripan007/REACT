@@ -1,3 +1,10 @@
+import { Component } from 'react';
+
+const USERS_DATA = [
+  { id: 'u1', name: 'john' },
+  { id: 'u2', name: 'mohit' },
+  { id: 'u3', name: 'gopi' },
+];
 class Users extends Component {
   constructor() {
     super();
@@ -12,7 +19,7 @@ class Users extends Component {
     });
   }
   render() {
-    const usersList = <ul></ul>;
+    const usersList = <ul>{}</ul>;
     return (
       <>
         <button onClick={this.toggleUsersHandler.this(bind)}>
