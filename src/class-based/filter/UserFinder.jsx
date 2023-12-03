@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 
 const DUMMY_USERS = [
   { id: 'u1', name: 'mohit' },
@@ -15,10 +15,15 @@ function UserFinder() {
     );
   }, [searchTerm]);
 
-  const searchChangeToggler = event => {
+  const searchChangeHandler = event => {
     setSearchTerm(event.target.value);
   };
-  return <div>UserFinder</div>;
+  return (
+    <Fragment>
+      <input type="search" onChange={searchChangeHandler} />
+      <Users />
+    </Fragment>
+  );
 }
 
 export default UserFinder;
