@@ -1,37 +1,7 @@
-import { Fragment, useState, useEffect } from 'react';
+import React from 'react';
 
-import Users from './Users';
-
-const DUMMY_USERS = [
-  { id: 'u1', name: 'Max' },
-  { id: 'u2', name: 'Manuel' },
-  { id: 'u3', name: 'Julie' },
-];
-
-const UserFinder = () => {
-  const [filteredUsers, setFilteredUsers] = useState(DUMMY_USERS);
-  const [searchTerm, setSearchTerm] = useState('');
-
-  useEffect(() => {
-    setFilteredUsers(
-      DUMMY_USERS.filter(user => user.name.includes(searchTerm))
-    );
-  }, [searchTerm]);
-
-  const searchChangeHandler = event => {
-    setSearchTerm(event.target.value);
-  };
-
-  return (
-    <Fragment>
-      <div>
-        <input type="search" onChange={searchChangeHandler} />
-      </div>
-      <Users users={filteredUsers} />
-    </Fragment>
-  );
-};
+function UserFinder() {
+  return <div>UserFinder</div>;
+}
 
 export default UserFinder;
-
-//  mindset
