@@ -1,10 +1,10 @@
+ul {
+  display: flex;
+}
+
 li {
   background-color: #0000ff;
   border-radius: 4px;
   border: 1px solid black;
   padding: 1rem;
-}
-
-ul {
-  display: flex;
 }
