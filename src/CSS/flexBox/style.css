@@ -2,24 +2,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color-scheme: dark;
 }
 
 body {
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  padding: 20rem;
+  padding: 1rem;
 }
-
 .content {
-  background-color: lightgray;
-  border-radius: 0.2rem;
+  background-color: gray;
+  padding: 1rem;
+  border-radius: 3px;
 }
 
 nav {
-  background-color: gray;
-  height: 1rem;
-  width: 100%;
+  background-color: lightgray;
+}
+
+header {
+  background-color: lightblue;
+}
+
+main {
+}
+
+aside {
 }
