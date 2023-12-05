@@ -27,5 +27,8 @@ function handleClick(event) {
   const btnId = event.target.id;
   highLightButton(event.target);
   if (btnId === 'btn-why-react') {
+    displayContent(content[0]);
+  } else if (btnId === 'btn-core-features') {
+    displayContent(content[1]);
   }
 }
