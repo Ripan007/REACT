@@ -10,9 +10,9 @@ function TabContent() {
   return (
     <div id="tabs">
       <menu>
-        <button></button>
-        <button></button>
-        <button></button>
+        <button onClick={() => setActiveContentIndex(0)}>awesome</button>
+        <button onClick={() => setActiveContentIndex(1)}>declarative</button>
+        <button onClick={() => setActiveContentIndex(2)}>composition</button>
       </menu>
       <div className="tab-contents"></div>
     </div>
