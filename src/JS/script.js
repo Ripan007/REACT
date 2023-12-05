@@ -10,7 +10,9 @@ function displayContent(items) {
   for (const item of items) {
     listContent += `<li>${item} </li>`;
   }
+  const list = document.createElement('ul');
+  tabContent.innerHTML = ''; // clear existing content
+  list.innerHTML = listContent; // insert  new content
+  tabContent.append(list);
 }
-
-const list = document.createElement('ul');
-tabContent.innerHTML = '';
+function highLightButton() {}
