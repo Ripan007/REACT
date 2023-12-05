@@ -17,4 +17,8 @@ function displayContent(items) {
 }
 function highLightButton(btn) {
   // clear all existing styles / highlight
+  btnWhyReact.className = '';
+  btnCoreFeatures.className = '';
+  btnRelated.className = '';
+  btn.className = 'active'; // setnew style / highlight
 }
