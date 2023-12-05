@@ -9,8 +9,9 @@ body {
 }
 .content {
   background-color: gray;
-  padding: 1rem;
+
   border-radius: 3px;
+  flex-basis: column;
 }
 
 nav {
