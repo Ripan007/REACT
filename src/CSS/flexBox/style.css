@@ -17,3 +17,8 @@ body {
   background-color: lightgray;
   border-radius: 0.2rem;
 }
+
+nav {
+  background-color: gray;
+  height: 1rem;
+}
