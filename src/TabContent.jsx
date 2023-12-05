@@ -10,11 +10,32 @@ function TabContent() {
   return (
     <div id="tabs">
       <menu>
-        <button onClick={() => setActiveContentIndex(0)}>awesome</button>
-        <button onClick={() => setActiveContentIndex(1)}>declarative</button>
-        <button onClick={() => setActiveContentIndex(2)}>composition</button>
+        <button
+          className={activeContentIndex === 0 ? active : ''}
+          onClick={() => setActiveContentIndex(0)}
+        >
+          awesome
+        </button>
+        <button
+          className={activeContentIndex === 1 ? active : ''}
+          onClick={() => setActiveContentIndex(1)}
+        >
+          declarative
+        </button>
+        <button
+          className={activeContentIndex === 2 ? active : ''}
+          onClick={() => setActiveContentIndex(2)}
+        >
+          composition
+        </button>
       </menu>
-      <div className="tab-contents"></div>
+      <div className="tab-contents">
+        <ul>
+          {content[activeContentIndex].map(item => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
