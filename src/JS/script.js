@@ -11,3 +11,6 @@ function displayContent(items) {
     listContent += `<li>${item} </li>`;
   }
 }
+
+const list = document.createElement('ul');
+tabContent.innerHTML = '';
