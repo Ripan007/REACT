@@ -37,4 +37,6 @@ function handleClick(event) {
 
 displayContent(content[0]); // initially show this content
 
-btnWhyReact();
+btnWhyReact.addEventListener('click', handleClick);
+btnCoreFeatures.addEventListener('click', handleClick);
+btnRelated.addEventListener('click', handleClick);
