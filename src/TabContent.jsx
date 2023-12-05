@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function TabContent() {
+  const [activeContentIndex, setActiveContentIndex] = useState(0);
   return (
     <div id="tabs">
       <menu>
