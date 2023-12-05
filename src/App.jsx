@@ -1,10 +1,11 @@
 import React from 'react';
-import TabContent from './TabContent';
+
+import Main from './ReactEssentials/Main';
 
 function App() {
   return (
     <div>
-      <TabContent />{' '}
+      <Main />
     </div>
   );
 }
