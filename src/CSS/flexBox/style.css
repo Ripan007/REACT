@@ -15,5 +15,5 @@ body {
 
 .content {
   background-color: lightgray;
-  border: 1px solid;
+  border-radius: 0.2rem;
 }
