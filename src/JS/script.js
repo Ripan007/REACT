@@ -20,5 +20,12 @@ function highLightButton(btn) {
   btnWhyReact.className = '';
   btnCoreFeatures.className = '';
   btnRelated.className = '';
-  btn.className = 'active'; // setnew style / highlight
+  btn.className = 'active'; // set new style / highlight
+}
+
+function handleClick(event) {
+  const btnId = event.target.id;
+  highLightButton(event.target);
+  if (btnId === 'btn-why-react') {
+  }
 }
