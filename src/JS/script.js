@@ -15,4 +15,6 @@ function displayContent(items) {
   list.innerHTML = listContent; // insert  new content
   tabContent.append(list);
 }
-function highLightButton(btn) {}
+function highLightButton(btn) {
+  // clear all existing styles / highlight
+}
