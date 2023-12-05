@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 
+const content = [
+  ['react is awesome'],
+  ['react is declarative'],
+  ['react composition'],
+];
 function TabContent() {
   const [activeContentIndex, setActiveContentIndex] = useState(0);
   return (
