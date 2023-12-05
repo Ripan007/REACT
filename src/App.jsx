@@ -1,7 +1,12 @@
 import React from 'react';
+import TabContent from './TabContent';
 
 function App() {
-  return <div>App mention somethings </div>;
+  return (
+    <div>
+      <TabContent />{' '}
+    </div>
+  );
 }
 
 export default App;
