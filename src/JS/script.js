@@ -30,5 +30,11 @@ function handleClick(event) {
     displayContent(content[0]);
   } else if (btnId === 'btn-core-features') {
     displayContent(content[1]);
+  } else {
+    displayContent(content[2]);
   }
 }
+
+displayContent(content[0]); // initially show this content
+
+btnWhyReact();
