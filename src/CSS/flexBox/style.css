@@ -1,3 +1,6 @@
-ul {
-  background-color: blue;
+li {
+  background-color: #0000ff;
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 1rem;
 }
