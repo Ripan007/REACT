@@ -1,7 +1,11 @@
 import React from 'react';
 
-function TabButton() {
-  return <div>TabButton</div>;
+function TabButton({ children }) {
+  return (
+    <>
+      <button> {children}</button>
+    </>
+  );
 }
 
 export default TabButton;
