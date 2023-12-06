@@ -1,7 +1,8 @@
 import React from 'react';
 
-function CoreConcept() {
-  return <div>CoreConcept</div>;
+function CoreConcept({ ...concept }) {
+  console.log(concept);
+  return <div>{concept.title}</div>;
 }
 
 export default CoreConcept;
