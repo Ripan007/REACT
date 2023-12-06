@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Components/Header.JSX';
+import Header from './Components/Header/Header.jsx';
 import CoreConcept from './Components/CoreConcept';
 import CORE_CONCEPTS from './Components/data';
 function Main() {

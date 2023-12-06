@@ -1,5 +1,5 @@
 import React from 'react';
-import mind from '../../assets/mind.png';
+import mind from '../../../assets/mind.png';
 const reactDescription = ['Important', 'Crucial', 'Core'];
 
 function displayRandomIndex(max) {

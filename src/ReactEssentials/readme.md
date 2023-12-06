@@ -3,3 +3,4 @@ reusable building block
 related codes lives together
 separation of concerns
 declarative :
+component composition:
