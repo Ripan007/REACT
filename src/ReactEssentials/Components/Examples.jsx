@@ -21,33 +21,39 @@ function Examples() {
   return (
     <>
       <Section title="examples" id="examples" className="example">
-        <Tabs> {tabContent}</Tabs>
-        <menu>
-          <TabButton
-            isSelected={selectedTopic === 'components'}
-            onClick={() => handleSelect('components')}
-          >
-            Components
-          </TabButton>
-          <TabButton
-            isSelected={selectedTopic === 'jsx'}
-            onClick={() => handleSelect('jsx')}
-          >
-            Jsx
-          </TabButton>
-          <TabButton
-            isSelected={selectedTopic === 'props'}
-            onClick={() => handleSelect('props')}
-          >
-            Props
-          </TabButton>
-          <TabButton
-            isSelected={selectedTopic === 'state'}
-            onClick={() => handleSelect('state')}
-          >
-            State
-          </TabButton>
-        </menu>
+        <Tabs
+          buttons={
+            <>
+              {' '}
+              <TabButton
+                isSelected={selectedTopic === 'components'}
+                onClick={() => handleSelect('components')}
+              >
+                Components
+              </TabButton>
+              <TabButton
+                isSelected={selectedTopic === 'jsx'}
+                onClick={() => handleSelect('jsx')}
+              >
+                Jsx
+              </TabButton>
+              <TabButton
+                isSelected={selectedTopic === 'props'}
+                onClick={() => handleSelect('props')}
+              >
+                Props
+              </TabButton>
+              <TabButton
+                isSelected={selectedTopic === 'state'}
+                onClick={() => handleSelect('state')}
+              >
+                State
+              </TabButton>
+            </>
+          }
+        >
+          {tabContent}
+        </Tabs>
       </Section>
     </>
   );
