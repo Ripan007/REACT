@@ -1,7 +1,7 @@
 import React from 'react';
 
 function CoreConcept({ ...concept }) {
-  console.log(concept);
+  console.log(concept.title);
   return <div></div>;
 }
 
