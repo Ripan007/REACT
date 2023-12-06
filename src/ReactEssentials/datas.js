@@ -4,16 +4,16 @@ const EXAMPLES = {
     description: 'reusable block of code',
   },
   jsx: {
-    title: 'components',
-    description: 'reusable block of code',
+    title: 'jsx',
+    description: 'dummy data',
   },
 
   props: {
-    title: 'components',
+    title: 'props',
     description: 'reusable block of code',
   },
   state: {
-    title: 'components',
+    title: 'state',
     description: 'reusable block of code',
   },
 };
