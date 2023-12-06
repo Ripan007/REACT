@@ -1,4 +1,20 @@
+import { useState } from 'react';
+import EXAMPLES from '../datas';
+
 function Examples() {
+  const [selectedTopic, setSelectedTopic] = useState(null);
+  function handleSelect(selectedButton) {
+    setSelectedTopic(selectedButton);
+  }
+  let tabContent = <p>please select a button</p>;
+  if (selectedTopic) {
+    tabContent = (
+      <div id="examples-content">
+        <h1>{EXAMPLES[selectedTopic].title}</h1>
+        <p>{EXAMPLES[selectedTopic].description}</p>
+      </div>
+    );
+  }
   return (
     <>
       <section id="examples">
