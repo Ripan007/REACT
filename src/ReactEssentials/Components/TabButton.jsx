@@ -1,9 +1,9 @@
 import React from 'react';
 
-function TabButton({ children }) {
+function TabButton({ children, onSelect }) {
   return (
     <>
-      <button> {children}</button>
+      <button onClick={onSelect}> {children}</button>
     </>
   );
 }
