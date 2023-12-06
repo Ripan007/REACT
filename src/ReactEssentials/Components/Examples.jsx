@@ -25,13 +25,13 @@ function Examples() {
         <menu>
           <TabButton
             isSelected={selectedTopic === 'components'}
-            onSelect={() => handleSelect('components')}
+            onClick={() => handleSelect('components')}
           >
             Components
           </TabButton>
           <TabButton
             isSelected={selectedTopic === 'jsx'}
-            onSelect={() => handleSelect('jsx')}
+            onClick={() => handleSelect('jsx')}
           >
             Jsx
           </TabButton>
@@ -43,7 +43,7 @@ function Examples() {
           </TabButton>
           <TabButton
             isSelected={selectedTopic === 'state'}
-            onSelect={() => handleSelect('state')}
+            onClick={() => handleSelect('state')}
           >
             State
           </TabButton>
