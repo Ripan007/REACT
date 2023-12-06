@@ -7,7 +7,13 @@ function displayRandomIndex(max) {
 }
 
 function Header() {
-  return <div>Header</div>;
+  const description = reactDescription(displayRandomIndex[0]);
+  return (
+    <div>
+      <h2>react essentials</h2>
+      <b>{description}:</b> react topics required to build any react app
+    </div>
+  );
 }
 
 export default Header;
