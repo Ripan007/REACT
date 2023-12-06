@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 
 function Practice() {
   const [show, setShow] = useState();
+  const [hide, setHide] = useState();
+
+  function handleDelete() {}
   return (
     <div>
       <div
@@ -14,9 +17,9 @@ function Practice() {
         className="content"
       >
         <p>Lorem, ipsum dolor.</p>
-        <button>proceed</button>
+        <button onClick={handleProced}>proceed</button>
       </div>
-      <button>delete</button>
+      <button onClick={handleDelete}>delete</button>
     </div>
   );
 }
