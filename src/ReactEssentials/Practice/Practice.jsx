@@ -5,21 +5,26 @@ function Practice() {
   const [hide, setHide] = useState();
 
   function handleDelete() {}
+
+  function handleProcced() {}
   return (
     <div>
-      <div
-        style={{
-          background: 'red',
-          padding: '1rem',
-          maxWidth: '100px',
-          margin: '1rem',
-        }}
-        className="content"
-      >
-        <p>Lorem, ipsum dolor.</p>
-        <button onClick={handleProced}>proceed</button>
-      </div>
-      <button onClick={handleDelete}>delete</button>
+      {!show ? (
+        <div
+          style={{
+            background: 'red',
+            padding: '1rem',
+            maxWidth: '100px',
+            margin: '1rem',
+          }}
+          className="content"
+        >
+          <p>Lorem, ipsum dolor.</p>
+          <button onClick={handleProcced}>proceed</button>
+        </div>
+      ) : (
+        <button onClick={handleDelete}>delete</button>
+      )}
     </div>
   );
 }
