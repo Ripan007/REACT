@@ -7,7 +7,7 @@ function displayRandomIndex(max) {
 }
 
 function Header() {
-  const description = reactDescription(displayRandomIndex[0]);
+  const description = reactDescription[displayRandomIndex(0)];
   return (
     <div>
       <h2>react essentials</h2>
