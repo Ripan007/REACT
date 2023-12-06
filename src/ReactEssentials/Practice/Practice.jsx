@@ -7,10 +7,8 @@ function Card() {
 function Practice() {
   return (
     <div>
-      <Card />
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptatum
-      pariatur est quia vero libero? Ipsum exercitationem, repudiandae est rerum
-      fuga, in laboriosam harum iusto hic ex, vero earum animi.
+      <hr />
+      <Card></Card>
     </div>
   );
 }
