@@ -31,7 +31,13 @@ header {
 main {
   background-color: violet;
   height: 90vh;
+  width: 40vw;
+  float: left;
 }
 
 aside {
+  float: right;
+  width: 30vh;
+
+  background-color: #fff;
 }
