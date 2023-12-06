@@ -18,7 +18,7 @@ function Examples() {
   }
   return (
     <>
-      <section id="examples">
+      <section title="examples" id="examples">
         <hr />
         <h2>examples</h2>
         <menu>
