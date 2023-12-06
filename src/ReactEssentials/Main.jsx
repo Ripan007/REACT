@@ -17,10 +17,11 @@ function Header() {
   );
 }
 
-function CoreConcept() {
+function CoreConcept({ title }) {
   return (
     <main>
       <h2>react coreConcepts</h2>
+      <p>{title}</p>
     </main>
   );
 }
@@ -29,7 +30,7 @@ function Main() {
   return (
     <div>
       <Header />
-      <CoreConcept title={''} />
+      <CoreConcept title={'react'} />
       <CoreConcept />
       <CoreConcept />
       <CoreConcept />
@@ -38,3 +39,5 @@ function Main() {
 }
 
 export default Main;
+
+//  state props components
