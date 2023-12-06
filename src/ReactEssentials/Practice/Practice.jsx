@@ -4,7 +4,12 @@ function Practice() {
   return (
     <div>
       <div
-        style={{ background: 'red', padding: '1rem', maxWidth: '20opx' }}
+        style={{
+          background: 'red',
+          padding: '1rem',
+          maxWidth: '100px',
+          margin: '1rem',
+        }}
         className="content"
       >
         <p>Lorem, ipsum dolor.</p>
