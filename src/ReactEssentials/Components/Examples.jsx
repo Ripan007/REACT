@@ -37,7 +37,7 @@ function Examples() {
           </TabButton>
           <TabButton
             isSelected={selectedTopic === 'props'}
-            onSelect={() => handleSelect('props')}
+            onClick={() => handleSelect('props')}
           >
             Props
           </TabButton>
