@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 
 function Practice() {
-  const [show, setShow] = useState();
+  const [show, setShow] = useState(true);
   const [hide, setHide] = useState();
 
-  function handleDelete() {}
+  function handleDelete() {
+    setShow(false);
+  }
 
   function handleProcced() {}
   return (
@@ -22,9 +24,8 @@ function Practice() {
           <p>Lorem, ipsum dolor.</p>
           <button onClick={handleProcced}>proceed</button>
         </div>
-      ) : (
-        <button onClick={handleDelete}>delete</button>
-      )}
+      ) : null}
+      <button onClick={handleDelete}>delete</button>
     </div>
   );
 }
