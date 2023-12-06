@@ -1,7 +1,12 @@
 import React from 'react';
 
-function Card() {
-  return <h1>card</h1>;
+function Card({ name, children }) {
+  return (
+    <article>
+      <h2>{name}</h2>
+      {children}
+    </article>
+  );
 }
 
 function Practice() {
