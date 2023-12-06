@@ -6,7 +6,10 @@ function Main() {
   return (
     <div>
       <Header />
-      <CoreConcept concept={CORE_CONCEPTS} />
+      <CoreConcept
+        title={CORE_CONCEPTS[0].title}
+        desc={CoreConcept[0].description}
+      />
     </div>
   );
 }
