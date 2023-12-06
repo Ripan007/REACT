@@ -5,8 +5,8 @@ import CORE_CONCEPTS from './Components/data';
 import TabButton from './Components/TabButton.jsx';
 import Practice from './Practice/Practice.jsx';
 function Main() {
-  function handleSelect() {
-    console.log('button get clicked');
+  function handleSelect(selectedButton) {
+    console.log(selectedButton);
   }
   return (
     <div>
@@ -22,10 +22,12 @@ function Main() {
         <hr />
         <h2>examples</h2>
         <menu>
-          <TabButton onSelect={handleSelect}>Components</TabButton>
-          <TabButton onSelect={handleSelect}>Jsx</TabButton>
-          <TabButton onSelect={handleSelect}>Props</TabButton>
-          <TabButton onSelect={handleSelect}>State</TabButton>
+          <TabButton onSelect={() => handleSelect('components')}>
+            Components
+          </TabButton>
+          <TabButton onSelect={() => handleSelect('jsx')}>Jsx</TabButton>
+          <TabButton onSelect={() => handleSelect('props')}>Props</TabButton>
+          <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
         </menu>
       </section>
     </div>
