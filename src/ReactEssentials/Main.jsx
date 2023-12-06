@@ -16,8 +16,14 @@ function Main() {
       <CoreConcept {...CORE_CONCEPTS[2]} />
       <CoreConcept {...CORE_CONCEPTS[3]} />
       <section id="examples">
+        <hr />
         <h2>examples</h2>
-        <TabButton>components</TabButton>
+        <menu>
+          <TabButton>Components</TabButton>
+          <TabButton>Jsx</TabButton>
+          <TabButton>Props</TabButton>
+          <TabButton>State</TabButton>
+        </menu>
       </section>
     </div>
   );
