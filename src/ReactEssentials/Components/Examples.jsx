@@ -22,6 +22,7 @@ function Examples() {
     <>
       <Section title="examples" id="examples" className="example">
         <Tabs
+          buttonsContainer={'ul'}
           buttons={
             <>
               {' '}
