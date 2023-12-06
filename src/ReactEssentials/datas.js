@@ -10,7 +10,7 @@ const EXAMPLES = {
 
   props: {
     title: 'props',
-    description: 'reusable block of code',
+    description: 'props block of code',
   },
   state: {
     title: 'state',
