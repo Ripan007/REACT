@@ -8,7 +8,15 @@ function Practice() {
   return (
     <div>
       <hr />
-      <Card></Card>
+      <Card name="awesome">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+          aut!
+        </p>
+        <p>
+          <a href="">click on me</a>
+        </p>
+      </Card>
     </div>
   );
 }
