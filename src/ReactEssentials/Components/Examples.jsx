@@ -22,10 +22,9 @@ function Examples() {
     <>
       <Section title="examples" id="examples" className="example">
         <Tabs
-          buttonsContainer={'ul'}
+          buttonsContainer={'menu'}
           buttons={
             <>
-              {' '}
               <TabButton
                 isSelected={selectedTopic === 'components'}
                 onClick={() => handleSelect('components')}
