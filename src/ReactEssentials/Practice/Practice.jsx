@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 function Practice() {
   const [isDeleting, setIsDeleting] = useState(false);
   function proceedHandler() {
-    setIsDeleting(true);
+    setIsDeleting(false);
   }
 
   function deleteHandler() {
-    setIsDeleting(false);
+    setIsDeleting(true);
   }
 
   let isWarning;
