@@ -3,6 +3,7 @@ import Header from './Components/Header/Header.jsx';
 import CoreConcept from './Components/CoreConcept';
 import CORE_CONCEPTS from './Components/data';
 import TabButton from './Components/TabButton.jsx';
+import Practice from './Practice/Practice.jsx';
 function Main() {
   return (
     <div>
@@ -18,6 +19,7 @@ function Main() {
         <h2>examples</h2>
         <TabButton>components</TabButton>
       </section>
+      <Practice />
     </div>
   );
 }
