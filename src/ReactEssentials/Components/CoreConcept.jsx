@@ -1,9 +1,12 @@
 import React from 'react';
 
-function CoreConcept({ ...concept }) {
-  const { title } = concept;
-  console.log(title);
-  return <div></div>;
+function CoreConcept({ title, desc }) {
+  return (
+    <div>
+      <h2>{title}</h2>
+      <p>{desc}</p>
+    </div>
+  );
 }
 
 export default CoreConcept;

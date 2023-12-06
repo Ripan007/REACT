@@ -8,7 +8,7 @@ function Main() {
       <Header />
       <CoreConcept
         title={CORE_CONCEPTS[0].title}
-        desc={CoreConcept[0].description}
+        desc={CORE_CONCEPTS[0].description}
       />
     </div>
   );
