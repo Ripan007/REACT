@@ -4,11 +4,9 @@ import CoreConcept from './Components/CoreConcept';
 import CORE_CONCEPTS from './Components/data';
 import TabButton from './Components/TabButton.jsx';
 import Practice from './Practice/Practice.jsx';
-import
+import EXAMPLES from './datas.js';
 function Main() {
-  const [selectedTopic, setSelectedTopic] = useState(
-    'please  select  a button'
-  );
+  const [selectedTopic, setSelectedTopic] = useState('components');
   function handleSelect(selectedButton) {
     console.log(selectedButton);
     setSelectedTopic(selectedButton);
@@ -34,7 +32,9 @@ function Main() {
           <TabButton onSelect={() => handleSelect('props')}>Props</TabButton>
           <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
         </menu>
-        <div id="examples-content">{selectedTopic}</div>
+        <div id="examples-content">
+          <h1>{EXAMPLES[selectedTopic].title}</h1>
+        </div>
       </section>
     </div>
   );
