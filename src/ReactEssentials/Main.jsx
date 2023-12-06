@@ -8,7 +8,6 @@ import EXAMPLES from './datas.js';
 function Main() {
   const [selectedTopic, setSelectedTopic] = useState('components');
   function handleSelect(selectedButton) {
-    console.log(selectedButton);
     setSelectedTopic(selectedButton);
   }
   return (
@@ -34,6 +33,7 @@ function Main() {
         </menu>
         <div id="examples-content">
           <h1>{EXAMPLES[selectedTopic].title}</h1>
+          <p>{EXAMPLES[selectedTopic].description}</p>
         </div>
       </section>
     </div>
