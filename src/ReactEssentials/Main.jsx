@@ -6,6 +6,7 @@ import CORE_CONCEPTS from './Components/data';
 import TabButton from './Components/TabButton.jsx';
 import Practice from './Practice/Practice.jsx';
 import EXAMPLES from './datas.js';
+import CoreConcepts from './Components/CoreConcepts.jsx';
 function Main() {
   const [selectedTopic, setSelectedTopic] = useState(null);
   function handleSelect(selectedButton) {
@@ -23,9 +24,9 @@ function Main() {
   return (
     <div>
       <Header />
-      {CORE_CONCEPTS.map(conceptItem => (
-        <CoreConcept key={conceptItem.title} {...conceptItem} />
-      ))}
+      <main>
+        <CoreConcepts />
+      </main>
 
       {/*       <CoreConcept
         title={CORE_CONCEPTS[0].title}
