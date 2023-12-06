@@ -17,10 +17,22 @@ function Header() {
   );
 }
 
+function CoreConcept() {
+  return (
+    <main>
+      <h2>react coreConcepts</h2>
+    </main>
+  );
+}
+
 function Main() {
   return (
     <div>
       <Header />
+      <CoreConcept title={''} />
+      <CoreConcept />
+      <CoreConcept />
+      <CoreConcept />
     </div>
   );
 }
