@@ -8,7 +8,7 @@ function Main() {
       <Header />
       <CoreConcept
         title={CORE_CONCEPTS[0].title}
-        desc={CORE_CONCEPTS[0].description}
+        description={CORE_CONCEPTS[0].description}
       />
       <CoreConcept {...CORE_CONCEPTS[1]} />
       <CoreConcept {...CORE_CONCEPTS[2]} />

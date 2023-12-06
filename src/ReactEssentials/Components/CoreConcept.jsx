@@ -1,10 +1,10 @@
 import React from 'react';
 
-function CoreConcept({ title, desc }) {
+function CoreConcept({ title, description }) {
   return (
     <div>
       <h2>{title}</h2>
-      <p>{desc}</p>
+      <p>{description}</p>
     </div>
   );
 }
