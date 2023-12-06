@@ -23,13 +23,18 @@ function Main() {
   return (
     <div>
       <Header />
-      <CoreConcept
+      {CORE_CONCEPTS.map(conceptItem => (
+        <CoreConcept key={conceptItem.title} {...conceptItem} />
+      ))}
+
+      {/*       <CoreConcept
         title={CORE_CONCEPTS[0].title}
         description={CORE_CONCEPTS[0].description}
       />
       <CoreConcept {...CORE_CONCEPTS[1]} />
       <CoreConcept {...CORE_CONCEPTS[2]} />
-      <CoreConcept {...CORE_CONCEPTS[3]} />
+      <CoreConcept {...CORE_CONCEPTS[3]} /> */}
+
       <section id="examples">
         <hr />
         <h2>examples</h2>
