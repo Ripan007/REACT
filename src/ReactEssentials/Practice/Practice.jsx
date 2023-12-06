@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Practice() {
+  const [show, setShow] = useState();
   return (
     <div>
       <div
