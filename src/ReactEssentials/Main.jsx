@@ -6,9 +6,18 @@ import TabButton from './Components/TabButton.jsx';
 import Practice from './Practice/Practice.jsx';
 import EXAMPLES from './datas.js';
 function Main() {
-  const [selectedTopic, setSelectedTopic] = useState('components');
+  const [selectedTopic, setSelectedTopic] = useState(null);
   function handleSelect(selectedButton) {
     setSelectedTopic(selectedButton);
+  }
+  let tabContent = <p>please select a button</p>;
+  if (selectedTopic) {
+    tabContent = (
+      <div id="examples-content">
+        <h1>{EXAMPLES[selectedTopic].title}</h1>
+        <p>{EXAMPLES[selectedTopic].description}</p>
+      </div>
+    );
   }
   return (
     <div>
@@ -31,10 +40,7 @@ function Main() {
           <TabButton onSelect={() => handleSelect('props')}>Props</TabButton>
           <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
         </menu>
-        <div id="examples-content">
-          <h1>{EXAMPLES[selectedTopic].title}</h1>
-          <p>{EXAMPLES[selectedTopic].description}</p>
-        </div>
+        {tabContent}
       </section>
     </div>
   );
