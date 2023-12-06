@@ -19,7 +19,6 @@ function Main() {
         <h2>examples</h2>
         <TabButton>components</TabButton>
       </section>
-      <Practice />
     </div>
   );
 }
