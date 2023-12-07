@@ -14,3 +14,4 @@ nested list
 array and object states
 component functions vs normal functions
 updating state based on the old state
+two way binding
