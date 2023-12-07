@@ -15,7 +15,7 @@ function Main() {
           <Player initialName="player 1" symbol="X" />
           <Player initialName="player 2" symbol="O" />
         </ol>
-        <GameBoard />
+        <GameBoard onSelectSquare={handleSelectSquare} />
       </div>
       game logic
     </main>
