@@ -11,15 +11,16 @@ function Player({ name, symbol }) {
   if (isEditing) {
     playerName = <input type="text" />;
   }
+
+  return (
+    <li>
+      <span className="player">
+        {playerName}
+        <span className="player-symbol">{symbol}</span>
+        <button onClick={handleEditClick}>edit</button>
+      </span>
+    </li>
+  );
 }
-return (
-  <li>
-    <span className="player">
-      {playerName}
-      <span className="player-symbol">{symbol}</span>
-      <button onClick={handleEditClick}>edit</button>
-    </span>
-  </li>
-);
 
 export default Player;
