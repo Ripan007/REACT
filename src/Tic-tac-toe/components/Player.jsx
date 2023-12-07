@@ -8,7 +8,9 @@ function Player({ initialName, symbol }) {
     setIsEditing(edit => !edit);
   }
 
-  function handleChange() {}
+  function handleChange(e) {
+    setPlayerName(e.target.value);
+  }
 
   let editablePlayerName = <span className="player-name">{playerName}</span>;
   if (isEditing) {
