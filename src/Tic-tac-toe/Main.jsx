@@ -22,7 +22,10 @@ function Main() {
             isActive={activePlayer === 'X'}
           />
         </ol>
-        <GameBoard onSelectSquare={handleSelectSquare} />
+        <GameBoard
+          onSelectSquare={handleSelectSquare}
+          activePlayerSymbol={activePlayer}
+        />
       </div>
       game logic
     </main>
