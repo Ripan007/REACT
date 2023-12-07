@@ -20,6 +20,7 @@ function Main() {
       return updatedTurns;
     });
   }
+
   return (
     <main>
       <div id="game-container">
