@@ -1,7 +1,11 @@
 import React from 'react';
 
 function Main() {
-  return <div>Main , add more line</div>;
+  return (
+    <main>
+      <div id="players-container"></div>
+    </main>
+  );
 }
 
 export default Main;
