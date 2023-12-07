@@ -5,3 +5,5 @@ function Main() {
 }
 
 export default Main;
+
+// MINDSET //
