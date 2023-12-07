@@ -1,7 +1,7 @@
-.active {
-  background-color: red;
+body {
+  background-color: lightgray;
 }
 
-.example {
-  background-color: pink;
+#players.highlight-player li.active {
+  border-color: orange;
 }
