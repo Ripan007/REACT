@@ -6,11 +6,15 @@ function Player({ name, symbol }) {
   function handleEdit() {
     setIsEditing(false);
   }
+
+  let show = <span className="player-name">{name}</span>;
+  if (isEditing) {
+    show = <input type="text" />;
+  }
   return (
     <li>
       <span className="player">
-        {!isEditing && <span className="player-name">{name}</span>}
-        {isEditing && <input type="text" />}
+        {show}
 
         <span className="player-symbol">{symbol}</span>
         <button onClick={handleEdit}>edit</button>
