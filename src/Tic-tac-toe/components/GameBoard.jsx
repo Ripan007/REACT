@@ -1,4 +1,4 @@
-const initilalBoard = [
+const initialBoard = [
   [null, null, null],
   [null, null, null],
   [null, null, null],
@@ -6,9 +6,13 @@ const initilalBoard = [
 export default function GameBoard() {
   return (
     <ol id="game-board">
-      {initilalBoard.map((row, rowIndex) => (
+      {initialBoard.map((row, rowIndex) => (
         <li key={rowIndex}>
-          <ol></ol>
+          <ol>
+            {row.map((playerSymbol, colIndex) => (
+              <li key={colIndex}>{playerSymbol}</li>
+            ))}
+          </ol>
         </li>
       ))}
     </ol>
