@@ -33,7 +33,7 @@ export default function GameBoard({ onSelectSquare, turns }) {
               <li style={{ listStyle: 'none' }} key={colIndex}>
                 <button
                   style={{ width: '50px', height: '50px', margin: '2px' }}
-                  onClick={() => handleSelectSquare(rowIndex, colIndex)}
+                  onClick={() => onSelectSquare(rowIndex, colIndex)}
                 >
                   {' '}
                   {playerSymbol}
