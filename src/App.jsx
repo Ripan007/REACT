@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Main from './ReactEssentials/Main';
+import Main from './Tic-tac-toe/Main';
 
 function App() {
   return (
