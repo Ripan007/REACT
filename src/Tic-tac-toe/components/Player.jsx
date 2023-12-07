@@ -10,6 +10,7 @@ function Player({ name, symbol }) {
     <li>
       <span className="player">
         {!isEditing && <span className="player-name">{name}</span>}
+        {isEditing && <input type="text" />}
 
         <span className="player-symbol">{symbol}</span>
         <button onClick={handleEdit}>edit</button>
