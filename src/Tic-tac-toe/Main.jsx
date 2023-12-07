@@ -3,7 +3,11 @@ import React from 'react';
 function Main() {
   return (
     <main>
-      <div id="players-container"></div>
+      <div id="game-container">
+        <ol id="players">
+          <li></li>
+        </ol>
+      </div>
     </main>
   );
 }
