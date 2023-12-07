@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Player from './components/Player';
 import GameBoard from './components/GameBoard';
+import Log from './components/Log';
 
 function Main() {
   const [activePlayer, setActivePlayer] = useState('X');
@@ -27,7 +28,7 @@ function Main() {
           activePlayerSymbol={activePlayer}
         />
       </div>
-      game logic
+      <Log />
     </main>
   );
 }
