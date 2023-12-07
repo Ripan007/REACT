@@ -25,7 +25,7 @@ export default function GameBoard() {
             {row.map((playerSymbol, colIndex) => (
               <li style={{ listStyle: 'none' }} key={colIndex}>
                 <button
-                  style={{ listStyle: 'none' }}
+                  style={{ width: '50px', height: '50px', margin: '2px' }}
                   onClick={() => handleSelectSquare(rowIndex, colIndex)}
                 >
                   {' '}
