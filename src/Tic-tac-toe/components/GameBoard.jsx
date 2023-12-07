@@ -18,13 +18,16 @@ export default function GameBoard() {
     });
   }
   return (
-    <ol id="game-board">
+    <ol id="game-board" style={{ display: 'flex', listStyle: 'none' }}>
       {gameBoard.map((row, rowIndex) => (
         <li key={rowIndex}>
           <ol>
             {row.map((playerSymbol, colIndex) => (
               <li key={colIndex}>
-                <button onClick={() => handleSelectSquare(rowIndex, colIndex)}>
+                <button
+                  style={{ listStyle: 'none' }}
+                  onClick={() => handleSelectSquare(rowIndex, colIndex)}
+                >
                   {' '}
                   {playerSymbol}
                 </button>
