@@ -8,11 +8,11 @@ children props vs attribute props : single vs multiple
 state:
 conditional rendering
 dynamic style
-wrapper component(reusable) **
+wrapper component(reusable) \*\*
 derived state => lifting state up => multiple states up
 nested list
 array and object states
 component functions vs normal functions
 updating state based on the old state
 two way binding
-lifting state up **
+lifting state up => lift the state up to the closest ancestor component that has access to all the components that has to need to work with that state
