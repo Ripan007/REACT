@@ -14,7 +14,9 @@ function Main() {
             <span className="players-symbol">O</span>
           </li>
         </ol>
+        game board
       </div>
+      game logic
     </main>
   );
 }
