@@ -35,3 +35,4 @@ function Main() {
 export default Main;
 
 // MINDSET //
+//  avoid getting distracted , focus on grasping as much as can , become a better programmer //
