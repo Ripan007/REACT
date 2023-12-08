@@ -38,7 +38,7 @@ function Main() {
           <Player
             initialName="player 2"
             symbol="O"
-            isActive={activePlayer === 'X'}
+            isActive={activePlayer === 'O'}
           />
         </ol>
         <GameBoard onSelectSquare={handleSelectSquare} turns={gameTurns} />
