@@ -26,7 +26,7 @@ function Main() {
   const [gameTurns, setGameTurns] = useState([]);
 
   function derivedGameBoard(gameTurns) {
-    let gameBoard = [...initialGameBoard.map(array => [...array])];
+    let gameBoard = [...INITIAL_GAME_BOARD.map(array => [...array])];
     for (const turn of gameTurns) {
       const { square, player } = turn;
       const { row, col } = square;
@@ -83,13 +83,13 @@ function Main() {
       <div id="game-container">
         <ol id="players" className="highlight-player">
           <Player
-            initialName="player 1"
+            initialName={PLAYERS.X}
             symbol="X"
             isActive={activePlayer === 'X'}
             onChangeName={handlePlayerNameChange}
           />
           <Player
-            initialName="player 2"
+            initialName={PLAYERS.O}
             symbol="O"
             isActive={activePlayer === 'O'}
             onChangeName={handlePlayerNameChange}
