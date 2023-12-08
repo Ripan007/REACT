@@ -6,7 +6,9 @@ function Player({ initialName, symbol, isActive, onChangeName }) {
 
   function handleEditClick() {
     setIsEditing(edit => !edit);
-    onChangeName(symbol, playerName);
+    if (isEditing) {
+      onChangeName(symbol, playerName);
+    }
   }
 
   function handleChange(e) {
