@@ -69,7 +69,7 @@ function Main() {
             isActive={activePlayer === 'O'}
           />
         </ol>
-        {winner}
+        {winner && <p>you won {winner} </p>}
         <GameBoard onSelectSquare={handleSelectSquare} board={gameBoard} />
       </div>
       <Log turns={gameTurns} />
