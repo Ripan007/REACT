@@ -4,7 +4,11 @@ import GameBoard from './components/GameBoard';
 import Log from './components/Log';
 import { WINNING_COMBINATIONS } from './winning-combinations';
 import { GameOver } from './components/GameOver';
-const initialGameBoard = [
+const PLAYERS = {
+  X: 'player 1',
+  O: 'player 2',
+};
+const INITIAL_GAME_BOARD = [
   [null, null, null],
   [null, null, null],
   [null, null, null],
@@ -18,10 +22,7 @@ function derivedActivePlayer(gameTurns) {
 }
 
 function Main() {
-  const [players, setPlayers] = useState({
-    X: 'player 1',
-    O: 'player 2',
-  });
+  const [players, setPlayers] = useState(PLAYERS);
   const [gameTurns, setGameTurns] = useState([]);
 
   function derivedGameBoard(gameTurns) {
