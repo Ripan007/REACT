@@ -24,7 +24,6 @@ function Main() {
   });
   const [gameTurns, setGameTurns] = useState([]);
 
-  const activePlayer = derivedActivePlayer(gameTurns);
   function derivedGameBoard(gameTurns) {
     let gameBoard = [...initialGameBoard.map(array => [...array])];
     for (const turn of gameTurns) {
@@ -53,8 +52,10 @@ function Main() {
     }
     return winner;
   }
-  const winner = derivedWinner(gameBoard, players);
+
+  const activePlayer = derivedActivePlayer(gameTurns);
   const gameBoard = derivedGameBoard(gameTurns);
+  const winner = derivedWinner(gameBoard, players);
   const hasDraw = gameTurns.length === 9 && !winner;
   function handleSelectSquare(rowIndex, colIndex) {
     setGameTurns(prevTurns => {
