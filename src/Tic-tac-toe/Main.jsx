@@ -19,7 +19,8 @@ function derivedActivePlayer(gameTurns) {
 
 function Main() {
   const [players, setPlayers] = useState({
-    X:
+    X: 'player 1',
+    O: 'player 2',
   });
   const [gameTurns, setGameTurns] = useState([]);
 
@@ -62,6 +63,8 @@ function Main() {
   function handleRestart() {
     setGameTurns([]);
   }
+
+  function handlePlayerNameChange() {}
   return (
     <main>
       <div id="game-container">
