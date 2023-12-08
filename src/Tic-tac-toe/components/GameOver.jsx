@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const GameOver = ({ winner, Restart }) => {
+export const GameOver = ({ winner, onRestart }) => {
   return (
     <div>
       <h2>game over</h2>
@@ -8,7 +8,7 @@ export const GameOver = ({ winner, Restart }) => {
       {!winner && <p>its draw</p>}
 
       <p>
-        <button onClick={Restart}>rematch</button>
+        <button onClick={onRestart}>rematch</button>
       </p>
     </div>
   );
