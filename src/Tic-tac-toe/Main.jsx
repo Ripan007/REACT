@@ -34,14 +34,15 @@ function Main() {
       gameBoard[combination[1].row][combination[1].column];
     const thirdSquareSymbol =
       gameBoard[combination[2].row][combination[2].column];
+    if (
+      firstSquareSymbol &&
+      firstSquareSymbol === secondSquareSymbol &&
+      firstSquareSymbol === thirdSquareSymbol
+    ) {
+      winner = firstSquareSymbol;
+    }
   }
-  if (
-    firstSquareSymbol &&
-    firstSquareSymbol === secondSquareSymbol &&
-    firstSquareSymbol === thirdSquareSymbol
-  ) {
-    winner = firstSquareSymbol;
-  }
+
   function handleSelectSquare(rowIndex, colIndex) {
     setGameTurns(prevTurns => {
       const currentPlayer = derivedActivePlayer(prevTurns);
