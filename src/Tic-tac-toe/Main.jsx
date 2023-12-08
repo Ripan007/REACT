@@ -18,6 +18,9 @@ function derivedActivePlayer(gameTurns) {
 }
 
 function Main() {
+  const [players, setPlayers] = useState({
+    X:
+  });
   const [gameTurns, setGameTurns] = useState([]);
 
   const activePlayer = derivedActivePlayer(gameTurns);
