@@ -54,6 +54,7 @@ function Main() {
     return winner;
   }
   const winner = derivedWinner(gameBoard, players);
+  const gameBoard = derivedGameBoard(gameTurns);
   const hasDraw = gameTurns.length === 9 && !winner;
   function handleSelectSquare(rowIndex, colIndex) {
     setGameTurns(prevTurns => {
