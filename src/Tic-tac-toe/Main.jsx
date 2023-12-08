@@ -39,17 +39,19 @@ function Main() {
     firstSquareSymbol &&
     firstSquareSymbol === secondSquareSymbol &&
     firstSquareSymbol === thirdSquareSymbol
-  )
-    function handleSelectSquare(rowIndex, colIndex) {
-      setGameTurns(prevTurns => {
-        const currentPlayer = derivedActivePlayer(prevTurns);
-        const updatedTurns = [
-          { square: { row: rowIndex, col: colIndex }, player: currentPlayer },
-          ...prevTurns,
-        ];
-        return updatedTurns;
-      });
-    }
+  ) {
+    winner = firstSquareSymbol;
+  }
+  function handleSelectSquare(rowIndex, colIndex) {
+    setGameTurns(prevTurns => {
+      const currentPlayer = derivedActivePlayer(prevTurns);
+      const updatedTurns = [
+        { square: { row: rowIndex, col: colIndex }, player: currentPlayer },
+        ...prevTurns,
+      ];
+      return updatedTurns;
+    });
+  }
 
   return (
     <main>
@@ -66,6 +68,7 @@ function Main() {
             isActive={activePlayer === 'O'}
           />
         </ol>
+        {winner}
         <GameBoard onSelectSquare={handleSelectSquare} board={gameBoard} />
       </div>
       <Log turns={gameTurns} />
