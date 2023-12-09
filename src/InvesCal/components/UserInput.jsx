@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export default function UserInput({ onChange, userInput }) {
   return (
