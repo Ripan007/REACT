@@ -8,13 +8,25 @@ export default function UserInput() {
     duration: 6,
   });
 
-  function handleChange() {}
+  function handleChange(inputIdentifier, newValue) {
+    setUserInput(PrevUserInput => {
+      return {
+        ...PrevUserInput,
+        [inputIdentifier]: newValue,
+      };
+    });
+  }
   return (
     <section>
       <div>
         <p>
           <label>initial investment</label>
-          <input type="number" required />
+          <input
+            type="number"
+            value={userInput.initialInvestment}
+            required
+            onChange={e => handleChange('initialInvestment', e.target.value)}
+          />
         </p>
         <p>
           <label>annual investment</label>
