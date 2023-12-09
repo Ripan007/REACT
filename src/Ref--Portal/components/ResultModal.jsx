@@ -16,3 +16,5 @@ export default function ResultModal({ result, targetTime }) {
     </dialog>
   );
 }
+
+ia;
