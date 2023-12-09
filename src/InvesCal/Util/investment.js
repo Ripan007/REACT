@@ -1,1 +1,6 @@
-export function calculateInvestmentResults({}) {}
+export function calculateInvestmentResults({
+  initialInvestment,
+  annualInvestment,
+  expectedResult,
+  duration,
+}) {}
