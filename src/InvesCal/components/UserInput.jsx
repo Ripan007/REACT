@@ -5,22 +5,22 @@ export default function UserInput() {
     <section>
       <div>
         <p>
-          <label></label>
-          <input type="number" />
+          <label>initial investment</label>
+          <input type="number" required />
         </p>
         <p>
-          <label></label>
-          <input type="number" />
+          <label>annual investment</label>
+          <input type="number" required />
         </p>
       </div>
       <div>
         <p>
-          <label></label>
-          <input type="number" />
+          <label>expected return</label>
+          <input type="number" required />
         </p>
         <p>
-          <label></label>
-          <input type="number" />
+          <label>return</label>
+          <input type="number" required />
         </p>
       </div>
     </section>
