@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function TimerChallenge({ title, targetTime }) {
+  const [timerExpired, setTimerExpired] = useState(false);
+
+  function handleStart() {}
   return (
     <section className="challenge">
       <h2>{title}</h2>
