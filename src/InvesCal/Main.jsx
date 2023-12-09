@@ -5,5 +5,6 @@ export default function Main() {
 }
 
 /**
- * avoid getting  distracted
+
+ * * avoid getting  distracted(stick to a particular thing),spend as time much as possible , enjoy(have all the fun)
  */
