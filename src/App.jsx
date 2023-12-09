@@ -1,7 +1,12 @@
 import React from 'react';
+import Main from './InvesCal/Main';
 
 function App() {
-  return <div>welcome</div>;
+  return (
+    <div>
+      <Main />
+    </div>
+  );
 }
 
 export default App;
