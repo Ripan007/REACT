@@ -8,12 +8,12 @@ const DUMMY_USERS = [
 ];
 
 export default function Users() {
-  const [showUsers, setShowUsers] = useState(true);
+  const [showUsers, setShowUsers] = useState(false);
 
   const users_lists = (
     <ul>
       {DUMMY_USERS.map(user => (
-        <User name={user.name} />
+        <User key={user.id} name={user.name} />
       ))}
     </ul>
   );
