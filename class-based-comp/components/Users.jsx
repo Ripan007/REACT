@@ -22,8 +22,9 @@ export default function Users() {
   }
   return (
     <>
+      <button onClick={showToggleUsers}>{showUsers ? 'hide' : 'open'}</button>
+
       {showUsers && users_lists}
-      <button onClick={showToggleUsers}>toggle</button>
     </>
   );
 }
