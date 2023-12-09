@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 export default function TimerChallenge({ title, targetTime }) {
+  const [timeStarted, setTimeStarted] = useState(false);
   const [timerExpired, setTimerExpired] = useState(false);
 
   function handleStart() {
