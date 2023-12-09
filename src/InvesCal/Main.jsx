@@ -19,11 +19,12 @@ export default function Main() {
       };
     });
   }
+  const inputIsValid = userInput.duration >= 1;
   return (
     <>
       <Header />
       <UserInput userInput={userInput} onChange={handleChange} />
-      <Results input={userInput} />
+      {inputIsValid && <Results input={userInput} />}
     </>
   );
 }
