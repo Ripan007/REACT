@@ -24,6 +24,7 @@ export default function Main() {
     <>
       <Header />
       <UserInput userInput={userInput} onChange={handleChange} />
+      {!inputIsValid && <p>please enter a valid input data</p>}
       {inputIsValid && <Results input={userInput} />}
     </>
   );
