@@ -1,0 +1,11 @@
+.container {
+  background-color: pink;
+  height: 50vh;
+  width: 50vh;
+  margin: 25vh auto 0;
+  padding: 0.5em;
+}
+
+.item {
+  background-color: #fff;
+}
