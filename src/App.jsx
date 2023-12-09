@@ -1,5 +1,5 @@
 import React from 'react';
-import Main from '../custom-react-hook/Main';
+import Main from '../class-based-comp/Main';
 
 function App() {
   return (
