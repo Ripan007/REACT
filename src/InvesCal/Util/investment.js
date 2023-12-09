@@ -1,7 +1,7 @@
 export function calculateInvestmentResults({
   initialInvestment,
   annualInvestment,
-  expectedResult,
+  expectedReturn,
   duration,
 }) {
   const annualData = [];
@@ -22,5 +22,6 @@ export function calculateInvestmentResults({
 export const formatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
-  minimumFractionDigits: 0,maximumFractionDigits:0
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
 });

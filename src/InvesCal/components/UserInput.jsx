@@ -34,7 +34,7 @@ export default function UserInput({ onChange, userInput }) {
           />
         </p>
         <p>
-          <label>return</label>
+          <label>duration</label>
           <input
             type="number"
             value={userInput.duration}
