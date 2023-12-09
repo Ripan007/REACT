@@ -15,7 +15,7 @@ export default function Main() {
     setUserInput(PrevUserInput => {
       return {
         ...PrevUserInput,
-        [inputIdentifier]: newValue,
+        [inputIdentifier]: +newValue,
       };
     });
   }
