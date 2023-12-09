@@ -8,6 +8,7 @@ export default function TimerChallenge({ title, targetTime }) {
     setTimeout(() => {
       setTimerExpired(true);
     }, targetTime * 1000);
+    setTimeStarted(true);
   }
   return (
     <section className="challenge">
