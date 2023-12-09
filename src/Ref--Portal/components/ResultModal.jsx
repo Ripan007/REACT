@@ -11,7 +11,7 @@ export default function ResultModal({ result, targetTime }) {
         you stop the timer with <strong>x seconds left</strong>
       </p>
       <form method="dialog">
-        <button>close</button>
+        <button>Close</button>
       </form>
     </dialog>
   );
