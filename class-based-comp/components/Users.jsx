@@ -17,7 +17,9 @@ export default function Users() {
       ))}
     </ul>
   );
-  function showToggleUsers() {}
+  function showToggleUsers() {
+    setShowUsers(currState => !currState);
+  }
   return (
     <>
       {showUsers && users_lists}
