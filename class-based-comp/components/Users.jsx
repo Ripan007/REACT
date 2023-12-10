@@ -55,10 +55,10 @@ class Users extends Component {
     );
     return (
       <>
-        {this.state.showUsers && usersList}
         <button onClick={this.toggleUserHandler.bind(this)}>
-          {this.state.showUsers ? 'hide' : 'open'}
+          {this.state.showUsers ? 'hide' : 'open'} users
         </button>
+        {this.state.showUsers && usersList}
       </>
     );
   }
