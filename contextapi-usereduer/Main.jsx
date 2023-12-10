@@ -49,5 +49,10 @@ export default function Main() {
       items: updatedItems,
     };
   }
-  return <div>Main</div>;
+  return (
+    <>
+      <Header cart={shoppingCart} />
+      <Shop addItemToCart={handleAddItemToCart} />
+    </>
+  );
 }
