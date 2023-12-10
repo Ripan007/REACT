@@ -8,13 +8,13 @@ const DUMMY_USERS = [
 
 const UserFinder = () => {
   const [filteredUsers, setFilteredUsers] = useState(DUMMY_USERS);
-  const [searchItem, setSearchItem] = useState('');
+  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
     setFilteredUsers(
-      DUMMY_USERS.filter(user => user.name.includes(searchItem))
+      DUMMY_USERS.filter(user => user.name.includes(searchTerm))
     );
-  });
+  }, [searchTerm]);
   return <></>;
 };
 
