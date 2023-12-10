@@ -54,7 +54,9 @@ class Users extends Component {
     return (
       <>
         {this.state.showUsers && usersLists}
-        <button>{showUsers ? 'hide' : 'open'} users</button>
+        <button onClick={handleToggleUsers}>
+          {this.state.showUsers ? 'hide' : 'open'} users
+        </button>
       </>
     );
   }
