@@ -65,3 +65,12 @@ class Users extends Component {
 }
 
 export default Users;
+
+/**
+ * * CLASS COMPONENT LIFE CYCLE :
+ * * sideEffects in functional  component  useEffects()
+ * * componentDidMount => called once a component mounted(evaluated and render by react) => useEffect(...[])
+ * * componentDidUpdate => called once a component  updated(re-evaluated and re-render by react) => useEffect(...[someValue])
+ * * componentWillUnmount => called right before component is unmounted(right before  removed from DOM) => UseEffect(()=>{
+ * })
+ * */
