@@ -40,7 +40,6 @@ class UserFinder extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log(prevState);
     if (prevState.searchTerm !== this.state.searchTerm) {
       this.setState({
         filteredUsers: DUMMY_USERS.filter(user =>
