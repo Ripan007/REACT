@@ -42,7 +42,7 @@ class Users extends Component {
     const usersLists = (
       <ul>
         {DUMMY_DATA.map(user => (
-          <User />
+          <User name={user.name} />
         ))}
       </ul>
     );
@@ -53,6 +53,7 @@ class Users extends Component {
   render() {
     return (
       <>
+        {this.state.showUsers && usersLists}
         <button>{showUsers ? 'hide' : 'open'} users</button>
       </>
     );
