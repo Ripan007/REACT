@@ -19,7 +19,14 @@ export default function Main() {
       updatedItems[existingCartItemIndex] = updatedItems;
     } else {
       const product = DUMMY_PRODUCTS.find(product => product.id === id);
+      updatedItems.push({
+        id: id,
+        name: product.title,
+        price: product.price,
+        quantity: 1,
+      });
     }
+    return { items: updatedItems };
   }
   return <div>Main</div>;
 }
