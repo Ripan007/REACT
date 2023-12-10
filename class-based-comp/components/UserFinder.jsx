@@ -48,6 +48,7 @@ class UserFinder extends Component {
       });
     }
   }
+
   searchChangeToggler(e) {
     this.setState({ searchTerm: e.target.value });
   }
