@@ -35,7 +35,19 @@ export default function Main() {
       const updatedItemIndex = updatedItems.findIndex(
         item => item.id === productId
       );
+      const updatedItem = {
+        ...updatedItem[updatedItemIndex],
+      };
+      updatedItem.quantity += amount;
+      if (updatedItem.quantity <= 0) {
+        updatedItems.splice(updatedItemIndex, 1);
+      } else {
+        updatedItems[updatedItemIndex] = updatedItem;
+      }
     });
+    return {
+      items: updatedItems,
+    };
   }
   return <div>Main</div>;
 }
