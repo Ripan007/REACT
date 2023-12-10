@@ -1,6 +1,3 @@
-import { Component, useState } from 'react';
-import User from './User';
-
 /*
 function Users() {
   const [showUsers, setShowUsers] = useState(false);
@@ -30,40 +27,3 @@ const DUMMY_DATA = [
   { id: 'u2', name: 'gopi' },
   { id: 'u3', name: 'joti' },
 ];
-
-class Users extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      showUsers: false,
-    };
-  }
-  handleToggleUsers() {
-    this.setState(currState => {
-      return {
-        showUsers: !currState.showUsers,
-      };
-    });
-  }
-  render() {
-    const usersLists = (
-      <ul>
-        {DUMMY_DATA.map(user => (
-          <User key={user.id} name={user.name} />
-        ))}
-      </ul>
-    );
-
-    return (
-      <>
-        {this.state.showUsers && usersLists}
-        <button onClick={this.handleToggleUsers.bind(this)}>
-          {this.state.showUsers ? 'hide' : 'open'} users
-        </button>
-      </>
-    );
-  }
-}
-
-export default Users;
