@@ -48,7 +48,7 @@ class Users extends Component {
   render() {
     const usersList = (
       <ul>
-        {DUMMY_DATA.map(user => (
+        {this.props.users.map(user => (
           <User key={user.id} name={user.name} />
         ))}
       </ul>
@@ -71,6 +71,6 @@ export default Users;
  * * sideEffects in functional  component  useEffects()
  * * componentDidMount => called once a component mounted(evaluated and render by react) => useEffect(...[])
  * * componentDidUpdate => called once a component  updated(re-evaluated and re-render by react) => useEffect(...[someValue])
- * * componentWillUnmount => called right before component is unmounted(right before  removed from DOM) => UseEffect(()=>{
- * })
- * */
+ * * componentWillUnmount => called right before component is unmounted(right before  removed from DOM) => UseEffect(()=>{ return ()=>{}})
+ *
+ */
