@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Users from './Users';
 
 const DUMMY_USERS = [
   { id: 'u1', name: 'anjali' },
@@ -19,7 +20,12 @@ const UserFinder = () => {
   const searchChangeToggler = e => {
     setSearchTerm(e.target.value);
   };
-  return <></>;
+  return (
+    <>
+      <input type="text" onChange={searchChangeToggler} />
+      <Users users={filteredUsers} />
+    </>
+  );
 };
 
 export default UserFinder;
