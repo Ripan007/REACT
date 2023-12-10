@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const DUMMY_DATA = [
   { id: 'u1', name: 'anjali' },
@@ -7,8 +7,8 @@ const DUMMY_DATA = [
 ];
 
 const UserFinder = () => {
-    const [filteredUsers,setFilteredUsers] = useState(DUMMY_DATA)
-    const []
+  const [filteredUsers, setFilteredUsers] = useState(DUMMY_DATA);
+  const [searchItem, setSearchItem] = useState('');
   return <></>;
 };
 
