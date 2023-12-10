@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const DUMMY_DATA = [
   { id: 'u1', name: 'anjali' },
   { id: 'u2', name: 'gopi' },
@@ -5,6 +7,8 @@ const DUMMY_DATA = [
 ];
 
 const UserFinder = () => {
+    const [filteredUsers,setFilteredUsers] = useState(DUMMY_DATA)
+    const []
   return <></>;
 };
 
