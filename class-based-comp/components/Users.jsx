@@ -39,12 +39,18 @@ class Users extends Component {
       showUsers: false,
     };
   }
-
+  handleToggleUsers() {
+    this.setState(currState => {
+      return {
+        showUsers: !currState.showUsers,
+      };
+    });
+  }
   render() {
     const usersLists = (
       <ul>
         {DUMMY_DATA.map(user => (
-          <User name={user.name} />
+          <User key={user.id} name={user.name} />
         ))}
       </ul>
     );
