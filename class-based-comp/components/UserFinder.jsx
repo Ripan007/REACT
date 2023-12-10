@@ -34,13 +34,13 @@ class UserFinder extends Component {
   constructor() {
     this.state = {
       filteredUsers: DUMMY_USERS,
-      searchTerm:''
+      searchTerm: '',
     };
   }
 
   componentDidMount() {}
   searchChangeToggler(e) {
-    this.setState(searchTerm:e.target.value);
+    this.setState({ searchTerm: e.target.value });
   }
   render() {
     return (
