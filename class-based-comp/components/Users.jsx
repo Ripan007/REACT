@@ -39,6 +39,14 @@ class Users extends Component {
       showUsers: false,
     };
 
+    const usersLists = (
+      <ul>
+        {DUMMY_DATA.map(user => (
+          <User />
+        ))}
+      </ul>
+    );
+
     function handleToggleUsers() {}
   }
   eUsers;
