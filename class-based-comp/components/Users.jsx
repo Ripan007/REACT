@@ -1,13 +1,8 @@
-import { useState } from 'react';
+import { Component, useState } from 'react';
 import User from './User';
 
-const DUMMY_DATA = [
-  { id: 'u1', name: 'anjali' },
-  { id: 'u2', name: 'gopi' },
-  { id: 'u3', name: 'joti' },
-];
-
-export default function Users() {
+/*
+function Users() {
   const [showUsers, setShowUsers] = useState(false);
   const usersListData = (
     <ul>
@@ -26,3 +21,34 @@ export default function Users() {
     </section>
   );
 }
+
+
+*/
+
+const DUMMY_DATA = [
+  { id: 'u1', name: 'anjali' },
+  { id: 'u2', name: 'gopi' },
+  { id: 'u3', name: 'joti' },
+];
+
+class Users extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      showUsers: false,
+    };
+
+    function handleToggleUsers() {}
+  }
+  eUsers;
+  render() {
+    return (
+      <>
+        <button>{showUsers ? 'hide' : 'open'} users</button>
+      </>
+    );
+  }
+}
+
+export default Users;
