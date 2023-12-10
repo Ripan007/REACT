@@ -1,5 +1,5 @@
 import React from 'react';
-import Main from '../class-based-comp/Main';
+import Main from '../contextapi-usereduer/Main';
 
 function App() {
   return (
