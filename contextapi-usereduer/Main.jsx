@@ -28,5 +28,9 @@ export default function Main() {
     }
     return { items: updatedItems };
   }
+
+  function handleUpdateCartItemQuantity(productId, amount) {
+    setShoppingCart({});
+  }
   return <div>Main</div>;
 }
