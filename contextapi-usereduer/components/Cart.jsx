@@ -9,7 +9,13 @@ export default function Cart({ items, onUpdateItemQuantity }) {
   return (
     <div>
       {items.cart === 0 && <p>no items in cart</p>}
-      {items.length > 0 && <ul></ul>}
+      {items.length > 0 && (
+        <ul>
+          {items.map(item => {
+            const formattedPrice = `$${item.price.toFixed(2)}`;
+          })}
+        </ul>
+      )}
     </div>
   );
 }
