@@ -1,4 +1,4 @@
-import { Component, useEffect, useState } from 'react';
+import { Component } from 'react';
 import Users from './Users';
 
 /*const UserFinder = () => {
@@ -39,7 +39,8 @@ class UserFinder extends Component {
     };
   }
 
-  componentDidUpdate(PrevProps, prevState) {
+  componentDidUpdate(prevProps, prevState) {
+    console.log(prevState);
     if (prevState.searchTerm !== this.state.searchTerm) {
       this.setState({
         filteredUsers: DUMMY_USERS.filter(user =>
