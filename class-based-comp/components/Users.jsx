@@ -16,10 +16,13 @@ export default function Users() {
       ))}
     </ul>
   );
-  function showToggleUsers() {}
+  function showToggleUsers() {
+    setShowUsers(currState => !currState);
+  }
   return (
     <section>
-      <button onClick={showToggleUsers}>{showUsers ? 'open' : 'close'}</button>
+      <button onClick={showToggleUsers}>{showUsers ? 'close' : 'open'}</button>
+      {showUsers && usersListData}
     </section>
   );
 }
