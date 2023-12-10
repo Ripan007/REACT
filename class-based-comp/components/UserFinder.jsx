@@ -32,6 +32,7 @@ const DUMMY_USERS = [
 
 class UserFinder extends Component {
   constructor() {
+    super();
     this.state = {
       filteredUsers: DUMMY_USERS,
       searchTerm: '',
@@ -39,7 +40,7 @@ class UserFinder extends Component {
   }
 
   componentDidUpdate(PrevProps, prevState) {
-    if (PrevProps.searchTerm !== this.state.searchTerm) {
+    if (prevState.searchTerm !== this.state.searchTerm) {
       this.setState({
         filteredUsers: DUMMY_USERS.filter(user =>
           user.name.includes(this.state.searchTerm)
