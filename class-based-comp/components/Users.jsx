@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import User from './User';
 
 const DUMMY_DATA = [
   { id: 'u1', name: 'anjali' },
@@ -11,7 +12,7 @@ export default function Users() {
   const usersListData = (
     <ul>
       {DUMMY_DATA.map(user => (
-        <></>
+        <User key={user.id} name={user.name} />
       ))}
     </ul>
   );
