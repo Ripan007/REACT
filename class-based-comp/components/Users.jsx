@@ -39,6 +39,10 @@ class Users extends Component {
       showUsers: false,
     };
 
+    function handleToggleUsers() {}
+  }
+  eUsers;
+  render() {
     const usersLists = (
       <ul>
         {DUMMY_DATA.map(user => (
@@ -46,15 +50,10 @@ class Users extends Component {
         ))}
       </ul>
     );
-
-    function handleToggleUsers() {}
-  }
-  eUsers;
-  render() {
     return (
       <>
         {this.state.showUsers && usersLists}
-        <button onClick={handleToggleUsers}>
+        <button onClick={this.handleToggleUsers.bind(this)}>
           {this.state.showUsers ? 'hide' : 'open'} users
         </button>
       </>
