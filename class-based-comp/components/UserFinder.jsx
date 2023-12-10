@@ -36,6 +36,8 @@ class UserFinder extends Component {
       filteredUsers: DUMMY_USERS,
     };
   }
+
+  componentDidMount() {}
   searchChangeToggler(e) {
     this.setState();
   }
