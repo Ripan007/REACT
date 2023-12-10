@@ -25,12 +25,6 @@ function Users() {
 import { Component } from 'react';
 import User from './User';
 
-const DUMMY_DATA = [
-  { id: 'u1', name: 'anjali' },
-  { id: 'u2', name: 'gopi' },
-  { id: 'u3', name: 'joti' },
-];
-
 class Users extends Component {
   constructor() {
     super();
