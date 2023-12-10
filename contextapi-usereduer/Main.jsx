@@ -30,7 +30,12 @@ export default function Main() {
   }
 
   function handleUpdateCartItemQuantity(productId, amount) {
-    setShoppingCart({});
+    setShoppingCart(prevShoppingCart => {
+      const updatedItems = [...prevShoppingCart.items];
+      const updatedItemIndex = updatedItems.findIndex(
+        item => item.id === productId
+      );
+    });
   }
   return <div>Main</div>;
 }
