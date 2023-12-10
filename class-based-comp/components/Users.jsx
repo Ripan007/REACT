@@ -38,6 +38,13 @@ class Users extends Component {
       showUsers: false,
     };
   }
+  toggleUserHandler() {
+    this.setState(currState => {
+      return {
+        showUsers: !currState.showUsers,
+      };
+    });
+  }
   render() {
     const usersList = (
       <ul>
@@ -48,7 +55,10 @@ class Users extends Component {
     );
     return (
       <>
-        <button>{}</button>
+        {this.state.showUsers && usersList}
+        <button onClick={this.toggleUserHandler.bind(this)}>
+          {this.state.showUsers ? 'hide' : 'open'}
+        </button>
       </>
     );
   }
