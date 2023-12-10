@@ -38,10 +38,8 @@ class Users extends Component {
     this.state = {
       showUsers: false,
     };
-
-    function handleToggleUsers() {}
   }
-  eUsers;
+
   render() {
     const usersLists = (
       <ul>
@@ -50,6 +48,7 @@ class Users extends Component {
         ))}
       </ul>
     );
+
     return (
       <>
         {this.state.showUsers && usersLists}
