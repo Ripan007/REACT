@@ -1,19 +1,26 @@
 import React, { useState } from 'react';
 
 export default function Login() {
-  const [enteredEmail, setEnteredEmail] = useState('');
-  const [enteredPassword, setEnteredPassword] = useState('');
-  function submitHandler(e) {
-    e.preventDefault();
-    console.log(enteredEmail, enteredPassword);
-  }
-  function handleEmailInput(e) {
+  const [showUsers, setShowUsers] = useState({
+    email,
+    password,
+  });
+  /* const [enteredEmail, setEnteredEmail] = useState('');
+  const [enteredPassword, setEnteredPassword] = useState('')
+    function handleEmailInput(e) {
     setEnteredEmail(e.target.value);
   }
 
   function handlePasswordInput(e) {
     setEnteredPassword(e.target.value);
   }
+
+  */
+  function submitHandler(e) {
+    e.preventDefault();
+    console.log(enteredEmail, enteredPassword);
+  }
+
   return (
     <form onSubmit={submitHandler}>
       <h2>login</h2>
