@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 export default function Login() {
   const [showUsers, setShowUsers] = useState({
-    email,
-    password,
+    email: '',
+    password: '',
   });
 
   function handleChangeUsers() {}
@@ -22,7 +22,11 @@ export default function Login() {
     e.preventDefault();
     console.log(enteredEmail, enteredPassword);
   }
-  function handleChangeUsers() {}
+  function handleChangeUsers(identifier, value) {
+    setShowUsers(prevUsers => {
+      ({ ...prevUsers, [identifier]: value });
+    });
+  }
 
   return (
     <form onSubmit={submitHandler}>
@@ -45,7 +49,7 @@ export default function Login() {
             id="password"
             name="password"
             value={showUsers.password}
-            onChange={() => handleChangeUsers('password', e.target.value)}
+            onChange={e => handleChangeUsers('password', e.target.value)}
           />
         </div>
         <p className="form-actions">
