@@ -24,6 +24,7 @@ export default function Login() {
             type="email"
             id="email"
             name="email"
+            value={enteredEmail}
             onChange={handleEmailInput}
           />
         </div>
@@ -33,6 +34,7 @@ export default function Login() {
             type="password"
             id="password"
             name="password"
+            value={enteredPassword}
             onChange={handlePasswordInput}
           />
         </div>
