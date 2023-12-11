@@ -25,7 +25,8 @@ export default function Login() {
     setShowUsers(prevState => ({ ...prevState, [identifier]: value }));
   }
 
-  let emailIsNotValid = showUsers.email !== '' && showUsers.email.includes('@');
+  const emailIsNotValid =
+    showUsers.email === '' && !showUsers.email.includes('@');
 
   return (
     <form onSubmit={submitHandler}>
