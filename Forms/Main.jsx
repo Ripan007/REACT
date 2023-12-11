@@ -17,6 +17,12 @@ export default function Main() {
 /**
 * * form submission:
 handing submission is relatively easy
-
+entered values can  be managed by states
+Alternatively they can extracted by refs / form data
+* * input validation:
+providing a good user experience is tricky
+validate => every key stroke => error(early)
+validate => lost focus => error(late)
+validate => form submission => error(late)
 
 */
