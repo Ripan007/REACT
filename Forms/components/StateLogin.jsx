@@ -7,6 +7,7 @@ export default function Login() {
     e.preventDefault();
     const currentEmail = e.target.value;
     const currentPassword = e.target.value;
+
     console.log(currentEmail, currentPassword);
   }
 
@@ -30,3 +31,9 @@ export default function Login() {
     </form>
   );
 }
+
+/**
+ * * DISADVANTAGE:
+ * * two many ref
+ * * reset is daunting
+ * */
