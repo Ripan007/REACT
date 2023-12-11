@@ -13,3 +13,10 @@ export default function Main() {
     </>
   );
 }
+
+/**
+* * form submission:
+handing submission is relatively easy
+
+
+*/
