@@ -5,6 +5,9 @@ export default function Login() {
   const passWord = useRef();
   function submitHandler(e) {
     e.preventDefault();
+    const currentEmail = e.target.value;
+    const currentPassword = e.target.value;
+    console.log(currentEmail, currentPassword);
   }
 
   return (
