@@ -13,6 +13,10 @@ export default function Login() {
           <label htmlFor="password">password</label>
           <input type="password" id="password" name="password" />
         </div>
+        <p className="form-actions">
+          <button className="button button-flat">reset</button>
+          <button className="button">login</button>
+        </p>
       </div>
     </form>
   );
