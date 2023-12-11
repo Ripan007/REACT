@@ -9,7 +9,7 @@ export default function Main() {
     <>
       <Header />
       <main>
-        <Signup />
+        <Login />
       </main>
     </>
   );
