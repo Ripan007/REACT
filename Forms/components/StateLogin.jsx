@@ -1,28 +1,10 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 
 export default function Login() {
-  const [showUsers, setShowUsers] = useState({
-    email: '',
-    password: '',
-  });
-
-  /* const [enteredEmail, setEnteredEmail] = useState('');
-  const [enteredPassword, setEnteredPassword] = useState('')
-    function handleEmailInput(e) {
-    setEnteredEmail(e.target.value);
-  }
-
-  function handlePasswordInput(e) {
-    setEnteredPassword(e.target.value);
-  }
-
-  */
+  const email = useRef();
+  const passWord = useRef();
   function submitHandler(e) {
     e.preventDefault();
-    console.log(showUsers);
-  }
-  function handleChangeUsers(identifier, value) {
-    setShowUsers(prevState => ({ ...prevState, [identifier]: value }));
   }
 
   return (
@@ -31,23 +13,11 @@ export default function Login() {
       <div className="control-row">
         <div className="control no-margin">
           <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={showUsers.email}
-            onChange={e => handleChangeUsers('email', e.target.value)}
-          />
+          <input type="email" id="email" name="email" ref={email} />
         </div>
         <div className="control no-margin">
           <label htmlFor="password">password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={showUsers.password}
-            onChange={e => handleChangeUsers('password', e.target.value)}
-          />
+          <input type="password" id="password" name="password" ref={passWord} />
         </div>
         <p className="form-actions">
           <button className="button button-flat">reset</button>
