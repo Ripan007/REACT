@@ -43,8 +43,8 @@ export default function Login() {
             type="password"
             id="password"
             name="password"
-            value={enteredPassword}
-            onChange={handlePasswordInput}
+            value={showUsers.password}
+            onChange={() => handleChangeUsers('password', e.target.value)}
           />
         </div>
         <p className="form-actions">
