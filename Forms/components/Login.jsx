@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Login() {
   const [enteredEmail, setEnteredEmail] = useState('');
   const [enteredPassword, setEnteredPassword] = useState('');
   function submitHandler(e) {
     e.preventDefault();
-    console.log('clicked');
+    console.log(enteredEmail, enteredPassword);
   }
-  function handleInputEmail(e) {
+  function handleEmailInput(e) {
     setEnteredEmail(e.target.value);
   }
 
-  function handlePasswordInput(e) {}
+  function handlePasswordInput(e) {
+    setEnteredPassword(e.target.value);
+  }
   return (
     <form onSubmit={submitHandler}>
       <h2>login</h2>
@@ -31,7 +33,7 @@ export default function Login() {
             type="password"
             id="password"
             name="password"
-            onchange={handlePasswordInput}
+            onChange={handlePasswordInput}
           />
         </div>
         <p className="form-actions">
