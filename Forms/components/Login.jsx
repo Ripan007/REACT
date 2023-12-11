@@ -25,6 +25,9 @@ export default function Login() {
     setShowUsers(prevState => ({ ...prevState, [identifier]: value }));
   }
 
+  const emailIsNotValid =
+    showUsers.email !== '' && showUsers.email.includes('@');
+
   return (
     <form onSubmit={submitHandler}>
       <h2>login</h2>
@@ -38,6 +41,9 @@ export default function Login() {
             value={showUsers.email}
             onChange={e => handleChangeUsers('email', e.target.value)}
           />
+        </div>
+        <div className="control-error">
+          {emailIsNotValid && <p>enter email , placeholder is empty</p>}
         </div>
         <div className="control no-margin">
           <label htmlFor="password">password</label>
