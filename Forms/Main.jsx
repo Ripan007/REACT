@@ -2,13 +2,14 @@ import React from 'react';
 import './Main.css';
 import Header from './components/Header';
 import Login from './components/Login';
+import Signup from './components/SignUp';
 
 export default function Main() {
   return (
     <>
       <Header />
       <main>
-        <Login />
+        <Signup />
       </main>
     </>
   );
