@@ -22,9 +22,7 @@ export default function Login() {
     console.log(showUsers);
   }
   function handleChangeUsers(identifier, value) {
-    setShowUsers(prevUsers => {
-      return { ...prevUsers, [identifier]: value };
-    });
+    setShowUsers({ [identifier]: value });
   }
 
   return (
