@@ -3,8 +3,8 @@ export default function Signup() {
     event.preventDefault();
     const fd = new FormData(event.target);
     const acquisitionChannel = fd.getAll('acquisition');
-    data.acquisition = acquisitionChannel;
     const data = Object.fromEntries(fd.entries());
+    data.acquisition = acquisitionChannel;
     console.log(data);
   }
 
