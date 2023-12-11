@@ -6,7 +6,6 @@ export default function Login() {
     password: '',
   });
 
-  function handleChangeUsers() {}
   /* const [enteredEmail, setEnteredEmail] = useState('');
   const [enteredPassword, setEnteredPassword] = useState('')
     function handleEmailInput(e) {
