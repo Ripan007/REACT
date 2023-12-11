@@ -22,7 +22,7 @@ export default function Login() {
     console.log(showUsers);
   }
   function handleChangeUsers(identifier, value) {
-    setShowUsers({ [identifier]: value });
+    setShowUsers(prevState => ({ ...prevState, [identifier]: value }));
   }
 
   return (
@@ -35,7 +35,7 @@ export default function Login() {
             type="email"
             id="email"
             name="email"
-            value={showUsers.email}
+            // value={showUsers.email}
             onChange={e => handleChangeUsers('email', e.target.value)}
           />
         </div>
@@ -45,7 +45,7 @@ export default function Login() {
             type="password"
             id="password"
             name="password"
-            value={showUsers.password}
+            // value={showUsers.password}
             onChange={e => handleChangeUsers('password', e.target.value)}
           />
         </div>
