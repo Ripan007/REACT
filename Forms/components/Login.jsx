@@ -1,8 +1,12 @@
 import React from 'react';
 
 export default function Login() {
+  function submitHandler(e) {
+    e.preventDefault();
+    console.log('clicked');
+  }
   return (
-    <form>
+    <form onSubmit={submitHandler}>
       <h2>login</h2>
       <div className="control-row">
         <div className="control no-margin">
