@@ -19,12 +19,13 @@ export default function Login() {
   */
   function submitHandler(e) {
     e.preventDefault();
-    console.log(enteredEmail, enteredPassword);
+    console.log(showUsers);
   }
   function handleChangeUsers(identifier, value) {
-    setShowUsers(prevUsers => {
-      ({ ...prevUsers, [identifier]: value });
-    });
+    setShowUsers(prevUsers => ({
+      ...prevUsers,
+      [identifier]: value,
+    }));
   }
 
   return (
