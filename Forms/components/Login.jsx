@@ -22,6 +22,7 @@ export default function Login() {
     e.preventDefault();
     console.log(enteredEmail, enteredPassword);
   }
+  function handleChangeUsers() {}
 
   return (
     <form onSubmit={submitHandler}>
