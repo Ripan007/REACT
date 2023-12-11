@@ -5,6 +5,8 @@ export default function Login() {
     email,
     password,
   });
+
+  function handleChangeUsers() {}
   /* const [enteredEmail, setEnteredEmail] = useState('');
   const [enteredPassword, setEnteredPassword] = useState('')
     function handleEmailInput(e) {
@@ -31,8 +33,8 @@ export default function Login() {
             type="email"
             id="email"
             name="email"
-            value={enteredEmail}
-            onChange={handleEmailInput}
+            value={showUsers.email}
+            onChange={e => handleChangeUsers('email', e.target.value)}
           />
         </div>
         <div className="control no-margin">
