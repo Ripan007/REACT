@@ -1,5 +1,14 @@
 import React from 'react';
+import Header from './components/Header';
+import Login from './components/Login';
 
 export default function Main() {
-  return <div>Main</div>;
+  return (
+    <>
+      <Header />
+      <main>
+        <Login />
+      </main>
+    </>
+  );
 }
