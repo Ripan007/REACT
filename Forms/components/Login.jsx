@@ -26,7 +26,7 @@ export default function Login() {
   }
 
   const emailIsNotValid =
-    showUsers.email === '' && !showUsers.email.includes('@');
+    showUsers.email !== '' && !showUsers.email.includes('@');
 
   return (
     <form onSubmit={submitHandler}>
