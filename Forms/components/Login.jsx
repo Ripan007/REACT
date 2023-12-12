@@ -21,13 +21,19 @@ export default function Login() {
             type="email"
             id="email"
             name="email"
-            onChange={e => onChangeHandler('', e.target.value)}
+            value={showUsers.email}
+            onChange={e => onChangeHandler('email', e.target.value)}
           />
         </div>
         <div className="control-error"></div>
         <div className="control no-margin">
           <label htmlFor="password">password</label>
-          <input type="password" id="password" name="password" />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            value={showUsers.password}
+          />
         </div>
         <p className="form-actions">
           <button type="reset" className="button button-flat">
