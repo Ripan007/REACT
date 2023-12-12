@@ -10,7 +10,12 @@ export default function Login() {
     e.preventDefault();
   }
 
-  function onChangeHandler() {}
+  function onChangeHandler(identifier, value) {
+    setShowUsers(prevUsers => ({
+      ...prevUsers,
+      [identifier]: value,
+    }));
+  }
   return (
     <form onSubmit={submitHandler}>
       <h2>login</h2>
@@ -33,6 +38,7 @@ export default function Login() {
             id="password"
             name="password"
             value={showUsers.password}
+            onChange={e => onChangeHandler('password', e.target.value)}
           />
         </div>
         <p className="form-actions">
