@@ -51,7 +51,7 @@ export default function Login() {
             type="password"
             id="password"
             name="password"
-            value={showUsers.password}
+            value={showUsers.pasword}
             onChange={e => handleChangeUsers('password', e.target.value)}
           />
         </div>
