@@ -6,28 +6,6 @@ export default function Login() {
     password: '',
   });
 
-  /* const [enteredEmail, setEnteredEmail] = useState('');
-  const [enteredPassword, setEnteredPassword] = useState('')
-    function handleEmailInput(e) {
-    setEnteredEmail(e.target.value);
-  }
-
-  function handlePasswordInput(e) {
-    setEnteredPassword(e.target.value);
-  }
-
-  */
-  function submitHandler(e) {
-    e.preventDefault();
-    console.log(showUsers);
-  }
-  function handleChangeUsers(identifier, value) {
-    setShowUsers(prevState => ({ ...prevState, [identifier]: value }));
-  }
-
-  const emailIsNotValid =
-    showUsers.email !== '' && !showUsers.email.includes('@');
-
   return (
     <form onSubmit={submitHandler}>
       <h2>login</h2>
