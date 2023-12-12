@@ -11,11 +11,15 @@ export default function Login() {
   }
 
   function onChangeHandler(identifier, value) {
+    console.log('show value', value);
     setShowUsers(prevUsers => ({
       ...prevUsers,
       [identifier]: value,
     }));
   }
+
+  const emailIsNotValid =
+    showUsers.email !== '' && showUsers.email.includes('@');
   return (
     <form onSubmit={submitHandler}>
       <h2>login</h2>
@@ -41,6 +45,7 @@ export default function Login() {
             onChange={e => onChangeHandler('password', e.target.value)}
           />
         </div>
+        <div>{showUsers && <p>email is invalid</p>}</div>
         <p className="form-actions">
           <button type="reset" className="button button-flat">
             reset
