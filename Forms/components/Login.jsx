@@ -45,7 +45,9 @@ export default function Login() {
             onChange={e => onChangeHandler('password', e.target.value)}
           />
         </div>
-        <div>{emailIsNotValid && <p>email is invalid</p>}</div>
+        <div className="control-error">
+          {emailIsNotValid && <p>email is invalid</p>}
+        </div>
         <p className="form-actions">
           <button type="reset" className="button button-flat">
             reset
