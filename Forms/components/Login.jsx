@@ -45,7 +45,7 @@ export default function Login() {
             onChange={e => onChangeHandler('password', e.target.value)}
           />
         </div>
-        <div>{showUsers && <p>email is invalid</p>}</div>
+        <div>{emailIsNotValid && <p>email is invalid</p>}</div>
         <p className="form-actions">
           <button type="reset" className="button button-flat">
             reset
