@@ -34,30 +34,20 @@ export default function Login() {
       <div className="control-row">
         <div className="control no-margin">
           <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={showUsers.email}
-            onChange={e => handleChangeUsers('email', e.target.value)}
-          />
+          <input type="email" id="email" name="email" />
         </div>
-        <div className="control-error">
-          {emailIsNotValid && <p>enter email , placeholder is empty</p>}
-        </div>
+        <div className="control-error"></div>
         <div className="control no-margin">
           <label htmlFor="password">password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={showUsers.pasword}
-            onChange={e => handleChangeUsers('password', e.target.value)}
-          />
+          <input type="password" id="password" name="password" />
         </div>
         <p className="form-actions">
-          <button className="button button-flat">reset</button>
-          <button className="button">login</button>
+          <button type="reset" className="button button-flat">
+            reset
+          </button>
+          <button type="submit" className="button">
+            login
+          </button>
         </p>
       </div>
     </form>
