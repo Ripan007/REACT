@@ -1,12 +1,14 @@
-import React from 'react';
-import Main from '../Forms/Main';
+import Player from './components/Player';
 
 function App() {
   return (
-    <div>
-      <Main />
-    </div>
+    <>
+      <Player />
+      <div id="challenges"></div>
+    </>
   );
 }
 
 export default App;
+
+
