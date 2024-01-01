@@ -6,9 +6,10 @@ export default function SignUp() {
         event.preventDefault()
         const fd = new FormData(event.target);
         const acquisitionChannel = fd.getAll('acquisition');
-        data.acquisition = acquisitionChannel;
         const data = Object.fromEntries(fd.entries());
+        data.acquisition = acquisitionChannel;
         console.log(data);
+        // event.target.reset()
 
     }
   return (
@@ -24,6 +25,7 @@ export default function SignUp() {
         <label htmlFor="">friends</label>
       </fieldset>
       <button>submit</button>
+      <button type='reset'>reset</button>
     </form>
   );
 }

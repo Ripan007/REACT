@@ -13,6 +13,10 @@ export default function StateLogin() {
   function submitHandler(event) {
     event.preventDefault();
     console.log(enteredValues);
+    setEnteredValues({
+        email:'',
+        password:''
+    })
   }
   return (
     <>
