@@ -30,7 +30,7 @@ export default function StateLogin() {
     });
   }
 
-  const emailIsNotValid = didEdit.email && !enteredValues.email.includes('@');
+  const emailIsInValid = didEdit.email && !enteredValues.email.includes('@');
   return (
     <>
       <form onSubmit={submitHandler}>
@@ -42,6 +42,7 @@ export default function StateLogin() {
           onBlur={() => handleInputBlur('email')}
           value={enteredValues.email}
           onChange={event => inputHandleChange('email', event.target.value)}
+          error={emailIsInValid && 'email is invalid'}
         />
         <br />
 
@@ -57,7 +58,6 @@ export default function StateLogin() {
         />
 
         <button>submit</button>
-
       </form>
     </>
   );
