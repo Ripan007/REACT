@@ -4,16 +4,16 @@ export default function SignUp() {
 
     function submitHandler(event){
         event.preventDefault()
-
-        const fd = new FormData(event);
-        const data = Object.fromEnteries(fd.entries);
-        lconsole.log(data);
+        const fd = new FormData(event.target);
+        const data = Object.fromEntries(fd.entries());
+        console.log(data);
 
     }
   return (
     <form onSubmit={submitHandler}>
-        <input type="text" placeholder='enter name' />
-        <input type="email" placeholder='enter email' />
+        <input type="text" placeholder='first name' name='name' />
+        <input type="email" placeholder='enter email' name='email' />
+        <input type="text" placeholder='last  name' name='last name' />
         <button>submit</button>
     </form>
   )
