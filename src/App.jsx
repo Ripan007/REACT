@@ -6,7 +6,9 @@ export default function App() {
   })
 
    function handleAddItemToCart(id){
-    
+    setShopppingCart((prevShoppingCart)=>{
+      const updatedItems =  [...prevShoppingCart.items]
+    })
 
    }
   return (
