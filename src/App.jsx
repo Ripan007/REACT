@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 export default function App() {
   const [enteredValues, setEnteredValues] = useState({
-    name: '',
+    email: '',
     password: '',
   });
 
