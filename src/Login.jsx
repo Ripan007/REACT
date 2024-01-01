@@ -15,7 +15,7 @@ export default function Login() {
 
     const emailIsValid = enteredEmail.includes('@')
     if(!emailIsValid){
-        
+        setEmailISValid(true)
 
     }
     email.current.value = ''
