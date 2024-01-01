@@ -22,7 +22,7 @@ const [passwordAreNotEqual,setPasswordAreNotEqual] = useState(false)
       <input type="text" placeholder="last  name" name="last name" />
       <input type="password" name='password' placeholder='enter password' required minLength={4} />
       <input type="password" name='conform-password' placeholder='enter conform password' />
-      {passwordAreNotEqual && <p>show error</p>}
+      {passwordAreNotEqual && <p>password are not matched</p>}
       <fieldset>
         <legend>how do you find us</legend>
         <input type="checkbox" name="acquisition" value='google' />
