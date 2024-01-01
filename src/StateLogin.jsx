@@ -56,7 +56,7 @@ export default function StateLogin() {
         />
 
         <button>submit</button>
-        {emailIsNotValid && <p style={{ color: 'red' }}>show error</p>}
+        {emailIsNotValid && <p style={{ color: 'red' }}>show errohhhhhr</p>}
       </form>
     </>
   );
