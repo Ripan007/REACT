@@ -14,6 +14,7 @@ export default function SignUp() {
         <input type="text" placeholder='first name' name='name' />
         <input type="email" placeholder='enter email' name='email' />
         <input type="text" placeholder='last  name' name='last name' />
+       
         <button>submit</button>
     </form>
   )
