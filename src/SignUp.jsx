@@ -1,7 +1,7 @@
-import React from 'react'
+import React ,{useState} from 'react'
 
 export default function SignUp() {
-
+const [passwordAreNotEqual,setPasswordAreNotEqual] = useState(false)
     function submitHandler(event){
         event.preventDefault()
         const fd = new FormData(event.target);
@@ -17,6 +17,8 @@ export default function SignUp() {
       <input type="text" placeholder="first name" name="name" />
       <input type="email" placeholder="enter email" name="email" />
       <input type="text" placeholder="last  name" name="last name" />
+      <input type="password" name='password' placeholder='enter password' />
+      <input type="password" name='conform-password' placeholder='enter conform password' />
       <fieldset>
         <legend>how do you find us</legend>
         <input type="checkbox" name="acquisition" value='google' />
