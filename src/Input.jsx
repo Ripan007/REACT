@@ -1,17 +1,11 @@
 import React from 'react';
 
-export default function Input() {
+export default function Input({ label, id, error, ...props }) {
   return (
     <>
-      <label htmlFor="email">email</label>
-      <input
-        id="email"
-        type="text"
-        name="email"
-        onBlur={() => handleInputBlur('email')}
-        value={enteredValues.email}
-        onChange={event => inputHandleChange('email', event.target.value)}
-      />
+      <label htmlFor={id}>email</label>
+      <input id={id} {...props} />
+      {error && <p>{error}</p>}
     </>
   );
 }
