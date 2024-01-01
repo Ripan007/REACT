@@ -40,7 +40,9 @@ export default function StateLogin() {
           onChange={event => inputHandleChange('password', event.target.value)}
         />
         <button>submit</button>
+        {emailIsNotValid && <p  style={{color:'red'}}>show error</p>}
       </form>
     </>
   );
 }
+
