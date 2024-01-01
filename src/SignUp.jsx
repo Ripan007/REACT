@@ -5,8 +5,8 @@ export default function SignUp() {
     function submitHandler(event){
         event.preventDefault()
 
-        const fd = new FormData();
-        const data = fd.fromEnteries(fd.entries);
+        const fd = new FormData(event);
+        const data = Object.fromEnteries(fd.entries);
         lconsole.log(data);
 
     }
