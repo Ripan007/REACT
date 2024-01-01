@@ -6,7 +6,7 @@ import StateLogin from './StateLogin';
 export default function App() {
   return (
     <>
-      <SignUp />
+      <Login />
     </>
   );
 }
