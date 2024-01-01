@@ -18,6 +18,9 @@ export default function StateLogin() {
         password:''
     })
   }
+
+
+  const emailIsNotValid = enteredValues.email !== '' && !enteredValues.email.includes('@')
   return (
     <>
       <form onSubmit={submitHandler}>
