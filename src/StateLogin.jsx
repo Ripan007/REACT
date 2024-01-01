@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Input from './Input';
 
 export default function StateLogin() {
   const [enteredValues, setEnteredValues] = useState({
@@ -33,22 +34,27 @@ export default function StateLogin() {
   return (
     <>
       <form onSubmit={submitHandler}>
-        <label htmlFor="email">email</label>
-        <input
-          type="text"
-          placeholder="enter email"
+        <Input
+          label="email"
           name="email"
+          id="email"
+          type="email"
           onBlur={() => handleInputBlur('email')}
           value={enteredValues.email}
           onChange={event => inputHandleChange('email', event.target.value)}
         />
-        <label htmlFor="password">password</label>
-        <input
-          type="password"
+        <br />
+
+        <Input
+          label="password"
           name="password"
+          id="password"
+          type="password"
+          onBlur={() => handleInputBlur('password')}
           value={enteredValues.password}
           onChange={event => inputHandleChange('password', event.target.value)}
         />
+
         <button>submit</button>
         {emailIsNotValid && <p style={{ color: 'red' }}>show error</p>}
       </form>
