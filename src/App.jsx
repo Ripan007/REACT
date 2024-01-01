@@ -1,12 +1,12 @@
 import React from 'react';
-import Login from './Login';
-import SignUp from './SignUp';
-import StateLogin from './StateLogin';
 
 export default function App() {
   return (
     <>
-      <StateLogin />
+  <h1>welcome</h1>
     </>
   );
 }
+
+
+//   shopping cart , component compostion 
