@@ -14,13 +14,13 @@ export default function StateLogin() {
     event.preventDefault();
     console.log(enteredValues);
     setEnteredValues({
-        email:'',
-        password:''
-    })
+      email: '',
+      password: '',
+    });
   }
 
-
-  const emailIsNotValid = enteredValues.email !== '' && !enteredValues.email.includes('@')
+  const emailIsNotValid =
+    enteredValues.email !== '' && !enteredValues.email.includes('@');
   return (
     <>
       <form onSubmit={submitHandler}>
@@ -40,9 +40,8 @@ export default function StateLogin() {
           onChange={event => inputHandleChange('password', event.target.value)}
         />
         <button>submit</button>
-        {emailIsNotValid && <p  style={{color:'red'}}>show error</p>}
+        {emailIsNotValid && <p style={{ color: 'red' }}>show error</p>}
       </form>
     </>
   );
 }
-
