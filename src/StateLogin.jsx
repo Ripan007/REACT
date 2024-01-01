@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Input from './Input';
-
+import { isEmail, isNotEmpty } from './validation';
 export default function StateLogin() {
   const [enteredValues, setEnteredValues] = useState({
     email: '',
@@ -30,8 +30,12 @@ export default function StateLogin() {
     });
   }
 
-  const emailIsInValid = didEdit.email && !enteredValues.email.includes('@');
-  const passwordIsInValid = didEdit.password &&  enteredValues.password.trim().length < 6;
+  const emailIsInValid =
+    didEdit.email &&
+    !isEmail(enteredValues.email) &&
+    isNotEmpty(enteredValues.email);
+  const passwordIsInValid =
+    didEdit.password && enteredValues.password.trim().length < 6;
   return (
     <>
       <form onSubmit={submitHandler}>
@@ -46,7 +50,7 @@ export default function StateLogin() {
           error={emailIsInValid && 'email is invalid'}
         />
         <br />
-
+        <br />
         <Input
           label="password"
           name="password"
@@ -57,7 +61,7 @@ export default function StateLogin() {
           onChange={event => inputHandleChange('password', event.target.value)}
           error={passwordIsInValid && 'show this  line'}
         />
-
+        <br /> <br />
         <button>submit</button>
       </form>
     </>
