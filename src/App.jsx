@@ -27,10 +27,40 @@ export default function App() {
           quantity: 1,
         });
       }
-      return{
-        items:updatedItems
-      }
+      return {
+        items: updatedItems,
+      };
     });
   }
-  return <></>;
+
+  function handleUpdateCartItemQuantity(productId, quantity) {
+    setShopppingCart(prevShoppingCart => {
+      const updatedItems = [...prevShoppingCart.items];
+      const updatedItemIndex = updatedItems.findIndex(
+        item => item.id === productId
+      );
+      const updatedItem = {
+        ...updatedItems[updatedItemIndex],
+      };
+
+      updatedItem.quantity += amount;
+      if (updatedItem.quantity <= 0) {
+        updatedItems.splice(updatedItemIndex, 1);
+      } else {
+        updatedItems[updatedItemIndex] = updatedItem;
+      }
+      return {
+        items: updatedItems,
+      };
+    });
+  }
+  return (
+    <>
+      <Header
+        cart={shoppingCart}
+        onUpateCartItemQuantity={handleUpdateCartItemQuantity}
+      />
+      <Shop onAddItemToCart ={handleAddItemToCart}/>
+    </>
+  );
 }
