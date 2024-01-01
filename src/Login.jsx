@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 
 export default function Login() {
-    const [emailISValid,setEmailISValid] = useState(false)
+    const [emailIsValid,setEmailISValid] = useState(false)
   const email = useRef();
   const password = useRef();
 
