@@ -12,6 +12,8 @@ const [passwordAreNotEqual,setPasswordAreNotEqual] = useState(false)
         // event.target.reset()
     if(data.password !== data['conform-password']){
         setPasswordAreNotEqual(true)
+    }else if(data.password === data['conform-password']){
+        setPasswordAreNotEqual(false)
     }
 
     }
