@@ -28,6 +28,7 @@ export default function Login() {
       <form onSubmit={submitHandler}>
         <label htmlFor="email">email</label>
         <input type="text" placeholder="enter email" name="email"  ref={email}/>
+        {emailIsValid && <p>show this text</p>}
         <label htmlFor="password">password</label>
         <input type="password" name="password" ref ={password} />
         <button>submit</button>
