@@ -31,6 +31,7 @@ export default function StateLogin() {
   }
 
   const emailIsInValid = didEdit.email && !enteredValues.email.includes('@');
+  const passwordIsInValid = didEdit.password ;
   return (
     <>
       <form onSubmit={submitHandler}>
@@ -54,7 +55,7 @@ export default function StateLogin() {
           onBlur={() => handleInputBlur('password')}
           value={enteredValues.password}
           onChange={event => inputHandleChange('password', event.target.value)}
-          error={emailIsNotValid && 'show this  line'}
+          error={passwordIsInValid && 'show this  line'}
         />
 
         <button>submit</button>
