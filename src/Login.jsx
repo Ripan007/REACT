@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 
 export default function Login() {
+    const [emailISValid,setEmailISValid] = useState(false)
   const email = useRef();
   const password = useRef();
 
@@ -10,8 +11,17 @@ export default function Login() {
     const eneteredPassword  = password.current.value
 
     console.log(enteredEmail,eneteredPassword);
+
+
+    const emailIsValid = enteredEmail.includes('@')
+    if(!emailIsValid){
+        
+
+    }
     email.current.value = ''
     password.current.value =  ''
+
+
   }
   return (
     <>
