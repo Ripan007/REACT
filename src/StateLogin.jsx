@@ -6,8 +6,17 @@ export default function StateLogin() {
     password: '',
   });
 
+  const [didEdit, setDidEdit] = useState({
+    email: false,
+    password: false,
+  });
+
   function inputHandleChange(identifier, value) {
     setEnteredValues(prevValues => ({ ...prevValues, [identifier]: value }));
+  }
+
+  function handleInputBlur(identifier) {
+    setDidEdit(prevEdit => ({ ...prevEdit, [identifier]: true }));
   }
 
   function submitHandler(event) {
@@ -19,8 +28,7 @@ export default function StateLogin() {
     });
   }
 
-  const emailIsNotValid =
-    enteredValues.email !== '' && !enteredValues.email.includes('@');
+  const emailIsNotValid = didEdit.email && !enteredValues.email.includes('@');
   return (
     <>
       <form onSubmit={submitHandler}>
@@ -29,6 +37,7 @@ export default function StateLogin() {
           type="text"
           placeholder="enter email"
           name="email"
+          onBlur={() => handleInputBlur('email')}
           value={enteredValues.email}
           onChange={event => inputHandleChange('email', event.target.value)}
         />
@@ -45,5 +54,3 @@ export default function StateLogin() {
     </>
   );
 }
-
-
