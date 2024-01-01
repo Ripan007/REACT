@@ -10,6 +10,8 @@ export default function Login() {
     const eneteredPassword  = password.current.value
 
     console.log(enteredEmail,eneteredPassword);
+    email.current.value = ''
+    password.current.value =  ''
   }
   return (
     <>
@@ -23,3 +25,6 @@ export default function Login() {
     </>
   );
 }
+
+
+//  disadvantage => two many ref  , empty the input text is not clear
