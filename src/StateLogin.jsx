@@ -13,6 +13,7 @@ export default function StateLogin() {
 
   function inputHandleChange(identifier, value) {
     setEnteredValues(prevValues => ({ ...prevValues, [identifier]: value }));
+    setDidEdit(prevEdit => ({ ...prevEdit, [identifier]: false }));
   }
 
   function handleInputBlur(identifier) {
