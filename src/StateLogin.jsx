@@ -31,7 +31,7 @@ export default function StateLogin() {
   }
 
   const emailIsInValid = didEdit.email && !enteredValues.email.includes('@');
-  const passwordIsInValid = didEdit.password ;
+  const passwordIsInValid = didEdit.password &&  enteredValues.password.trim() < 6;
   return (
     <>
       <form onSubmit={submitHandler}>
