@@ -53,10 +53,11 @@ export default function StateLogin() {
           onBlur={() => handleInputBlur('password')}
           value={enteredValues.password}
           onChange={event => inputHandleChange('password', event.target.value)}
+          error={emailIsNotValid && <p>show this  line</p>}
         />
 
         <button>submit</button>
-        {emailIsNotValid && <p style={{ color: 'red' }}>show errohhhhhr</p>}
+
       </form>
     </>
   );
