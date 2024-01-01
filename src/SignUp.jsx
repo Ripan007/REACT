@@ -10,6 +10,9 @@ const [passwordAreNotEqual,setPasswordAreNotEqual] = useState(false)
         data.acquisition = acquisitionChannel;
         console.log(data);
         // event.target.reset()
+    if(data.password !== data['conform-password']){
+        setPasswordAreNotEqual(true)
+    }
 
     }
   return (
@@ -17,8 +20,9 @@ const [passwordAreNotEqual,setPasswordAreNotEqual] = useState(false)
       <input type="text" placeholder="first name" name="name" />
       <input type="email" placeholder="enter email" name="email" />
       <input type="text" placeholder="last  name" name="last name" />
-      <input type="password" name='password' placeholder='enter password' />
+      <input type="password" name='password' placeholder='enter password' required minLength={4} />
       <input type="password" name='conform-password' placeholder='enter conform password' />
+      {passwordAreNotEqual && <p>show error</p>}
       <fieldset>
         <legend>how do you find us</legend>
         <input type="checkbox" name="acquisition" value='google' />
