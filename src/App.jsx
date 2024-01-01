@@ -1,14 +1,22 @@
-import Player from './components/Player';
+import React from 'react';
 
-function App() {
+export default function App() {
+
+  function submitHandler(event){
+    event.preventDefault()
+
+  }
   return (
     <>
-      <Player />
-      <div id="challenges"></div>
+      <form onSubmit={submitHandler}>
+        <label htmlFor="email">email</label>
+        <input type="text" placeholder="enter email" name="email" />
+        <label htmlFor="password">password</label>
+        <input type="password" name="password" />
+        <button>submit</button>
+      </form>
     </>
   );
 }
-
-export default App;
 
 
