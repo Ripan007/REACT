@@ -24,7 +24,7 @@ export default function TimeChallenge({ title, targetTime }) {
       </p>
       <p>
         <button onClick={handleStart}>
-          {' '}
+          
           {timerStarted ? 'stop' : 'start'}challenge
         </button>
       </p>
