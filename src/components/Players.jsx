@@ -5,6 +5,7 @@ export default function Players() {
   const [submitted, setSubmitted] = useState(false);
 
   function handleChange(event) {
+    setSubmitted(false)
     setEnteredplayerName(event.target.value);
   }
 
