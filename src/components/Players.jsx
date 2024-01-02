@@ -1,24 +1,26 @@
 import React, { useState } from 'react';
 
 export default function Players() {
-    const [getValues,setGetValues] = useState('')
-    const [show,setShow]= useState('')
+const [enteredPlayerName,setEnteredplayerName] = useState(null)
+const [submitted,setSubmitted] = useState(false)
 
-    function getUserInput(event){
-        setGetValues(event.target.value)
+function handleChange(){
 
-    }
+}
 
-    function displayData(){
-        setShow(getValues)
-    }
+
+function handleClick(){
+    
+}
+
+
    return (
     <>
       <section id="players">
         <h2>welcome unkown entity{show}</h2>
         <p>
-          <input type="text" onChange={getUserInput}value={getValues} />
-          <button onClick={displayData}>set name</button>
+          <input type="text" />
+          <button>set name</button>
         </p>
       </section>
     </>
