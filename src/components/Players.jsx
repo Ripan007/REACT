@@ -1,14 +1,11 @@
 import React, { useRef, useState } from 'react';
 
 export default function Players() {
-    const playerName= useRef()
+  const playerName = useRef();
   const [enteredPlayerName, setEnteredplayerName] = useState(null);
 
-
-
-
   function handleClick() {
-    setEnteredplayerName(playerName.current.value)
+    setEnteredplayerName(playerName.current.value);
   }
 
   return (
@@ -23,6 +20,3 @@ export default function Players() {
     </>
   );
 }
-
-
-//  i want to become  a good programmer as soon as poss
