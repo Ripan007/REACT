@@ -7,10 +7,10 @@ export default function App() {
     <div>
       <Players />
       <div id="challenges">
-        <TimeChallenge title="easy" TimeChallenge={5}/>
-        <TimeChallenge title="not easy" TimeChallenge={10}/>
-        <TimeChallenge title="getting tough" TimeChallenge={5}/>
-        <TimeChallenge title="pros only" TimeChallenge={5}/>
+        <TimeChallenge title="easy" targetTime={1}/>
+        <TimeChallenge title="not easy" targetTime={2}/>
+        <TimeChallenge title="getting tough" targetTime={3}/>
+        <TimeChallenge title="pros only" targetTime={4}/>
       </div>
     </div>
   );
