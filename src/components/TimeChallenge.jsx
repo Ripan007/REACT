@@ -10,6 +10,10 @@ export default function TimeChallenge({ title, targetTime }) {
     }, targetTime * 1000);
     setTimerStarted(true);
   }
+
+  function handleStop(){
+    
+  }
   return (
     <section className="challenge">
       <h2>{title}</h2>
