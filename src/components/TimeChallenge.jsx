@@ -3,16 +3,18 @@ import React, { useState } from 'react';
 export default function TimeChallenge({ title, targetTime }) {
   const [timerStarted, setTimerStarted] = useState(false);
   const [timerExpired, setTimerExpired] = useState(false);
+  let timer ;
 
   function handleStart() {
-    setTimeout(() => {
+  timer =   setTimeout(() => {
       setTimerExpired(true);
     }, targetTime * 1000);
     setTimerStarted(true);
   }
 
   function handleStop(){
-    
+clearTimeout(timer)
+
   }
   return (
     <section className="challenge">
@@ -27,7 +29,7 @@ export default function TimeChallenge({ title, targetTime }) {
           {timerStarted ? 'stop' : 'start'}challenge
         </button>
       </p>
-      <p className={timerStarted ? 'active' : undefined}>
+      <p className={timerStarted ? handleStop : handleStart}>
         {timerStarted ? 'time is running' : 'time is inactive'}
       </p>
     </section>
