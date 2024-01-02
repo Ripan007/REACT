@@ -1,20 +1,19 @@
 import React, { useState } from 'react';
 
-let timer ;
+let timer;
 export default function TimeChallenge({ title, targetTime }) {
-    const [timerStarted, setTimerStarted] = useState(false);
+  const [timerStarted, setTimerStarted] = useState(false);
   const [timerExpired, setTimerExpired] = useState(false);
 
   function handleStart() {
-  timer =   setTimeout(() => {
+    timer = setTimeout(() => {
       setTimerExpired(true);
     }, targetTime * 1000);
     setTimerStarted(true);
   }
 
-  function handleStop(){
-clearTimeout(timer)
-
+  function handleStop() {
+    clearTimeout(timer);
   }
   return (
     <section className="challenge">
@@ -35,4 +34,3 @@ clearTimeout(timer)
     </section>
   );
 }
-
