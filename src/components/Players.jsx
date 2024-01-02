@@ -23,3 +23,6 @@ export default function Players() {
     </>
   );
 }
+
+
+//  i want to become  a good programmer as soon as poss
