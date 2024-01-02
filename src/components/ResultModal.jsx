@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ResultModal({ result, targetTime }) {
   return (
-    <dialog open>
+    <dialog  className='result-modal'open>
       <h2>you{result}</h2>
       <p>
         the target time was <strong>{targetTime}seconds</strong>
