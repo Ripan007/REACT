@@ -17,7 +17,7 @@ export default function TimeChallenge({ title, targetTime }) {
     clearTimeout(timer.current);
   }
   return (
-    <section  style={{color:'#fff'}}className="challenge">
+    <section  style={{color:'#ffffff'}}className="challenge">
       <h2>{title}</h2>
       {timerExpired &&  <ResultModal targetTime={targetTime} result={'lost'}/>}
       {/* {timerExpired && <p>you lost !</p>} */}
