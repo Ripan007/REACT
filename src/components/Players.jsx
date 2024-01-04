@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState  ,StyleSheet} from 'react';
 
 export default function Players() {
   const playerName = useRef();
@@ -20,3 +20,9 @@ export default function Players() {
     </>
   );
 }
+
+const Styles = StyleSheet.create({
+  container:{
+    color:'#fff'
+  }
+});
