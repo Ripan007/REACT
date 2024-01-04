@@ -21,8 +21,3 @@ export default function Players() {
   );
 }
 
-const Styles = StyleSheet.create({
-  container:{
-    color:'#fff'
-  }
-});
