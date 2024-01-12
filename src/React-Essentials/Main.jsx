@@ -2,9 +2,14 @@ import React from 'react'
 
 const items = ['pant','tshart','kurta']
 
-function  getRandomInt( max){
-    return Math.random() * (max + 1)
+function  getRandomInt(max){
+    return Math.floor(Math.random()  * max)
+
+
+
 }
+
+    console.log(Math.floor(Math.random() * max));
 
 
 
