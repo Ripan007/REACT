@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Modal({children}) {
+export default function Modal({onClose ,children}) {
   return (
-    <div>
-      <dialog open={true}>{children}</dialog>
+    <div onClick={onClose}>
+      <dialog open>{children}</dialog>
     </div>
   );
 }
