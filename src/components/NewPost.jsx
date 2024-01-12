@@ -1,6 +1,10 @@
 import React from 'react';
 
 export default function NewPost() {
+    function changeBodyHandler(event){
+        console.log(event.target.value);
+
+    }
   return (
     <form
       style={{
@@ -15,7 +19,7 @@ export default function NewPost() {
       <label htmlFor="text">text</label>
       <textarea name="" id="" cols="30" rows="3"></textarea>
       <label htmlFor="name">your name</label>
-      <input type="text" placeholder="max" />
+      <input type="text" placeholder="max"  onChange={changeBodyHandler}/>
     </form>
   );
 }
