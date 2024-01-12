@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function NewPost({describe}) {
+export default function NewPost({describe ,nameHandler}) {
 
   return (
     <form
@@ -16,7 +16,7 @@ export default function NewPost({describe}) {
       <label htmlFor="text">text</label>
       <textarea name="" id="" cols="30" rows="3" onChange={describe}></textarea>
       <label htmlFor="name">your name</label>
-      <input type="text" placeholder="max" />
+      <input type="text" placeholder="max" onChange={nameHandler} />
     </form>
   );
 }
