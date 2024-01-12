@@ -5,6 +5,7 @@ function getRandomIndex(max){
   return Math.floor(Math.random() *  (max + 1))
 }
 function Header() {
+  const description = reactDescription[getRandomIndex(2)]
   return (
     <header>
       <img style={{width:'100px',width:'100px'}}
@@ -12,7 +13,7 @@ function Header() {
         alt="change"
       />
       <h1>react essentials</h1>
-      <p>react essentials concept are required for creating any react app</p>
+      <p>{description} react essentials concept are required for creating any react app</p>
     </header>
   );
 }
