@@ -3,10 +3,10 @@ import Post from './Post';
 import NewPost from './NewPost';
 import Modal from './Modal';
 
-export default function PosList() {
+export default function PosList({isPosting}) {
   const [describeText, setDescribeText] = useState('default');
   const [name, setName] = useState('default');
-  const [modalIsVisible, setModalIsVisible] = useState(true);
+
 
   function describeChangeHandler(event) {
     setDescribeText(event.target.value);
@@ -16,12 +16,10 @@ export default function PosList() {
     setName(event.target.value);
   }
 
-  function hideModalHandler() {
-    setModalIsVisible(false)
-  }
+
   return (
     <>
-      {modalIsVisible && (
+      {isPosting && (
         <Modal onClose = {hideModalHandler}>
           <NewPost
             describe={describeChangeHandler}

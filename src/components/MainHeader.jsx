@@ -1,11 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { FaRegMessage } from 'react-icons/fa6';
 
-export default function MainHeader() {
+export default function MainHeader({ createPost }) {
   return (
-    <button>
+    <button onClick={createPost}>
       <p>
-        {' '}
         <FaRegMessage /> new posts
       </p>
     </button>
