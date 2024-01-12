@@ -2,7 +2,7 @@ import React from 'react';
 import { CORE_CONCEPTS } from './data';
 import Header from './components/Header/Header';
 import CoreConcept from './components/CoreConcept';
-import './index.css'
+import  './index.css'
 export default function Main() {
   return (
     <div>
