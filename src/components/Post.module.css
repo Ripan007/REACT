@@ -1,0 +1,8 @@
+.container{
+    background-color: lightblue;
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 0px rgba(000,000,000, 0.1);
+    margin: 10px;
+}
