@@ -16,7 +16,7 @@ export default function App() {
     <main>
       <MainHeader createPost={showModalHandler} />
 
-      <PosList isPosting ={modalIsVisible} />
+      <PosList isPosting ={modalIsVisible} hidePost ={hideModalHandler} />
     </main>
   );
 }

@@ -3,7 +3,7 @@ import Post from './Post';
 import NewPost from './NewPost';
 import Modal from './Modal';
 
-export default function PosList({isPosting}) {
+export default function PosList({isPosting ,hidePost}) {
   const [describeText, setDescribeText] = useState('default');
   const [name, setName] = useState('default');
 
@@ -20,7 +20,7 @@ export default function PosList({isPosting}) {
   return (
     <>
       {isPosting && (
-        <Modal onClose = {hideModalHandler}>
+        <Modal onClose = {hidePost}>
           <NewPost
             describe={describeChangeHandler}
             nameHandler={nameChangeHandler}
