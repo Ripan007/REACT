@@ -7,20 +7,7 @@ function getRandomIndex(max) {
 function Header() {
   const description = reactDescription[getRandomIndex(2)];
   return (
-    <header
-      style={{
-        backgroundColor: 'lightblue',
-        textAlign: 'center',
-        fontFamily: 'monospace',
-        fontSize: 23,
-      }}
-    >
-      <img
-        style={{ width: '100px', width: '100px' }}
-        src="https://cdn.pixabay.com/photo/2014/09/19/05/29/person-451713_1280.jpg"
-        alt="change"
-      />
-      <h1>react essentials</h1>
+    <header>
       <p>
         {description} react essentials concept are required for creating any
         react app
