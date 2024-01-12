@@ -35,3 +35,4 @@ export default function PosList({isPosting ,hidePost}) {
     </>
   );
 }
+
