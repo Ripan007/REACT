@@ -1,10 +1,7 @@
 import React from 'react';
 
-export default function NewPost() {
-    function changeBodyHandler(event){
-        console.log(event.target.value);
+export default function NewPost({describe}) {
 
-    }
   return (
     <form
       style={{
@@ -17,9 +14,9 @@ export default function NewPost() {
       }}
     >
       <label htmlFor="text">text</label>
-      <textarea name="" id="" cols="30" rows="3"></textarea>
+      <textarea name="" id="" cols="30" rows="3" onChange={describe}></textarea>
       <label htmlFor="name">your name</label>
-      <input type="text" placeholder="max"  onChange={changeBodyHandler}/>
+      <input type="text" placeholder="max" />
     </form>
   );
 }
