@@ -1,9 +1,9 @@
 import React from 'react'
-import styless from './Post.module.css'
+import {styles} from './Post.module.css'
 
 export default function Post({title,describe}) {
   return (
-    <section className={styless.container}>
+    <section  className={styles.container}>
         <h1>{title}</h1>
         <p>{describe}</p>
     </section>
