@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Post from './Post';
 import NewPost from './NewPost';
+import Modal from './Modal';
 
 export default function PosList() {
   const [describeText, setDescribeText] = useState('default');
@@ -15,10 +16,13 @@ export default function PosList() {
   }
   return (
     <>
-      <NewPost
-        describe={describeChangeHandler}
-        nameHandler={nameChangeHandler}
-      />
+      <Modal>
+        <NewPost
+          describe={describeChangeHandler}
+          nameHandler={nameChangeHandler}
+        />
+      </Modal>
+
       <ul>
         <Post title={name} describe={describeText} />
         <Post title="next" describe="next is much more better than react" />
