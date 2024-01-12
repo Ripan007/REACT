@@ -1,4 +1,9 @@
 import React from 'react';
+
+const reactDescription =  ['fundamental','crucial','core'];
+function getRandomIndex(max){
+  return Math.floor(Math.random() *  (max + 1))
+}
 function Header() {
   return (
     <header>
