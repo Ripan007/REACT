@@ -66,3 +66,6 @@ export default function Main() {
     </div>
   );
 }
+
+
+//  i have completed the first section , and after completion i have learn lot of things which  include components => in compne
