@@ -2,5 +2,13 @@
     display: flex;
     width: 200px;
     border: 1px  solid lightblue;
-  
+
 }
+
+.active{
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/*  in this co */

@@ -34,12 +34,30 @@ export default function Main() {
         <CoreConcept {...CORE_CONCEPTS[3]} />
       </section>
       <menu>
-        <TabButton onSelect={() => handleSelect('components')}>
+        <TabButton
+          isSelected={selectedTopic === 'components'}
+          onSelect={() => handleSelect('components')}
+        >
           Component
         </TabButton>
-        <TabButton onSelect={() => handleSelect('jsx')}>jsx</TabButton>
-        <TabButton onSelect={() => handleSelect('props')}>Prop</TabButton>
-        <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
+        <TabButton
+          isSelected={selectedTopic === 'jsx'}
+          onSelect={() => handleSelect('jsx')}
+        >
+          jsx
+        </TabButton>
+        <TabButton
+          isSelected={selectedTopic === 'props'}
+          onSelect={() => handleSelect('props')}
+        >
+          Prop
+        </TabButton>
+        <TabButton
+          isSelected={selectedTopic === 'state'}
+          onSelect={() => handleSelect('state')}
+        >
+          State
+        </TabButton>
       </menu>
       <div id="tab-content">{tabContent}</div>
     </div>
