@@ -68,4 +68,4 @@ export default function Main() {
 }
 
 
-//  i have completed the first section , and after completion i have learn lot of things which  include components => in compne
+//   i am pretty happy because i am going  to react towards   my goal
