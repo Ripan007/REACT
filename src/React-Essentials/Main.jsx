@@ -31,7 +31,7 @@ export default function Main() {
         <TabButton onSelect={() => handleSelect('components')}>
           Component
         </TabButton>
-        <TabButton onSelect={() => handleSelect('jSX')}>jsx</TabButton>
+        <TabButton onSelect={() => handleSelect('jsx')}>jsx</TabButton>
         <TabButton onSelect={() => handleSelect('props')}>Prop</TabButton>
         <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
       </menu>
