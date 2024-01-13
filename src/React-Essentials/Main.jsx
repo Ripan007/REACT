@@ -8,6 +8,8 @@ export default function Main() {
   function handleSelect(selectedButton){
     console.log(selectedButton);
   }
+
+  console.log('app content');
   return (
     <div>
       <Header />
