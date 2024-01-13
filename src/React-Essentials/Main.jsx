@@ -4,7 +4,6 @@ import Header from './components/Header/Header';
 import CoreConcept from './components/CoreConcept';
 import '../index.css';
 import TabButton from './components/TabButton';
-import { EXAMPLES } from './data';
 export default function Main() {
   const[selectedTopic,setSelectedTopic] = useState('please select a topic')
 
@@ -35,10 +34,8 @@ export default function Main() {
         <TabButton onSelect={() => handleSelect('prop')}>Prop</TabButton>
         <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
       </menu>
-      <div id='tab-content'>
-
-      </div>
-
+      <div id='tab-conte'></div>
+      {selectedTopic}
     </div>
   );
 }
