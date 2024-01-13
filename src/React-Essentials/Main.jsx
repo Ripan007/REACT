@@ -6,7 +6,7 @@ import '../index.css';
 import TabButton from './components/TabButton';
 import { EXAMPLES } from './data';
 export default function Main() {
-  const[selectedTopic,setSelectedTopic] = useState('please select a topic')
+  const[selectedTopic,setSelectedTopic] = useState('Components')
 
   function handleSelect(selectedButton) {
   setSelectedTopic(selectedButton)
@@ -28,18 +28,22 @@ export default function Main() {
         <CoreConcept {...CORE_CONCEPTS[3]} />
       </section>
       <menu>
-        <TabButton onSelect={() => handleSelect('components')}>
+        <TabButton onSelect={() => handleSelect('Components')}>
           Component
         </TabButton>
-        <TabButton onSelect={() => handleSelect('jsx')}>Jsx</TabButton>
-        <TabButton onSelect={() => handleSelect('prop')}>Prop</TabButton>
-        <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
+        <TabButton onSelect={() => handleSelect('Jsx')}>Jsx</TabButton>
+        <TabButton onSelect={() => handleSelect('Props')}>Prop</TabButton>
+        <TabButton onSelect={() => handleSelect('State')}>State</TabButton>
       </menu>
-      {}
+      <div id='tab-content'>
+        <h1>{EXAMPLES[selectedTopic].title}</h1>
+        <p>{EXAMPLES[selectedTopic].description}</p>
+        <pre>{EXAMPLES[selectedTopic].code}</pre>
+      </div>
+
     </div>
   );
 }
 
 
 
-//   in javascript  the  topic which i need to go through is function , array  , object , rest operator , array desttructing and  many more things , ultimately i want to say that javascriprt is reuiresf fpr react
