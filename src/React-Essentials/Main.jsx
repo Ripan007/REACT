@@ -28,12 +28,12 @@ export default function Main() {
         <CoreConcept {...CORE_CONCEPTS[3]} />
       </section>
       <menu>
-        <TabButton onSelect={() => handleSelect('Components')}>
+        <TabButton onSelect={() => handleSelect('components')}>
           Component
         </TabButton>
-        <TabButton onSelect={() => handleSelect('JSX')}>Jsx</TabButton>
-        <TabButton onSelect={() => handleSelect('Props')}>Prop</TabButton>
-        <TabButton onSelect={() => handleSelect('State')}>State</TabButton>
+        <TabButton onSelect={() => handleSelect('JSX')}>jsx</TabButton>
+        <TabButton onSelect={() => handleSelect('props')}>Prop</TabButton>
+        <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
       </menu>
       <div id='tab-content'>
         <h1>{EXAMPLES[selectedTopic].title}</h1>
