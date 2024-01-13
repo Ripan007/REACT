@@ -19,10 +19,10 @@ export default function Main() {
         <CoreConcept {...CORE_CONCEPTS[3]} />
       </section>
       <menu>
-        <TabButton onSelect={handleSelect}>Component</TabButton>
-        <TabButton onSelect={handleSelect}>Jsx</TabButton>
-        <TabButton onSelect={handleSelect}>Prop</TabButton>
-        <TabButton onSelect={handleSelect}>State</TabButton>
+        <TabButton onSelect={()=>handleSelect('components')}>Component</TabButton>
+        <TabButton onSelect={()=>handleSelect('jsx')}>Jsx</TabButton>
+        <TabButton onSelect={()=>handleSelect('prop')}>Prop</TabButton>
+        <TabButton onSelect={()=>handleSelect('state')}>State</TabButton>
       </menu>
     </div>
   );
