@@ -5,6 +5,9 @@ import CoreConcept from './components/CoreConcept';
 import  '../index.css'
 import TabButton from './components/TabButton';
 export default function Main() {
+  function handleSelect(){
+    console.log('button got clicked');
+  }
   return (
     <div>
       <Header />
@@ -16,10 +19,10 @@ export default function Main() {
         <CoreConcept {...CORE_CONCEPTS[3]} />
       </section>
       <menu>
-        <TabButton>Component</TabButton>
-        <TabButton>Jsx</TabButton>
-        <TabButton>Prop</TabButton>
-        <TabButton>State</TabButton>
+        <TabButton onSelect={handleSelect}>Component</TabButton>
+        <TabButton onSelect={handleSelect}>Jsx</TabButton>
+        <TabButton onSelect={handleSelect}>Prop</TabButton>
+        <TabButton onSelect={handleSelect}>State</TabButton>
       </menu>
     </div>
   );
