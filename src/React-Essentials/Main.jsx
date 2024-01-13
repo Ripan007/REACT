@@ -68,4 +68,3 @@ export default function Main() {
 }
 
 
-//   i am pretty happy because i am going  to react towards   my goal
