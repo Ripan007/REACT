@@ -12,6 +12,17 @@ export default function Main() {
     setSelectedTopic(selectedButton);
   }
 
+  let tabContent = 'please select a button';
+  if (selectedTopic) {
+    tabContent = (
+      <div>
+        <h1>{EXAMPLES[selectedTopic].title}</h1>
+        <p>{EXAMPLES[selectedTopic].description}</p>
+        <pre>{EXAMPLES[selectedTopic].code}</pre>
+      </div>
+    );
+  }
+
   return (
     <div>
       <Header />
@@ -30,17 +41,7 @@ export default function Main() {
         <TabButton onSelect={() => handleSelect('props')}>Prop</TabButton>
         <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
       </menu>
-      <div id="tab-content">
-        {!selectedTopic ? <p>please select a topic</p> : null}
-        {selectedTopic ? (
-          <div>
-            {' '}
-            <h1>{EXAMPLES[selectedTopic].title}</h1>
-            <p>{EXAMPLES[selectedTopic].description}</p>
-            <pre>{EXAMPLES[selectedTopic].code}</pre>
-          </div>
-        ) : null}
-      </div>
+      <div id="tab-content">{tabContent}</div>
     </div>
   );
 }
