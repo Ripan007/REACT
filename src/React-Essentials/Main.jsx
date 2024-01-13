@@ -40,5 +40,3 @@ export default function Main() {
 }
 
 
-
-//   in javascript  the  topic which i need to go through is function , array  , object , rest operator , array desttru
