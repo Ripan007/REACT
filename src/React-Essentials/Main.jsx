@@ -6,7 +6,7 @@ import '../index.css';
 import TabButton from './components/TabButton';
 import { EXAMPLES } from './data';
 export default function Main() {
-  const[selectedTopic,setSelectedTopic] = useState('Components')
+  const[selectedTopic,setSelectedTopic] = useState('components')
 
   function handleSelect(selectedButton) {
   setSelectedTopic(selectedButton)
