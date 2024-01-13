@@ -35,12 +35,11 @@ export default function Main() {
         <TabButton onSelect={() => handleSelect('props')}>Prop</TabButton>
         <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
       </menu>
-      <div id='tab-content'>
+      <div id="tab-content">
         <h1>{EXAMPLES[selectedTopic].title}</h1>
         <p>{EXAMPLES[selectedTopic].description}</p>
         <pre>{EXAMPLES[selectedTopic].code}</pre>
       </div>
-
     </div>
   );
 }
