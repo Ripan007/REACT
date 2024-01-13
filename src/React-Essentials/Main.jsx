@@ -5,8 +5,8 @@ import CoreConcept from './components/CoreConcept';
 import  '../index.css'
 import TabButton from './components/TabButton';
 export default function Main() {
-  function handleSelect(){
-    console.log('button got clicked');
+  function handleSelect(selectedButton){
+    console.log(selectedButton);
   }
   return (
     <div>
