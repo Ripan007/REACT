@@ -2,14 +2,16 @@ import React from 'react';
 import { CORE_CONCEPTS } from './data';
 import Header from './components/Header/Header';
 import CoreConcept from './components/CoreConcept';
-import  '../index.css'
+import '../index.css';
 import TabButton from './components/TabButton';
 export default function Main() {
-  function handleSelect(selectedButton){
-    console.log(selectedButton);
+  let tabContent = 'please select a button'
+  function handleSelect(selectedButton) {
+    tabContent = selectedButton
+    console.log('tabcontent',tabContent);
+
   }
 
-  console.log('app content');
   return (
     <div>
       <Header />
@@ -21,11 +23,17 @@ export default function Main() {
         <CoreConcept {...CORE_CONCEPTS[3]} />
       </section>
       <menu>
-        <TabButton onSelect={()=>handleSelect('components')}>Component</TabButton>
-        <TabButton onSelect={()=>handleSelect('jsx')}>Jsx</TabButton>
-        <TabButton onSelect={()=>handleSelect('prop')}>Prop</TabButton>
-        <TabButton onSelect={()=>handleSelect('state')}>State</TabButton>
+        <TabButton onSelect={() => handleSelect('components')}>
+          Component
+        </TabButton>
+        <TabButton onSelect={() => handleSelect('jsx')}>Jsx</TabButton>
+        <TabButton onSelect={() => handleSelect('prop')}>Prop</TabButton>
+        <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
       </menu>
+      {tabContent}
     </div>
   );
 }
+
+
+//   i dont have to press harder to done my workm
