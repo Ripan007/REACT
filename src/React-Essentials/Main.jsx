@@ -6,16 +6,11 @@ import '../index.css';
 import TabButton from './components/TabButton';
 import { EXAMPLES } from './data';
 export default function Main() {
-  const[selectedTopic,setSelectedTopic] = useState('components')
+  const [selectedTopic, setSelectedTopic] = useState('');
 
   function handleSelect(selectedButton) {
-  setSelectedTopic(selectedButton)
-
-
+    setSelectedTopic(selectedButton);
   }
-
-
-  console.log('render the component');
 
   return (
     <div>
@@ -36,13 +31,16 @@ export default function Main() {
         <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
       </menu>
       <div id="tab-content">
-        <h1>{EXAMPLES[selectedTopic].title}</h1>
-        <p>{EXAMPLES[selectedTopic].description}</p>
-        <pre>{EXAMPLES[selectedTopic].code}</pre>
+        {!selectedTopic ? <p>please select a topic</p> : null}
+        {selectedTopic ? (
+          <div>
+            {' '}
+            <h1>{EXAMPLES[selectedTopic].title}</h1>
+            <p>{EXAMPLES[selectedTopic].description}</p>
+            <pre>{EXAMPLES[selectedTopic].code}</pre>
+          </div>
+        ) : null}
       </div>
     </div>
   );
 }
-
-
-
