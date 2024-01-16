@@ -1,5 +1,5 @@
 import React from 'react'
-import Main from './React-Essentials/Main'
+import Main from './Tic-Tac-Toe/Main'
 
 export default function App() {
   return (

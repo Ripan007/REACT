@@ -1,13 +1,54 @@
-.container{
-    display: flex;
-    width: 200px;
-    border: 1px  solid lightblue;
-
+.container {
+  display: flex;
+  width: 200px;
+  border: 1px solid lightblue;
 }
 
-.active{
-    background-color: #000;
-    color: #fff;
+/* .active {
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+} */
+
+#examples {
+  background-color: rgb(16, 142, 184);
+}
+
+/*  tic tac toe */
+
+.player-name {
+  margin-right: 10px;
+}
+
+.player-symbol {
+  margin-right: 10px;
+}
+#players {
+  /* border: 1px solid #000; */
+  display: flex;
+  gap: 10rem;
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: fit-content;
+  list-style: none;
+}
+
+#game-board {
+  display: flex;
+  list-style: none;
+}
+
+.gameboard-button {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+
+.highlight-player li.active{
+    border: 2px solid #c75915;
     border-radius: 10px;
-}
 
+}
