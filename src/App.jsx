@@ -1,10 +1,9 @@
-import React from 'react'
-import Main from './Tic-Tac-Toe/Main'
+import React from 'react';
 
 export default function App() {
   return (
-    <div>
-      <Main/>
-    </div>
-  )
+    <>
+      <h1>welcome to react</h1>
+    </>
+  );
 }
