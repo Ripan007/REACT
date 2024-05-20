@@ -42,7 +42,6 @@ export default function App() {
           </ul>
         </div>
       </div>
-      <h1>welcome to react ,lets have all the fun</h1>
     </>
   );
 }
