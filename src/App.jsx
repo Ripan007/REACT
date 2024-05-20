@@ -25,7 +25,12 @@ export default function App() {
   return (
     <>
       <div id="tabs">
-        <menu></menu>
+        <menu>
+          <button onClick={() => setActiveContentIndex(0)}>why react ?</button>
+          <button onClick={() => setActiveContentIndex(1)}>
+            core features
+          </button>
+        </menu>
       </div>
       <h1>welcome to react ,lets have all the fun</h1>
     </>
