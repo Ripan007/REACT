@@ -30,7 +30,11 @@ export default function App() {
           <button onClick={() => setActiveContentIndex(1)}>
             core features
           </button>
+          <button onClick={() => setActiveContentIndex(2)}>
+            related resources
+          </button>
         </menu>
+        <div id="tab-content"></div>
       </div>
       <h1>welcome to react ,lets have all the fun</h1>
     </>
