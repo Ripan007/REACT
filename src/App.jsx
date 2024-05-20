@@ -34,7 +34,13 @@ export default function App() {
             related resources
           </button>
         </menu>
-        <div id="tab-content"></div>
+        <div id="tab-content">
+          <ul>
+            {content[activeContentIndex].map(item => {
+              <li key={item}>{item}</li>;
+            })}
+          </ul>
+        </div>
       </div>
       <h1>welcome to react ,lets have all the fun</h1>
     </>
