@@ -24,6 +24,9 @@ export default function App() {
   const [activeContentIndex, setActiveContentIndex] = useState(0);
   return (
     <>
+      <div id="tabs">
+        <menu></menu>
+      </div>
       <h1>welcome to react ,lets have all the fun</h1>
     </>
   );
