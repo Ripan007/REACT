@@ -17,7 +17,7 @@ export default function App() {
       </section>
       <section id="examples">
         <h2>examples</h2>
-        <menu>
+        <menu style={{ display: 'flex', listStyle: 'none', gap: '10px' }}>
           <TabButton>components</TabButton>
           <TabButton>components</TabButton>
           <TabButton>components</TabButton>
