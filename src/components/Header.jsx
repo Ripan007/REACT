@@ -12,8 +12,10 @@ export default function Header() {
   const descriptiion = reactDesc[getRanInde(2)];
   return (
     <div>
-      <img src={ReactImage} alt="couple-image" />
-      <p> {descriptiion} show the output</p>
+      <p>
+        {' '}
+        {descriptiion} 🥇 shows this random output which are randomly executed
+      </p>
     </div>
   );
 }
