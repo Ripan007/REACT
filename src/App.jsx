@@ -7,6 +7,9 @@ import Header from './components/Header';
 import TabButton from './components/TabButton';
 
 export default function App() {
+  function handleSelect() {
+    console.log('button got clicked');
+  }
   return (
     <>
       <Header />
@@ -18,10 +21,10 @@ export default function App() {
       <section id="examples">
         <h2>examples</h2>
         <menu style={{ display: 'flex', listStyle: 'none', gap: '10px' }}>
-          <TabButton>components</TabButton>
-          <TabButton>components</TabButton>
-          <TabButton>components</TabButton>
-          <TabButton>components</TabButton>
+          <TabButton onSelect={handleSelect}>components</TabButton>
+          <TabButton onSelect={handleSelect}>components</TabButton>
+          <TabButton onSelect={handleSelect}>components</TabButton>
+          <TabButton onSelect={handleSelect}>components</TabButton>
         </menu>
       </section>
     </>

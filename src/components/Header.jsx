@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactImage from '../assets/couple.jpg';
 
 const reactDesc = ['xx', 'yy', 'zz'];
 
