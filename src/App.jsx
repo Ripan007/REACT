@@ -22,9 +22,9 @@ export default function App() {
         <h2>examples</h2>
         <menu style={{ display: 'flex', listStyle: 'none', gap: '10px' }}>
           <TabButton onSelect={handleSelect}>components</TabButton>
-          <TabButton onSelect={handleSelect}>components</TabButton>
-          <TabButton onSelect={handleSelect}>components</TabButton>
-          <TabButton onSelect={handleSelect}>components</TabButton>
+          <TabButton onSelect={handleSelect}>jsx</TabButton>
+          <TabButton onSelect={handleSelect}>props</TabButton>
+          <TabButton onSelect={handleSelect}>state</TabButton>
         </menu>
       </section>
     </>
