@@ -11,10 +11,10 @@ function getRanInde(max) {
 
 function CoreConcepts(props) {
   return (
-    <>
+    <div style={'border:1px solid black'}>
       <h1>{props.title}</h1>
       <p>{props.desc}</p>
-    </>
+    </div>
   );
 }
 export default function App() {
