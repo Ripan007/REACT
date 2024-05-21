@@ -7,9 +7,10 @@ function getRanInde(max) {
 }
 
 export default function App() {
+  const descriptiion = reactDesc[getRanInde(2)];
   return (
     <>
-      <p> {reactDesc[getRanInde(2)]} show the output</p>
+      <p> {descriptiion} show the output</p>
     </>
   );
 }
