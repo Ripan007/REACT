@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 import ReactImage from './assets/couple.jpg';
 const reactDesc = ['xx', 'yy', 'zz'];
 
@@ -11,7 +12,7 @@ export default function App() {
   const descriptiion = reactDesc[getRanInde(2)];
   return (
     <>
-      <img src={ReactImage} alt="" />
+      <img src={ReactImage} alt="couple-image" />
       <p> {descriptiion} show the output</p>
     </>
   );
