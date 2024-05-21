@@ -11,8 +11,8 @@ function getRanInde(max) {
 function CoreConcepts(props) {
   return (
     <>
-      <h1>title</h1>
-      <p>description</p>
+      <h1>{props.title}</h1>
+      <p>{props.descriptiion}</p>
     </>
   );
 }
@@ -22,7 +22,7 @@ export default function App() {
     <>
       <img src={ReactImage} alt="couple-image" />
       <p> {descriptiion} show the output</p>
-      <CoreConcepts />
+      <CoreConcepts title="xxx" descriptiion="lkkkkkkkkkk" />
     </>
   );
 }
