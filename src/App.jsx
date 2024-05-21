@@ -32,6 +32,7 @@ export default function App() {
       <p> {descriptiion} show the output</p>
       <CoreConcepts {...CORE_CONCEPTS[0]} />
       <CoreConcepts {...CORE_CONCEPTS[1]} />
+      <CoreConcepts {...CORE_CONCEPTS[2]} />
     </>
   );
 }
