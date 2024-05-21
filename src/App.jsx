@@ -9,9 +9,15 @@ export default function App() {
   return (
     <>
       <Header />
-      <CoreConcepts {...CORE_CONCEPTS[0]} />
-      <CoreConcepts {...CORE_CONCEPTS[1]} />
-      <CoreConcepts {...CORE_CONCEPTS[2]} />
+      <section>
+        <CoreConcepts {...CORE_CONCEPTS[0]} />
+        <CoreConcepts {...CORE_CONCEPTS[1]} />
+        <CoreConcepts {...CORE_CONCEPTS[2]} />
+      </section>
+      <section id="examples">
+        <h2>examples</h2>
+        <menu></menu>
+      </section>
     </>
   );
 }
