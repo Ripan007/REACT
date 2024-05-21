@@ -9,7 +9,7 @@ function getRanInde(max) {
   return Math.floor(Math.random() * (max + 1));
 }
 
-function CoreConcepts(props) {
+function CoreConcepts({ title, describe }) {
   return (
     <div
       style={{
@@ -19,8 +19,8 @@ function CoreConcepts(props) {
         borderRadius: '10px',
       }}
     >
-      <h1>{props.title}</h1>
-      <p>{props.desc}</p>
+      <h1>{title}</h1>
+      <p>{describe}</p>
     </div>
   );
 }
@@ -30,14 +30,8 @@ export default function App() {
     <>
       <img src={ReactImage} alt="couple-image" />
       <p> {descriptiion} show the output</p>
-      <CoreConcepts
-        title={CORE_CONCEPTS[0].title}
-        desc={CORE_CONCEPTS[0].describe}
-      />
-      <CoreConcepts
-        title={CORE_CONCEPTS[1].title}
-        desc={CORE_CONCEPTS[1].describe}
-      />
+      <CoreConcepts {...CORE_CONCEPTS[0]} />
+      <CoreConcepts {...CORE_CONCEPTS[1]} />
     </>
   );
 }
