@@ -11,7 +11,7 @@ function getRanInde(max) {
 
 function CoreConcepts(props) {
   return (
-    <div style={'border:1px solid black'}>
+    <div>
       <h1>{props.title}</h1>
       <p>{props.desc}</p>
     </div>
@@ -25,7 +25,11 @@ export default function App() {
       <p> {descriptiion} show the output</p>
       <CoreConcepts
         title={CORE_CONCEPTS[0].title}
-        desc={CORE_CONCEPTS[0].desc}
+        desc={CORE_CONCEPTS[0].describe}
+      />
+      <CoreConcepts
+        title={CORE_CONCEPTS[1].title}
+        desc={CORE_CONCEPTS[1].describe}
       />
     </>
   );
