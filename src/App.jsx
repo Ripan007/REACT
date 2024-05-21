@@ -19,6 +19,9 @@ export default function App() {
         <h2>examples</h2>
         <menu>
           <TabButton>components</TabButton>
+          <TabButton>components</TabButton>
+          <TabButton>components</TabButton>
+          <TabButton>components</TabButton>
         </menu>
       </section>
     </>
