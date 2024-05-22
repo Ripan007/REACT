@@ -21,5 +21,8 @@ export const CORE_CONCEPTS = [
 ];
 
 export const EXAMPLES = {
-  components: { tit: 'jjjjjjjjjjjjjj', desc: 'hhhhhhhhhhhhhhhhhhhhh' },
+  components: { tit: 'cccccccc', desc: 'hhhhhhhhhhhhhhhhhhhhh' },
+  jsx: { tit: 'jjjjjjjjjjjjjj', desc: 'hhhhhhhhhhhhhhhhhhhhh' },
+  props: { tit: 'pppppppppp', desc: 'hhhhhhhhhhhhhhhhhhhhh' },
+  state: { tit: 'ssssssssss', desc: 'hhhhhhhhhhhhhhhhhhhhh' },
 };
