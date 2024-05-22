@@ -31,6 +31,7 @@ export default function App() {
           <TabButton onSelect={() => handleSelect('props')}>props</TabButton>
           <TabButton onSelect={() => handleSelect('state')}>state</TabButton>
         </menu>
+
         {!selectedTopic && <p>please select a topic</p>}
         {selectedTopic && (
           <div className="tab-content">
