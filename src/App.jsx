@@ -1,67 +1,81 @@
-import './index.css';
-import CoreConcept from './components/CoreConcept';
-import Header from './components/Header';
-import { CORE_CONCEPTS, EXAMPLES } from './data';
-import CoreExample from './components/CoreExample';
 import { useState } from 'react';
-export default function App() {
-  const [activeTabContent, setActiveTabContent] = useState();
-  function handleClick(event) {
-    setActiveTabContent(event);
+
+import { CORE_CONCEPTS } from './data.js';
+import Header from './components/Header/Header';
+import CoreConcept from './components/CoreConcept';
+import TabButton from './components/TabButton';
+import { EXAMPLES } from './data.js';
+
+function App() {
+  const [selectedTopic, setSelectedTopic] = useState();
+
+  function handleSelect(selectedButton) {
+    // selectedButton => 'components', 'jsx', 'props', 'state'
+    setSelectedTopic(selectedButton);
+    // console.log(selectedTopic);
   }
 
-  let tabContent = <p>please select a button</p>;
-  if (activeTabContent) {
+  console.log('APP COMPONENT EXECUTING');
+
+  let tabContent = <p>Please select a topic.</p>;
+
+  if (selectedTopic) {
     tabContent = (
-      <div>
-        <h1>{EXAMPLES[activeTabContent].tit}</h1>
-        <p>{EXAMPLES[activeTabContent].desc}</p>
+      <div id="tab-content">
+        <h3>{EXAMPLES[selectedTopic].title}</h3>
+        <p>{EXAMPLES[selectedTopic].description}</p>
+        <pre>
+          <code>{EXAMPLES[selectedTopic].code}</code>
+        </pre>
       </div>
     );
   }
+
   return (
-    <>
+    <div>
       <Header />
-      <section id="core-concepts">
-        <h2>Core Concepts</h2>
-        <menu>
+      <main>
+        <section id="core-concepts">
+          <h2>Core Concepts</h2>
           <ul>
             {CORE_CONCEPTS.map(conceptItem => (
               <CoreConcept key={conceptItem.title} {...conceptItem} />
             ))}
           </ul>
-        </menu>
-      </section>
-      <section id="core-examples">
-        <menu style={{ display: 'flex', gap: '20px' }}>
-          <h2>examples</h2>
-          <CoreExample
-            isSelected={activeTabContent === 'components'}
-            onSelect={() => handleClick('components')}
-          >
-            components
-          </CoreExample>
-          <CoreExample
-            isSelected={activeTabContent === 'jsx'}
-            onSelect={() => handleClick('jsx')}
-          >
-            jsx
-          </CoreExample>
-          <CoreExample
-            isSelected={activeTabContent === 'props'}
-            onSelect={() => handleClick('props')}
-          >
-            props
-          </CoreExample>
-          <CoreExample
-            isSelected={activeTabContent === 'state'}
-            onSelect={() => handleClick('state')}
-          >
-            state
-          </CoreExample>
-        </menu>
-        {tabContent}
-      </section>
-    </>
+        </section>
+        <section id="examples">
+          <h2>Examples</h2>
+          <menu>
+            <TabButton
+              isSelected={selectedTopic === 'components'}
+              onSelect={() => handleSelect('components')}
+            >
+              Components
+            </TabButton>
+            <TabButton
+              isSelected={selectedTopic === 'jsx'}
+              onSelect={() => handleSelect('jsx')}
+            >
+              JSX
+            </TabButton>
+            <TabButton
+              isSelected={selectedTopic === 'props'}
+              onSelect={() => handleSelect('props')}
+            >
+              Props
+            </TabButton>
+            <TabButton
+              isSelected={selectedTopic === 'state'}
+              onSelect={() => handleSelect('state')}
+            >
+              State
+            </TabButton>
+          </menu>
+          {tabContent}
+        </section>
+      </main>
+    </div>
   );
 }
+
+export default App;
