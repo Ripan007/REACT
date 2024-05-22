@@ -4,7 +4,37 @@ export const CORE_CONCEPTS = [
   { title: 'kk', describe: 'jppppppppp' },
 ];
 
-export default EXAMPLES = {
+export const EXAMPLES = {
+  components: {
+    title: 'react',
+    description: 'react is awesome javascript framework',
+    code: `
+    <div>
+    <p> show this line of code</p>
+
+    </div>
+    `,
+  },
+  components: {
+    title: 'react',
+    description: 'react is awesome javascript framework',
+    code: `
+    <div>
+    <p> show this line of code</p>
+
+    </div>
+    `,
+  },
+  components: {
+    title: 'react',
+    description: 'react is awesome javascript framework',
+    code: `
+    <div>
+    <p> show this line of code</p>
+
+    </div>
+    `,
+  },
   components: {
     title: 'react',
     description: 'react is awesome javascript framework',

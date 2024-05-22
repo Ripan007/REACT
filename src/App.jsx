@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './index.css';
-import EXAMPLES, { CORE_CONCEPTS } from './data';
+import { EXAMPLES, CORE_CONCEPTS } from './data';
 
 import CoreConcepts from './components/CoreConcepts';
 import Header from './components/Header';
@@ -33,9 +33,9 @@ export default function App() {
         </menu>
         <div className="tab-content">
           <h1>{EXAMPLES[selectedTopic].title}</h1>
-          <h2></h2>
+          <h2>{EXAMPLES[selectedTopic].description}</h2>
           <pre>
-            <code></code>
+            <code> {EXAMPLES[selectedTopic].code} </code>
           </pre>
         </div>
       </section>
