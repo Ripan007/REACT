@@ -1,3 +1,4 @@
+import './index.css';
 import CoreConcept from './components/CoreConcept';
 import Header from './components/Header';
 import { CORE_CONCEPTS } from './data';
