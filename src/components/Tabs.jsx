@@ -8,13 +8,3 @@ export default function Tabs({ buttons, children, ButtonsContainer = 'menu' }) {
     </>
   );
 }
-
-/*
-multiple state value
-nested links
-lifting state up
-derived state
-array and object states
-
-
-*/
