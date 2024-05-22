@@ -10,6 +10,7 @@ export default function App() {
   let tabContent = 'please select a button';
   function handleSelect(selectedButton) {
     tabContent = selectedButton;
+    console.log(tabContent);
   }
   return (
     <>
