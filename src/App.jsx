@@ -29,7 +29,9 @@ export default function App() {
   return (
     <>
       <Header />
-      <section>
+      <section id="core-concepts">
+        <h2>core concepts</h2>
+        <ul>{}</ul>
         <CoreConcepts {...CORE_CONCEPTS[0]} />
         <CoreConcepts {...CORE_CONCEPTS[1]} />
         <CoreConcepts {...CORE_CONCEPTS[2]} />
