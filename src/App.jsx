@@ -6,8 +6,14 @@ import Log from './Log';
 export default function App() {
   const [gameTurns, setGameTurns] = useState([]);
   const [activePlayer, setActivePlayer] = useState('x');
-  function handleSelectSquare() {
+  function handleSelectSquare(rowIndex, colIndex) {
     setActivePlayer(currActivePlayer => (currActivePlayer === 'x' ? 'o' : 'x'));
+    setGameTurns(prevTurns => {
+      const updatedTurns = [
+        { square: { row: rowIndex, col: colIndex }, player: activePlayer },
+        ...prevTurns,
+      ];
+    });
   }
   return (
     <main>
