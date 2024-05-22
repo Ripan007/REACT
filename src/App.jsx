@@ -31,10 +31,11 @@ export default function App() {
       <Header />
       <section id="core-concepts">
         <h2>core concepts</h2>
-        <ul>{}</ul>
-        <CoreConcepts {...CORE_CONCEPTS[0]} />
-        <CoreConcepts {...CORE_CONCEPTS[1]} />
-        <CoreConcepts {...CORE_CONCEPTS[2]} />
+        <ul>
+          {CORE_CONCEPTS.map((concept_item, key) => (
+            <CoreConcepts key={key} {...concept_item} />
+          ))}
+        </ul>
       </section>
       <section id="examples">
         <h2>examples</h2>
