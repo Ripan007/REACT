@@ -1,29 +1,29 @@
-import componentsImg from 'https://cdn.pixabay.com/photo/2024/03/31/06/16/bird-8666099_1280.jpg';
-import propsImg from 'https://cdn.pixabay.com/photo/2024/03/31/06/16/bird-8666099_1280.jpg';
-import jsxImg from 'https://cdn.pixabay.com/photo/2024/03/31/06/16/bird-8666099_1280.jpg';
-import stateImg from 'https://cdn.pixabay.com/photo/2024/03/31/06/16/bird-8666099_1280.jpg';
+// import componentsImg from 'https://cdn.pixabay.com/photo/2024/03/31/06/16/bird-8666099_1280.jpg';
+// import propsImg from 'https://cdn.pixabay.com/photo/2024/03/31/06/16/bird-8666099_1280.jpg';
+// import jsxImg from 'https://cdn.pixabay.com/photo/2024/03/31/06/16/bird-8666099_1280.jpg';
+// import stateImg from 'https://cdn.pixabay.com/photo/2024/03/31/06/16/bird-8666099_1280.jpg';
 
 export const CORE_CONCEPTS = [
   {
-    image: componentsImg,
+    // image: componentsImg,
     title: 'Components',
     description:
       'The core UI building block - compose the user interface by combining multiple components.',
   },
   {
-    image: jsxImg,
+    // image: jsxImg,
     title: 'JSX',
     description:
       'Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered.',
   },
   {
-    image: propsImg,
+    // image: propsImg,
     title: 'Props',
     description:
       'Make components configurable (and therefore reusable) by passing input data to them.',
   },
   {
-    image: stateImg,
+    // image: stateImg,
     title: 'State',
     description:
       'React-managed data which, when changed, causes the component to re-render & the UI to update.',

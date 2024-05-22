@@ -1,4 +1,4 @@
-import reactImg from '../../assets/react-core-concepts.png';
+// import reactImg from 'https://cdn.pixabay.com/photo/2024/03/31/06/16/bird-8666099_1280.jpg';
 import './Header.css';
 
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <header>
-      <img src={reactImg} alt="Stylized atom" />
+      {/* <img src={reactImg} alt="Stylized atom" /> */}
       <h1>React Essentials</h1>
       <p>
         {description} React concepts you will need for almost any app you are
