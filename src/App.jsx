@@ -7,22 +7,23 @@ import Header from './components/Header';
 import TabButton from './components/TabButton';
 
 export default function App() {
-  const [selectedTopic, setSelectedTopic] = useState('');
+  const [selectedTopic, setSelectedTopic] = useState();
 
   function handleSelect(selectedButton) {
     setSelectedTopic(selectedButton);
-    let tabContent = <p>please select a topic</p>;
-    if (tabContent) {
-      tabContent = (
-        <div className="tab-content">
-          <h1>{EXAMPLES[selectedTopic].title}</h1>
-          <h2>{EXAMPLES[selectedTopic].description}</h2>
-          <pre>
-            <code> {EXAMPLES[selectedTopic].code} </code>
-          </pre>
-        </div>
-      );
-    }
+  }
+
+  let tabContent = <p>please select a topic</p>;
+  if (selectedTopic) {
+    tabContent = (
+      <div className="tab-content">
+        <h1>{EXAMPLES[selectedTopic].title}</h1>
+        <h2>{EXAMPLES[selectedTopic].description}</h2>
+        <pre>
+          <code> {EXAMPLES[selectedTopic].code} </code>
+        </pre>
+      </div>
+    );
   }
 
   return (
