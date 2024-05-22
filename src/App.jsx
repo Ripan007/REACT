@@ -11,19 +11,18 @@ export default function App() {
 
   function handleSelect(selectedButton) {
     setSelectedTopic(selectedButton);
-  }
-
-  let tabContent = <p>please select a topic</p>;
-  if (tabContent) {
-    tabContent = (
-      <div className="tab-content">
-        <h1>{EXAMPLES[selectedTopic].title}</h1>
-        <h2>{EXAMPLES[selectedTopic].description}</h2>
-        <pre>
-          <code> {EXAMPLES[selectedTopic].code} </code>
-        </pre>
-      </div>
-    );
+    let tabContent = <p>please select a topic</p>;
+    if (tabContent) {
+      tabContent = (
+        <div className="tab-content">
+          <h1>{EXAMPLES[selectedTopic].title}</h1>
+          <h2>{EXAMPLES[selectedTopic].description}</h2>
+          <pre>
+            <code> {EXAMPLES[selectedTopic].code} </code>
+          </pre>
+        </div>
+      );
+    }
   }
 
   return (
