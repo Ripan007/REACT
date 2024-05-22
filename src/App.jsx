@@ -18,6 +18,7 @@ export default function App() {
         { square: { row: rowIndex, col: colIndex }, player: currentPlayer },
         ...prevTurns,
       ];
+      return updatedTurns;
     });
   }
   return (
