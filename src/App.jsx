@@ -31,9 +31,8 @@ export default function App() {
           <TabButton onSelect={() => handleSelect('props')}>props</TabButton>
           <TabButton onSelect={() => handleSelect('state')}>state</TabButton>
         </menu>
-        {!selectedTopic ? (
-          <p>please select a topic</p>
-        ) : (
+        {!selectedTopic && <p>please select a topic</p>}
+        {selectedTopic && (
           <div className="tab-content">
             <h1>{EXAMPLES[selectedTopic].title}</h1>
             <h2>{EXAMPLES[selectedTopic].description}</h2>
@@ -46,5 +45,3 @@ export default function App() {
     </>
   );
 }
-
-//  more readable is much  more important the shorter syn
