@@ -20,8 +20,4 @@ export const CORE_CONCEPTS = [
   },
 ];
 
-export const EXAMPLES = [
-  {
-    components: {},
-  },
-];
+export const EXAMPLES = [];
