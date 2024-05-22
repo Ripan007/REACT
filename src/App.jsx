@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './index.css';
-
+import EXAMPLES from './components/examples'
 import { CORE_CONCEPTS } from './data';
 import CoreConcepts from './components/CoreConcepts';
 import Header from './components/Header';
@@ -12,7 +12,7 @@ export default function App() {
   function handleSelect(selectedButton) {
     setSelectedTopic(selectedButton);
   }
-
+🆒
   return (
     <>
       <Header />
