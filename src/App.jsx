@@ -7,13 +7,6 @@ export default function App() {
         <ol id="players">
           <li>
             <span className="player">
-              <span className="player-name">player1</span>
-              <span className="player-symbol">x</span>
-              <button>edit</button>
-            </span>
-          </li>
-          <li>
-            <span className="player">
               <span className="player-name">player2</span>
               <span className="player-symbol">o</span>
               <button>edit</button>
