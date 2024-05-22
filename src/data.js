@@ -1,11 +1,18 @@
+export const CORE_CONCEPTS = [
+  { title: 'ccc', describe: 'jjjjjjjjj' },
+  { title: 'aa', describe: 'jjjjjjllljjj' },
+  { title: 'kk', describe: 'jppppppppp' },
+];
+
 export default EXAMPLES = {
   components: {
-    title: 'components',
-    description:
-      'react is awesome , but to unlease its power i have to know about it',
+    title: 'react',
+    description: 'react is awesome javascript framework',
     code: `
     <div>
-    <h1> react is awesome</h1>
-    </div>`,
+    <p> show this line of code</p>
+
+    </div>
+    `,
   },
 };

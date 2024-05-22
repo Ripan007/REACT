@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './index.css';
-import EXAMPLES from './data';
+import EXAMPLES, { CORE_CONCEPTS } from './data';
 
 import CoreConcepts from './components/CoreConcepts';
 import Header from './components/Header';
