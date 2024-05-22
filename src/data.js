@@ -1,7 +1,7 @@
-import componentsImg from '';
-import propsImg from './assets/config.png';
-import jsxImg from './assets/jsx-ui.png';
-import stateImg from './assets/state-mgmt.png';
+import componentsImg from 'https://cdn.pixabay.com/photo/2024/03/31/06/16/bird-8666099_1280.jpg';
+import propsImg from 'https://cdn.pixabay.com/photo/2024/03/31/06/16/bird-8666099_1280.jpg';
+import jsxImg from 'https://cdn.pixabay.com/photo/2024/03/31/06/16/bird-8666099_1280.jpg';
+import stateImg from 'https://cdn.pixabay.com/photo/2024/03/31/06/16/bird-8666099_1280.jpg';
 
 export const CORE_CONCEPTS = [
   {
