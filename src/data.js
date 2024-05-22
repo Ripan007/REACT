@@ -15,8 +15,8 @@ export const EXAMPLES = {
     </div>
     `,
   },
-  components: {
-    title: 'react',
+  jsx: {
+    title: 'jsx',
     description: 'react is awesome javascript framework',
     code: `
     <div>
@@ -25,8 +25,8 @@ export const EXAMPLES = {
     </div>
     `,
   },
-  components: {
-    title: 'react',
+  props: {
+    title: 'props',
     description: 'react is awesome javascript framework',
     code: `
     <div>
@@ -35,8 +35,8 @@ export const EXAMPLES = {
     </div>
     `,
   },
-  components: {
-    title: 'react',
+  state: {
+    title: 'state',
     description: 'react is awesome javascript framework',
     code: `
     <div>
