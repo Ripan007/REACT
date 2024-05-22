@@ -9,8 +9,8 @@ export default function Header() {
     <header>
       <h1>react essentials</h1>
       <p>
-        {description} : core react concepts you will need for almost any app you
-        are going to build
+        {description} react concepts you will need for almost any app you are
+        going to build
       </p>
     </header>
   );
