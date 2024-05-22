@@ -1,7 +1,7 @@
 export default function Header() {
   const reactDescription = ['fundamental', 'core', 'essentials'];
   function getRandomIndex(max) {
-    return Math.floor(Math.random() * (max + 1));
+    Math.floor(Math.random() * (max + 1));
   }
   return (
     <header>
