@@ -46,3 +46,5 @@ export default function App() {
     </>
   );
 }
+
+//  more readable is much  more important the shorter syn
