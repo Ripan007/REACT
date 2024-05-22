@@ -13,7 +13,6 @@ export default function App() {
     setSelectedTopic(selectedButton);
   }
 
-  console.log(⚕️);
   return (
     <>
       <Header />
