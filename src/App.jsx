@@ -16,7 +16,7 @@ function App() {
     // console.log(selectedTopic);
   }
 
-  console.log('APP COMPONENT EXECUTING');
+  // console.log('APP COMPONENT EXECUTING');
 
   let tabContent = <p>Please select a topic.</p>;
 
