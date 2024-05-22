@@ -7,8 +7,8 @@ import Header from './components/Header';
 import TabButton from './components/TabButton';
 
 export default function App() {
-  function handleSelect() {
-    console.log('button got clicked');
+  function handleSelect(selectedButton) {
+    console.log(selectedButton);
   }
   return (
     <>
@@ -21,10 +21,11 @@ export default function App() {
       <section id="examples">
         <h2>examples</h2>
         <menu style={{ display: 'flex', listStyle: 'none', gap: '10px' }}>
-          <TabButton onSelect={handleSelect}>components</TabButton>
-          <TabButton onSelect={handleSelect}>jsx</TabButton>
-          <TabButton onSelect={handleSelect}>props</TabButton>
-          <TabButton onSelect={handleSelect}>state</TabButton>
+          <TabButton onSelect={() => handleSelect('components')}>
+            components
+          </TabButton>
+          <TabButton onSelect={() => handleSelect('props')}>props</TabButton>
+          <TabButton onSelect={() => handleSelect('state')}>state</TabButton>
         </menu>
       </section>
     </>
