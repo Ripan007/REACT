@@ -9,7 +9,15 @@ export default function GameBoard() {
   return (
     <ol id="game-board">
       {initialGameBoard.map((row, rowIndex) => (
-        <li></li>
+        <li key={rowIndex}>
+          <ol>
+            {row.map((col, colIndex) => (
+              <li key={colIndex}>
+                <button></button>
+              </li>
+            ))}
+          </ol>
+        </li>
       ))}
     </ol>
   );
