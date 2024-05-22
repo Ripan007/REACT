@@ -5,6 +5,7 @@ export default function App() {
       <Header />
       <section id="core-concepts">
         <h2>Core Concepts</h2>
+        <menu></menu>
       </section>
     </>
   );
