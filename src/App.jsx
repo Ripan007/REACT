@@ -6,8 +6,12 @@ export default function App() {
       <div id="game-container">
         <ol id="players">
           <li>
-            <span className="player-name">player name</span>
-            <span className="player-symbol">player symbol</span>
+            <span className="player-name">player1</span>
+            <span className="player-symbol">x</span>
+          </li>
+          <li>
+            <span className="player-name">player2</span>
+            <span className="player-symbol">o</span>
           </li>
         </ol>
         game boards
