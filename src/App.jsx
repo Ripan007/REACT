@@ -6,6 +6,11 @@ import CoreExample from './components/CoreExample';
 import { useState } from 'react';
 export default function App() {
   const [activeTabContent, setActiveTabContent] = useState();
+  function handleClick(event) {
+    setActiveTabContent(event);
+  }
+
+  let tabContent = <></>;
   return (
     <>
       <Header />
@@ -22,10 +27,12 @@ export default function App() {
       <section id="core-examples">
         <menu style={{ display: 'flex', gap: '20px' }}>
           <h2>examples</h2>
-          <CoreExample>components</CoreExample>
-          <CoreExample>jsx</CoreExample>
-          <CoreExample>props</CoreExample>
-          <CoreExample>state</CoreExample>
+          <CoreExample onSelect={() => handleClick('components')}>
+            components
+          </CoreExample>
+          <CoreExample onSelect={() => handleClick('jsx')}>jsx</CoreExample>
+          <CoreExample onSelect={() => handleClick('props')}>props</CoreExample>
+          <CoreExample onSelect={() => handleClick('state')}>state</CoreExample>
         </menu>
       </section>
     </>
