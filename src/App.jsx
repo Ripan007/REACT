@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Player from './components/Player';
 import GameBoard from './components/GameBoard';
 
@@ -22,7 +22,10 @@ export default function App() {
             isActive={activePlayer === 'o'}
           />
         </ol>
-        <GameBoard onSelectSquare={handleSelectSquare} />
+        <GameBoard
+          onSelectSquare={handleSelectSquare}
+          activePlayerSymbol={activePlayer}
+        />
       </div>
       logic
     </main>
