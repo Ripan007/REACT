@@ -59,8 +59,9 @@ export default function Examples() {
             </TabButton>
           </>
         }
-      ></Tabs>
-      {tabContent}
+      >
+        {tabContent}
+      </Tabs>
     </Section>
   );
 }
