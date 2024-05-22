@@ -1,6 +1,16 @@
 import React from 'react';
-const initialGameBoard = [[null, null, null], [null], []];
+const initialGameBoard = [
+  [null, null, null],
+  [null, null, null],
+  [null, null, null],
+];
 
 export default function GameBoard() {
-  return <div>GameBoard</div>;
+  return (
+    <ol id="game-board">
+      {initialGameBoard.map((row, rowIndex) => (
+        <li></li>
+      ))}
+    </ol>
+  );
 }
