@@ -36,25 +36,25 @@ export default function App() {
         <menu style={{ display: 'flex', gap: '20px' }}>
           <h2>examples</h2>
           <CoreExample
-            isSelected={activeTabContent}
+            isSelected={activeTabContent === 'components'}
             onSelect={() => handleClick('components')}
           >
             components
           </CoreExample>
           <CoreExample
-            isSelected={activeTabContent}
+            isSelected={activeTabContent === 'jsx'}
             onSelect={() => handleClick('jsx')}
           >
             jsx
           </CoreExample>
           <CoreExample
-            isSelected={activeTabContent}
+            isSelected={activeTabContent === 'props'}
             onSelect={() => handleClick('props')}
           >
             props
           </CoreExample>
           <CoreExample
-            isSelected={activeTabContent}
+            isSelected={activeTabContent === 'state'}
             onSelect={() => handleClick('state')}
           >
             state
