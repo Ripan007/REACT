@@ -20,6 +20,6 @@ export const CORE_CONCEPTS = [
   },
 ];
 
-export const EXAMPLES = [
-  { components: { tit: 'jjjjjjjjjjjjjj', desc: 'hhhhhhhhhhhhhhhhhhhhh' } },
-];
+export const EXAMPLES = {
+  components: { tit: 'jjjjjjjjjjjjjj', desc: 'hhhhhhhhhhhhhhhhhhhhh' },
+};
