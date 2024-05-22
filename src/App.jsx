@@ -10,7 +10,14 @@ export default function App() {
     setActiveTabContent(event);
   }
 
-  let tabContent = <></>;
+  let tabContent = <p>please select a button</p>;
+  if (activeTabContent) {
+    tabContent = (
+      <div>
+        <h1>{}</h1>
+      </div>
+    );
+  }
   return (
     <>
       <Header />
@@ -34,6 +41,7 @@ export default function App() {
           <CoreExample onSelect={() => handleClick('props')}>props</CoreExample>
           <CoreExample onSelect={() => handleClick('state')}>state</CoreExample>
         </menu>
+        {tabContent}
       </section>
     </>
   );
