@@ -1,7 +1,7 @@
 import './index.css';
 import CoreConcept from './components/CoreConcept';
 import Header from './components/Header';
-import { CORE_CONCEPTS } from './data';
+import { CORE_CONCEPTS, EXAMPLES } from './data';
 import CoreExample from './components/CoreExample';
 import { useState } from 'react';
 export default function App() {
@@ -14,7 +14,8 @@ export default function App() {
   if (activeTabContent) {
     tabContent = (
       <div>
-        <h1>{}</h1>
+        <h1>{EXAMPLES[activeTabContent].tit}</h1>
+        <p>{EXAMPLES[activeTabContent].desc}</p>
       </div>
     );
   }
