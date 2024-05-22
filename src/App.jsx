@@ -4,7 +4,9 @@ import GameBoard from './components/GameBoard';
 
 export default function App() {
   const [activePlayer, setActivePlayer] = useState('x');
-  function handleSelectSquare() {}
+  function handleSelectSquare() {
+    setActivePlayer(currActivePlayer => (currActivePlayer === 'x' ? 'o' : 'x'));
+  }
   return (
     <main>
       <div id="game-container">
