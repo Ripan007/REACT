@@ -37,12 +37,30 @@ export default function App() {
       <section id="examples">
         <h2>examples</h2>
         <menu style={{ display: 'flex', listStyle: 'none', gap: '10px' }}>
-          <TabButton onSelect={() => handleSelect('components')}>
+          <TabButton
+            isSelected={selectedTopic === 'components'}
+            onSelect={() => handleSelect('components')}
+          >
             components
           </TabButton>
-          <TabButton onSelect={() => handleSelect('jsx')}>jsx</TabButton>
-          <TabButton onSelect={() => handleSelect('props')}>props</TabButton>
-          <TabButton onSelect={() => handleSelect('state')}>state</TabButton>
+          <TabButton
+            isSelected={selectedTopic === 'jsx'}
+            onSelect={() => handleSelect('jsx')}
+          >
+            jsx
+          </TabButton>
+          <TabButton
+            isSelected={selectedTopic === 'props'}
+            onSelect={() => handleSelect('props')}
+          >
+            props
+          </TabButton>
+          <TabButton
+            isSelected={selectedTopic === 'state'}
+            onSelect={() => handleSelect('state')}
+          >
+            state
+          </TabButton>
         </menu>
 
         {tabContent}
