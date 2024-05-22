@@ -2,12 +2,18 @@ import React, { useState } from 'react';
 
 export default function Player({ name, symbol }) {
   const [isEditing, setIsEditing] = useState(false);
-  let show = <span className="player-name">{name}</span>;
+
+  if (isEditing) {
+    let show = <span className="player-name">{name}</span>;
+  } else {
+    show = <span className="player-symbol">{symbol}</span>;
+  }
 
   return (
     <li>
       <span className="player">
-        <span className="player-symbol">{symbol}</span>
+        {show}
+
         <button>edit</button>
       </span>
     </li>
