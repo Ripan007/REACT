@@ -12,6 +12,8 @@ export default function App() {
   function handleSelect(selectedButton) {
     setSelectedTopic(selectedButton);
   }
+
+  console.log(⚕️);
   return (
     <>
       <Header />
