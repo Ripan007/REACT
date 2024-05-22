@@ -35,12 +35,30 @@ export default function App() {
       <section id="core-examples">
         <menu style={{ display: 'flex', gap: '20px' }}>
           <h2>examples</h2>
-          <CoreExample onSelect={() => handleClick('components')}>
+          <CoreExample
+            onAdd={components === 'active'}
+            onSelect={() => handleClick('components')}
+          >
             components
           </CoreExample>
-          <CoreExample onSelect={() => handleClick('jsx')}>jsx</CoreExample>
-          <CoreExample onSelect={() => handleClick('props')}>props</CoreExample>
-          <CoreExample onSelect={() => handleClick('state')}>state</CoreExample>
+          <CoreExample
+            onAdd={jsx === 'active'}
+            onSelect={() => handleClick('jsx')}
+          >
+            jsx
+          </CoreExample>
+          <CoreExample
+            onAdd={props === 'active'}
+            onSelect={() => handleClick('props')}
+          >
+            props
+          </CoreExample>
+          <CoreExample
+            onAdd={state === 'active'}
+            onSelect={() => handleClick('state')}
+          >
+            state
+          </CoreExample>
         </menu>
         {tabContent}
       </section>
