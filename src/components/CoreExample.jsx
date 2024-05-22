@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function CoreExample({ children, onSelect, onActive }) {
+export default function CoreExample({ children, onSelect, isSelected }) {
   return (
     <div>
-      <button className={onActive === 'active'} onClick={onSelect}>
+      <button className={isSelected ? 'active' : undefined} onClick={onSelect}>
         {children}
       </button>
     </div>
