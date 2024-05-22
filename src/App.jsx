@@ -1,5 +1,6 @@
 import React from 'react';
 import Player from './components/Player';
+import GameBoard from './components/GameBoard';
 
 export default function App() {
   return (
@@ -9,7 +10,7 @@ export default function App() {
           <Player initialName="player1" symbol="x" />
           <Player initialName="player2" symbol="o" />
         </ol>
-        game boards
+        <GameBoard />
       </div>
       logic
     </main>
