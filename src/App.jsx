@@ -31,14 +31,17 @@ export default function App() {
           <TabButton onSelect={() => handleSelect('props')}>props</TabButton>
           <TabButton onSelect={() => handleSelect('state')}>state</TabButton>
         </menu>
-        {!selectedTopic  ? (<p><p/>):()}
-        <div className="tab-content">
-          <h1>{EXAMPLES[selectedTopic].title}</h1>
-          <h2>{EXAMPLES[selectedTopic].description}</h2>
-          <pre>
-            <code> {EXAMPLES[selectedTopic].code} </code>
-          </pre>
-        </div>
+        {!selectedTopic ? (
+          <p>please select a topic</p>
+        ) : (
+          <div className="tab-content">
+            <h1>{EXAMPLES[selectedTopic].title}</h1>
+            <h2>{EXAMPLES[selectedTopic].description}</h2>
+            <pre>
+              <code> {EXAMPLES[selectedTopic].code} </code>
+            </pre>
+          </div>
+        )}
       </section>
     </>
   );
