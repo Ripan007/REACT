@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.css';
 
 import { CORE_CONCEPTS } from './data';
@@ -7,10 +7,10 @@ import Header from './components/Header';
 import TabButton from './components/TabButton';
 
 export default function App() {
+  const [selectedTopic, setSelectedTopic] = useState('click a button');
   let tabContent = 'please select a button';
   function handleSelect(selectedButton) {
-    tabContent = selectedButton;
-    console.log(tabContent);
+    setSelectedTopic(selectedButton);
   }
   return (
     <>
@@ -30,7 +30,7 @@ export default function App() {
           <TabButton onSelect={() => handleSelect('props')}>props</TabButton>
           <TabButton onSelect={() => handleSelect('state')}>state</TabButton>
         </menu>
-        {tabContent}
+        {selectedTopic}
       </section>
     </>
   );
