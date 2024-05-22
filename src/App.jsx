@@ -1,7 +1,8 @@
+import Header from './components/Header';
 export default function App() {
   return (
     <>
-      <h1>welcome to the react essentials</h1>
+      <Header />
     </>
   );
 }
