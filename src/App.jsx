@@ -24,6 +24,7 @@ export default function App() {
           <TabButton onSelect={() => handleSelect('components')}>
             components
           </TabButton>
+          <TabButton onSelect={() => handleSelect('jsx')}>jsx</TabButton>
           <TabButton onSelect={() => handleSelect('props')}>props</TabButton>
           <TabButton onSelect={() => handleSelect('state')}>state</TabButton>
         </menu>
