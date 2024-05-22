@@ -7,8 +7,9 @@ import Header from './components/Header';
 import TabButton from './components/TabButton';
 
 export default function App() {
+  let tabContent = 'please select a button';
   function handleSelect(selectedButton) {
-    console.log(selectedButton);
+    tabContent = selectedButton;
   }
   return (
     <>
@@ -28,6 +29,7 @@ export default function App() {
           <TabButton onSelect={() => handleSelect('props')}>props</TabButton>
           <TabButton onSelect={() => handleSelect('state')}>state</TabButton>
         </menu>
+        {tabContent}
       </section>
     </>
   );
