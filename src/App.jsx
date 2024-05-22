@@ -13,7 +13,6 @@ export default function App() {
       if (prevTurns.length > 0 && prevTurns[0].player === 'x') {
         currentPlayer = 'o';
       }
-
       const updatedTurns = [
         { square: { row: rowIndex, col: colIndex }, player: currentPlayer },
         ...prevTurns,
