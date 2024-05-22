@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function CoreExample({ children }) {
+export default function CoreExample({ children, onSelect }) {
   return (
     <div>
-      <button>{children}</button>
+      <button onClick={onSelect}>{children}</button>
     </div>
   );
 }
