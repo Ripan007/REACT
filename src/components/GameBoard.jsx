@@ -7,8 +7,11 @@ const initialGameBoard = [
 
 export default function GameBoard() {
   const [gameBoard, setGameBoard] = useState(initialGameBoard);
-  function handleSelectSquare() {
-    setGameBoard(prevGameBoard => {});
+  function handleSelectSquare(rowIndex, colIndex) {
+    setGameBoard(prevGameBoard => {
+      prevGameBoard[rowIndex][colIndex] = 'X';
+      return prevGameBoard;
+    });
   }
   return (
     <ol id="game-board">
