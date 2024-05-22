@@ -9,6 +9,11 @@ export default function App() {
   function handleSelectSquare(rowIndex, colIndex) {
     setActivePlayer(currActivePlayer => (currActivePlayer === 'x' ? 'o' : 'x'));
     setGameTurns(prevTurns => {
+      let currentPlayer = 'x';
+      if (prevTurns.length > 0 && prevTurns[0].player === 'x') {
+        currentPlayer = 'o';
+      }
+
       const updatedTurns = [
         { square: { row: rowIndex, col: colIndex }, player: activePlayer },
         ...prevTurns,
