@@ -3,7 +3,9 @@ import CoreConcept from './components/CoreConcept';
 import Header from './components/Header';
 import { CORE_CONCEPTS } from './data';
 import CoreExample from './components/CoreExample';
+import { useState } from 'react';
 export default function App() {
+  const [activeTabContent, setActiveTabContent] = useState();
   return (
     <>
       <Header />
@@ -18,12 +20,12 @@ export default function App() {
         </menu>
       </section>
       <section id="core-examples">
-        <menu>
+        <menu style={{ display: 'flex', gap: '20px' }}>
           <h2>examples</h2>
           <CoreExample>components</CoreExample>
-          <CoreExample></CoreExample>
-          <CoreExample>llllll</CoreExample>
-          <CoreExample>llllll</CoreExample>
+          <CoreExample>jsx</CoreExample>
+          <CoreExample>props</CoreExample>
+          <CoreExample>state</CoreExample>
         </menu>
       </section>
     </>
