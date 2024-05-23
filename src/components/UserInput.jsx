@@ -12,6 +12,14 @@ export default function UserInput() {
           <label htmlFor="">annual investment</label>
           <input type="text" />
         </p>
+        <p>
+          <label htmlFor="">Initial investment</label>
+          <input type="text" />
+        </p>
+        <p>
+          <label htmlFor="">annual investment</label>
+          <input type="text" />
+        </p>
       </div>
     </section>
   );
