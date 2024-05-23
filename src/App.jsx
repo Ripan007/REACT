@@ -11,3 +11,16 @@ export default function App() {
     </>
   );
 }
+
+/*
+* * Styling React Apps
+* static and dynamic styling for pretty apps
+* styling with vanilla css
+* scoping styles with  css modules
+* css-in-js styling with 'styled components'
+* styling with tailwind css
+* static and dynamic(conditional)
+
+
+
+*/
