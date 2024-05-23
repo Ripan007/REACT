@@ -2,8 +2,8 @@ import React from 'react';
 import { calculateInvestmentResults } from '../util/investment';
 
 export default function Results({ input }) {
-  const results = calculateInvestmentResults(input);
-  console.log(results);
+  const resultsData = calculateInvestmentResults(input);
+  //   console.log(results);
   return (
     <table id="result">
       <thead>
@@ -15,7 +15,15 @@ export default function Results({ input }) {
           <th>invested capital</th>
         </tr>
       </thead>
-      <tbody></tbody>
+      <tbody>
+        {resultsData.map(yearData => {
+          return (
+            <tr key={yearData.year}>
+              <td>{yearData.year}</td>
+            </tr>
+          );
+        })}
+      </tbody>
     </table>
   );
 }
