@@ -13,11 +13,11 @@ export default function UserInput() {
           <input type="text" />
         </p>
         <p>
-          <label htmlFor="">Initial investment</label>
+          <label htmlFor="">expected return</label>
           <input type="text" />
         </p>
         <p>
-          <label htmlFor="">annual investment</label>
+          <label htmlFor="">duration</label>
           <input type="text" />
         </p>
       </div>
