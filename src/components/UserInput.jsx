@@ -5,11 +5,11 @@ export default function UserInput() {
     <section id="" user-input>
       <div className="input-group">
         <p>
-          <label htmlFor=""></label>
+          <label htmlFor="">Initial investment</label>
           <input type="text" />
         </p>
         <p>
-          <label htmlFor=""></label>
+          <label htmlFor="">annual investment</label>
           <input type="text" />
         </p>
       </div>
