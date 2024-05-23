@@ -18,7 +18,11 @@ export default function App() {
     advantage :
     {1.css code is decoupled from jsx code
     2.you write css code as you (maybe) know and (maybe) love it
-    3.
+    3.css code can be written by another developer who needs only a minimal amount of access to your jsx code
+    }
+    disadvantage:
+    {1.you need to know css
+    2.css code is not  scoped to components => css rules may  clash across components(eg.same css class name used in different components)
     }
  * styling with vanilla css
  * scoping styles with  css modules
