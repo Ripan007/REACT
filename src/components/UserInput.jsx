@@ -7,6 +7,7 @@ export default function UserInput() {
     expectedReturn: 6,
     duration: 10,
   });
+  function handleChange(inputIdentifier, newValue) {}
   return (
     <section id="user-input">
       <div className="input-group">
