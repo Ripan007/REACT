@@ -14,7 +14,7 @@ export default function App() {
 
 /*
  * ******** STYLING REACT APPS ***********
- * static and dynamic styling for pretty apps
+ * styling with vanilla css
     advantage :
     {1.css code is decoupled from jsx code
     2.you write css code as you (maybe) know and (maybe) love it
@@ -27,7 +27,15 @@ export default function App() {
     across components(eg.same css class name used in different components
       for different purposes)
     }
- * styling with vanilla css
+* inline css
+advantage:{
+  1.quick and easy to add to jsx
+  2.styles only effect the element to  which you add to them
+}
+disadvantage:{
+  1.you need to know css
+  2.you  need to style every element individually
+}
  * scoping styles with  css modules
  * css-in-js styling with 'styled components'
  * styling with tailwind css
