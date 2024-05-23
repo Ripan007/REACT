@@ -20,7 +20,7 @@ export default function App() {
   return (
     <>
       <Header />
-      <UserInput onChange={handleChange} />
+      <UserInput userInput={userInput} onChange={handleChange} />
     </>
   );
 }
