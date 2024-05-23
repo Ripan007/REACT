@@ -23,6 +23,7 @@ export default function UserInput() {
           <input
             type="number"
             required
+            value={userInput.initialInvestment}
             onChange={event =>
               handleChange('initialInvestment', event.target.value)
             }
