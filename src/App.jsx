@@ -35,6 +35,7 @@ advantage:{
 disadvantage:{
   1.you need to know css
   2.you  need to style every element individually
+  3.no separation between css and jsx code
 }
  * scoping styles with  css modules
  * css-in-js styling with 'styled components'
