@@ -8,7 +8,11 @@ export default function Results({ input }) {
     <table id="" result>
       <thead>
         <tr>
-          <th></th>
+          <th>year</th>
+          <th>Investment value</th>
+          <th>interest(year)</th>
+          <th>total interest</th>
+          <th>invested capital</th>
         </tr>
       </thead>
     </table>
