@@ -37,3 +37,5 @@ export default function Results({ input }) {
     </table>
   );
 }
+
+//  this way i could not able to achieve what i want
