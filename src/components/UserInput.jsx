@@ -20,7 +20,13 @@ export default function UserInput() {
       <div className="input-group">
         <p>
           <label htmlFor="">Initial investment</label>
-          <input type="number" required />
+          <input
+            type="number"
+            required
+            onChange={event =>
+              handleChange('initialInvestment', event.target.value)
+            }
+          />
         </p>
         <p>
           <label htmlFor="">annual investment</label>
