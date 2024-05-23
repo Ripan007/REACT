@@ -31,6 +31,7 @@ export default function App() {
 advantage:{
   1.quick and easy to add to jsx
   2.styles only effect the element to  which you add to them
+  3.dynamic(conditional) styling is simple
 }
 disadvantage:{
   1.you need to know css
