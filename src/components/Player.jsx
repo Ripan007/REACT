@@ -1,3 +1,11 @@
 export default function Player() {
-  return <h1>player</h1>;
+  return (
+    <div id="player">
+      <h2>welcome unknown entity</h2>
+      <p>
+        <input type="text" />
+        <button>set name</button>
+      </p>
+    </div>
+  );
 }
