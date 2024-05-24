@@ -11,5 +11,3 @@ export default function App() {
     </>
   );
 }
-
-// what i want  to become that rdequ
