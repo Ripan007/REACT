@@ -1,7 +1,10 @@
+import { useState } from "react";
 
 
 export default function Player() {
-    const [enteredPlayerName]
+    const playerName =
+    const [enteredPlayerName, setEnteredPlayerName] = useState(null);
+
 
   return (
     <div id="player">
