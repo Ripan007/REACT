@@ -10,3 +10,13 @@ export default function Header() {
     </header>
   );
 }
+
+/*
+making sense of  react error message
+finding logical error via the browser dev tools and debugger
+enabling react strict  mode
+using the  react dev tools for application analysis
+
+
+
+*/
