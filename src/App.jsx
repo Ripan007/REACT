@@ -6,7 +6,10 @@ export default function App() {
     <>
       <Player />
       <div id="challenges">
-        <TimerChallenge />
+        <TimerChallenge title="easy" targetTime={1} />
+        <TimerChallenge title="not easy" targetTime={5} />
+        <TimerChallenge title="getting tough" targetTime={15} />
+        <TimerChallenge title="pros only" targetTime={20} />
       </div>
     </>
   );
