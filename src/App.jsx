@@ -31,6 +31,7 @@ advanced dom access and value management
 }}
 {forwardRef:{
   Ref forwarding is a technique for automatically passing a ref through a component to one of its children. This is typically not necessary for most components in the application. However, it can be useful for some kinds of components, especially in reusable component libraries
+  forwardRef lets your component expose a DOM node to parent component with a ref.
 }}
 * exposing api functions from components
 * detaching dom rendering from jsx structure with portals
