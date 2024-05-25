@@ -4,10 +4,14 @@ export default function TimerChallenge({ title, targetTime }) {
   const [timerStarted, setTimerStarted] = useState(false);
   const [timerExpired, setTimerExpired] = useState(false);
   function handleStart() {
-    setTimeout(() => {
+    let timer;
+    timer = setTimeout(() => {
       setTimerExpired(true);
     }, targetTime * 1000);
     setTimerStarted(true);
+  }
+  function handleStop() {
+    clearTimeout(timer);
   }
   return (
     <section className="challenge">
