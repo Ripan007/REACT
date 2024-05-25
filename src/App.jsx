@@ -6,7 +6,7 @@ import ProjectSideBar from './components/ProjectsideBar';
 
 export default function App() {
   const [projectsState, setProjectsState] = useState({
-    selectedProjectedId: undefined,
+    selectedProjectedId: null,
     projects: [],
   });
   function handleStartAddProject() {
