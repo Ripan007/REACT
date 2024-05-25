@@ -13,5 +13,16 @@ const CartModal = forwardRef(function Modal(
       },
     };
   });
-  return createPortal(<dialog id="modal" ref={dialog}></dialog>);
+  return createPortal(
+    <dialog id="modal" ref={dialog}>
+      <h2>{title}</h2>
+      <Cart items={cartItems} opUpdateItemQuantity={onUpdateCartItemQuantity} />
+      <form method="dialog" id="modal-actions">
+        {actions}
+      </form>
+    </dialog>,
+    document.getElementById('modal')
+  );
 });
+
+export default CartModal;
