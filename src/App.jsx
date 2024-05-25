@@ -53,8 +53,11 @@ export default function App() {
   }
   return (
     <>
-      <Header />
-      <Shop />
+      <Header
+        cart={shoppingCart}
+        onUpdateCartItemQuantity={handleUpdateCartItemQuantity}
+      />
+      <Shop onAddItemToCart={handleAddItemToCart} />
     </>
   );
 }
