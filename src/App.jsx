@@ -29,6 +29,7 @@ export default function App() {
         });
       }
     });
+    return { items: updatedItems };
   }
   return <div>App</div>;
 }
