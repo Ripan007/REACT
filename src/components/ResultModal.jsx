@@ -3,7 +3,6 @@ import React from 'react';
 export default function ResultModal({ result, targetTime }) {
   return (
     <>
-      {timerExpired && <ResultModal targetTime={targetTime} />}
       <dialog>
         <h2>you {result}</h2>
         <p>
