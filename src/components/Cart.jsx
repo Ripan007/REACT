@@ -10,7 +10,6 @@ export default function Cart({ items, onUpdateItemQuantity }) {
   return (
     <div id="cart">
       {items.length === 0 && <p>no items in cart!</p>}
-
       {items.length > 0 && (
         <ul id="cart-items">
           {items.map(item => {
