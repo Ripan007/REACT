@@ -4,6 +4,10 @@ export default function App() {
   const [shoppingCart, setShoppingCart] = useState({
     items: [],
   });
-  function handleAddItemToCart() {}
+  function handleAddItemToCart() {
+    setShoppingCart(prevShoppingCart => {
+      const updatedItems = [...prevShoppingCart.items];
+    });
+  }
   return <div>App</div>;
 }
