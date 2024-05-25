@@ -36,6 +36,9 @@ advanced dom access and value management
 {useImperativeHandle:{
   useImperativeHandle is a React Hook that lets you customize the handle exposed as a ref.
 }}
+{createPortal:{
+  createPortal lets you render some children into a different part of the DOM.
+}}
 * exposing api functions from components
 * detaching dom rendering from jsx structure with portals
 */
