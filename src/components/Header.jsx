@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import CartModal from './CartModal';
 
 export default function Header({ cart, onUpdateCartItemQuantity }) {
   const modal = useRef();
@@ -6,5 +7,23 @@ export default function Header({ cart, onUpdateCartItemQuantity }) {
   function handleOpenCartClick() {
     modal.current.open();
   }
-  return <div>Header</div>;
+  let modalActions = <button>close</button>;
+  if (cartQuantity > 0) {
+    modalActions = (
+      <>
+        <button>close</button>
+        <button>checkout</button>
+      </>
+    );
+  }
+  return (
+    <>
+      <CartModal
+        ref={modal}
+        cartItems={cart.items}
+        onUpdateCartItemQuantity={onUpdateCartItemQuantity}
+        title=""
+      />
+    </>
+  );
 }
