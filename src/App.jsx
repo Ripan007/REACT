@@ -29,6 +29,9 @@ advanced dom access and value management
 1.do not cause component re-evaluation when changed
 2.can be used to gain direct DOM element access(great for reading values  or accessing certain  browser APIs)
 }}
+{forwardRef:{
+  Ref forwarding is a technique for automatically passing a ref through a component to one of its children. This is typically not necessary for most components in the application. However, it can be useful for some kinds of components, especially in reusable component libraries
+}}
 * exposing api functions from components
 * detaching dom rendering from jsx structure with portals
 */
