@@ -14,7 +14,7 @@ const ResultModal = forwardRef(function ResultModal(
   });
   return (
     <>
-      <dialog ref={ref} className="result-modal" open>
+      <div ref={ref} className="result-modal" open>
         <h2>you {result}</h2>
         <p>
           the target time was <strong>{targetTime} seconds.</strong>
@@ -25,7 +25,7 @@ const ResultModal = forwardRef(function ResultModal(
         <form method="dialog">
           <button>close</button>
         </form>
-      </dialog>
+      </div>
     </>
   );
 });
