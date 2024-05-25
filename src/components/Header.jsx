@@ -22,8 +22,18 @@ export default function Header({ cart, onUpdateCartItemQuantity }) {
         ref={modal}
         cartItems={cart.items}
         onUpdateCartItemQuantity={onUpdateCartItemQuantity}
-        title=""
+        title="your cart"
+        actions={modalActions}
       />
+      <header id="main-header">
+        <div id="main-title">
+          <img src="../assets/note.jpg" alt="elegant modal" />
+          <h1>elegant modal</h1>
+        </div>
+        <p>
+          <button onClick={handleOpenCartClick}>cart({cartQuantity})</button>
+        </p>
+      </header>
     </>
   );
 }
