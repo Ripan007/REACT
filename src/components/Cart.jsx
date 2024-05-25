@@ -36,7 +36,7 @@ export default function Cart({ items, onUpdateItemQuantity }) {
         </ul>
       )}
       <p id="cart-total-price">
-        cart total:<strong></strong>
+        cart total:<strong>{formattedTotalPrice}</strong>
       </p>
     </div>
   );
