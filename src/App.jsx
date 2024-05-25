@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { DUMMY_PRODUCTS } from './dummy-products';
+import Header from './components/Header';
+import Shop from './components/Shop';
 
 export default function App() {
   const [shoppingCart, setShoppingCart] = useState({
