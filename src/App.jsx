@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function App() {
-  return <div className="h-4 text-red-800">kkkkkkkkkkkkkkkkkkkkkk</div>;
+  return <h1 className="my-8 text-center font-5">hello world</h1>;
 }
