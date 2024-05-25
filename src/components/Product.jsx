@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Product({
   id,
   image,
@@ -18,7 +16,7 @@ export default function Product({
           <p>{description}</p>
         </div>
         <p className="product-actions">
-          <button onClick={() => onAddToCart(id)}>add to cart</button>
+          <button onClick={() => onAddToCart(id)}>Add to Cart</button>
         </p>
       </div>
     </article>

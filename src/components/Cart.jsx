@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Cart({ items, onUpdateItemQuantity }) {
   const totalPrice = items.reduce(
     (acc, item) => acc + item.price * item.quantity,
@@ -9,16 +7,17 @@ export default function Cart({ items, onUpdateItemQuantity }) {
 
   return (
     <div id="cart">
-      {items.length === 0 && <p>no items in cart!</p>}
+      {items.length === 0 && <p>No items in cart!</p>}
       {items.length > 0 && (
         <ul id="cart-items">
           {items.map(item => {
-            const formattedPrice = `$${formattedPrice.toFixed(2)}`;
+            const formattedPrice = `$${item.price.toFixed(2)}`;
+
             return (
               <li key={item.id}>
                 <div>
                   <span>{item.name}</span>
-                  <span>({formattedPrice})</span>
+                  <span> ({formattedPrice})</span>
                 </div>
                 <div className="cart-item-actions">
                   <button onClick={() => onUpdateItemQuantity(item.id, -1)}>
@@ -35,7 +34,7 @@ export default function Cart({ items, onUpdateItemQuantity }) {
         </ul>
       )}
       <p id="cart-total-price">
-        cart total:<strong>{formattedTotalPrice}</strong>
+        Cart Total: <strong>{formattedTotalPrice}</strong>
       </p>
     </div>
   );

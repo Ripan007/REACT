@@ -1,37 +1,43 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
+
 import CartModal from './CartModal';
 
 export default function Header({ cart, onUpdateCartItemQuantity }) {
   const modal = useRef();
+
   const cartQuantity = cart.items.length;
+
   function handleOpenCartClick() {
     modal.current.open();
   }
-  let modalActions = <button>close</button>;
+
+  let modalActions = <button>Close</button>;
+
   if (cartQuantity > 0) {
     modalActions = (
       <>
-        <button>close</button>
-        <button>checkout</button>
+        <button>Close</button>
+        <button>Checkout</button>
       </>
     );
   }
+
   return (
     <>
       <CartModal
         ref={modal}
         cartItems={cart.items}
         onUpdateCartItemQuantity={onUpdateCartItemQuantity}
-        title="your cart"
+        title="Your Cart"
         actions={modalActions}
       />
       <header id="main-header">
         <div id="main-title">
-          <img src="../assets/note.jpg" alt="elegant modal" />
-          <h1>elegant modal</h1>
+          <img src="logo.png" alt="Elegant model" />
+          <h1>Elegant Context</h1>
         </div>
         <p>
-          <button onClick={handleOpenCartClick}>cart({cartQuantity})</button>
+          <button onClick={handleOpenCartClick}>Cart ({cartQuantity})</button>
         </p>
       </header>
     </>
