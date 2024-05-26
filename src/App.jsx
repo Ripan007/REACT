@@ -87,3 +87,6 @@ function App() {
 }
 
 export default App;
+
+//  class based components
+//
