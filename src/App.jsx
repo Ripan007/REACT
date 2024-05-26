@@ -72,6 +72,12 @@ function App() {
         onUpdateCartItemQuantity={handleUpdateCartItemQuantity}
       />
       <Shop onAddItemToCart={handleAddItemToCart} />
+      {DUMMY_PRODUCTS.map(product => (
+        <li key={product.id}>
+          <Product {...product} onAddToCart={onAddItemToCart} />
+        </li>
+      ))}
+      <Shop />
     </>
   );
 }
