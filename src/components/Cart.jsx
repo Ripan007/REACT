@@ -10,11 +10,11 @@ export default function Cart({ items, onUpdateItemQuantity }) {
 
   return (
     <div id="cart">
-      {cartCtx.length === 0 && <p>No items in cart!</p>}
-      {cartCtx.length > 0 && (
+      {cartCtx.items.length === 0 && <p>No items in cart!</p>}
+      {cartCtx.items.length > 0 && (
         <ul id="cart-items">
           {cartCtx.items.map(item => {
-            const formattedPrice = `$${cartCtx.price.toFixed(2)}`;
+            const formattedPrice = `$${cartCtx.items.price.toFixed(2)}`;
 
             return (
               <li key={item.id}>
