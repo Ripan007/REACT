@@ -19,7 +19,7 @@ export default function Users() {
     </ul>
   );
   return (
-    <div className={Classes.users}>
+    <div className={Classes.Users}>
       <button onClick={toggleUsersHandler}>
         {showUsers ? 'hide' : 'show'} users
       </button>
