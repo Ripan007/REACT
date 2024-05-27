@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Classes from './User.module.css';
 import User from './User';
 const DUMMY_USERS = [
   { id: 'u1', name: 'Max' },
@@ -18,7 +19,7 @@ export default function Users() {
     </ul>
   );
   return (
-    <div className={ClassNames.users}>
+    <div className={Classes.users}>
       <button onClick={toggleUsersHandler}>
         {showUsers ? 'hide' : 'show'} users
       </button>
