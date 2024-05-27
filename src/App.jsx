@@ -10,7 +10,8 @@ export default function App() {
 }
 
 /*
-********
+✈️✈️✈️✈️ Error Boundaries ✈️✈️✈️✈️
+
 
 
 */
