@@ -5,7 +5,10 @@ const DUMMY_USERS = [
   { id: 'u3', name: 'Julie' },
 ];
 export default function Users() {
-  const [users, setUsers] = useState(true);
-  const toggleUsersHandler = () => {};
+  const [showUsers, setShowUsers] = useState(true);
+  const toggleUsersHandler = () => {
+    setShowUsers(currState => !currState);
+  };
+  const userList = <ul></ul>;
   return <div>User</div>;
 }
