@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function ProductsPage() {
+    const PRODUCTS = [{ id: '' }]
     return (
         <>
             <h1>Products page</h1>;
