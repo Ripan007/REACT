@@ -12,10 +12,10 @@ export default function ProductsPage() {
     ]
     return (
         <>
-            <h1>Products page</h1>;
+            <h1>Products page</h1>
             <ul>
                 {PRODUCTS.map(prod => (
-                    <Link key={prod.id} to={`/products/${prod.id}}`}>
+                    <Link key={prod.id} to={`/products/${prod.id}`}>
                         {prod.title}
                     </Link>
                 ))}

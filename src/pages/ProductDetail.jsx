@@ -6,7 +6,7 @@ export default function ProductDetailsPage() {
     return (
         <div>
             <h1>product detail page</h1>
-            <p>{params.productId}</p>
+            <h2>{params.productId}</h2>
         </div>
     )
 }
