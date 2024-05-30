@@ -10,16 +10,22 @@ export default function MainNavigation() {
           <li>
             <NavLink
               className={({ isActive }) =>
-                isActive ? 'classes.active' : undefined
+                isActive ? classes.active : undefined
               }
-              end
               to="/"
             >
               home{' '}
             </NavLink>
           </li>
           <li>
-            <NavLink to="/products">products</NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+              to="/products"
+            >
+              products
+            </NavLink>
           </li>
         </ul>
       </nav>
