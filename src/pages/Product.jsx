@@ -1,7 +1,14 @@
 import React from 'react'
 
 export default function ProductsPage() {
-    const PRODUCTS = [{ id: '' }]
+    const product = [
+        {
+            id: 'p1',
+            title: 'product 1',
+        },
+        { id: 'p2', title: 'product 2' },
+        { id: 'p3', title: 'product 3' },
+    ]
     return (
         <>
             <h1>Products page</h1>;
