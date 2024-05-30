@@ -7,11 +7,9 @@ export default function MainNavigation() {
       <nav>
         <ul>
           <li>
-            {' '}
             <Link to="/">home </Link>
           </li>
           <li>
-            {' '}
             <Link to="/products">products</Link>
           </li>
         </ul>
