@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function ProductsPage() {
-    const product = [
+    const PRODUCTS = [
         {
             id: 'p1',
             title: 'product 1',
@@ -13,9 +14,11 @@ export default function ProductsPage() {
         <>
             <h1>Products page</h1>;
             <ul>
-                <li>products 1</li>
-                <li>products 2</li>
-                <li>products 3</li>
+                {PRODUCTS.map(prod => (
+                    <Link key={prod.id} to={`/products/${prod.id}}`}>
+                        {prod.title}
+                    </Link>
+                ))}
             </ul>
         </>
     )
