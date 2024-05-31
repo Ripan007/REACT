@@ -72,7 +72,12 @@ export default function Signup() {
             </fieldset>
             <div className="control">
                 <label htmlFor="terms-and-conditions">
-                    <input type="checkbox" />
+                    <input
+                        type="checkbox"
+                        id="terms-and-conditions"
+                        name="terms"
+                    />
+                    agree to the terms and conditions
                 </label>
             </div>
         </form>
