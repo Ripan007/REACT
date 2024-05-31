@@ -34,7 +34,11 @@ export default function Login() {
                             handleEnteredValues('email', event.target.value)
                         }
                     />
-                    <div className="control-error"></div>
+                    <div className="control-error">
+                        {emailIsInvalid && (
+                            <p>the email which was assign is invalid</p>
+                        )}
+                    </div>
                 </div>
                 <div className="control no-margin">
                     <label htmlFor="password">password</label>
@@ -49,7 +53,9 @@ export default function Login() {
                     />
                 </div>
                 <p className="form-actions">
-                    <button className="button button-flat">resest</button>
+                    <button type="reset" className="button button-flat">
+                        resest
+                    </button>
                     <button type="submit" className="button">
                         submit
                     </button>
