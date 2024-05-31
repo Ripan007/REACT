@@ -37,12 +37,11 @@ export default function Signup() {
             <div className="control">
                 <label htmlFor="role">what role best describe you</label>
                 <select name="role" id="role">
-                    <option value="student">student</option>
-                    <option value="teacher">teacher</option>
-                    <option value="employee">employee</option>
-                    <option value="founder">founder</option>
-                    <option value="student">student</option>
-                    <option value="student">student</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="employee">Employee</option>
+                    <option value="founder">Founder</option>
+                    <option value="other">Other</option>
                 </select>
             </div>
         </form>
