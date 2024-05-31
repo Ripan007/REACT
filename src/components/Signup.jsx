@@ -34,6 +34,17 @@ export default function Signup() {
                     <input type="text" id="last-name" name="last-name" />
                 </div>
             </div>
+            <div className="control">
+                <label htmlFor="role">what role best describe you</label>
+                <select name="role" id="role">
+                    <option value="student">student</option>
+                    <option value="teacher">teacher</option>
+                    <option value="student">student</option>
+                    <option value="student">student</option>
+                    <option value="student">student</option>
+                    <option value="student">student</option>
+                </select>
+            </div>
         </form>
     )
 }
