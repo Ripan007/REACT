@@ -29,8 +29,7 @@ export default function Login() {
         console.log(enteredValues)
     }
 
-    const emailIsInvalid =
-        enteredValues.email !== '' && !enteredValues.email.includes('@')
+    const emailIsInvalid = didEdit.email && !enteredValues.email.includes('@')
 
     return (
         <form onSubmit={handleSubmit}>
@@ -42,6 +41,7 @@ export default function Login() {
                         type="email"
                         name="email"
                         id="email"
+                        onBlur={() => handleChangeEdit('email')}
                         value={enteredValues.email}
                         onChange={event =>
                             handleEnteredValues('email', event.target.value)
