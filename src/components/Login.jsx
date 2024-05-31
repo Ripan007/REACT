@@ -14,8 +14,8 @@ export default function Login() {
                     <input type="password" name="password" id="password" />
                 </div>
                 <p className="form-actions">
-                    <button>resest</button>
-                    <button>submit</button>
+                    <button className="button button-flat">resest</button>
+                    <button className="button">submit</button>
                 </p>
             </div>
         </form>
