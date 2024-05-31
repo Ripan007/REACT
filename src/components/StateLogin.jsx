@@ -18,6 +18,7 @@ export default function Login() {
         console.log(enteredValues)
     }
 
+    const emailIsInvalid = !enteredValues.email.includes('@')
     return (
         <form onSubmit={handleSubmit}>
             <h1>login</h1>
@@ -33,6 +34,7 @@ export default function Login() {
                             handleEnteredValues('email', event.target.value)
                         }
                     />
+                    <div className="control-error"></div>
                 </div>
                 <div className="control no-margin">
                     <label htmlFor="password">password</label>
