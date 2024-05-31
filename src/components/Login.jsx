@@ -1,8 +1,12 @@
 import React from 'react'
 
 export default function Login() {
+    function handleSubmit(event) {
+        event.preventDefault()
+        console.log('submitted')
+    }
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <h2>login</h2>
             <div className="control-row">
                 <div className="control no-margin">
@@ -16,7 +20,9 @@ export default function Login() {
             </div>
             <p className="form-actions">
                 <button className="button button-flat">reset</button>
-                <button className="button">login</button>
+                <button type="submit" className="button">
+                    login
+                </button>
             </p>
         </form>
     )
