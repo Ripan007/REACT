@@ -39,8 +39,8 @@ export default function Signup() {
                 <select name="role" id="role">
                     <option value="student">student</option>
                     <option value="teacher">teacher</option>
-                    <option value="student">student</option>
-                    <option value="student">student</option>
+                    <option value="employee">employee</option>
+                    <option value="founder">founder</option>
                     <option value="student">student</option>
                     <option value="student">student</option>
                 </select>
