@@ -55,6 +55,16 @@ export default function Signup() {
                     />
                     <label htmlFor="google">google</label>
                 </div>
+                <div className="control">
+                    <label htmlFor="friend">friend</label>
+                    <input
+                        type="checkbox"
+                        id="friend"
+                        name="acquisition"
+                        value={'friend'}
+                    />
+                    <label htmlFor="friend">refered by friends</label>
+                </div>
             </fieldset>
         </form>
     )
