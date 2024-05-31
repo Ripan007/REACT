@@ -21,6 +21,7 @@ export default function Login() {
                 <div className="control no-margin">
                     <label htmlFor="email">email</label>
                     <input type="email" name="email" id="email" ref={email} />
+                    <div className="control-error"></div>
                 </div>
                 <div className="control no-margin">
                     <label htmlFor="password">password</label>
