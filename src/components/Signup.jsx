@@ -3,11 +3,8 @@ import React from 'react'
 export default function Signup() {
     function handleSubmit(event) {
         event.preventDefault()
-        const fd = new FormData(event.target)
-        const acquisitionChannel = fd.getAll('acquisition')
-        const data = Object.fromEntries(fd.entries())
-        fd.acquisition = acquisitionChannel
-        console.log(data)
+        const fd = new FormData(event.target);
+        const acquisitionChannel = fd.
     }
     return (
         <form onSubmit={handleSubmit}>
