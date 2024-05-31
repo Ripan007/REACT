@@ -6,6 +6,11 @@ export default function Login() {
         password: '',
     })
 
+    const [didEdit, setDidEdit] = useState({
+        email: false,
+        password: false,
+    })
+
     function handleEnteredValues(identifier, value) {
         setEnteredValues(preValues => ({
             ...preValues,
@@ -13,6 +18,12 @@ export default function Login() {
         }))
     }
 
+    function handleChangeEdit(identifier) {
+        setDidEdit(prevalue => ({
+            ...prevalue,
+            [identifier]: true,
+        }))
+    }
     function handleSubmit(event) {
         event.preventDefault()
         console.log(enteredValues)
