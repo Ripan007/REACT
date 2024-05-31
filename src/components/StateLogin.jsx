@@ -20,6 +20,7 @@ export default function Login() {
 
     const emailIsInvalid =
         enteredValues.email !== '' && !enteredValues.email.includes('@')
+
     return (
         <form onSubmit={handleSubmit}>
             <h1>login</h1>
