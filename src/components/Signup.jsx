@@ -15,9 +15,15 @@ export default function Signup() {
                     <input type="password" name="password" id="password" />
                 </div>
                 <div className="control">
-                    <label htmlFor="" className="control-password"></label>
+                    <label htmlFor="control-password">control password</label>
+                    <input
+                        type="password"
+                        id="control-password"
+                        name="control-password"
+                    />
                 </div>
             </div>
+            <hr />
         </form>
     )
 }
