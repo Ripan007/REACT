@@ -83,7 +83,9 @@ export default function Signup() {
                 <button type="reset" className="button button-flat">
                     reset
                 </button>
-                <button type="submit">sign up</button>
+                <button className="button" type="submit">
+                    sign up
+                </button>
             </p>
         </form>
     )
