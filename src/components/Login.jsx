@@ -2,6 +2,7 @@ import { useRef } from 'react'
 
 export default function Login() {
     const email = useRef()
+    console.log('email data', email)
     const password = useRef()
 
     function handleSubmit(event) {
