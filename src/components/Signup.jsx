@@ -21,11 +21,11 @@ export default function Signup() {
                     <input type="password" name="password" id="password" />
                 </div>
                 <div className="control">
-                    <label htmlFor="control-password">conform password</label>
+                    <label htmlFor="conform-password">conform password</label>
                     <input
                         type="password"
                         id="control-password"
-                        name="control-password"
+                        name="conform-password"
                     />
                 </div>
             </div>
