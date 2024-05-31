@@ -44,6 +44,9 @@ export default function Signup() {
                     <option value="other">Other</option>
                 </select>
             </div>
+            <fieldset>
+                <legend>what do you find us ?</legend>
+            </fieldset>
         </form>
     )
 }
