@@ -80,6 +80,12 @@ export default function Signup() {
                     agree to the terms and conditions
                 </label>
             </div>
+            <p className="form-actions">
+                <button type="reset" className="button button-flat">
+                    reset
+                </button>
+                <button type="submit">submit</button>
+            </p>
         </form>
     )
 }
