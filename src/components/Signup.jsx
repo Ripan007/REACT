@@ -2,12 +2,13 @@ import React from 'react'
 
 export default function Signup() {
     function handleSubmit(event) {
+        event.preventDefault()
         const fd = new FormData(event.target)
         const data = Object.fromEntries(fd.entries())
         console.log(data)
     }
     return (
-        <form onSubmi={handleSubmit}>
+        <form onSubmit={handleSubmit}>
             <h2>welcome on board</h2>
             <p>we just need little bit of data for you to get started</p>
             <div className="control">
