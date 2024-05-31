@@ -16,16 +16,16 @@ export default function Login() {
             ...preValues,
             [identifier]: value,
         }))
+        setDidEdit(prevEdit => ({
+            ...prevEdit,
+            [identifier]: false,
+        }))
     }
 
     function handleChangeEdit(identifier) {
         setDidEdit(prevalue => ({
             ...prevalue,
             [identifier]: true,
-        }))
-        setDidEdit(prevEdit => ({
-            ...prevEdit,
-            [identifier]: false,
         }))
     }
     function handleSubmit(event) {
