@@ -70,6 +70,11 @@ export default function Signup() {
                     <label htmlFor="other">other</label>
                 </div>
             </fieldset>
+            <div className="control">
+                <label htmlFor="terms-and-conditions">
+                    <input type="checkbox" />
+                </label>
+            </div>
         </form>
     )
 }
