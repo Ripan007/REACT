@@ -13,7 +13,7 @@ export default function Login() {
         email.current.value = ''
         password.current.value = ''
     }
-
+    const emailIsInvalid = email.includes
     return (
         <form onSubmit={handleSubmit}>
             <h1>login</h1>
