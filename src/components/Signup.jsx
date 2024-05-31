@@ -46,6 +46,15 @@ export default function Signup() {
             </div>
             <fieldset>
                 <legend>what do you find us ?</legend>
+                <div className="control">
+                    <input
+                        type="checkbox"
+                        id="google"
+                        name="acquisition"
+                        value="google"
+                    />
+                    <label htmlFor="google">google</label>
+                </div>
             </fieldset>
         </form>
     )
