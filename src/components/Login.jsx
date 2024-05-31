@@ -6,7 +6,8 @@ export default function Login() {
             <h2>login</h2>
             <div className="control-row">
                 <div className="control no-margin">
-                    <label htmlFor=""></label>
+                    <label htmlFor="email">email</label>
+                    <input type="email" id="email" />
                 </div>
             </div>
         </form>
