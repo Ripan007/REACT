@@ -29,6 +29,10 @@ export default function Signup() {
                     <label htmlFor="first-name">first name</label>
                     <input type="text" id="first-name" name="first-name" />
                 </div>
+                <div className="control">
+                    <label htmlFor="last-name">last name</label>
+                    <input type="text" id="last-name" name="last-name" />
+                </div>
             </div>
         </form>
     )
