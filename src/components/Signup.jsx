@@ -15,7 +15,7 @@ export default function Signup() {
                     <input type="password" name="password" id="password" />
                 </div>
                 <div className="control">
-                    <label htmlFor="control-password">control password</label>
+                    <label htmlFor="control-password">conform password</label>
                     <input
                         type="password"
                         id="control-password"
@@ -84,7 +84,7 @@ export default function Signup() {
                 <button type="reset" className="button button-flat">
                     reset
                 </button>
-                <button type="submit">submit</button>
+                <button type="submit">sign up</button>
             </p>
         </form>
     )
