@@ -23,6 +23,10 @@ export default function Login() {
             ...prevalue,
             [identifier]: true,
         }))
+        setDidEdit(prevEdit => ({
+            ...prevEdit,
+            [identifier]: false,
+        }))
     }
     function handleSubmit(event) {
         event.preventDefault()
