@@ -10,15 +10,11 @@ export default function Login() {
         event.preventDefault()
         const enteredEmail = email.current.value
         const eneteredPassword = password.current.value
-        console.log(enteredEmail, eneteredPassword)
-        email.current.value = ''
-        password.current.value = ''
-    }
-
-    const emailIsValid = enteredEmail.includes('@')
-    if (!emailIsValid) {
-        setEmailIsInvalid(true)
-        return
+        const emailIsValid = enteredEmail.includes('@')
+        if (!emailIsValid) {
+            setEmailIsInvalid(true)
+            return
+        }
     }
 
     return (
