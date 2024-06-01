@@ -14,7 +14,7 @@ export default function Login() {
         password.current.value = ''
     }
 
-    return (
+    const emailIsInvalid = email.return(
         <form onSubmit={handleSubmit}>
             <h1>login</h1>
             <div className="control-row">
