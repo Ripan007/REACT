@@ -6,9 +6,9 @@ import StateLogin from './components/StateLogin'
 export default function App() {
     return (
         <div>
-            {/* <Login /> */}
+            <Login />
             {/* <Signup /> */}
-            <StateLogin />
+            {/* <StateLogin /> */}
         </div>
     )
 }
