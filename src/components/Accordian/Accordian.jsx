@@ -1,5 +1,5 @@
 import React from 'react'
 
-export default function Accordian() {
-    return <div>Accordian</div>
+export default function Accordian({ className, children }) {
+    return <ul className={className}>{children}</ul>
 }
