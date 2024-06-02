@@ -5,7 +5,26 @@ export default function App() {
     return (
         <>
             <Accordian className="accordion">
-                <AccordianItem></AccordianItem>
+                <section>
+                    <AccordianItem title="first" className="accordion-item">
+                        <article>
+                            <p>show first some randon data</p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Voluptas, eveniet.
+                            </p>
+                        </article>
+                    </AccordianItem>
+                    <AccordianItem title="second" className="accordion-item">
+                        <article>
+                            <p>show first some randon data</p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Voluptas, eveniet.
+                            </p>
+                        </article>
+                    </AccordianItem>
+                </section>
             </Accordian>
         </>
     )
