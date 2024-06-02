@@ -1,8 +1,5 @@
-export default function AccordianItem({ className, title, children }) {
-    return (
-        <li className={className}>
-            <h3>{title}</h3>
-            {children}
-        </li>
-    )
+import React from 'react'
+
+export default function AccordianItem() {
+    return <div>AccordianItem</div>
 }
