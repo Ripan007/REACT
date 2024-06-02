@@ -8,7 +8,7 @@ export default function App() {
             <main>
                 <section>
                     <h2>why work with us ?</h2>
-                    <Accordian className="accordian">
+                    <Accordian className="accordion">
                         <AccordianItem
                             className="accordion-item"
                             tille="first item">
