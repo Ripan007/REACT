@@ -10,14 +10,16 @@ export default function App() {
                     <h2>why work with us ?</h2>
                     <Accordian className="accordian">
                         <AccordianItem
-                            className="accordian-item"
+                            className="accordion-item"
                             tille="first item">
                             <article>
                                 <p>shows the first item</p>
                                 <p>show some duplicate item</p>
                             </article>
                         </AccordianItem>
-                        <AccordianItem tille="first item">
+                        <AccordianItem
+                            className={'accordion-item'}
+                            tille="first item">
                             <article>
                                 <p>shows the first item</p>
                                 <p>show some duplicate item</p>
