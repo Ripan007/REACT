@@ -1,5 +1,10 @@
 import React from 'react'
 
 export default function AccordianItem() {
-    return <div>AccordianItem</div>
+    return (
+        <li>
+            <h3>{title}</h3>
+            {children}
+        </li>
+    )
 }
