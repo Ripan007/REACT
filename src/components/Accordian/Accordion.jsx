@@ -11,7 +11,7 @@ export function useAccordianContext() {
     return ctx
 }
 
-export default function Accordian({ className, children }) {
+export default function Accordion({ className, children }) {
     const [openItemId, setOpenItemId] = useState('')
 
     function toggleItem(id) {
