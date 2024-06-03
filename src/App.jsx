@@ -12,7 +12,7 @@ export default function App() {
                             title="we got 20 years of experience"
                             className="accordion-item">
                             <article>
-                                <p>show first some randon data</p>
+                                <p>show experience data of the user</p>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit. Voluptas, eveniet.
@@ -24,7 +24,7 @@ export default function App() {
                             title="what you got from it ?"
                             className="accordion-item">
                             <article>
-                                <p>show first some randon data</p>
+                                <p>show accordion random data</p>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit. Voluptas, eveniet.
