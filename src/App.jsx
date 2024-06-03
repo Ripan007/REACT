@@ -53,10 +53,12 @@ export default function App() {
                     </Accordion>
                 </section>
                 <section>
-                    <SearchableList items={PLACES}>
+                    <SearchableList items={PLACES} itemKeyFun={item => item.id}>
                         {item => <Place item={item} />}
                     </SearchableList>
-                    <SearchableList items={['item 1', 'item 2']}>
+                    <SearchableList
+                        items={['item 1', 'item 2']}
+                        itemKeyFun={item => item}>
                         {item => item}
                     </SearchableList>
                 </section>
