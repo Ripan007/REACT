@@ -14,13 +14,12 @@ export default function Accordian({ className, children }) {
     const [openItemId, setOpenItemId] = useState('')
 
     function toggleItem(id) {
-        setOpenItemId(prevId === id ? null : undefined)
+        setOpenItemId(prevId === id ? null : id)
     }
 
     const contextValue = {
         openItemId: openItemId,
-        openItem,
-        closedItem,
+        toggleItem,
     }
     return (
         <AccordianContext.Provider value={contextValue}>
