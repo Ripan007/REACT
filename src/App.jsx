@@ -56,7 +56,9 @@ export default function App() {
                     <SearchableList items={PLACES}>
                         {item => <Place item={item} />}
                     </SearchableList>
-                    <SearchableList items={['item 1', 'item 2']} />
+                    <SearchableList items={['item 1', 'item 2']}>
+                        {item => item}
+                    </SearchableList>
                 </section>
             </main>
         </>
