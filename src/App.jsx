@@ -1,5 +1,3 @@
-import Accordion from './components/Accordian/Accordion'
-
 export default function App() {
     return (
         <>
@@ -18,7 +16,7 @@ export default function App() {
                                 </p>
                             </article>
                         </Accordion.Item>
-                        <Accordion.Item
+                        <Accordian.Item
                             id={'local-guides'}
                             title="what you got from it ?"
                             className="accordion-item">
@@ -29,7 +27,7 @@ export default function App() {
                                     adipisicing elit. Voluptas, eveniet.
                                 </p>
                             </article>
-                        </Accordion.Item>
+                        </Accordian.Item>
                     </Accordion>
                 </section>
             </main>
