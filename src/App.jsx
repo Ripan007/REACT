@@ -7,7 +7,7 @@ export default function App() {
             <main>
                 <section>
                     <Accordian className="accordion">
-                        <AccordianItem
+                        <Accordian.Item
                             id={'experience'}
                             title="we got 20 years of experience"
                             className="accordion-item">
@@ -18,8 +18,8 @@ export default function App() {
                                     adipisicing elit. Voluptas, eveniet.
                                 </p>
                             </article>
-                        </AccordianItem>
-                        <AccordianItem
+                        </Accordian.Item>
+                        <Accordian.Item
                             id={'local-guides'}
                             title="what you got from it ?"
                             className="accordion-item">
@@ -30,7 +30,7 @@ export default function App() {
                                     adipisicing elit. Voluptas, eveniet.
                                 </p>
                             </article>
-                        </AccordianItem>
+                        </Accordian.Item>
                     </Accordian>
                 </section>
             </main>
