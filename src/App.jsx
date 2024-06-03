@@ -7,7 +7,9 @@ export default function App() {
             <main>
                 <section>
                     <Accordian className="accordion">
-                        <AccordianItem title="first" className="accordion-item">
+                        <AccordianItem
+                            title="we got 20 years of experience"
+                            className="accordion-item">
                             <article>
                                 <p>show first some randon data</p>
                                 <p>
@@ -17,7 +19,7 @@ export default function App() {
                             </article>
                         </AccordianItem>
                         <AccordianItem
-                            title="second"
+                            title="what you got from it ?"
                             className="accordion-item">
                             <article>
                                 <p>show first some randon data</p>
