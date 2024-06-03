@@ -7,7 +7,9 @@ export default function SearchableList({ items, itemKeyFun, children }) {
     )
 
     function handleChange(event) {
-        setSearchTerm(event.target.value)
+        setTimeout(() => {
+            setSearchTerm(event.target.value)
+        }, 500)
     }
     return (
         <div className="searchable-list">
