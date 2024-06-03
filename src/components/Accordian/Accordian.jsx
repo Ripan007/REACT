@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from 'react'
+import AccordianItem from './AccordianItem'
 const AccordianContext = createContext()
 export function useAccordianContext() {
     const ctx = useContext(AccordianContext)
@@ -27,3 +28,5 @@ export default function Accordian({ className, children }) {
         </AccordianContext.Provider>
     )
 }
+
+Accordian.Item = AccordianItem
