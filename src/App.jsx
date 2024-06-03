@@ -1,5 +1,5 @@
-import Accordian from './components/Accordian/Accordian'
-import AccordianItem from './components/Accordian/AccordianItem'
+import Accordian from './components/Accordian/Accordion'
+import AccordianItem from './components/Accordian/AccordionItem'
 
 export default function App() {
     return (

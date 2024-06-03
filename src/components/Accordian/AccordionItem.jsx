@@ -1,5 +1,5 @@
 import React from 'react'
-import { useAccordianContext } from './Accordian'
+import { useAccordianContext } from './Accordion'
 
 export default function AccordianItem({ id, className, title, children }) {
     const { openItemId, toggleItem } = useAccordianContext()

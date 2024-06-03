@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from 'react'
-import AccordianItem from './AccordianItem'
+import AccordianItem from './AccordionItem'
 const AccordianContext = createContext()
 export function useAccordianContext() {
     const ctx = useContext(AccordianContext)
