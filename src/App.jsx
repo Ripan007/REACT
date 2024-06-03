@@ -3,8 +3,12 @@ import SearchableList from './components/SearchableList/SearchableList'
 
 const PLACES = [
     { id: 'african', title: 'african', description: 'it is a deserted area' },
-    { id: '', title: '', description: '' },
-    { id: '', title: '', description: '' },
+    { id: 'india', title: 'india', description: 'india is wonderfull' },
+    {
+        id: 'andaman',
+        title: 'andaman',
+        description: 'andaman is my homeland territory',
+    },
 ]
 
 export default function App() {
