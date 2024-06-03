@@ -1,3 +1,12 @@
 export default function AccordionContent() {
-    return <></>
+    return (
+        <div
+            className={
+                isOpen
+                    ? 'accordion-item-content open'
+                    : 'accordion-item-content'
+            }>
+            {children}
+        </div>
+    )
 }
