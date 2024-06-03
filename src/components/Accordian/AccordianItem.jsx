@@ -14,7 +14,14 @@ export default function AccordianItem({ id, className, title, children }) {
     return (
         <li className={className}>
             <h3 onClick={handleClick}>{title}</h3>
-            <div className={isOpen ? 'open' : undefined}>{children}</div>
+            <div
+                className={
+                    isOpen
+                        ? 'accordion-item-content open'
+                        : 'accordion - item - content'
+                }>
+                {children}
+            </div>
         </li>
     )
 }
