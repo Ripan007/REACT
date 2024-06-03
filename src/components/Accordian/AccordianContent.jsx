@@ -1,16 +1,7 @@
 import { useAccordianContext } from './Accordion'
 
-export default function AccordionContent({ id, children }) {
+export default function AccordionContent({ id, className, children }) {
     const { openItemId } = useAccordianContext()
     const isOpen = openItemId === id
-    return (
-        <div
-            className={
-                isOpen
-                    ? 'accordion-item-content open'
-                    : 'accordion-item-content'
-            }>
-            {children}
-        </div>
-    )
+    return <div className={className}>{children}</div>
 }
