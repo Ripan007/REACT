@@ -26,13 +26,15 @@ export default function App() {
                             <Accordion.Title>
                                 what you got from it ?
                             </Accordion.Title>
-                            <article>
-                                <p>show accordion random data</p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Voluptas, eveniet.
-                                </p>
-                            </article>
+                            <Accordion.Content>
+                                <article>
+                                    <p>show accordion random data</p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Voluptas, eveniet.
+                                    </p>
+                                </article>
+                            </Accordion.Content>
                         </Accordian.Item>
                     </Accordion>
                 </section>
