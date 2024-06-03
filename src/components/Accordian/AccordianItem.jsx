@@ -18,7 +18,7 @@ export default function AccordianItem({ id, className, title, children }) {
                 className={
                     isOpen
                         ? 'accordion-item-content open'
-                        : 'accordion - item - content'
+                        : 'accordion-item-content'
                 }>
                 {children}
             </div>
