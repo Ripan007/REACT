@@ -1,5 +1,11 @@
 import React, { createContext, useState } from 'react'
 const AccordianContext = createContext()
+export function useAcordianContext() {
+    const ctx = useContext(AccordianContext)
+    if (!ctx) {
+        throw new Error('Accordian related component must be wrapped ')
+    }
+}
 
 export default function Accordian({ className, children }) {
     const { openItemId, setOpenItemId } = useState()
