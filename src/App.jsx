@@ -18,7 +18,7 @@ export default function App() {
                                 </p>
                             </article>
                         </Accordion.Item>
-                        <Accordian.Item
+                        <Accordion.Item
                             id={'local-guides'}
                             title="what you got from it ?"
                             className="accordion-item">
@@ -29,7 +29,7 @@ export default function App() {
                                     adipisicing elit. Voluptas, eveniet.
                                 </p>
                             </article>
-                        </Accordian.Item>
+                        </Accordion.Item>
                     </Accordion>
                 </section>
             </main>
