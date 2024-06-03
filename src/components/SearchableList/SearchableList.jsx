@@ -1,13 +1,18 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 export default function SearchableList({ items, itemKeyFun, children }) {
+    const lastChange = useRef()
     const [searchTerm, setSearchTerm] = useState('')
     const searchResults = items.filter(item =>
         JSON.stringify(item).toLowerCase().includes(searchTerm.toLowerCase())
     )
 
     function handleChange(event) {
-        setTimeout(() => {
+        if (lastChange) {
+            setTimeout(lastChange.current)
+        }
+        lastChange.current = setTimeout(() => {
+            lastChange.current = null
             setSearchTerm(event.target.value)
         }, 500)
     }
