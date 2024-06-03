@@ -3,8 +3,11 @@ const AccordianContext = createContext()
 export function useAcordianContext() {
     const ctx = useContext(AccordianContext)
     if (!ctx) {
-        throw new Error('Accordian related component must be wrapped ')
+        throw new Error(
+            'Accordian related component must be wrapped  by <Accordian>.'
+        )
     }
+    return ctx
 }
 
 export default function Accordian({ className, children }) {
