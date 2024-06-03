@@ -5,7 +5,7 @@ export function useAccordionItemContext() {
    const ctx = useContext(AccordionItemContext)
    if (!ctx) {
       throw new Error(
-         'AccordianItem-related component  must be wrapped by <Accordion.item> '
+         'AccordianItem-related component  must be wrapped by <Accordion.Item> '
       )
    }
 }
