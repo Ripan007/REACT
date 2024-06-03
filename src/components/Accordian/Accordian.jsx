@@ -3,7 +3,9 @@ const AccordianContext = createContext()
 
 export default function Accordian({ className, children }) {
     const { openItemId, setOpenItemId } = useState()
-    function openItem() {}
+    function openItem(id) {
+        setOpenItemId()
+    }
     function closedItem() {}
     const contextValue = {
         openItemId: null,
