@@ -1,3 +1,5 @@
+import Accordion from './components/Accordian/Accordion'
+
 export default function App() {
     return (
         <>
@@ -5,10 +7,10 @@ export default function App() {
                 <section>
                     <Accordion className="accordion">
                         <Accordion.Item className="accordion-item">
-                            <Accordion.Title className="accordion-">
+                            <Accordion.Title className="accordion-item-title">
                                 we got 20 years of experience
                             </Accordion.Title>
-                            <Accordion.Content>
+                            <Accordion.Content className="accordion-item-content">
                                 <article>
                                     <p>show experience data of the user</p>
                                     <p>
@@ -18,13 +20,13 @@ export default function App() {
                                 </article>
                             </Accordion.Content>
                         </Accordion.Item>
-                        <Accordian.Item
+                        <Accordion.Item
                             id={'local-guides'}
                             className="accordion-item">
-                            <Accordion.Title>
+                            <Accordion.Title className="accordion-item-title">
                                 what you got from it ?
                             </Accordion.Title>
-                            <Accordion.Content>
+                            <Accordion.Content className="accordion-item-content">
                                 <article>
                                     <p>show accordion random data</p>
                                     <p>
@@ -33,7 +35,7 @@ export default function App() {
                                     </p>
                                 </article>
                             </Accordion.Content>
-                        </Accordian.Item>
+                        </Accordion.Item>
                     </Accordion>
                 </section>
             </main>
