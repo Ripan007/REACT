@@ -3,8 +3,8 @@ export default function SearchableList({ items }) {
         <div className="searchable-list">
             <input type="search" placeholder="search" />
             <ul>
-                {items.map(item => (
-                    <li key={item}>{item}</li>
+                {items.map((item, index) => (
+                    <li key={index}>{item.toString()}</li>
                 ))}
             </ul>
         </div>
