@@ -14,7 +14,7 @@ export default function Accordian({ className, children }) {
     const [openItemId, setOpenItemId] = useState('')
 
     function toggleItem(id) {
-        setOpenItemId(prevId === id ? null : id)
+        setOpenItemId(prevId => (prevId === id ? null : id))
     }
 
     const contextValue = {
