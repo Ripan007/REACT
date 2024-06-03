@@ -52,7 +52,7 @@ export default function App() {
                     </Accordion>
                 </section>
                 <section>
-                    <SearchableList items={PLACES} />
+                    <SearchableList items={PLACES}></SearchableList>
                     <SearchableList items={['item 1', 'item 2']} />
                 </section>
             </main>
