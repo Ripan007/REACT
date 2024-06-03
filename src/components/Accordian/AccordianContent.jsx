@@ -6,7 +6,7 @@ export default function AccordionContent({ id, className, children }) {
     return (
         <div
             className={
-                isOpen ? `${className ?? ''}open ` : `${className ?? ''}`
+                isOpen ? `${className ?? ''}open ` : `${className ?? ''} close`
             }>
             {children}
         </div>
