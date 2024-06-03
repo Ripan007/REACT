@@ -1,7 +1,11 @@
 import Accordion from './components/Accordian/Accordion'
 import SearchableList from './components/SearchableList/SearchableList'
 
-const PLACES= [{id:'',title:'',description:''},{id:'',title:'',description:''},{id:'',title:'',description:''}]
+const PLACES = [
+    { id: '', title: '', description: '' },
+    { id: '', title: '', description: '' },
+    { id: '', title: '', description: '' },
+]
 
 export default function App() {
     return (
@@ -44,7 +48,8 @@ export default function App() {
                     </Accordion>
                 </section>
                 <section>
-                    <SearchableList items={} />
+                    <SearchableList items={PLACES} />
+                    <SearchableList items={['item 1', 'item 2']} />
                 </section>
             </main>
         </>
