@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 export default function SearchableList({ items }) {
-    const [searchTerm, setSearchTerm] = useState()
+    const [searchTerm, setSearchTerm] = useState('')
     const searchResults = items.filter(item =>
         JSON.stringify(item).toLowerCase().includes(searchTerm.toLowerCase())
     )
