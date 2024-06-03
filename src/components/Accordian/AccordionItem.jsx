@@ -7,7 +7,6 @@ export default function AccordionItem({ id, className, title, children }) {
 
     return (
         <li className={className}>
-            <h3 onClick={() => toggleItem(id)}>{title}</h3>
             <div
                 className={
                     isOpen

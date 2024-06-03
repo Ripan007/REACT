@@ -1,3 +1,3 @@
 export default function AccordionTitle() {
-    return <></>
+    return <h3 onClick={() => toggleItem(id)}>{title}</h3>
 }
