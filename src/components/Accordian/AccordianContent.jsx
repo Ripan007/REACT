@@ -4,7 +4,10 @@ export default function AccordionContent({ id, className, children }) {
     const { openItemId } = useAccordianContext()
     const isOpen = openItemId === id
     return (
-        <div className={isOpen ? `${className ?? ''}open ` : className}>
+        <div
+            className={
+                isOpen ? `${className ?? ''}open ` : `${className ?? ''}`
+            }>
             {children}
         </div>
     )
