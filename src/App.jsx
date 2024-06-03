@@ -6,7 +6,7 @@ export default function App() {
          <main>
             <section>
                <Accordion className="accordion">
-                  <Accordion.Item className="accordion-item">
+                  <Accordion.Item className="accordion-item" id={'experience'}>
                      <Accordion.Title className="accordion-item-title">
                         we got 20 years of experience
                      </Accordion.Title>
