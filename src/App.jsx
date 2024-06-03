@@ -8,6 +8,7 @@ export default function App() {
                 <section>
                     <Accordian className="accordion">
                         <AccordianItem
+                            id={'experience'}
                             title="we got 20 years of experience"
                             className="accordion-item">
                             <article>
@@ -19,6 +20,7 @@ export default function App() {
                             </article>
                         </AccordianItem>
                         <AccordianItem
+                            id={'local-guides'}
                             title="what you got from it ?"
                             className="accordion-item">
                             <article>
