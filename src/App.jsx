@@ -1,12 +1,11 @@
-import Accordian from './components/Accordian/Accordion'
-import AccordianItem from './components/Accordian/AccordionItem'
+import Accordion from './components/Accordian/Accordion'
 
 export default function App() {
     return (
         <>
             <main>
                 <section>
-                    <Accordian className="accordion">
+                    <Accordion className="accordion">
                         <Accordion.Item
                             id={'experience'}
                             title="we got 20 years of experience"
@@ -31,7 +30,7 @@ export default function App() {
                                 </p>
                             </article>
                         </Accordian.Item>
-                    </Accordian>
+                    </Accordion>
                 </section>
             </main>
         </>
