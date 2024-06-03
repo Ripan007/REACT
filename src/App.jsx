@@ -2,7 +2,7 @@ import Accordion from './components/Accordian/Accordion'
 import SearchableList from './components/SearchableList/SearchableList'
 
 const PLACES = [
-    { id: '', title: '', description: '' },
+    { id: 'african', title: '', description: '' },
     { id: '', title: '', description: '' },
     { id: '', title: '', description: '' },
 ]
