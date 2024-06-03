@@ -11,9 +11,11 @@ export default function Accordian({ className, children }) {
     }
     const contextValue = {
         openItemId: openItemId,
+        openItem,
+        closedItem,
     }
     return (
-        <AccordianContext.Provider>
+        <AccordianContext.Provider value={contextValue}>
             <ul className={className}>{children}</ul>
         </AccordianContext.Provider>
     )
