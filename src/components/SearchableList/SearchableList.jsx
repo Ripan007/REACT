@@ -2,7 +2,9 @@ import { useState } from 'react'
 
 export default function SearchableList({ items }) {
     const [searchTerm, setSearchTerm] = useState()
-    function handleChange() {}
+    const searchResults = function handleChange(event) {
+        setSearchTerm(event.target.value)
+    }
     return (
         <div className="searchable-list">
             <input type="search" placeholder="search" onChange={handleChange} />
