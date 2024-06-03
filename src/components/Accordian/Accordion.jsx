@@ -1,8 +1,9 @@
 import React, { createContext, useContext, useState } from 'react'
-import AccordianItem from './AccordionItem'
-const AccordianContext = createContext()
+import AccordionItem from './AccordionItem'
+
+const AccordionContext = createContext()
 export function useAccordianContext() {
-    const ctx = useContext(AccordianContext)
+    const ctx = useContext(AccordionContext)
     if (!ctx) {
         throw new Error(
             'Accordian related component must be wrapped  by <Accordian>.'
@@ -23,10 +24,10 @@ export default function Accordion({ className, children }) {
         toggleItem,
     }
     return (
-        <AccordianContext.Provider value={contextValue}>
+        <AccordionContext.Provider value={contextValue}>
             <ul className={className}>{children}</ul>
-        </AccordianContext.Provider>
+        </AccordionContext.Provider>
     )
 }
 
-Accordian.Item = AccordianItem
+Accordion.Item = AccordionItem
