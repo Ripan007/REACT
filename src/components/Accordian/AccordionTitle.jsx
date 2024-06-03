@@ -1,6 +1,10 @@
 import { useAccordianContext } from './Accordion'
 
-export default function AccordionTitle({ id, children }) {
+export default function AccordionTitle({ id, className, children }) {
     const { toggleItem } = useAccordianContext()
-    return <h3 onClick={() => toggleItem(id)}>{children}</h3>
+    return (
+        <h3 className={className} onClick={() => toggleItem(id)}>
+            {children}
+        </h3>
+    )
 }
