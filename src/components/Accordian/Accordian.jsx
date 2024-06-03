@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useContext, useState } from 'react'
 const AccordianContext = createContext()
 export function useAccordianContext() {
     const ctx = useContext(AccordianContext)
