@@ -12,12 +12,11 @@ export function useAccordianContext() {
 
 export default function Accordian({ className, children }) {
     const [openItemId, setOpenItemId] = useState('')
-    function openItem(id) {
-        setOpenItemId(id)
+
+    function toggleItem(id) {
+        setOpenItemId()
     }
-    function closedItem() {
-        setOpenItemId(null)
-    }
+
     const contextValue = {
         openItemId: openItemId,
         openItem,
