@@ -6,8 +6,11 @@ export default function App() {
                     <Accordion className="accordion">
                         <Accordion.Item
                             id={'experience'}
-                            title="we got 20 years of experience"
                             className="accordion-item">
+                            <Accordion.Title>
+                                we got 20 years of experience
+                            </Accordion.Title>
+                            <Accordion.Content></>
                             <article>
                                 <p>show experience data of the user</p>
                                 <p>
@@ -18,8 +21,10 @@ export default function App() {
                         </Accordion.Item>
                         <Accordian.Item
                             id={'local-guides'}
-                            title="what you got from it ?"
                             className="accordion-item">
+                            <Accordion.Title>
+                                what you got from it ?
+                            </Accordion.Title>
                             <article>
                                 <p>show accordion random data</p>
                                 <p>
