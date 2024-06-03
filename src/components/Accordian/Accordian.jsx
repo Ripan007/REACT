@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react'
 const AccordianContext = createContext()
-export function useAcordianContext() {
+export function useAccordianContext() {
     const ctx = useContext(AccordianContext)
     if (!ctx) {
         throw new Error(
