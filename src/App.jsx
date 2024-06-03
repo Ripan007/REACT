@@ -10,14 +10,15 @@ export default function App() {
                             <Accordion.Title>
                                 we got 20 years of experience
                             </Accordion.Title>
-                            <Accordion.Content></>
-                            <article>
-                                <p>show experience data of the user</p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Voluptas, eveniet.
-                                </p>
-                            </article>
+                            <Accordion.Content>
+                                <article>
+                                    <p>show experience data of the user</p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Voluptas, eveniet.
+                                    </p>
+                                </article>
+                            </Accordion.Content>
                         </Accordion.Item>
                         <Accordian.Item
                             id={'local-guides'}
