@@ -4,6 +4,9 @@ import TabButton from './components/TabButton'
 import { CORE_CONCEPTS } from './data'
 
 export default function App() {
+    function onSelect() {
+        console.log('button got clicked')
+    }
     return (
         <>
             <Header />
@@ -20,10 +23,10 @@ export default function App() {
                 <section id="examples">
                     <h3>examples</h3>
                     <menu>
-                        <TabButton>components</TabButton>
-                        <TabButton>props</TabButton>
-                        <TabButton>jsx</TabButton>
-                        <TabButton>state</TabButton>
+                        <TabButton onClick={onSelect}>components</TabButton>
+                        <TabButton onClick={onSelect}>props</TabButton>
+                        <TabButton onClick={onSelect}>jsx</TabButton>
+                        <TabButton onClick={onSelect}>state</TabButton>
                     </menu>
                     dynamic content
                 </section>
