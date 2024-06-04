@@ -19,10 +19,12 @@ export default function App() {
                 </section>
                 <section id="examples">
                     <h3>examples</h3>
-                    <TabButton>components</TabButton>
-                    <TabButton>props</TabButton>
-                    <TabButton>jsx</TabButton>
-                    <TabButton>state</TabButton>
+                    <menu>
+                        <TabButton>components</TabButton>
+                        <TabButton>props</TabButton>
+                        <TabButton>jsx</TabButton>
+                        <TabButton>state</TabButton>
+                    </menu>
                 </section>
             </main>
         </>
