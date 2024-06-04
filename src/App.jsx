@@ -1,3 +1,5 @@
+import { CORE_CONCEPTS } from './data'
+
 const reactDescritption = ['fundamental', 'crucial', 'core']
 function genRandomIndex(max) {
     return Math.floor(Math.random() * (max + 1))
@@ -19,12 +21,12 @@ function Header() {
         </header>
     )
 }
-function CoreConcepts(props) {
+function CoreConcepts({ title, description }) {
     return (
         <>
             <li>
-                <h3>{props.title}</h3>
-                <p>{props.description}</p>
+                <h3>{title}</h3>
+                <p>{description}</p>
             </li>
         </>
     )
@@ -38,22 +40,10 @@ export default function App() {
                 <section id="core-concepts">
                     <h2>time to get started</h2>
                     <ul>
-                        <CoreConcepts
-                            title="components"
-                            description="react is a awesome library"
-                        />
-                        <CoreConcepts
-                            title="props"
-                            description="react is a awesome library"
-                        />
-                        <CoreConcepts
-                            title="jsx"
-                            description="react is a awesome library"
-                        />
-                        <CoreConcepts
-                            title="state"
-                            description="react is a awesome library"
-                        />
+                        <CoreConcepts {...CORE_CONCEPTS[0]} />
+                        <CoreConcepts {...CORE_CONCEPTS[1]} />
+                        <CoreConcepts {...CORE_CONCEPTS[2]} />
+                        <CoreConcepts {...CORE_CONCEPTS[3]} />
                     </ul>
                 </section>
             </main>
