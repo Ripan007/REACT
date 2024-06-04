@@ -2,7 +2,7 @@ import { useState } from 'react'
 import CoreConcept from './components/CoreConcept'
 import Header from './components/Header/Header'
 import TabButton from './components/TabButton'
-import { CORE_CONCEPTS } from './data'
+import { CORE_CONCEPTS, EXAMPLES } from './data'
 
 export default function App() {
     const [selectedTopic, setSelectedTopic] = useState('please select a button')
@@ -41,7 +41,8 @@ export default function App() {
                         </TabButton>
                     </menu>
                     <section id="tab-content">
-                        <h3>{}</h3>
+                        <h3>{EXAMPLES[selectedTopic].title}</h3>
+                        <p>{EXAMPLES[selectedTopic].description}</p>
                     </section>
                 </section>
             </main>
