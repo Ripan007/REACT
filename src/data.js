@@ -5,5 +5,5 @@ export const CORE_CONCEPTS = [
         title: 'state',
         description: 'rerender the ui',
     },
-    {},
+    { title: 'jsx', description: 'the way to  write  html in  react' },
 ]
