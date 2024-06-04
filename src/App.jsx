@@ -22,8 +22,10 @@ function Header() {
 function CoreConcepts(props) {
     return (
         <>
-            <h3>{props.title}</h3>
-            <p>{props.description}</p>
+            <li>
+                <h3>{props.title}</h3>
+                <p>{props.description}</p>
+            </li>
         </>
     )
 }
@@ -35,10 +37,24 @@ export default function App() {
             <main>
                 <section id="core-concepts">
                     <h2>time to get started</h2>
-                    <CoreConcepts
-                        title="react"
-                        description="react is a awesome library"
-                    />
+                    <ul>
+                        <CoreConcepts
+                            title="components"
+                            description="react is a awesome library"
+                        />
+                        <CoreConcepts
+                            title="props"
+                            description="react is a awesome library"
+                        />
+                        <CoreConcepts
+                            title="jsx"
+                            description="react is a awesome library"
+                        />
+                        <CoreConcepts
+                            title="state"
+                            description="react is a awesome library"
+                        />
+                    </ul>
                 </section>
             </main>
         </div>
