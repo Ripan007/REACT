@@ -40,7 +40,9 @@ export default function App() {
                             State
                         </TabButton>
                     </menu>
-                    {selectedTopic}
+                    <section id="tab-content">
+                        <h3>{}</h3>
+                    </section>
                 </section>
             </main>
         </>
