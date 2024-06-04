@@ -1,9 +1,10 @@
 import CoreConcept from './components/CoreConcept'
+import Header from './components/Header'
 import { CORE_CONCEPTS } from './data'
 
 export default function App() {
     return (
-        <div>
+        <>
             <Header />
             <main>
                 <section id="core-concepts">
@@ -16,6 +17,6 @@ export default function App() {
                     </ul>
                 </section>
             </main>
-        </div>
+        </>
     )
 }
