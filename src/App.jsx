@@ -24,11 +24,11 @@ export default function App() {
                     <h3>examples</h3>
                     <menu>
                         <TabButton onSelect={handleSelect}>
-                            components
+                            Components
                         </TabButton>
-                        <TabButton onSelect={handleSelect}>props</TabButton>
-                        <TabButton onSelect={handleSelect}>jsx</TabButton>
-                        <TabButton onSelect={handleSelect}>state</TabButton>
+                        <TabButton onSelect={handleSelect}>Props</TabButton>
+                        <TabButton onSelect={handleSelect}>Jsx</TabButton>
+                        <TabButton onSelect={handleSelect}>State</TabButton>
                     </menu>
                     dynamic content
                 </section>
