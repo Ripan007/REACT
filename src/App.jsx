@@ -1,15 +1,5 @@
+import CoreConcept from './components/CoreConcept'
 import { CORE_CONCEPTS } from './data'
-
-function CoreConcepts({ title, description }) {
-    return (
-        <>
-            <li>
-                <h3>{title}</h3>
-                <p>{description}</p>
-            </li>
-        </>
-    )
-}
 
 export default function App() {
     return (
@@ -19,10 +9,10 @@ export default function App() {
                 <section id="core-concepts">
                     <h2>time to get started</h2>
                     <ul>
-                        <CoreConcepts {...CORE_CONCEPTS[0]} />
-                        <CoreConcepts {...CORE_CONCEPTS[1]} />
-                        <CoreConcepts {...CORE_CONCEPTS[2]} />
-                        <CoreConcepts {...CORE_CONCEPTS[3]} />
+                        <CoreConcept {...CORE_CONCEPTS[0]} />
+                        <CoreConcept {...CORE_CONCEPTS[1]} />
+                        <CoreConcept {...CORE_CONCEPTS[2]} />
+                        <CoreConcept {...CORE_CONCEPTS[3]} />
                     </ul>
                 </section>
             </main>
