@@ -4,7 +4,7 @@ import TabButton from './components/TabButton'
 import { CORE_CONCEPTS } from './data'
 
 export default function App() {
-    function onSelect() {
+    function handleSelect() {
         console.log('button got clicked')
     }
     return (
@@ -23,10 +23,12 @@ export default function App() {
                 <section id="examples">
                     <h3>examples</h3>
                     <menu>
-                        <TabButton onClick={onSelect}>components</TabButton>
-                        <TabButton onClick={onSelect}>props</TabButton>
-                        <TabButton onClick={onSelect}>jsx</TabButton>
-                        <TabButton onClick={onSelect}>state</TabButton>
+                        <TabButton onSelect={handleSelect}>
+                            components
+                        </TabButton>
+                        <TabButton onSelect={handleSelect}>props</TabButton>
+                        <TabButton onSelect={handleSelect}>jsx</TabButton>
+                        <TabButton onSelect={handleSelect}>state</TabButton>
                     </menu>
                     dynamic content
                 </section>
