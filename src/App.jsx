@@ -2,11 +2,13 @@ import CoreConcept from './components/CoreConcept'
 import Header from './components/Header/Header'
 import TabButton from './components/TabButton'
 import { CORE_CONCEPTS } from './data'
-
+let tabContent = 'please select a button'
 export default function App() {
     function handleSelect(selectedButton) {
+        tabContent = selectedButton
         console.log(selectedButton)
     }
+
     return (
         <>
             <Header />
@@ -36,7 +38,7 @@ export default function App() {
                             State
                         </TabButton>
                     </menu>
-                    dynamic content
+                    {tabContent}
                 </section>
             </main>
         </>
