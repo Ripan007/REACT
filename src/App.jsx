@@ -25,6 +25,7 @@ export default function App() {
                         <TabButton>jsx</TabButton>
                         <TabButton>state</TabButton>
                     </menu>
+                    dynamic content
                 </section>
             </main>
         </>
