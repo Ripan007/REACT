@@ -15,14 +15,14 @@ export const EXAMPLES = {
     },
     props: {
         title: 'props',
-        description: 'components are reusable building blocks',
+        description: 'props are reusable building blocks',
     },
     jsx: {
         title: 'jsx',
-        description: 'components are reusable building blocks',
+        description: 'jsx are reusable building blocks',
     },
     state: {
         title: 'state',
-        description: 'components are reusable building blocks',
+        description: 'state are reusable building blocks',
     },
 }
