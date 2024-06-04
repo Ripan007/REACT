@@ -4,6 +4,7 @@ function genRandomIndex(max) {
 }
 
 function Header() {
+    const description = reactDescritption[genRandomIndex(3)]
     return (
         <header>
             <img
@@ -18,7 +19,7 @@ function Header() {
         </header>
     )
 }
-const description = reactDescritption[genRandomIndex(3)]
+
 export default function App() {
     return (
         <div>
