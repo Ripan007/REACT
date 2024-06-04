@@ -1,4 +1,8 @@
-cns
+const reactDescritption = ['fundamental', 'crucialc', 'core']
+function getRandomIndex(max) {
+    return Math.floor(Math.random() * (max + 1))
+}
+
 function Header() {
     return (
         <header>
@@ -8,13 +12,14 @@ function Header() {
             />
             <h1>react essentials</h1>
             <p>
-                fundamemtal react concept you will need for building any react
+                {description} react concept you will need for building any react
                 app
             </p>
         </header>
     )
 }
 export default function App() {
+    const description = reactDescritption[getRandomIndex(3)]
     return (
         <div>
             <Header />
