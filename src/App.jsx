@@ -19,13 +19,27 @@ function Header() {
         </header>
     )
 }
+function CoreConcepts(props) {
+    return (
+        <>
+            <h3>{props.title}</h3>
+            <p>{props.description}</p>
+        </>
+    )
+}
 
 export default function App() {
     return (
         <div>
             <Header />
             <main>
-                <h2>time to get started</h2>
+                <section id="core-concepts">
+                    <h2>time to get started</h2>
+                    <CoreConcepts
+                        title="react"
+                        description="react is a awesome library"
+                    />
+                </section>
             </main>
         </div>
     )
