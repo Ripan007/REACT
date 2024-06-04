@@ -5,7 +5,7 @@ import TabButton from './components/TabButton'
 import { CORE_CONCEPTS, EXAMPLES } from './data'
 
 export default function App() {
-    const [selectedTopic, setSelectedTopic] = useState('please select a button')
+    const [selectedTopic, setSelectedTopic] = useState('components')
     function handleSelect(selectedButton) {
         setSelectedTopic(selectedButton)
         console.log(selectedTopic)
