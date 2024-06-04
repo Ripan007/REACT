@@ -4,8 +4,8 @@ import TabButton from './components/TabButton'
 import { CORE_CONCEPTS } from './data'
 
 export default function App() {
-    function handleSelect() {
-        console.log('button got clicked')
+    function handleSelect(selectedButton) {
+        console.log(selectedButton)
     }
     return (
         <>
@@ -23,16 +23,16 @@ export default function App() {
                 <section id="examples">
                     <h3>examples</h3>
                     <menu>
-                        <TabButton onSelect={() => handleSelect('')}>
+                        <TabButton onSelect={() => handleSelect('components')}>
                             Components
                         </TabButton>
-                        <TabButton onSelect={() => handleSelect('')}>
+                        <TabButton onSelect={() => handleSelect('props')}>
                             Props
                         </TabButton>
-                        <TabButton onSelect={() => handleSelect('')}>
+                        <TabButton onSelect={() => handleSelect('jsx')}>
                             Jsx
                         </TabButton>
-                        <TabButton onSelect={() => handleSelect('')}>
+                        <TabButton onSelect={() => handleSelect('state')}>
                             State
                         </TabButton>
                     </menu>
