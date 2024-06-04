@@ -13,4 +13,16 @@ export const EXAMPLES = {
         title: 'components',
         description: 'components are reusable building blocks',
     },
+    props: {
+        title: 'props',
+        description: 'components are reusable building blocks',
+    },
+    jsx: {
+        title: 'jsx',
+        description: 'components are reusable building blocks',
+    },
+    state: {
+        title: 'state',
+        description: 'components are reusable building blocks',
+    },
 }
