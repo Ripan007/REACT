@@ -23,12 +23,18 @@ export default function App() {
                 <section id="examples">
                     <h3>examples</h3>
                     <menu>
-                        <TabButton onSelect={handleSelect}>
+                        <TabButton onSelect={() => handleSelect('')}>
                             Components
                         </TabButton>
-                        <TabButton onSelect={handleSelect}>Props</TabButton>
-                        <TabButton onSelect={handleSelect}>Jsx</TabButton>
-                        <TabButton onSelect={handleSelect}>State</TabButton>
+                        <TabButton onSelect={() => handleSelect('')}>
+                            Props
+                        </TabButton>
+                        <TabButton onSelect={() => handleSelect('')}>
+                            Jsx
+                        </TabButton>
+                        <TabButton onSelect={() => handleSelect('')}>
+                            State
+                        </TabButton>
                     </menu>
                     dynamic content
                 </section>
