@@ -1,5 +1,6 @@
 import CoreConcept from './components/CoreConcept'
 import Header from './components/Header/Header'
+import TabButton from './components/TabButton'
 import { CORE_CONCEPTS } from './data'
 
 export default function App() {
@@ -15,6 +16,10 @@ export default function App() {
                         <CoreConcept {...CORE_CONCEPTS[2]} />
                         <CoreConcept {...CORE_CONCEPTS[3]} />
                     </ul>
+                </section>
+                <section id="examples">
+                    <h3>examples</h3>
+                    <TabButton>components</TabButton>
                 </section>
             </main>
         </>
