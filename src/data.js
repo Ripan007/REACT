@@ -7,3 +7,5 @@ export const CORE_CONCEPTS = [
     },
     { title: 'jsx', description: 'the way to  write  html in  react' },
 ]
+
+export const EXAMPLES = {}
