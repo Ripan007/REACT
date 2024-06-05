@@ -1,12 +1,11 @@
+import Player from './components/Player'
+
 export default function App() {
     return (
         <main>
             <div id="game-container">
                 <ol id="players">
-                    <li>
-                        <span className="player-name">player 2</span>
-                        <span className="player-symbol">0</span>
-                    </li>
+                    <Player />
                 </ol>
             </div>
         </main>
