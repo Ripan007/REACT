@@ -7,7 +7,7 @@ export default function Player({ name, symbol }) {
         playerName = <input type="text" value={name} />
     }
     function handleEditClick() {
-        setIsEditing(true)
+        setIsEditing(editing => !editing)
     }
     return (
         <li>
