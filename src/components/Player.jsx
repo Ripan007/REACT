@@ -9,9 +9,9 @@ export default function Player({ initialName, symbol }) {
     function handleEditClick() {
         setIsEditing(editing => !editing)
     }
-    setPlayerName = <span className="player-name">{playerName}</span>
+    let editablePlayerName = <span className="player-name">{playerName}</span>
     if (isEditing) {
-        setPlayerName = (
+        editablePlayerName = (
             <input type="text" value={playerName} onChange={handleChange} />
         )
     }
@@ -19,7 +19,7 @@ export default function Player({ initialName, symbol }) {
     return (
         <li>
             <span className="player">
-                {playerName}
+                {editablePlayerName}
                 <span className="player-symbol">{symbol}</span>
                 <button onClick={handleEditClick}>
                     {isEditing ? 'save' : 'edit'}
