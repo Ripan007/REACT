@@ -22,7 +22,7 @@ export default function Examples() {
     }
     return (
         <>
-            <Section title="examples" id="examples">
+            <Section title="Examples" id="examples">
                 <Tabs
                     buttons={
                         <>
