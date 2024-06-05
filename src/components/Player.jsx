@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 
 export default function Player({ name, symbol }) {
     const [isEditing, setIsEditing] = useState(false)
-    function handleClick() {}
+    function handleClick() {
+        let show =
+    }
     return (
         <li>
             <span className="player">
