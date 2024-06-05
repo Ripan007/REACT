@@ -25,14 +25,6 @@ export default function App() {
         <>
             <Header />
             <main>
-                <section id="core-concepts">
-                    <h2>time to get started</h2>
-                    <ul>
-                        {CORE_CONCEPTS.map(coreItem => (
-                            <CoreConcept {...coreItem} />
-                        ))}
-                    </ul>
-                </section>
                 <section id="examples">
                     <h3>examples</h3>
                     <menu>
