@@ -49,3 +49,12 @@ export default function Examples() {
         </>
     )
 }
+
+/*
+create a template that have
+<section>
+<h2>
+<>..
+</h2></section>
+
+*/
