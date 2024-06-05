@@ -5,7 +5,8 @@ export default function App() {
         <main>
             <div id="game-container">
                 <ol id="players">
-                    <Player />
+                    <Player name="player 1" symbol="x" />
+                    <Player name="player 2" symbol="o" />
                 </ol>
             </div>
         </main>
