@@ -28,3 +28,5 @@ export default function Player({ initialName, symbol }) {
         </li>
     )
 }
+
+// i have  to spend more time on thinking rather  than other  th
