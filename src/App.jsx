@@ -53,11 +53,7 @@ export default function App() {
         }
         return winner
     }
-    for (const turn of gameTurns) {
-        const { square, player } = turn
-        const { row, col } = square
-        gameBoard[row][col] = player
-    }
+
     const winner = deriveWinner(gameBoard, players)
     const hasDraw = gameTurns.length === 9 && !winner
     function handleSelectSquare(rowIndex, colIndex) {
