@@ -80,6 +80,7 @@ export default function App() {
                 <GameBoard
                     onSelectSquare={handleSelectSquare}
                     board={gameBoard}
+                    onRestart={handleRestart}
                 />
             </div>
             <Log turns={gameTurns} />
