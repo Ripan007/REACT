@@ -12,7 +12,7 @@ export default function App() {
         )
         setGameTurns(prevTurns => {
             let currentPlayer = 'x'
-            if (prevTurns.lenth > 0 && prevTurns[0].player === 'x') {
+            if (prevTurns.length > 0 && prevTurns[0].player === 'x') {
                 currentPlayer = 'o'
             }
             const updatedTurns = [
