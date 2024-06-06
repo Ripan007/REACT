@@ -25,6 +25,8 @@ export default function App() {
     })
     const [gameTurns, setGameTurns] = useState([])
     const activePlayer = deriveActivePlayer(gameTurns)
+    const winner = deriveWinner(gameBoard, players)
+    const hasDraw = gameTurns.length === 9 && !winner
     let gameBoard = [...initialGameBoard.map(array => [...array])]
     function deriveGameBoard() {
         let gameBoard = [...initialGameBoard.map(array => [...array])]
@@ -54,8 +56,6 @@ export default function App() {
         return winner
     }
 
-    const winner = deriveWinner(gameBoard, players)
-    const hasDraw = gameTurns.length === 9 && !winner
     function handleSelectSquare(rowIndex, colIndex) {
         setGameTurns(prevTurns => {
             const currentPlayer = deriveActivePlayer(prevTurns)
