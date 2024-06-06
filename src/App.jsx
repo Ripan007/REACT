@@ -12,11 +12,14 @@ export default function App() {
     return (
         <main>
             <div id="game-container">
-                <ol id="players">
+                <ol id="players" className="">
                     <Player initialName="player 1" symbol="x" />
                     <Player initialName="player 2" symbol="o" />
                 </ol>
-                <GameBoard onSelectSquare={handleSelectSquare} />
+                <GameBoard
+                    onSelectSquare={handleSelectSquare}
+                    activePlayerSymbol={activePlayer}
+                />
             </div>
         </main>
     )
