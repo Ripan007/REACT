@@ -19,6 +19,7 @@ function deriveActivePlayer(gameTurns) {
 }
 
 export default function App() {
+    const [player, setPlayer] = useState({})
     const [gameTurns, setGameTurns] = useState([])
     const activePlayer = deriveActivePlayer(gameTurns)
     let gameBoard = [...initialGameBoard.map(array => [...array])]
