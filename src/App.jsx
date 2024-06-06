@@ -4,7 +4,11 @@ import Player from './components/Player'
 
 export default function App() {
     const [activePlayer, setActivePlayer] = useState('x')
-    function handleSelectSquare() {}
+    function handleSelectSquare() {
+        setActivePlayer(currActivePlayer =>
+            currActivePlayer === 'x' ? 'o' : 'x'
+        )
+    }
     return (
         <main>
             <div id="game-container">
@@ -12,7 +16,7 @@ export default function App() {
                     <Player initialName="player 1" symbol="x" />
                     <Player initialName="player 2" symbol="o" />
                 </ol>
-                <GameBoard />
+                <GameBoard onSelectSquare={handleSelectSquare} />
             </div>
         </main>
     )
