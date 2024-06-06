@@ -26,6 +26,7 @@ export default function App() {
         const { row, col } = square
         gameBoard[row][col] = player
     }
+    let winner
 
     for (const combination of WINNING_COMBINATIONS) {
         const firstSquareSymbol =
@@ -39,6 +40,7 @@ export default function App() {
             firstSquareSymbol === secondSquareSymbol &&
             firstSquareSymbol === thirdSquareSymbol
         ) {
+            winner = firstSquareSymbol
         }
     }
     function handleSelectSquare(rowIndex, colIndex) {
