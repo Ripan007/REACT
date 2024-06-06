@@ -27,6 +27,7 @@ export default function App() {
     const activePlayer = deriveActivePlayer(gameTurns)
     let gameBoard = [...initialGameBoard.map(array => [...array])]
     function deriveGameBoard() {
+        let gameBoard = [...initialGameBoard.map(array => [...array])]
         for (const turn of gameTurns) {
             const { square, player } = turn
             const { row, col } = square
