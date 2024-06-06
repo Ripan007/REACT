@@ -19,7 +19,7 @@ function deriveActivePlayer(gameTurns) {
 }
 
 export default function App() {
-    const [player, setPlayers] = useState({
+    const [players, setPlayers] = useState({
         x: 'player x',
         o: 'player o',
     })
@@ -45,7 +45,7 @@ export default function App() {
             firstSquareSymbol === secondSquareSymbol &&
             firstSquareSymbol === thirdSquareSymbol
         ) {
-            winner = players[]
+            winner = players[firstSquareSymbol]
         }
     }
     const hasDraw = gameTurns.length === 9 && !winner
