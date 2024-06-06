@@ -76,11 +76,12 @@ export default function App() {
                         isActive={activePlayer === 'o'}
                     />
                 </ol>
-                {(winner || hasDraw) && <GameOver winner={winner} />}
+                {(winner || hasDraw) && (
+                    <GameOver winner={winner} onRestart={handleRestart} />
+                )}
                 <GameBoard
                     onSelectSquare={handleSelectSquare}
                     board={gameBoard}
-                    onRestart={handleRestart}
                 />
             </div>
             <Log turns={gameTurns} />
