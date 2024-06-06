@@ -73,7 +73,7 @@ export default function App() {
                         isActive={activePlayer === 'o'}
                     />
                 </ol>
-                {winner && <GameOver winner={winner} />}
+                {(winner || hasDraw) && <GameOver winner={winner} />}
                 <GameBoard
                     onSelectSquare={handleSelectSquare}
                     board={gameBoard}
