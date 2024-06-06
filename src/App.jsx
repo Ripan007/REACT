@@ -71,6 +71,7 @@ export default function App() {
                         isActive={activePlayer === 'o'}
                     />
                 </ol>
+                {winner && <p>you won ,{winner}</p>}
                 <GameBoard
                     onSelectSquare={handleSelectSquare}
                     board={gameBoard}
