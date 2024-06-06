@@ -45,8 +45,8 @@ export default function App() {
                     activePlayerSymbol={activePlayer}
                     turns={gameTurns}
                 />
-                <Log />
             </div>
+            <Log turns={GameBoard} />
         </main>
     )
 }
