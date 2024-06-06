@@ -65,9 +65,11 @@ export default function App() {
     function handleRestart() {
         setGameTurns([])
     }
-    function handlePlayerNameChange() {
+    function handlePlayerNameChange(symbol, newName) {
         setPlayers(prevPlayers => {
-            return {}
+            return {
+                ...prevPlayers,
+            }
         })
     }
     return (
