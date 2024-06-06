@@ -6,13 +6,13 @@ import Log from './components/Log'
 export default function App() {
     const [gameTurns, setGameTurns] = useState([])
     const [activePlayer, setActivePlayer] = useState('x')
-    function handleSelectSquare() {
+    function handleSelectSquare(rowIndex, colIndex) {
         setActivePlayer(currActivePlayer =>
             currActivePlayer === 'x' ? 'o' : 'x'
         )
         setGameTurns(prevTurns => {
             let currentPlayer = 'x'
-            if (prevTurns.lenth > 0 && prevTurns[0].player === x) {
+            if (prevTurns.lenth > 0 && prevTurns[0].player === 'x') {
                 currentPlayer = 'o'
             }
             const updatedTurns = [
