@@ -2,11 +2,18 @@ import { useState } from 'react'
 import GameBoard from './components/GameBoard'
 import Player from './components/Player'
 import Log from './components/Log'
-function derivedActivePlayer() {}
+function deriveActivePlayer(gameTurns) {
+    let currentPlayer = 'x'
+    if (prevTurns.length > 0 && prevTurns[0].player === 'x') {
+        currentPlayer = 'o'
+    }
+    return currentPlayer
+}
 
 export default function App() {
     const [gameTurns, setGameTurns] = useState([])
     // const [activePlayer, setActivePlayer] = useState('x')
+
     let currentPlayer = 'x'
     if (prevTurns.length > 0 && prevTurns[0].player === 'x') {
         currentPlayer = 'o'
