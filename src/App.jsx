@@ -45,7 +45,7 @@ export default function App() {
             firstSquareSymbol === secondSquareSymbol &&
             firstSquareSymbol === thirdSquareSymbol
         ) {
-            winner = firstSquareSymbol
+            winner = players[]
         }
     }
     const hasDraw = gameTurns.length === 9 && !winner
