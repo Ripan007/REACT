@@ -26,6 +26,13 @@ export default function App() {
     const [gameTurns, setGameTurns] = useState([])
     const activePlayer = deriveActivePlayer(gameTurns)
     let gameBoard = [...initialGameBoard.map(array => [...array])]
+    function deriveGameBoard() {
+        for (const turn of gameTurns) {
+            const { square, player } = turn
+            const { row, col } = square
+            gameBoard[row][col] = player
+        }
+    }
     function deriveWinner(gameBoard, players) {
         let winner
         for (const combination of WINNING_COMBINATIONS) {
