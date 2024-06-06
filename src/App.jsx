@@ -5,7 +5,7 @@ import Log from './components/Log'
 
 function deriveActivePlayer(gameTurns) {
     let currentPlayer = 'x'
-    if (prevTurns.length > 0 && prevTurns[0].player === 'x') {
+    if (gameTurns.length > 0 && gameTurns[0].player === 'x') {
         currentPlayer = 'o'
     }
     return currentPlayer
