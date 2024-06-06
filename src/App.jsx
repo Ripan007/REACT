@@ -10,7 +10,20 @@ export default function App() {
         setActivePlayer(currActivePlayer =>
             currActivePlayer === 'x' ? 'o' : 'x'
         )
-        setGameTurns()
+        setGameTurns(prevTurns => {
+            let currentPlayer = 'x'
+            if (prevTurns.lenth > 0 && prevTurns[0].player === x) {
+                currentPlayer = 'o'
+            }
+            const updatedTurns = [
+                {
+                    square: { row: rowIndex, col: colIndex },
+                    player: currentPlayer,
+                },
+                ...prevTurns,
+            ]
+            return updatedTurns
+        })
     }
     return (
         <main>
