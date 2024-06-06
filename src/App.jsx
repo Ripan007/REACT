@@ -58,6 +58,9 @@ export default function App() {
             return updatedTurns
         })
     }
+    function handleRestart() {
+        setGameTurns([])
+    }
     return (
         <main>
             <div id="game-container">
