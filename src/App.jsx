@@ -44,6 +44,7 @@ export default function App() {
             winner = firstSquareSymbol
         }
     }
+    const hasDraw = gameTurns.length === 9 && !winner
     function handleSelectSquare(rowIndex, colIndex) {
         setGameTurns(prevTurns => {
             const currentPlayer = deriveActivePlayer(prevTurns)
