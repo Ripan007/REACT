@@ -46,7 +46,7 @@ export default function App() {
                     turns={gameTurns}
                 />
             </div>
-            <Log turns={GameBoard} />
+            <Log turns={gameTurns} />
         </main>
     )
 }
