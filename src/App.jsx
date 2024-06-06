@@ -19,7 +19,10 @@ function deriveActivePlayer(gameTurns) {
 }
 
 export default function App() {
-    const [player, setPlayer] = useState({})
+    const [player, setPlayers] = useState({
+        x: 'player x',
+        o: 'player o',
+    })
     const [gameTurns, setGameTurns] = useState([])
     const activePlayer = deriveActivePlayer(gameTurns)
     let gameBoard = [...initialGameBoard.map(array => [...array])]
@@ -61,6 +64,11 @@ export default function App() {
     }
     function handleRestart() {
         setGameTurns([])
+    }
+    function handlePlayerNameChange() {
+        setPlayers(prevPlayers => {
+            return {}
+        })
     }
     return (
         <main>
