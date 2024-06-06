@@ -27,7 +27,8 @@ export default function App() {
     const activePlayer = deriveActivePlayer(gameTurns)
     const winner = deriveWinner(gameBoard, players)
     const hasDraw = gameTurns.length === 9 && !winner
-    let gameBoard = [...initialGameBoard.map(array => [...array])]
+    const gameBoard = deriveGameBoard(gameTurns)
+
     function deriveGameBoard() {
         let gameBoard = [...initialGameBoard.map(array => [...array])]
         for (const turn of gameTurns) {
