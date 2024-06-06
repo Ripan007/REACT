@@ -81,11 +81,13 @@ export default function App() {
                         initialName="player 1"
                         symbol="x"
                         isActive={activePlayer === 'x'}
+                        onChangeName={handlePlayerNameChange}
                     />
                     <Player
                         initialName="player 2"
                         symbol="o"
                         isActive={activePlayer === 'o'}
+                        onChangeName={handlePlayerNameChange}
                     />
                 </ol>
                 {(winner || hasDraw) && (
