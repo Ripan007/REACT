@@ -8,8 +8,11 @@ export default function ResultModal({ result, targetTime }) {
                 the target time was <strong>{targetTime}</strong>seconds
             </p>
             <p>
-                you stop the timer with <strong></strong>
+                you stop the timer with <strong>x seconds left</strong>
             </p>
+            <form method="dialog">
+                <button>close</button>
+            </form>
         </dialog>
     )
 }
