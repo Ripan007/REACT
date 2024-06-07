@@ -20,6 +20,11 @@ export default function App() {
         <>
             <Header />
             <UserInput userInput={userInput} onChange={handleChange} />
+            {!inputIsValid && (
+                <p className="center">
+                    please enter a duration greater than zero
+                </p>
+            )}
             {inputIsValid && <Results input={userInput} />}
         </>
     )
