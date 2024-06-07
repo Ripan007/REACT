@@ -9,6 +9,7 @@ export default function TimerChallenge({ title, targetTime }) {
         }, targetTime * 1000)
         setTimerStarted(true)
     }
+    function handleStop() {}
     return (
         <section className="challenge">
             <h2>{title}</h2>
@@ -22,9 +23,10 @@ export default function TimerChallenge({ title, targetTime }) {
                 </button>
             </p>
             <p className={timerStarted ? 'active' : undefined}>
-                {timer}
-                time running / .. timer is inactive
+                {timerStarted ? 'time running' : 'timer is inActive'}
             </p>
         </section>
     )
 }
+
+//
