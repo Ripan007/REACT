@@ -21,7 +21,7 @@ export default function Results({ input }) {
                     return (
                         <tr key={yearData.year}>
                             <td>{yearData.year}</td>
-                            <td></td>
+                            <td>{yearData.valueEndOfYear}</td>
                             <td></td>
                             <td></td>
                             <td></td>
