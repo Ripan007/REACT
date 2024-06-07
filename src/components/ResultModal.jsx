@@ -7,7 +7,9 @@ const ResultModal = forwardRef(function ResultModal(
     const dialog = useRef()
     useImperativeHandle(ref, () => {
         return {
-            open() {},
+            open() {
+                dialog.current.showModal()
+            },
         }
     })
     return (
