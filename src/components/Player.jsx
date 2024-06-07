@@ -4,9 +4,10 @@ export default function Player() {
     const [enteredPlayerName, setEnteredPlayerName] = useState('')
     const [submitted, setSubmitted] = useState(false)
     function handleChange(event) {
+        setSubmitted(false)
         setEnteredPlayerName(event.target.value)
     }
-    function handleSubmitted() {
+    function handleClick() {
         setSubmitted(true)
     }
     return (
@@ -18,7 +19,7 @@ export default function Player() {
                     value={enteredPlayerName}
                     onChange={handleChange}
                 />
-                <button onClick={handleSubmitted}>set name</button>
+                <button onClick={handleClick}>set name</button>
             </p>
         </section>
     )
