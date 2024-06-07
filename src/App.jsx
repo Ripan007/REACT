@@ -1,5 +1,11 @@
 import React from 'react'
+import Player from './components/Player'
 
 export default function App() {
-    return <div>App</div>
+    return (
+        <>
+            <Player />
+            <div id="challenges"></div>
+        </>
+    )
 }
