@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Header from './components/Header'
 import UserInput from './components/UserInput'
+import Results from './components/Results'
 
 export default function App() {
     const [userInput, setUserInput] = useState({
@@ -18,6 +19,7 @@ export default function App() {
         <>
             <Header />
             <UserInput userInput={userInput} onChange={handleChange} />
+            <Results input={userInput} />
         </>
     )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 
 export default function Results({ input }) {
-    return <div>Results</div>
+    console.log(input)
+    return <p>Results...</p>
 }
