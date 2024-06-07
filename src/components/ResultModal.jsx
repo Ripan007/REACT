@@ -5,7 +5,7 @@ const ResultModal = forwardRef(function ResultModal(
     ref
 ) {
     return (
-        <dialog ref={ref} className="result-modal" open>
+        <dialog ref={ref} className="result-modal">
             <h2>you {result}</h2>
             <p>
                 the target time was <strong>{targetTime}</strong>seconds
