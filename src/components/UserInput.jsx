@@ -6,21 +6,21 @@ export default function UserInput() {
             <div className="input-group">
                 <p>
                     <label htmlFor="">initial investment</label>
-                    <input type="text" />
+                    <input type="number" required />
                 </p>
                 <p>
                     <label htmlFor="">annual investment</label>
-                    <input type="text" />
+                    <input type="number" required />
                 </p>
             </div>
             <div className="input-group">
                 <p>
                     <label htmlFor="">expected return</label>
-                    <input type="text" />
+                    <input type="number" required />
                 </p>
                 <p>
                     <label htmlFor="">duration</label>
-                    <input type="text" />
+                    <input type="number" required />
                 </p>
             </div>
         </section>
