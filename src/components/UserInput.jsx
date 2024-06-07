@@ -20,22 +20,45 @@ export default function UserInput() {
                     <input
                         type="number"
                         required
-                        onChange={() => handleChange('')}
+                        onChange={() =>
+                            handleChange(
+                                'initialInvestment',
+                                event.target.value
+                            )
+                        }
                     />
                 </p>
                 <p>
                     <label htmlFor="">annual investment</label>
-                    <input type="number" required />
+                    <input
+                        type="number"
+                        required
+                        onChange={() =>
+                            handleChange('annualInvestment', event.target.value)
+                        }
+                    />
                 </p>
             </div>
             <div className="input-group">
                 <p>
                     <label htmlFor="">expected return</label>
-                    <input type="number" required />
+                    <input
+                        type="number"
+                        required
+                        onChange={() =>
+                            handleChange('expecetdReturn', event.target.value)
+                        }
+                    />
                 </p>
                 <p>
                     <label htmlFor="">duration</label>
-                    <input type="number" required />
+                    <input
+                        type="number"
+                        required
+                        onChange={() =>
+                            handleChange('duration', event.target.value)
+                        }
+                    />
                 </p>
             </div>
         </section>
