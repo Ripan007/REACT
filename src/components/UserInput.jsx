@@ -33,7 +33,7 @@ export default function UserInput({ onChange, userInput }) {
                         required
                         value={userInput.expectedReturn}
                         onChange={event =>
-                            onChange('expectdedReturn', event.target.value)
+                            onChange('expectedReturn', event.target.value)
                         }
                     />
                 </p>
