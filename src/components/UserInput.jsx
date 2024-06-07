@@ -7,7 +7,11 @@ export default function UserInput() {
         expecetdReturn: 6,
         duration: 10,
     })
-    function handleChange() {}
+    function handleChange(inputIdentifier, newValue) {
+        setUserInput(prevUserInput => {
+            return { ...prevUserInput, [inputIdentifier]: newValue }
+        })
+    }
     return (
         <section id="user-input">
             <div className="input-group">
