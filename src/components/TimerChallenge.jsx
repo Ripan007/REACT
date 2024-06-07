@@ -10,7 +10,7 @@ export default function TimerChallenge({ title, targetTime }) {
             <p>
                 <button>start challenge</button>
             </p>
-            <p>time id running / .. timer is inactive</p>
+            <p>time running / .. timer is inactive</p>
         </section>
     )
 }
