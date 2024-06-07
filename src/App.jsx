@@ -12,14 +12,15 @@ export default function App() {
     })
     function handleChange(inputIdentifier, newValue) {
         setUserInput(prevUserInput => {
-            return { ...prevUserInput, [inputIdentifier]: newValue }
+            return { ...prevUserInput, [inputIdentifier]: +newValue }
         })
     }
+    const inputIsValid = userInput.duration >= 1
     return (
         <>
             <Header />
             <UserInput userInput={userInput} onChange={handleChange} />
-            <Results input={userInput} />
+            {inputIsValid && <Results input={userInput} />}
         </>
     )
 }
