@@ -28,5 +28,3 @@ export default function TimerChallenge({ title, targetTime }) {
         </section>
     )
 }
-
-//
