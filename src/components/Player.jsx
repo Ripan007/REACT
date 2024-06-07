@@ -1,5 +1,9 @@
 import React from 'react'
 
 export default function Player() {
-    return <div>Player</div>
+    return (
+        <section id="player">
+            <h2></h2>
+        </section>
+    )
 }
