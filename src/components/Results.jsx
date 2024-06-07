@@ -16,6 +16,19 @@ export default function Results({ input }) {
                     <th>invested capital</th>
                 </tr>
             </thead>
+            <tbody>
+                {resultsData.map(yearData => {
+                    return (
+                        <tr key={yearData.year}>
+                            <td>{yearData.year}</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    )
+                })}
+            </tbody>
         </table>
     )
 }
