@@ -1,9 +1,15 @@
-import React, { forwardRef, useImperativeHandle } from 'react'
+import React, { forwardRef, useImperativeHandle, useRef } from 'react'
 
 const ResultModal = forwardRef(function ResultModal(
     { result, targetTime },
     ref
 ) {
+    const dialog = useRef()
+    useImperativeHandle(ref, () => {
+        return {
+            open() {},
+        }
+    })
     return (
         <dialog ref={ref} className="result-modal">
             <h2>you {result}</h2>
