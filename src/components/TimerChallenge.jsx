@@ -15,7 +15,7 @@ export default function TimerChallenge({ title, targetTime }) {
                 {targetTime} second {targetTime > 1 ? 's' : ''}
             </p>
             <p>
-                <button>start challenge</button>
+                <button onClick={handleStart}>start challenge</button>
             </p>
             <p>time running / .. timer is inactive</p>
         </section>
