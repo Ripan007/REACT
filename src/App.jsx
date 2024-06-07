@@ -1,5 +1,14 @@
 import React from 'react'
+import Header from './components/Header'
+import AuthInputs from './components/AuthInputs'
 
 export default function App() {
-    return <div>App</div>
+    return (
+        <>
+            <Header />
+            <main>
+                <AuthInputs />
+            </main>
+        </>
+    )
 }
