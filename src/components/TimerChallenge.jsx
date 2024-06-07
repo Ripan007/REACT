@@ -37,3 +37,5 @@ export default function TimerChallenge({ title, targetTime }) {
         </>
     )
 }
+
+//  passing prop from one component to another using forward ref
