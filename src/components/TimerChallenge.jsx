@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function TimerChallenge({ title, targetTime }) {
     function handleStart() {
-        setTimeout(() => {}, targetTime * 100)
+        setTimeout(() => {}, targetTime * 1000)
     }
     return (
         <section className="challenge">
