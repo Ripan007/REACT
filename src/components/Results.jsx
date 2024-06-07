@@ -18,11 +18,14 @@ export default function Results({ input }) {
             </thead>
             <tbody>
                 {resultsData.map(yearData => {
-                    return (
+                    const totalInterest =
+                        yearData.valueEndOfYear -
+                        yearData.annualInvestment * yearData.year
+                    yearData.yearData.return(
                         <tr key={yearData.year}>
                             <td>{yearData.year}</td>
                             <td>{formatter.format(yearData.valueEndOfYear)}</td>
-                            <td></td>
+                            <td>{formatter.format(yearData.interest)}</td>
                             <td></td>
                             <td></td>
                         </tr>
