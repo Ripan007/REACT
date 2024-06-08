@@ -20,9 +20,9 @@ export default function NewProject() {
                 </li>
             </menu>
             <div>
-                <Input label="title" />
-                <Input label="description" textarea />
-                <Input label="due date" />
+                <Input ref={title} label="title" />
+                <Input ref={description} label="description" textarea />
+                <Input ref={dueDate} label="due date" />
             </div>
         </div>
     )
