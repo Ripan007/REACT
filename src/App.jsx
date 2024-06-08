@@ -28,7 +28,16 @@ export default function App() {
             }
         })
     }
-    console.log(projectsState)
+
+    function handleCancelAddProject() {
+        setProjectsState(prevState => {
+            return {
+                ...prevState,
+                selectedProjectId: null,
+            }
+        })
+    }
+    // console.log(projectsState)
     let content
     if (projectsState.selectedProjectId === null) {
         content = <NewProject onAdd={handleAddProject} />
