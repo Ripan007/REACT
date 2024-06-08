@@ -9,6 +9,7 @@ export default function NewProject() {
         const enteredTitle = title.current.value
         const enteredDescription = description.current.value
         const enteredDueDate = dueDate.current.value
+        //  validate...
     }
     return (
         <div className="w-[35rem] mt-16">
