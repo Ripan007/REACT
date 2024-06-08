@@ -1,7 +1,7 @@
 import React, { forwardRef, useImperativeHandle, useRef } from 'react'
 
 const ResultModal = forwardRef(function ResultModal(
-    { result, targetTime, remainingTime },
+    { result, targetTime, remainingTime, onReset },
     ref
 ) {
     const dialog = useRef()
@@ -25,7 +25,7 @@ const ResultModal = forwardRef(function ResultModal(
                 you stop the timer with
                 <strong>{formattedRemainingTime} seconds left</strong>
             </p>
-            <form method="dialog">
+            <form method="dialog" onSubmit={onReset}>
                 <button>close</button>
             </form>
         </dialog>
