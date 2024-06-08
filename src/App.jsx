@@ -19,7 +19,7 @@ export default function App() {
     function handleAddProject(projectData) {
         setProjectsState(prevState => {
             const newProject = {
-                ...newProject,
+                ...projectData,
                 id: Math.random(),
             }
             return {
