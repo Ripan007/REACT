@@ -30,13 +30,13 @@ export default function NewProject({ onAdd }) {
     return (
         <>
             <Modal ref={modal} buttonCaption="okay">
-                <h2 className="text-xl  font-bold text-stone-500 my-4">
+                <h2 className="text-xl  font-bold text-stone-700 my-4">
                     invalid input
                 </h2>
-                <p className="text-stone-400  mb-4">
+                <p className="text-stone-600  mb-4">
                     opp.. you forget to entered invalid value
                 </p>
-                <p className="text-stone-400 mb-4">
+                <p className="text-stone-600 mb-4">
                     please make sure you provide a valid input for every input
                     value
                 </p>
