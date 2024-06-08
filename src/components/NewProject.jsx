@@ -10,6 +10,7 @@ export default function NewProject({ onAdd }) {
         const enteredDescription = description.current.value
         const enteredDueDate = dueDate.current.value
         //  validate...
+        if(enteredTitle.trim()=== '' || )
         onAdd({
             title: enteredTitle,
             description: enteredDescription,
