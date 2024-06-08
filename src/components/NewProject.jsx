@@ -13,15 +13,15 @@ export default function NewProject() {
             </menu>
             <div>
                 <p>
-                    <label htmlFor=""></label>
+                    <label htmlFor="">title</label>
                     <input type="text" />
                 </p>
                 <p>
-                    <label htmlFor=""></label>
-                    <input type="text" />
+                    <label htmlFor="">description</label>
+                    <textarea />
                 </p>
                 <p>
-                    <label htmlFor=""></label>
+                    <label htmlFor="">due date</label>
                     <input type="text" />
                 </p>
             </div>
