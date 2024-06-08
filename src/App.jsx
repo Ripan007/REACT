@@ -16,6 +16,7 @@ export default function App() {
             }
         })
     }
+    function handleAddProject() {}
     let content
     if (projectsState.selectedProjectId === null) {
         content = <NewProject />
