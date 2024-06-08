@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 export default function NoProjectSelected() {
     return (
@@ -15,7 +16,7 @@ export default function NoProjectSelected() {
                 select a project or get started with new one
             </p>
             <p className="mt-8">
-                <button>create new project</button>
+                <Button>create new project</Button>
             </p>
         </div>
     )
