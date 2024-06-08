@@ -18,8 +18,8 @@ export default function App() {
     }
     return (
         <main className="h-screen my-8 flex gap-8">
-            <ProjectsSideBar />
-            <NoProjectSelected />
+            <ProjectsSideBar onStartAddProject={handleStartAddProject} />
+            <NoProjectSelected onStartAddProject={handleStartAddProject} />
         </main>
     )
 }
