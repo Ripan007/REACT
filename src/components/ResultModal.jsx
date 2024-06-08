@@ -6,6 +6,7 @@ const ResultModal = forwardRef(function ResultModal(
 ) {
     const dialog = useRef()
     const userLost = remainingTime <= 0
+    const formattedRemainingTime = (remainingTime / 1000).toFixed(2)
     useImperativeHandle(ref, () => {
         return {
             open() {
@@ -21,7 +22,8 @@ const ResultModal = forwardRef(function ResultModal(
                 the target time was <strong>{targetTime}</strong>seconds
             </p>
             <p>
-                you stop the timer with <strong>x seconds left</strong>
+                you stop the timer with
+                <strong>{formattedRemainingTime} seconds left</strong>
             </p>
             <form method="dialog">
                 <button>close</button>
