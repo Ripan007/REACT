@@ -5,6 +5,7 @@ const ResultModal = forwardRef(function ResultModal(
     ref
 ) {
     const dialog = useRef()
+    const userLost = remainingTime <= 0
     useImperativeHandle(ref, () => {
         return {
             open() {
@@ -14,7 +15,8 @@ const ResultModal = forwardRef(function ResultModal(
     })
     return (
         <dialog ref={dialog} className="result-modal">
-            <h2>you {result}</h2>
+            {userLost && <h2>you {result}</h2>}
+
             <p>
                 the target time was <strong>{targetTime}</strong>seconds
             </p>
