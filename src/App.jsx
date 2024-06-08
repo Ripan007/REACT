@@ -1,5 +1,10 @@
 import React from 'react'
+import ProjectsSideBar from './components/ProjectsSideBar'
 
 export default function App() {
-    return <div>App</div>
+    return (
+        <main className="h-screen my-8">
+            <ProjectsSideBar />
+        </main>
+    )
 }
