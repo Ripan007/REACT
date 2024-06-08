@@ -30,7 +30,7 @@ export default function App() {
     }
     let content
     if (projectsState.selectedProjectId === null) {
-        content = <NewProject />
+        content = <NewProject onAdd={handleAddProject} />
     } else if (projectsState.selectedProjectId === undefined) {
         content = (
             <NoProjectSelected onStartAddProject={handleStartAddProject} />
