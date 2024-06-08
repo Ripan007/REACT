@@ -16,6 +16,11 @@ export default function App() {
             }
         })
     }
+    let content
+    if (projectsState.selectedProjectId === null) {
+        content = <NewProject />
+    } else if (projectsState.selectedProjectId === undefined) {
+    }
     return (
         <main className="h-screen my-8 flex gap-8">
             <ProjectsSideBar onStartAddProject={handleStartAddProject} />
