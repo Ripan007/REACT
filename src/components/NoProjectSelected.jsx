@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 
-export default function NoProjectSelected() {
+export default function NoProjectSelected({ onStartAddProject }) {
     return (
         <div className="mt-24  text-center  w-2/3">
             <img
@@ -16,7 +16,7 @@ export default function NoProjectSelected() {
                 select a project or get started with new one
             </p>
             <p className="mt-8">
-                <Button>create new project</Button>
+                <Button onClick={onStartAddProject}>create new project</Button>
             </p>
         </div>
     )
