@@ -1,5 +1,8 @@
 import React from 'react'
-
-export default function Modal() {
-    return <div>Modal</div>
+import { createPortal } from 'react-dom'
+export default function Modal({ children }) {
+    return createPortal(
+        <dialog>{children}</dialog>,
+        document.getElementById('modal-root')
+    )
 }
