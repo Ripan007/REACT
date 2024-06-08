@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Input({ label, textarea }) {
+export default function Input({ label, textarea, ...props }) {
     return (
         <p>
             <label htmlFor="">{label}</label>
-            {textarea ? <textarea /> : <input />}
+            {textarea ? <textarea {...props} /> : <input {...props} />}
         </p>
     )
 }

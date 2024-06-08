@@ -1,4 +1,5 @@
 import React from 'react'
+import Input from './Input'
 
 export default function NewProject() {
     return (
@@ -12,18 +13,9 @@ export default function NewProject() {
                 </li>
             </menu>
             <div>
-                <p>
-                    <label htmlFor="">title</label>
-                    <input type="text" />
-                </p>
-                <p>
-                    <label htmlFor="">description</label>
-                    <textarea />
-                </p>
-                <p>
-                    <label htmlFor="">due date</label>
-                    <input type="text" />
-                </p>
+                <Input label="" />
+                <Input label="" />
+                <Input label="" />
             </div>
         </div>
     )
