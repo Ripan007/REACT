@@ -18,6 +18,8 @@ export default function NewProject({ onAdd }) {
             enteredDueDate.trim() === ''
         ) {
             //  show the  error modal
+            modal.current.open()
+            return
         }
         onAdd({
             title: enteredTitle,
@@ -27,7 +29,9 @@ export default function NewProject({ onAdd }) {
     }
     return (
         <>
-            <Modal ref={modal} />
+            <Modal ref={modal}>
+                <h2></h2>
+            </Modal>
             <div className="w-[35rem] mt-16">
                 <menu className="flex items-center justify-end gap-4 my-4">
                     <li>
