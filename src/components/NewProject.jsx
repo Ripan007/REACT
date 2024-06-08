@@ -29,7 +29,10 @@ export default function NewProject({ onAdd }) {
     }
     return (
         <>
-            <Modal ref={modal} buttonCaption="okay">
+            <Modal
+                ref={modal}
+                buttonCaption="okay"
+                className="backdrop:bg-stone-900/90 p-4 rounded-md  shadow-md">
                 <h2>invalid input</h2>
                 <p>opp.. you forget to entered invalid value</p>
                 <p>
