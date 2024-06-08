@@ -30,7 +30,8 @@ export default function NewProject({ onAdd }) {
     return (
         <>
             <Modal ref={modal}>
-                <h2></h2>
+                <h2>invalid input</h2>
+                <p>opp.. you forget to entered invalid value</p>
             </Modal>
             <div className="w-[35rem] mt-16">
                 <menu className="flex items-center justify-end gap-4 my-4">
