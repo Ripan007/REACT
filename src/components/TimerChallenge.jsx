@@ -9,6 +9,7 @@ export default function TimerChallenge({ title, targetTime }) {
     if (timeRemaining <= 0) {
         clearImmediate(timer.current)
         setTimeRemaining(targetTime * 1000)
+        dialog.current.open()
     }
     function handleStart() {
         timer.current = setInterval(() => {
@@ -17,6 +18,7 @@ export default function TimerChallenge({ title, targetTime }) {
         setTimerStarted(true)
     }
     function handleStop() {
+        dialog.current.open()
         clearInterval(timer.current)
     }
     return (
