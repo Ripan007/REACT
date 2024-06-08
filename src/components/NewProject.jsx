@@ -32,6 +32,10 @@ export default function NewProject({ onAdd }) {
             <Modal ref={modal}>
                 <h2>invalid input</h2>
                 <p>opp.. you forget to entered invalid value</p>
+                <p>
+                    please make sure you provide a valid input for every input
+                    value
+                </p>
             </Modal>
             <div className="w-[35rem] mt-16">
                 <menu className="flex items-center justify-end gap-4 my-4">
