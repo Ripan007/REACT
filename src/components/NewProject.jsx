@@ -11,6 +11,20 @@ export default function NewProject() {
                     <button>save</button>
                 </li>
             </menu>
+            <div>
+                <p>
+                    <label htmlFor=""></label>
+                    <input type="text" />
+                </p>
+                <p>
+                    <label htmlFor=""></label>
+                    <input type="text" />
+                </p>
+                <p>
+                    <label htmlFor=""></label>
+                    <input type="text" />
+                </p>
+            </div>
         </div>
     )
 }
