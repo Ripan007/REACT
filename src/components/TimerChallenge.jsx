@@ -5,12 +5,15 @@ export default function TimerChallenge({ title, targetTime }) {
     const timer = useRef()
     const dialog = useRef()
     const [timeRemaining, setTimeRemaining] = useState(targetTime * 1000)
+    const timerIsActive = timeRemaining > 0 && timeRemaining < targetTime * 1000
     function handleStart() {
-        timer.current = setInterval(() => {}, 10)
+        timer.current = setInterval(() => {
+            setTimeRemaining(prevTimeRemaining => prevTimeRemaining - 10)
+        }, 10)
         setTimerStarted(true)
     }
     function handleStop() {
-        clearTimeout(timer.current)
+        clearInterval(timer.current)
     }
     return (
         <>
