@@ -29,7 +29,7 @@ export default function SelectedProject({
                     {project.description}
                 </p>
             </header>
-            <Tasks onAdd={onAddTask} />
+            <Tasks onAdd={onAddTask} onDelete={onDeleteTask} />
         </div>
     )
 }
