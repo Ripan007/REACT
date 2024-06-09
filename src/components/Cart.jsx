@@ -1,6 +1,6 @@
 import { CartContext } from '../store/Shopping-cart-context'
 import { useContext } from 'react'
-export default function Cart({ onUpdateItemQuantity }) {
+export default function Cart() {
     const { items, updateItemQuantity } = useContext(CartContext)
 
     const totalPrice = items.reduce(
@@ -26,14 +26,14 @@ export default function Cart({ onUpdateItemQuantity }) {
                                 <div className="cart-item-actions">
                                     <button
                                         onClick={() =>
-                                            onUpdateItemQuantity(item.id, -1)
+                                            updateItemQuantity(item.id, -1)
                                         }>
                                         -
                                     </button>
                                     <span>{item.quantity}</span>
                                     <button
                                         onClick={() =>
-                                            onUpdateItemQuantity(item.id, 1)
+                                            updateItemQuantity(item.id, 1)
                                         }>
                                         +
                                     </button>
