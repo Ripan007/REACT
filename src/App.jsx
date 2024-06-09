@@ -11,6 +11,7 @@ export default function App() {
         tasks: [],
     })
     function handleAddTask() {}
+    function handleDeleteTask() {}
 
     function handleSelectProject(id) {
         setProjectsState(prevState => {

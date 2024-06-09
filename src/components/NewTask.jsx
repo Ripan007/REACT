@@ -5,6 +5,7 @@ export default function NewTask() {
     function handleChange(event) {
         setEnteredTask(event.target.value)
     }
+    function handleClick() {}
     return (
         <div className="flex items-center gap-4">
             <input
