@@ -1,7 +1,7 @@
 import { CartContext } from '../store/Shopping-cart-context'
 import { useContext } from 'react'
 export default function Product({ id, image, title, price, description }) {
-    const cartCtx = useContext(CartContext)
+    const { addItemToCart } = useContext(CartContext)
     return (
         <article className="product">
             <img src={image} alt={title} />
@@ -12,7 +12,9 @@ export default function Product({ id, image, title, price, description }) {
                     <p>{description}</p>
                 </div>
                 <p className="product-actions">
-                    <button onClick={() => onAddToCart(id)}>Add to Cart</button>
+                    <button onClick={() => addItemToCart(id)}>
+                        Add to Cart
+                    </button>
                 </p>
             </div>
         </article>
