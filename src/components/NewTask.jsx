@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function NewTask() {
+    const [enteredTask, setEnteredTask] = useState()
     return (
         <div className="flex items-center gap-4">
             <input
