@@ -8,6 +8,12 @@ export default function App() {
         selectedProjectId: undefined,
         projects: [],
     })
+
+    function handleSelectProject(id) {
+        setProjectsState(prevState => {
+            return { ...prevState, selectedProjectId: id }
+        })
+    }
     function handleStartAddProject() {
         setProjectsState(prevState => {
             return {
@@ -56,6 +62,7 @@ export default function App() {
             <ProjectsSideBar
                 onStartAddProject={handleStartAddProject}
                 projects={projectsState.projects}
+                onSelectProject={}
             />
             {content}
         </main>
