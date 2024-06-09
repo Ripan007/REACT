@@ -44,6 +44,7 @@ export default function App() {
             }
         })
     }
+    function handleDeleteProject() {}
     // console.log(projectsState)
     const selectedProject = projectsState.projects.find(
         project => project.id === projectsState.selectedProjectId
