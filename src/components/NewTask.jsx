@@ -14,7 +14,9 @@ export default function NewTask() {
                 onChange={handleChange}
                 value={enteredTask}
             />
-            <button className="text-stone-700 hover:text-stone-950">
+            <button
+                className="text-stone-700 hover:text-stone-950"
+                onClick={handleClick}>
                 add task
             </button>
         </div>
