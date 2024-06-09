@@ -44,7 +44,15 @@ export default function App() {
             }
         })
     }
-    function handleDeleteProject() {}
+    function handleDeleteProject() {
+        setProjectsState(prevState => {
+            return {
+                ...prevState,
+                selectedProjectId: undefined,
+                projects: prevState.projects.filter(),
+            }
+        })
+    }
     // console.log(projectsState)
     const selectedProject = projectsState.projects.find(
         project => project.id === projectsState.selectedProjectId
