@@ -67,6 +67,7 @@ export default function App() {
             project={selectedProject}
             onDelete={handleDeleteProject}
             onAddTask={handleAddTask}
+            onDeleteTask={handleDeleteTask}
         />
     )
     if (projectsState.selectedProjectId === null) {
