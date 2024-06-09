@@ -49,7 +49,9 @@ export default function App() {
             return {
                 ...prevState,
                 selectedProjectId: undefined,
-                projects: prevState.projects.filter(),
+                projects: prevState.projects.filter(
+                    project => project.id !== prevState.selectedProjectId
+                ),
             }
         })
     }
