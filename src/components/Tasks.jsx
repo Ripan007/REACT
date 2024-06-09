@@ -11,7 +11,7 @@ export default function Tasks({ tasks, onAdd, onDelete }) {
                     this projects does not have any tasks yet
                 </p>
             )}
-            {tasks.length > 0 && <ul></ul>}
+            {tasks.length > 0 && <ul>{tasks.}</ul>}
         </section>
     )
 }
