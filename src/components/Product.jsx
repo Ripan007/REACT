@@ -1,11 +1,7 @@
-export default function Product({
-    id,
-    image,
-    title,
-    price,
-    description,
-    onAddToCart,
-}) {
+import { CartContext } from '../store/Shopping-cart-context'
+import { useContext } from 'react'
+export default function Product({ id, image, title, price, description }) {
+    const cartCtx = useContext(CartContext)
     return (
         <article className="product">
             <img src={image} alt={title} />
