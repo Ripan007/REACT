@@ -11,6 +11,7 @@ export default function NewTask() {
                 className="w-64 px-2  py-1 rounded-sm  bg-stone-200"
                 type="text"
                 onChange={handleChange}
+                value={enteredTask}
             />
             <button className="text-stone-700 hover:text-stone-950">
                 add task
