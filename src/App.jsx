@@ -62,7 +62,7 @@ export default function App() {
             <ProjectsSideBar
                 onStartAddProject={handleStartAddProject}
                 projects={projectsState.projects}
-                onSelectProject={}
+                onSelectProject={handleSelectProject}
             />
             {content}
         </main>
