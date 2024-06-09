@@ -66,7 +66,7 @@ export default function App() {
         <SelectedProject
             project={selectedProject}
             onDelete={handleDeleteProject}
-            onAddTask={}
+            onAddTask={handleAddTask}
         />
     )
     if (projectsState.selectedProjectId === null) {
