@@ -5,12 +5,19 @@ import { AVAILABLE_PLACES } from './data'
 import Modal from './components/Modal'
 import DeleteConfirmation from './components/DeleteConfirmation'
 import logoImg from './assets/couple.jpg'
+import { sortPlacesByDistance } from './loc'
 
 function App() {
     const modal = useRef()
     const selectedPlace = useRef()
     const [pickedPlaces, setPickedPlaces] = useState([])
-
+    navigator.geolocation.getCurrentPosition(position => {
+        const sortedPlaces = sortPlacesByDistance(
+            AVAILABLE_PLACES,
+            position.coords.latitude,
+            position.coords.longitude
+        )
+    })
     function handleStartRemovePlace(id) {
         modal.current.open()
         selectedPlace.current = id
