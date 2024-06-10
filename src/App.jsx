@@ -79,6 +79,7 @@ function App() {
                     title="Available Places"
                     places={AVAILABLE_PLACES}
                     onSelectPlace={handleSelectPlace}
+                    fallBackText={'sorting places by  distance....'}
                 />
             </main>
         </>
