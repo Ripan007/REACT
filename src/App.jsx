@@ -57,6 +57,10 @@ function App() {
         modal.current.close()
         const storeIds =
             JSON.parse(localStorage.getItem('selectedPlaces')) || []
+        localStorage.setItem(
+            'selectedPlaces',
+            JSON.stringify(storeIds.filter())
+        )
     }
 
     return (
