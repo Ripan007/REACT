@@ -40,52 +40,59 @@ function App() {
             const place = AVAILABLE_PLACES.find(place => place.id === id)
             return [place, ...prevPickedPlaces]
         })
-    }
+        const storeIds =
+            JSON.parse(localStorage.getItem('selectedPlaces')) || []
+        if (storeIds.indexOf(id) === -1) {
+            localStorage.setItem(
+                'selectedPlaces',
+                JSON.stringify([id, ...storeIds])
+            )
+        }
 
-    function handleRemovePlace() {
-        setPickedPlaces(prevPickedPlaces =>
-            prevPickedPlaces.filter(place => place.id !== selectedPlace.current)
+        function handleRemovePlace() {
+            setPickedPlaces(prevPickedPlaces =>
+                prevPickedPlaces.filter(
+                    place => place.id !== selectedPlace.current
+                )
+            )
+            modal.current.close()
+        }
+
+        return (
+            <>
+                <Modal ref={modal}>
+                    <DeleteConfirmation
+                        onCancel={handleStopRemovePlace}
+                        onConfirm={handleRemovePlace}
+                    />
+                </Modal>
+
+                <header>
+                    <img src={logoImg} alt="Stylized globe" />
+                    <h1>PlacePicker</h1>
+                    <p>
+                        Create your personal collection of places you would like
+                        to visit or you have visited.
+                    </p>
+                </header>
+                <main>
+                    <Places
+                        title="I'd like to visit ..."
+                        fallbackText={
+                            'Select the places you would like to visit below.'
+                        }
+                        places={pickedPlaces}
+                        onSelectPlace={handleStartRemovePlace}
+                    />
+                    <Places
+                        title="Available Places"
+                        places={AVAILABLE_PLACES}
+                        onSelectPlace={handleSelectPlace}
+                        fallBackText={'sorting places by  distance....'}
+                    />
+                </main>
+            </>
         )
-        modal.current.close()
     }
-
-    return (
-        <>
-            <Modal ref={modal}>
-                <DeleteConfirmation
-                    onCancel={handleStopRemovePlace}
-                    onConfirm={handleRemovePlace}
-                />
-            </Modal>
-
-            <header>
-                <img src={logoImg} alt="Stylized globe" />
-                <h1>PlacePicker</h1>
-                <p>
-                    Create your personal collection of places you would like to
-                    visit or you have visited.
-                </p>
-            </header>
-            <main>
-                <Places
-                    title="I'd like to visit ..."
-                    fallbackText={
-                        'Select the places you would like to visit below.'
-                    }
-                    places={pickedPlaces}
-                    onSelectPlace={handleStartRemovePlace}
-                />
-                <Places
-                    title="Available Places"
-                    places={AVAILABLE_PLACES}
-                    onSelectPlace={handleSelectPlace}
-                    fallBackText={'sorting places by  distance....'}
-                />
-            </main>
-        </>
-    )
 }
-
 export default App
-
-//  i have to increase my  typing speed up to 60 wpm
