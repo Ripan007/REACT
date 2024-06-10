@@ -10,6 +10,7 @@ import { sortPlacesByDistance } from './loc'
 function App() {
     const modal = useRef()
     const selectedPlace = useRef()
+    const [availablePlaces, setAvailablePlaces] = useState([])
     const [pickedPlaces, setPickedPlaces] = useState([])
     navigator.geolocation.getCurrentPosition(position => {
         const sortedPlaces = sortPlacesByDistance(
@@ -17,6 +18,7 @@ function App() {
             position.coords.latitude,
             position.coords.longitude
         )
+        setAvailablePlaces(sortedPlaces)
     })
     function handleStartRemovePlace(id) {
         modal.current.open()
