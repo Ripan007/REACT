@@ -55,6 +55,8 @@ function App() {
             prevPickedPlaces.filter(place => place.id !== selectedPlace.current)
         )
         modal.current.close()
+        const storeIds =
+            JSON.parse(localStorage.getItem('selectedPlaces')) || []
     }
 
     return (
