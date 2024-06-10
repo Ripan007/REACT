@@ -59,7 +59,7 @@ function App() {
             JSON.parse(localStorage.getItem('selectedPlaces')) || []
         localStorage.setItem(
             'selectedPlaces',
-            JSON.stringify(storeIds.filter())
+            JSON.stringify(storeIds.filter(id => id !== selectedPlace.current))
         )
     }
 
