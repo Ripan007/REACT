@@ -48,51 +48,50 @@ function App() {
                 JSON.stringify([id, ...storeIds])
             )
         }
-
-        function handleRemovePlace() {
-            setPickedPlaces(prevPickedPlaces =>
-                prevPickedPlaces.filter(
-                    place => place.id !== selectedPlace.current
-                )
-            )
-            modal.current.close()
-        }
-
-        return (
-            <>
-                <Modal ref={modal}>
-                    <DeleteConfirmation
-                        onCancel={handleStopRemovePlace}
-                        onConfirm={handleRemovePlace}
-                    />
-                </Modal>
-
-                <header>
-                    <img src={logoImg} alt="Stylized globe" />
-                    <h1>PlacePicker</h1>
-                    <p>
-                        Create your personal collection of places you would like
-                        to visit or you have visited.
-                    </p>
-                </header>
-                <main>
-                    <Places
-                        title="I'd like to visit ..."
-                        fallbackText={
-                            'Select the places you would like to visit below.'
-                        }
-                        places={pickedPlaces}
-                        onSelectPlace={handleStartRemovePlace}
-                    />
-                    <Places
-                        title="Available Places"
-                        places={AVAILABLE_PLACES}
-                        onSelectPlace={handleSelectPlace}
-                        fallBackText={'sorting places by  distance....'}
-                    />
-                </main>
-            </>
-        )
     }
+
+    function handleRemovePlace() {
+        setPickedPlaces(prevPickedPlaces =>
+            prevPickedPlaces.filter(place => place.id !== selectedPlace.current)
+        )
+        modal.current.close()
+    }
+
+    return (
+        <>
+            <Modal ref={modal}>
+                <DeleteConfirmation
+                    onCancel={handleStopRemovePlace}
+                    onConfirm={handleRemovePlace}
+                />
+            </Modal>
+
+            <header>
+                <img src={logoImg} alt="Stylized globe" />
+                <h1>PlacePicker</h1>
+                <p>
+                    Create your personal collection of places you would like to
+                    visit or you have visited.
+                </p>
+            </header>
+            <main>
+                <Places
+                    title="I'd like to visit ..."
+                    fallbackText={
+                        'Select the places you would like to visit below.'
+                    }
+                    places={pickedPlaces}
+                    onSelectPlace={handleStartRemovePlace}
+                />
+                <Places
+                    title="Available Places"
+                    places={AVAILABLE_PLACES}
+                    onSelectPlace={handleSelectPlace}
+                    fallBackText={'sorting places by  distance....'}
+                />
+            </main>
+        </>
+    )
 }
+
 export default App
