@@ -18,6 +18,7 @@ function App() {
         const storedPlaces = storeIds.map(id =>
             AVAILABLE_PLACES.map.find(place => place.id === id)
         )
+        setPickedPlaces(storedPlaces)
     }, [])
     useEffect(() => {
         navigator.geolocation.getCurrentPosition(position => {
