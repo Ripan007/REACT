@@ -16,7 +16,7 @@ function App() {
         const storeIds =
             JSON.parse(localStorage.getItem('selectedPlaces')) || []
         const storedPlaces = storeIds.map(id =>
-            AVAILABLE_PLACES.map.find(place => place.id === id)
+            AVAILABLE_PLACES.find(place => place.id === id)
         )
         setPickedPlaces(storedPlaces)
     }, [])
