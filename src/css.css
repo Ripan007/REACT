@@ -3,3 +3,11 @@
     height: 100px;
     background-color: red;
 }
+p {
+    color: white;
+}
+
+.green {
+    /* color: green; */
+    background-color: green;
+}
