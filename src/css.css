@@ -1,23 +1,7 @@
-.flex-container {
-    display: flex;
+@media (min-width: 600px) and(max-width:900px) {
+    body {
+        background-color: red;
+    }
 }
 
-.card {
-    background-color: blue;
-    border: 30px solid white;
-    height: 100px;
-    flex: 1;
-}
-
-.first {
-    flex: 2;
-}
-
-.second {
-    flex: 0.25;
-}
-
-/*  smaller or equal to 600px is comes under max-width */
-/* screen between 600px and 900px */
-
-@media (min-width: 600px) and @media();
+/*  600 to 900px */
