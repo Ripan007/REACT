@@ -7,3 +7,11 @@
     color: blue;
     text-transform: capitalize;
 }
+
+.tile-image {
+    float: left;
+}
+
+.tilee-image {
+    float: right;
+}
