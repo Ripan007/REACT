@@ -1,6 +1,7 @@
 /*  319 480px */
 /* 481 1200px => poweblue */
 /* 1201 1600px => limegreen*/
+/* 1601 and more */
 
 @media (min-width: 319px) and (max-width: 480px) {
     body {
@@ -17,5 +18,11 @@
 @media (min-width: 1201) and(max-width:1600px) {
     body {
         background-color: limegreen;
+    }
+}
+
+@media (min-width: 1601) {
+    body {
+        background-color: seagreen;
     }
 }
