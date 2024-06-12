@@ -1,0 +1,9 @@
+.flex-container {
+    display: flex;
+}
+
+.card {
+    background-color: blue;
+    border: 30px solid white;
+    height: 100px;
+}
