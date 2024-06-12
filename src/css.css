@@ -9,3 +9,10 @@ body {
 .main {
     flex: 1;
 }
+h1 {
+    font-size: 5rem;
+}
+footer {
+    text-align: right;
+    color: midnightblue;
+}
