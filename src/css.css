@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif;
+    margin: 50px 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    min-width: 95vh;
+}
+
+.logo {
+    width: 100px;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.creative {
+    color: blue;
+}
