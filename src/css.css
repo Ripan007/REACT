@@ -1,2 +1,24 @@
+.logo {
+    width: 200px;
+    height: 50px;
+}
+
 body {
+    font-family: sans-serif;
+    margin: 50px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+}
+.main {
+    flex: 1;
+}
+
+.tile-image {
+    height: 200px;
+    float: left;
+}
+
+.card {
+    width: 45%;
 }
