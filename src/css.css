@@ -1,0 +1,7 @@
+/*  319 480px */
+
+@media (min-width: 319px) and (max-width: 480px) {
+    body {
+        background-color: lightsalmon;
+    }
+}
