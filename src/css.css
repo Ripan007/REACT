@@ -21,7 +21,7 @@
     }
 }
 
-@media (min-width: 1601) {
+@media (min-width: 1601px) {
     body {
         background-color: seagreen;
     }
