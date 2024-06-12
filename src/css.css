@@ -1,20 +1,23 @@
-.container {
-    padding: 10px;
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+.yellow {
     background-color: yellow;
-    display: flex;
-    gap: 30px;
+}
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+.indigo {
+    background-color: indigo;
 }
 
-li {
-    list-style: none;
-}
-
-p {
-    margin: 0;
-    padding: 0;
-    font-weight: 700;
-}
-
-a {
-    text-decoration: none;
+.purple {
+    background-color: purple;
 }
