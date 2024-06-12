@@ -1,3 +1,11 @@
-img {
+.cat-img {
     width: 100px;
+    float: left;
+    background-color: red;
+}
+
+.dog-img {
+    width: 100px;
+    float: right;
+    background-color: blue;
 }
