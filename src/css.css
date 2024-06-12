@@ -1,11 +1,25 @@
 .cat-img {
     width: 100px;
     float: left;
+}
+
+.cat {
     background-color: red;
 }
 
 .dog-img {
     width: 100px;
     float: right;
+}
+
+.dog {
     background-color: blue;
+}
+
+footer {
+    background-color: pink;
+}
+
+footer {
+    clear: right;
 }
