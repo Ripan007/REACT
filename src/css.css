@@ -16,3 +16,6 @@
 .second {
     flex: 0.25;
 }
+
+/*  smaller or equal to 600px is comes under max-width */
+/*  */
