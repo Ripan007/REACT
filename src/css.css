@@ -18,4 +18,6 @@
 }
 
 /*  smaller or equal to 600px is comes under max-width */
-/*  */
+/* screen between 600px and 900px */
+
+@media (min-width: 600px) and @media();
