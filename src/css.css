@@ -1,19 +1,19 @@
 .cat-img {
     width: 100px;
-    float: left;
 }
 
 .cat {
     background-color: red;
+    float: left;
 }
 
 .dog-img {
     width: 100px;
-    float: right;
 }
 
 .dog {
     background-color: blue;
+    float: right;
 }
 
 footer {
