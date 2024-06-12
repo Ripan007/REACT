@@ -25,6 +25,7 @@ body {
     height: 200px;
     float: left;
     margin-right: 50px;
+    border-radius: 10px;
 }
 
 .card {
