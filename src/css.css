@@ -1,25 +1,6 @@
-.cat-img {
-    width: 100px;
-}
-
-.cat {
-    background-color: red;
-    float: left;
-}
-
-.dog-img {
-    width: 100px;
-}
-
-.dog {
-    background-color: blue;
-    float: right;
-}
-
-footer {
-    background-color: pink;
-}
-
-footer {
-    clear: right;
+.grid-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 200px 200px;
 }
