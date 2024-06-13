@@ -37,7 +37,7 @@
     .pricing-container {
         flex-direction: column;
         gap: 30px;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .pricing-plan {
         flex: 1;
