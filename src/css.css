@@ -1,3 +1,5 @@
-h1 ~ p {
-    color: red;
+.container {
+    height: 100px;
+    padding: 20px;
+    background-color: gray;
 }
