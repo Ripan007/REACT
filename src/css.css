@@ -19,10 +19,7 @@
     grid-column: span 2;
 }
 
-.astaurant {
-    order: 1;
-}
-
-.book {
+.astronout {
+    order: 3;
     grid-column: span 2;
 }
