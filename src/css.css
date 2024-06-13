@@ -3,8 +3,24 @@
     height: 100vh;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
 }
 
 .pricing-plan {
     background-color: rgba(128, 128, 128, 0.128);
+    padding: 40px;
+}
+.plan-title {
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.plan-price {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.plan-features {
+    list-style: none;
 }
