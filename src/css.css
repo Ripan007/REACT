@@ -31,3 +31,10 @@
 .plan-features li {
     margin-bottom: 10px;
 }
+.plan-button {
+    padding: 10px;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
