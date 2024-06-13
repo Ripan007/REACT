@@ -13,3 +13,12 @@
     background-color: burlywood;
     border: 1px solid black;
 }
+
+.cow {
+    background-color: lightblue;
+    grid-column: span 2;
+}
+
+.astaurant {
+    order: 3;
+}
