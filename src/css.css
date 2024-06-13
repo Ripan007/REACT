@@ -4,7 +4,7 @@
     background-color: gray;
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 100px;
     color: white;
 }
 
@@ -29,4 +29,5 @@
 }
 
 .item3 {
+    flex: 1 0 2;
 }
