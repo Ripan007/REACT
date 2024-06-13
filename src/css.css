@@ -20,5 +20,9 @@
 }
 
 .astaurant {
-    order: 3;
+    order: 1;
+}
+
+.book {
+    grid-column: span 2;
 }
