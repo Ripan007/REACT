@@ -1,0 +1,10 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: 100px 200px;
+    grid-template-columns: 400px 800px;
+    background-color: blue;
+}
+
+.grid-item {
+    border: 1px solid white;
+}
