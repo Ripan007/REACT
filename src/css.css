@@ -1,8 +1,8 @@
 .container {
-    height: 100vh;
+    width: 800px;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .black {
@@ -14,5 +14,5 @@
 .white {
     height: 100px;
     width: 100px;
-    background-color: white;
+    background-color: rgb(189, 33, 33);
 }
