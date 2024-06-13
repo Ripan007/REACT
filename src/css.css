@@ -19,15 +19,19 @@
 }
 
 .container > * {
-    flex-basis: 200px;
 }
 
 .item1 {
+    flex-basis: 200px;
+    flex: 0 1;
 }
 
 .item2 {
+    flex-basis: 200px;
+    flex: 1 0;
 }
 
 .item3 {
-    flex: 1 0 2;
+    flex-basis: 400px;
+    flex: 1 0;
 }
