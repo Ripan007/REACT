@@ -1,45 +1,15 @@
 .pricing-container {
     display: flex;
     height: 100vh;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    gap: 2rem;
 }
-
 .pricing-plan {
-    background-color: rgba(128, 128, 128, 0.128);
-    padding: 40px;
-}
-.plan-title {
-    font-weight: 400;
-    font-size: 1rem;
-    text-transform: capitalize;
-}
-
-.plan-price {
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-.plan-features {
-    list-style: none;
-}
-
-.plan-button {
-    background-color: orange;
-    border: none;
-    padding: 5px;
-    color: white;
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgb(183, 176, 176);
     border-radius: 5px;
-}
-
-@media (max-width: 680px) {
-    .pricing-container {
-        flex-direction: column;
-        gap: 30px;
-        justify-content: space-between;
-    }
-    .pricing-plan {
-        flex: 1;
-    }
+    text-align: center;
 }
