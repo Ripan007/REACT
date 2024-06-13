@@ -24,3 +24,11 @@
 .plan-features {
     list-style: none;
 }
+
+.plan-button {
+    background-color: orange;
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
