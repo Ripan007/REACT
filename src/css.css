@@ -1,35 +1,10 @@
-.container {
+.pricing-container {
     display: flex;
     height: 100vh;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 40px;
 }
 
-.card-content {
-    background-color: rgba(128, 128, 128, 0.174);
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.content-list {
-    list-style: none;
-}
-
-button {
-    background-color: orange;
-    border-radius: 10px;
-    color: white;
-    padding: 5px;
-    border: none;
-}
-
-@media (max-width: 680px) {
-    .container {
-        flex-direction: column;
-    }
-    .card-content {
-        flex: 1;
-    }
+.pricing-plan {
+    background-color: rgba(128, 128, 128, 0.128);
 }
