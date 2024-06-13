@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    color: white;
 }
 
 .item {
@@ -18,16 +19,14 @@
 }
 
 .container > * {
+    flex-basis: 200px;
 }
 
 .item1 {
-    flex: 1;
 }
 
 .item2 {
-    flex: 1;
 }
 
 .item3 {
-    flex: 2;
 }
