@@ -20,6 +20,8 @@
 }
 
 .astronout {
-    order: 3;
-    grid-column: span 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: -2;
+    grid-row-end: -1;
 }
