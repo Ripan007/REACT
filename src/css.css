@@ -23,3 +23,7 @@
     height: 414px;
     width: 320px;
 }
+
+.gray {
+    background-color: gray;
+}
