@@ -2,7 +2,7 @@
     height: 100vh;
     display: grid;
     gap: 5px;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     /* background-color: lightblue; */
 }
@@ -15,6 +15,7 @@
 
 .item-1 {
     background-color: red;
+    grid-area: 1 /2/3/-2;
 }
 
 .item-2 {
