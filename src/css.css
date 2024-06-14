@@ -28,10 +28,11 @@
 
 .item-4 {
     background-color: aquamarine;
-    grid-column: 1/4;
-    grid-row: 2/4;
+    grid-area: 1/4/4/3;
 }
 
 .item-5 {
     background-color: beige;
 }
+
+/*  grid area => row start colstart   */
