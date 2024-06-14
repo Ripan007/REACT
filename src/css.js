@@ -2,9 +2,9 @@
 const btn = document.querySelector('.btn-country')
 const countriesContainer = document.querySelector('.countries')
 
-function getCountryData() {
+function getCountryData(country) {
     const request = new XMLHttpRequest()
-    request.open('GET', 'https://restcountries.com/v2/name/portugal')
+    request.open('GET', `https://restcountries.com/v2/name/${country}`)
     request.send()
 
     request.addEventListener('load', function () {
@@ -33,3 +33,7 @@ function getCountryData() {
         countriesContainer.style.opacity = 1
     })
 }
+
+getCountryData('portugal')
+getCountryData('usa')
+getCountryData('bharat')
