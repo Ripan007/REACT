@@ -2,16 +2,8 @@
 const btn = document.querySelector('.btn-country')
 const countriesContainer = document.querySelector('.countries')
 
-function getCountryData(country) {
-    const request = new XMLHttpRequest()
-    request.open('GET', `https://restcountries.com/v2/name/${country}`)
-    request.send()
-
-    request.addEventListener('load', function () {
-        // console.log(this.responseText)
-        const [data] = JSON.parse(this.responseText)
-        console.log(data)
-        const html = `
+function renderData(data) {
+    const html = `
           <article class="country">
                     <img src=${data.flag} alt="" class="country__img" />
                     <div class="country__data">
@@ -29,12 +21,22 @@ function getCountryData(country) {
 
 
     `
-        countriesContainer.insertAdjacentHTML('beforeend', html)
-        countriesContainer.style.opacity = 1
+    countriesContainer.insertAdjacentHTML('beforeend', html)
+    countriesContainer.style.opacity = 1
+}
+
+function getCountryNeighnbourCountry(country) {
+    const request = new XMLHttpRequest()
+    request.open('GET', `https://restcountries.com/v2/name/${country}`)
+    request.send()
+
+    request.addEventListener('load', function () {
+        // console.log(this.responseText)
+        const [data] = JSON.parse(this.responseText)
+        console.log(data)
+        renderData(data)
     })
 }
 
-getCountryData('portugal')
-getCountryData('usa')
-getCountryData('bharat')
-getCountryData('germany')
+getCountryNeighnbourCountry('bharat')
+getCountryNeighnbourCountry('usa')
