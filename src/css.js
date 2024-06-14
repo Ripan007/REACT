@@ -12,7 +12,7 @@ request.addEventListener('load', function () {
     console.log(data)
     const html = `
           <article class="country">
-                    <img src=${data.flags} alt="" class="country__img" />
+                    <img src=${data.flag} alt="" class="country__img" />
                     <div class="country__data">
                         <h3 class="country__name">${data.name}</h3>
                         <h4 class="country__region">${data.region}</h4>
