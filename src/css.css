@@ -15,4 +15,11 @@
     height: 748px;
     width: 748px;
     gap: 9px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.red {
+    background-color: red;
+    height: 414px;
+    width: 320px;
 }
