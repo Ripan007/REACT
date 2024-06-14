@@ -16,9 +16,15 @@ request.addEventListener('load', function () {
                     <div class="country__data">
                         <h3 class="country__name">${data.name}</h3>
                         <h4 class="country__region">${data.region}</h4>
-                        <p class="country__row">😖<span>${data}</span></p>
-                        <p class="country__row">🦩<span>${data}</span></p>
-                        <p class="country__row">🪐<span>${data}</span></p>
+                        <p class="country__row">😖<span>${(
+                            +data.population / 1000000
+                        ).toFixed(1)}</span></p>
+                        <p class="country__row">🦩<span>${
+                            data.languages[0].name
+                        }</span></p>
+                        <p class="country__row">🪐<span>${
+                            data.currencies[0].name
+                        }</span></p>
                     </div>
                 </article>
 
