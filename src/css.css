@@ -15,3 +15,9 @@ body {
     background-color: #f7f7f7;
     color: #555;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
