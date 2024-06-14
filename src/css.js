@@ -37,3 +37,4 @@ function getCountryData(country) {
 getCountryData('portugal')
 getCountryData('usa')
 getCountryData('bharat')
+getCountryData('germany')
