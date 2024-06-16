@@ -55,10 +55,7 @@ getCountryAndNeighbour('bharat')
 
 const countryData = function (country) {
     fetch(`https://restcountries.com/v2/name/${country}`)
-        .then(
-            res => res.json(),
-            err => alert(err)
-        )
+        .then(res => res.json())
         .then(data => {
             renderCountry(data[0])
             const neighbour = data[0].borders[0]
@@ -67,6 +64,7 @@ const countryData = function (country) {
         })
         .then(res => res.json())
         .then(data => renderCountry(data, 'neighbour'))
+        .catch(err => alert(err))
 }
 btn.addEventListener('click', function () {
     countryData('portugal')
