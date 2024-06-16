@@ -25,37 +25,8 @@ function renderCountry(data, className = '') {
 
 const renderError = function (msg) {
     countriesContainer.insertAdjacentHTML('beforeend', html)
+    countriesContainer.style.opacity = 1
 }
-
-/*
-function getCountryAndNeighbour(country) {
-    const request = new XMLHttpRequest()
-    request.open('GET', `https://restcountries.com/v2/name/${country}`)
-    request.send()
-    request.addEventListener('load', function () {
-        // console.log(this.responseText)
-        const [data] = JSON.parse(this.responseText)
-        console.log(data)
-        //  render country 1 data
-        renderCountry(data)
-        //  get neighbour country data
-        const [neighbour] = data.borders
-        if (!neighbour) return
-        const request2 = new XMLHttpRequest()
-        request2.open('GET', `https://restcountries.com/v2/alpha/${neighbour}`)
-        request2.send()
-        request2.addEventListener('load', function () {
-            const data2 = JSON.parse(this.responseText)
-            console.log('🚀 ~ data2:', data2)
-            renderCountry(data2, 'neighbour')
-        })
-    })
-}
-
-getCountryAndNeighbour('bharat')
-
-
-*/
 
 const countryData = function (country) {
     fetch(`https://restcountries.com/v2/name/${country}`)
@@ -68,7 +39,7 @@ const countryData = function (country) {
         })
         .then(res => res.json())
         .then(data => renderCountry(data, 'neighbour'))
-        .catch(err => alert(err))
+        .catch(err => console.error())
 }
 btn.addEventListener('click', function () {
     countryData('portugal')
