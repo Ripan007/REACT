@@ -23,6 +23,7 @@ function renderCountry(data, className = '') {
     countriesContainer.style.opacity = 1
 }
 
+/*
 function getCountryAndNeighbour(country) {
     const request = new XMLHttpRequest()
     request.open('GET', `https://restcountries.com/v2/name/${country}`)
@@ -48,3 +49,8 @@ function getCountryAndNeighbour(country) {
 }
 
 getCountryAndNeighbour('bharat')
+
+
+*/
+
+const countryData = function (country) {}
