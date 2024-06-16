@@ -59,4 +59,4 @@ btn.addEventListener('click', function () {
     getCountryData('portugal')
 })
 
-getCountryData('hhhhhhh')
+// getCountryData('hhhhhhh')
