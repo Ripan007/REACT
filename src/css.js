@@ -52,4 +52,4 @@ function getCountryNeighnbourCountry(country) {
     })
 }
 
-getCountryNeighnbourCountry('usa')
+getCountryNeighnbourCountry('portugal')
