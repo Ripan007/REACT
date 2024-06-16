@@ -65,5 +65,6 @@ const countryData = function (country) {
         .then(res => res.json())
         .then(data => renderCountry(data, 'neighbour'))
 }
-
-countryData('portugal')
+btn.addEventListener('click', function () {
+    countryData('portugal')
+})
