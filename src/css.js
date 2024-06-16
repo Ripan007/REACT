@@ -46,8 +46,10 @@ function getCountryNeighnbourCountry(country) {
 
     request2.addEventListener('load', function () {
         const data2 = JSON.parse(this.responseText)
+        console.log('🚀 ~ data2:', data2)
+
         renderCountry(data2, 'neighbour')
     })
 }
 
-getCountryNeighnbourCountry('bharat')
+getCountryNeighnbourCountry('usa')
