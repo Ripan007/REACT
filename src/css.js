@@ -24,7 +24,7 @@ function renderCountry(data, className = '') {
 
 const renderError = function (msg) {
     countriesContainer.insertAdjacentHTML('beforeend', msg);
-    countriesContainer.style.opacity = 1;
+    // countriesContainer.style.opacity = 1;
 };
 
 const getJSON = function (url, errorMsg = 'something went wrong') {
