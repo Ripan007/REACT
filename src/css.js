@@ -24,7 +24,7 @@ function renderCountry(data, className = '') {
 }
 
 const renderError = function (msg) {
-    countriesContainer.insertAdjacentHTML('beforeend', html)
+    countriesContainer.insertAdjacentHTML('beforeend', msg)
     countriesContainer.style.opacity = 1
 }
 
@@ -41,7 +41,7 @@ const countryData = function (country) {
         .then(data => renderCountry(data, 'neighbour'))
         .catch(err => {
             console.error(`${err} ✴️ ✴️ ✴️`)
-            renderError(`something went wrong 💥💥💥 ${err}`)
+            renderError(`something went wrong 💥💥💥 ${err.message} .try again`)
         })
 }
 btn.addEventListener('click', function () {
