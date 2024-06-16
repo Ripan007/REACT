@@ -51,3 +51,7 @@ btn.addEventListener('click', function () {
 })
 
 countryData('hhhhhhh')
+
+if (!response.ok) {
+    throw new Error(`error not found ${}`)
+}
