@@ -53,14 +53,10 @@ getCountryAndNeighbour('bharat')
 
 */
 
-const countryData = function (country) {
+const countryeData = function (country) {
     fetch(`https://restcountries.com/v2/name/${country}`)
-        .then(function (response) {
-            return response.json()
-        })
-        .then(function (data) {
-            renderCountry(data[0])
-        })
+        .then(res => res.json())
+        .then(data => renderCountry(data[0]))
 }
 
-countryData('usa')
+countryeData('bhutan')
