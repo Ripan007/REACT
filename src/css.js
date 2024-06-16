@@ -48,4 +48,3 @@ function getCountryAndNeighbour(country) {
 }
 
 getCountryAndNeighbour('bharat')
-//  an object that result in future result
