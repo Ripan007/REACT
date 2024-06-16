@@ -39,7 +39,10 @@ const countryData = function (country) {
         })
         .then(res => res.json())
         .then(data => renderCountry(data, 'neighbour'))
-        .catch(err => console.error())
+        .catch(err => {
+            console.error(`${err} ✴️ ✴️ ✴️`)
+            renderError()
+        })
 }
 btn.addEventListener('click', function () {
     countryData('portugal')
