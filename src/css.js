@@ -52,4 +52,4 @@ function getCountryAndNeighbour(country) {
     })
 }
 
-getCountryAndNeighbour('australia')
+getCountryAndNeighbour('bharat')
