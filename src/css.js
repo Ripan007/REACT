@@ -34,7 +34,12 @@ function getCountryNeighnbourCountry(country) {
         // console.log(this.responseText)
         const [data] = JSON.parse(this.responseText)
         console.log(data)
+        //  render country 1 data
         renderCountry(data)
+        //  get neighbour country data
+
+        const [neighbour] =
+
     })
 }
 
