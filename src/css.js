@@ -2,7 +2,7 @@
 const btn = document.querySelector('.btn-country')
 const countriesContainer = document.querySelector('.countries')
 
-function renderData(data) {
+function renderCountry(data) {
     const html = `
           <article class="country">
                     <img src=${data.flag} alt="" class="country__img" />
@@ -34,9 +34,8 @@ function getCountryNeighnbourCountry(country) {
         // console.log(this.responseText)
         const [data] = JSON.parse(this.responseText)
         console.log(data)
-        renderData(data)
+        renderCountry(data)
     })
 }
 
 getCountryNeighnbourCountry('bharat')
-getCountryNeighnbourCountry('usa')
