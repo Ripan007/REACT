@@ -30,13 +30,12 @@ const renderError = function (msg) {
 const getJSON = function (url, errorMsg = 'something went wrong') {
     return fetch(url).then(response => {
         if (!response.ok) throw new Error(`${errorMsg}(${response.status})`)
-        return
+        return response.json()
     })
 }
 
 const getCountryData = function (country) {
-    fetch(`https://restcountries.com/v2/name/${country}`)
-        .then(res => res.json())
+    getJSON(`https://restcountries.com/v2/name/${country}`)
         .then(data => {
             renderCountry(data[0])
             const neighbour = data[0].borders[0]
