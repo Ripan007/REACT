@@ -55,7 +55,10 @@ getCountryAndNeighbour('bharat')
 
 const countryData = function (country) {
     fetch(`https://restcountries.com/v2/name/${country}`)
-        .then(res => res.json())
+        .then(
+            res => res.json(),
+            err => alert(err)
+        )
         .then(data => {
             renderCountry(data[0])
             const neighbour = data[0].borders[0]
