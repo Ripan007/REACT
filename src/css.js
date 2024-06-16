@@ -41,7 +41,7 @@ const countryData = function (country) {
         .then(data => renderCountry(data, 'neighbour'))
         .catch(err => {
             console.error(`${err} ✴️ ✴️ ✴️`)
-            renderError()
+            renderError(`something went wrong 💥💥💥 ${err}`)
         })
 }
 btn.addEventListener('click', function () {
