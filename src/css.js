@@ -49,3 +49,5 @@ const countryData = function (country) {
 btn.addEventListener('click', function () {
     countryData('portugal')
 })
+
+countryData('hhhhhhh')
