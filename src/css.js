@@ -62,6 +62,8 @@ const countryeData = function (country) {
             if (!neighbour) return
             return fetch(`https://restcountries.com/alpha/${neighbour}`)
         })
+        .then(res => res.json())
+        .then(data => renderCountry(data, 'neighbour'))
 }
 
 countryeData('bhutan')
