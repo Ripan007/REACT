@@ -27,7 +27,14 @@ const renderError = function (msg) {
     countriesContainer.style.opacity = 1
 }
 
-const countryData = function (country) {
+const getJSON = function (url, errorMsg = 'something went wrong') {
+    return fetch(url).then(response => {
+        if (!response.ok) throw new Error(`${errorMsg}(${response.status})`)
+        return
+    })
+}
+
+const getCountryData = function (country) {
     fetch(`https://restcountries.com/v2/name/${country}`)
         .then(res => res.json())
         .then(data => {
@@ -47,7 +54,7 @@ const countryData = function (country) {
         })
 }
 btn.addEventListener('click', function () {
-    countryData('portugal')
+    getCountryData('portugal')
 })
 
-countryData('hhhhhhh')
+getCountryData('hhhhhhh')
