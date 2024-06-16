@@ -37,18 +37,18 @@ function getCountryNeighnbourCountry(country) {
         //  render country 1 data
         renderCountry(data)
         //  get neighbour country data
-    })
-    const [neighbour] = data.borders
-    if (!neighbour) return
-    const request2 = new XMLHttpRequest()
-    request2.open('GET', `https://restcountries.com/v2/alpha/${neighbour}`)
-    request2.send()
+        const [neighbour] = data.borders
+        if (!neighbour) return
+        const request2 = new XMLHttpRequest()
+        request2.open('GET', `https://restcountries.com/v2/alpha/${neighbour}`)
+        request2.send()
 
-    request2.addEventListener('load', function () {
-        const data2 = JSON.parse(this.responseText)
-        console.log('🚀 ~ data2:', data2)
+        request2.addEventListener('load', function () {
+            const data2 = JSON.parse(this.responseText)
+            console.log('🚀 ~ data2:', data2)
 
-        renderCountry(data2, 'neighbour')
+            renderCountry(data2, 'neighbour')
+        })
     })
 }
 
