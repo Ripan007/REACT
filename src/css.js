@@ -33,7 +33,7 @@ const countryData = function (country) {
         .then(data => {
             renderCountry(data[0])
             const neighbour = data[0].borders[0]
-            if (!neighbour) return
+            if (!neighbour) throw new Error('no neighbour found')
             return fetch(`https://restcountries.com/v2/alpha/${neighbour}`)
         })
         .then(res => res.json())
