@@ -66,4 +66,4 @@ const countryeData = function (country) {
         .then(data => renderCountry(data, 'neighbour'))
 }
 
-countryeData('bhutan')
+countryeData('portugal')
