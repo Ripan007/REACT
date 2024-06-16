@@ -56,7 +56,7 @@ const getCountryData = function (country) {
         })
 }
 btn.addEventListener('click', function () {
-    getCountryData('australia')
+    getCountryData('portugal')
 })
 
-// getCountryData('hhhhhhh')
+getCountryData('australia')
