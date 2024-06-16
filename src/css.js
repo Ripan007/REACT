@@ -45,7 +45,7 @@ const getCountryData = function (country) {
                 'country not found'
             )
         })
-        .then(res => res.json())
+
         .then(data => renderCountry(data, 'neighbour'))
         .catch(err => {
             console.error(`${err} ✴️ ✴️ ✴️`)
@@ -56,7 +56,7 @@ const getCountryData = function (country) {
         })
 }
 btn.addEventListener('click', function () {
-    getCountryData('portugal')
+    getCountryData('australia')
 })
 
 // getCountryData('hhhhhhh')
