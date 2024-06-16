@@ -35,7 +35,7 @@ const getJSON = function (url, errorMsg = 'something went wrong') {
 }
 
 const getCountryData = function (country) {
-    getJSON(`https://restcountries.com/v2/name/${country}`)
+    getJSON(`https://restcountries.com/v2/name/${country}`, 'country not found')
         .then(data => {
             renderCountry(data[0])
             const neighbour = data[0].borders[0]
