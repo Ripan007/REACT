@@ -2,9 +2,9 @@
 const btn = document.querySelector('.btn-country')
 const countriesContainer = document.querySelector('.countries')
 
-function renderCountry(data) {
+function renderCountry(data, className = '') {
     const html = `
-          <article class="country">
+          <article class="country ${className}">
                     <img src=${data.flag} alt="" class="country__img" />
                     <div class="country__data">
                         <h3 class="country__name">${data.name}</h3>
@@ -37,9 +37,16 @@ function getCountryNeighnbourCountry(country) {
         //  render country 1 data
         renderCountry(data)
         //  get neighbour country data
+    })
+    const [neighbour] = data.borders
+    if (!neighbour) return
+    const request2 = new XMLHttpRequest()
+    request2.open('GET', `https://restcountries.com/v2/alpha/${neighbour}`)
+    request2.send()
 
-        const [neighbour] =
-
+    request2.addEventListener('load', function () {
+        const data2 = JSON.parse(this.responseText)
+        renderCountry(data2, 'neighbour')
     })
 }
 
