@@ -23,6 +23,10 @@ function renderCountry(data, className = '') {
     countriesContainer.style.opacity = 1
 }
 
+const renderError = function (msg) {
+    countriesContainer.insertAdjacentHTML('beforeend', html)
+}
+
 /*
 function getCountryAndNeighbour(country) {
     const request = new XMLHttpRequest()
