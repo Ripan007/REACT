@@ -40,7 +40,10 @@ const getCountryData = function (country) {
             renderCountry(data[0])
             const neighbour = data[0].borders[0]
             if (!neighbour) throw new Error('no neighbour found')
-            return fetch(`https://restcountries.com/v2/alpha/${neighbour}`)
+            return getJSON(
+                `https://restcountries.com/v2/alpha/${neighbour}`,
+                'country not found'
+            )
         })
         .then(res => res.json())
         .then(data => renderCountry(data, 'neighbour'))
