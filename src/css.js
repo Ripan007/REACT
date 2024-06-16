@@ -20,7 +20,6 @@ function renderCountry(data, className = '') {
                 </article>
  `
     countriesContainer.insertAdjacentHTML('beforeend', html)
-    countriesContainer.style.opacity = 1
 }
 
 const renderError = function (msg) {
@@ -42,6 +41,9 @@ const countryData = function (country) {
         .catch(err => {
             console.error(`${err} ✴️ ✴️ ✴️`)
             renderError(`something went wrong 💥💥💥 ${err.message} .try again`)
+        })
+        .finally(() => {
+            countriesContainer.style.opacity = 1
         })
 }
 btn.addEventListener('click', function () {
