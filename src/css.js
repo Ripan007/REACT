@@ -1,10 +1,17 @@
 Promise.all([
     fetch('https://jsonplaceholder.typicode.com/posts'),
     fetch('https://jsonplaceholder.typicode.com/users'),
-]).then(function (responses) {
-    return Promises.all(
-        responses.map(function (response) {
-            return response.json();
-        })
-    );
-});
+])
+    .then(function (responses) {
+        return Promise.all(
+            responses.map(function (response) {
+                return response.json();
+            })
+        );
+    })
+    .then(function (data) {
+        console.log('🚀 ~ data:', data);
+    })
+    .catch(function (err) {
+        console.warn(err);
+    });
