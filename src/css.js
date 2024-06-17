@@ -7,6 +7,8 @@ let highScore = 0;
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 console.log('🚀 ~ secretNumber:', secretNumber);
 
+const displayMessage = function (message) {};
+
 document.querySelector('.check').addEventListener('click', function () {
     const guess = Number(document.querySelector('.guess').value);
     console.log('🚀 ~ guess:', guess, typeof guess);
