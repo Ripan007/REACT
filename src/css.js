@@ -10,6 +10,9 @@ document.querySelector('.check').addEventListener('click', function () {
     if (!guess) {
         document.querySelector('.message').textContent = '🚫 no number!';
     } else if (guess === secretNumber) {
-        document.querySelector('.message').textContent = '😀 number';
+        document.querySelector('.message').textContent = '😀 correct number';
     }
 });
+
+//  i have to understand  the logic
+//
