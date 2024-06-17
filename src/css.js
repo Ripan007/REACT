@@ -10,6 +10,6 @@ document.querySelector('.check').addEventListener('click', function () {
     if (!guess) {
         document.querySelector('.message').textContent = '🚫 no number!';
     } else if (guess === secretNumber) {
-        document.querySelector;
+        document.querySelector('.message').textContent = '😀 number';
     }
 });
