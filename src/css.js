@@ -11,5 +11,5 @@ new Promise(function (resolve, reject) {
         console.warn('🚀 ~ error:', error);
     })
     .finally(function () {
-        console.log('no matter what , what will run');
+        console.log('no matter what , we will run');
     });
