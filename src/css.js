@@ -1,17 +1,9 @@
-let count = new Promise(function (resolve, reject) {
-    resolve(1);
+let question = new Promise(function (resolve, reject) {
+    resolve(42);
 });
 
-count
-    .then(function (num) {
-        console.log('🚀 ~ num:', num);
-        return num + 1;
-    })
-    .then(function (num) {
-        console.log('🚀 ~ num:', num);
-        return num + 1;
-    })
-    .then(function (num) {
-        console.log('🚀 ~ num:', num);
-        return num + 1;
+setTimeout(function () {
+    question.then(function (answer) {
+        console.log('🚀 ~ answer:', answer);
     });
+}, 3000);
