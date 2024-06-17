@@ -1,6 +1,6 @@
 let sayHello = new Promise(function (resolve, reject) {
     reject('unable to say hi');
-    setTimeout(() => {
+    setTimeout(function () {
         resolve('hi, universe');
     }, 5000);
 });
