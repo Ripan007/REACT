@@ -44,8 +44,8 @@ document.querySelector('.check').addEventListener('click', function () {
 again.addEventListener('click', function () {
   document.querySelector('.score').textContent = 20;
   document.querySelector('.number').textContent = '?';
-  document.querySelector('.message').textContent = '📉 correct is to low ';
-  document.querySelector('.guess').textContent = 'start guessing..';
+  document.querySelector('.message').textContent = ' start guessing.. ';
+  document.querySelector('.guess').value = '';
   document.querySelector('body').style.background = '#222';
   document.querySelector('.number').width = '15rem';
 });
