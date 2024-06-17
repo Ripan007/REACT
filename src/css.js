@@ -8,8 +8,10 @@ document.querySelector('.number').textContent = secretNumber;
 document.querySelector('.check').addEventListener('click', function () {
     const guess = Number(document.querySelector('.guess').value);
     console.log('🚀 ~ guess:', guess, typeof guess);
+    //  when there is no input
     if (!guess) {
         document.querySelector('.message').textContent = '🚫 no number!';
+        //  when player wins
     } else if (guess === secretNumber) {
         document.querySelector('.message').textContent = '😀 correct number';
     } else if (guess > secretNumber) {
