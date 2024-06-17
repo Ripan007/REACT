@@ -13,6 +13,3 @@ document.querySelector('.check').addEventListener('click', function () {
         document.querySelector('.message').textContent = '😀 correct number';
     }
 });
-
-//  i have to understand  the logic
-//
