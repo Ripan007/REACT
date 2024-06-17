@@ -50,6 +50,7 @@ document.querySelector('.check').addEventListener('click', function () {
 //  reset the game
 again.addEventListener('click', function () {
     score = 20;
+    highScore = 0;
     secretNumber = Math.trunc(Math.random() * 20) + 1;
     console.log('🚀 ~ secretNumber:', secretNumber);
     document.querySelector('.number').textContent = '?';
@@ -59,4 +60,5 @@ again.addEventListener('click', function () {
     document.querySelector('.guess').value = '';
     document.querySelector('body').style.background = '#222';
     document.querySelector('.number').style.width = '15rem';
+    document.querySelector('.highscore').textContent = highScore;
 });
