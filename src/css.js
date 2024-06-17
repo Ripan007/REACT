@@ -21,6 +21,7 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.number').style.width = '30rem';
     if (score > highScore) {
       highScore = score;
+      document.querySelector('.highscore').textContent = score;
     }
     // when guess is to high
   } else if (guess > secretNumber) {
