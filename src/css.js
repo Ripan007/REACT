@@ -1,6 +1,7 @@
 'use strict';
 
 const show = document.querySelector('.message').textContent;
+const again = document.querySelector('');
 let score = 20;
 const secretNumber = Math.trunc(Math.random() * 20) + 1;
 console.log('🚀 ~ secretNumber:', secretNumber);
