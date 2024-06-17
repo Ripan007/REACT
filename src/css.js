@@ -1,3 +1,1 @@
-let sayHello = new Promise(resolve, reject){
-
-}
+let sayHello =
