@@ -41,4 +41,8 @@ document.querySelector('.check').addEventListener('click', function () {
   }
 });
 
-again.addEventListener('click', function () {});
+again.addEventListener('click', function () {
+  score = 20;
+  document.querySelector('.number').textContent = '?';
+  document.querySelector('.message').textContent = '📉 correct is to low ';
+});
