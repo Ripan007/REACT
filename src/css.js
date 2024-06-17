@@ -16,4 +16,4 @@ Promise.all([
         console.warn(err);
     });
 
-//  that wait for asynchronous code to resolve before
+//  that wait for asynchronous code to resolve before contuining
