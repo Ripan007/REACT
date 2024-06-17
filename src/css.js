@@ -1,4 +1,9 @@
 let sayHello = new Promise(function (resolve, reject) {
-    resolve('hi universe');
-    setTimeout(function () {}, 1000);
+    setTimeout(function () {
+        resolve('hello world');
+    }, 2000);
+});
+
+sayHello.then(function (msg) {
+    console.log('🚀 ~ msg:', msg);
 });
