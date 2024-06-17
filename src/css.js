@@ -24,17 +24,16 @@ document.querySelector('.check').addEventListener('click', function () {
             document.querySelector('.highscore').textContent = score;
         }
         //    when  guess is  wrong
-        else if (guess !== secretNumber) {
-            if (score > 1) {
-                document.querySelector('.message').textContent =
-                    guess > secretNumber ? '📈to high' : '📉to low';
-                score--;
-                document.querySelector('.score').textContent = score;
-            } else {
-                document.querySelector('.message').textContent =
-                    '💥 you lost the game';
-                document.querySelector('.score').textContent = 0;
-            }
+    } else if (guess !== secretNumber) {
+        if (score > 1) {
+            document.querySelector('.message').textContent =
+                guess > secretNumber ? '📈to high' : '📉to low';
+            score--;
+            document.querySelector('.score').textContent = score;
+        } else {
+            document.querySelector('.message').textContent =
+                '💥 you lost the game';
+            document.querySelector('.score').textContent = 0;
         }
     }
 });
