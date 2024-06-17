@@ -12,3 +12,5 @@ sayHello
     .catch(function (error) {
         console.warn('🚀 ~ error:', error);
     });
+
+console.warn('show this line of errror');
