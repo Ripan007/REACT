@@ -1,6 +1,6 @@
 'use strict';
 
-const show = document.querySelector('.message').textContent;
+const show = document.querySelector('.message');
 const again = document.querySelector('.again');
 let score = 20;
 let highScore = 0;
