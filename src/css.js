@@ -20,5 +20,6 @@ document.querySelector('.check').addEventListener('click', function () {
         document.querySelector('.message').textContent =
             '📉 correct is to low ';
         score--;
+        document.querySelector('.score').textContent = score;
     }
 });
