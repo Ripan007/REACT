@@ -10,8 +10,10 @@ Promise.all([
         );
     })
     .then(function (data) {
-        console.log('🚀 ~ data:', data);
+        console.log('🚀 ~ data:', data[0]);
     })
     .catch(function (err) {
         console.warn(err);
     });
+
+//  that wait for asynchronous code to resolve before
