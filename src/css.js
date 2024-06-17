@@ -1,14 +1,8 @@
-let sayHello = new Promise(function (resolve, reject) {
-    setTimeout(function () {
-        resolve('hello world');
-    }, 2000);
-    reject('unable to say hi');
+let count = new Promise(function (resolve, reject) {
+    resolve(1);
 });
 
-sayHello
-    .then(function (msg) {
-        console.log('🚀 ~ msg:', msg);
-    })
-    .catch(function (err) {
-        console.warn('🚀 ~ err:', err);
-    });
+count.then(function (num) {
+    console.log('🚀 ~ num:', num);
+    return count + 1;
+});
