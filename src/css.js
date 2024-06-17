@@ -39,8 +39,9 @@ document.querySelector('.check').addEventListener('click', function () {
             displayMessage(guess > secretNumber ? '📈to high' : '📉to low');
             document.querySelector('.score').textContent = score;
         } else {
-            document.querySelector('.message').textContent =
-                '💥 you lost the game';
+            displayMessage('💥 you lost the game');
+            // document.querySelector('.message').textContent =
+            //     '💥 you lost the game';
             document.querySelector('.score').textContent = 0;
         }
     }
@@ -53,7 +54,8 @@ again.addEventListener('click', function () {
     console.log('🚀 ~ secretNumber:', secretNumber);
     document.querySelector('.number').textContent = '?';
     document.querySelector('.score').textContent = score;
-    document.querySelector('.message').textContent = ' start guessing.. ';
+    displayMessage(' start guessing.. ');
+    // document.querySelector('.message').textContent = ' start guessing.. ';
     document.querySelector('.guess').value = '';
     document.querySelector('body').style.background = '#222';
     document.querySelector('.number').style.width = '15rem';
