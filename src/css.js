@@ -7,14 +7,18 @@ let highScore = 0;
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 console.log('🚀 ~ secretNumber:', secretNumber);
 
-const displayMessage = function (message) {};
+const displayMessage = function (message) {
+    document.querySelector('.message').textContent = message;
+};
 
 document.querySelector('.check').addEventListener('click', function () {
     const guess = Number(document.querySelector('.guess').value);
     console.log('🚀 ~ guess:', guess, typeof guess);
     //  when there is no input
     if (!guess) {
-        document.querySelector('.message').textContent = '🚫 no number!';
+        // document.querySelector('.message').textContent = '🚫 no number!';
+        displayMessage('🚫 no number!');
+
         //  when player wins
     } else if (guess === secretNumber) {
         document.querySelector('.message').textContent = '😀 correct number';
