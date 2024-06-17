@@ -13,7 +13,7 @@ document.querySelector('.check').addEventListener('click', function () {
     } else if (guess === secretNumber) {
         document.querySelector('.message').textContent = '😀 correct number';
     } else if (guess > secretNumber) {
-        if (guess > 0) {
+        if (score > 0) {
             document.querySelector('.message').textContent =
                 '📈 guess is to high';
             score--;
