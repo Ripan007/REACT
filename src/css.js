@@ -13,9 +13,15 @@ document.querySelector('.check').addEventListener('click', function () {
     } else if (guess === secretNumber) {
         document.querySelector('.message').textContent = '😀 correct number';
     } else if (guess > secretNumber) {
-        document.querySelector('.message').textContent = '📈 guess is to high';
-        score--;
-        document.querySelector('.score').textContent = score;
+        if (guess > 0) {
+            document.querySelector('.message').textContent =
+                '📈 guess is to high';
+            score--;
+            document.querySelector('.score').textContent = score;
+        } else {
+            document.querySelector('.message').textContent =
+                '💥 you lost the game';
+        }
     } else if (guess < secretNumber) {
         document.querySelector('.message').textContent =
             '📉 correct is to low ';
