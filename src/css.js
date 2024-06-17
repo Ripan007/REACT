@@ -14,6 +14,7 @@ document.querySelector('.check').addEventListener('click', function () {
         //  when player wins
     } else if (guess === secretNumber) {
         document.querySelector('.message').textContent = '😀 correct number';
+        // when guess is to high
     } else if (guess > secretNumber) {
         if (score > 1) {
             document.querySelector('.message').textContent =
@@ -25,6 +26,7 @@ document.querySelector('.check').addEventListener('click', function () {
                 '💥 you lost the game';
             document.querySelector('.score').textContent = 0;
         }
+        //  when guess is to low
     } else if (guess < secretNumber) {
         if (score > 1) {
             document.querySelector('.message').textContent =
