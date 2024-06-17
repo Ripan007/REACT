@@ -45,4 +45,6 @@ again.addEventListener('click', function () {
   score = 20;
   document.querySelector('.number').textContent = '?';
   document.querySelector('.message').textContent = '📉 correct is to low ';
+  document.querySelector('.guess').textContent = 'start guessing..';
+  document.querySelector('body').style.background = '#222';
 });
