@@ -1,7 +1,7 @@
 'use strict';
 
 const show = document.querySelector('.message').textContent;
-let again = document.querySelector('.again');
+const again = document.querySelector('.again');
 let score = 20;
 const secretNumber = Math.trunc(Math.random() * 20) + 1;
 console.log('🚀 ~ secretNumber:', secretNumber);
@@ -42,6 +42,7 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 
 again.addEventListener('click', function () {
+  console.log('button got clicked');
   score = 20;
   document.querySelector('.number').textContent = '?';
   document.querySelector('.message').textContent = '📉 correct is to low ';
