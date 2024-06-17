@@ -42,8 +42,7 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 
 again.addEventListener('click', function () {
-  console.log('button got clicked');
-  score = 20;
+  document.querySelector('.score').textContent = 20;
   document.querySelector('.number').textContent = '?';
   document.querySelector('.message').textContent = '📉 correct is to low ';
   document.querySelector('.guess').textContent = 'start guessing..';
